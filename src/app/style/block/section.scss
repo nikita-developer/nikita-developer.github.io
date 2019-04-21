@@ -1,0 +1,32 @@
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #fff;
+
+  &_gray {
+    background-color: #fbfbfb;
+  }
+
+  &_cell {
+    background-image: url('../../media/section/cell.jpg');
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, .4);
+  }
+
+  &_black {
+    background-color: #000;
+  }
+}
+
+.section__title {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 36px;
+  font-family: 'OzHandicraft';
+}
+
+@media (max-width: 768px) {
+  .section__title {
+    font-size: 24px;
+  }
+}
