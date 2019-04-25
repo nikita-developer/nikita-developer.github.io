@@ -6,18 +6,19 @@ $(document).ready(function () {
   // Вызов owl-carousel
   $('.js-myWorks').owlCarousel({
     loop: true,
+    dots: false,
+    nav: true,
     margin: 32,
     items: 3,
+    navText: ['', ''],
     responsive: {
       0 : {
         items: 1,
       },
-      // breakpoint from 480 up
-      576 : {
+      768 : {
         items: 2,
       },
-      // breakpoint from 768 up
-      768 : {
+      992 : {
         items: 3,
       },
     },
