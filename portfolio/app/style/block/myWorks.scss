@@ -39,6 +39,8 @@
 }
 
 .myWorks__item {
+  padding: .5rem 0 1.5rem 0;
+  border: 1px solid rgba(0,0,0, 0.1);
   text-align: center;
 }
 
@@ -49,6 +51,8 @@
   padding-left: 50px;
   margin-bottom: 1rem;
   font-size: 24px;
+  font-weight: 700;
+  color: #656565;
 
   &::before {
     position: absolute;
@@ -76,6 +80,8 @@
 }
 
 .myWorks__description {
+  padding-right: .5rem;
+  padding-left: .5rem;
   margin-bottom: 1rem;
   color: #656565;
 }
@@ -83,6 +89,10 @@
 .myWorks__btm {
   border-radius: 2px;
   color: #fff;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 @media (max-width: 992px) {

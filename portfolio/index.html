@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="app/style/css/style.css">
 </head>
 <body>
-  <section class="face">
+  <section class="face js-face">
+    <nav class="nav js-nav">
+      <a class="nav__link" data-scroll="section-1" href="#section-1">Мои работы</a>
+      <a class="nav__link" data-scroll="section-2" href="#section-2">В работе использую</a>
+      <a class="nav__link" data-scroll="section-3" href="#section-3">Обо мне</a>
+      <a class="nav__link" data-scroll="section-4" href="#section-4">Есть вопросы? Напиши мне</a>
+    </nav>
     <div class="container-fluid">
       <div class="row">
         <div class="col">
@@ -16,48 +22,54 @@
             <div class="header__myFace"><img src="app/media/header/nikita.jpg" alt=""></div>
             <h1 class="header__title">Сайт-портфолио html-верстальщика</h1>
             <div class="header__intro">Кузнецова Никиты</div>
-            <div class="header__scrollBot wow bounce animated" data-wow-duration="4s" data-wow-iteration="infinite"><img src="app/media/header/arrow.svg" alt=""></div>
+            <div class="header__scrollBot js-header__scrollBot wow bounce animated" data-wow-duration="4s" data-wow-iteration="infinite"><img src="app/media/header/arrow.svg" alt=""></div>
           </header>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" data-anchor="section-1">
     <div class="section__title">Мои работы</div>
     <div class="container">
       <div class="row">
         <div class="col">
           <div class="myWorks js-myWorks owl-carousel">
             <div class="myWorks__item">
-              <div class="myWorks__title">Title</div>
+              <div class="myWorks__title">Mansprint</div>
               <div class="myWorks__media"><img src="app/media/myWorks/1.jpg" alt=""></div>
               <div class="myWorks__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, voluptatum.</div>
-              <div class="myWorks__btm btn">Просмотр</div>
+              <a class="myWorks__btm btn" href="https://mansprint.ru/">Просмотр</a>
             </div>
             <div class="myWorks__item">
-              <div class="myWorks__title">Title</div>
+              <div class="myWorks__title">Pravozakon</div>
               <div class="myWorks__media"><img src="app/media/myWorks/2.jpg" alt=""></div>
               <div class="myWorks__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, voluptatum.</div>
-              <div class="myWorks__btm btn">Просмотр</div>
+              <a class="myWorks__btm btn" href="https://pravozakon.org/">Просмотр</a>
             </div>
             <div class="myWorks__item">
-              <div class="myWorks__title">Title</div>
+              <div class="myWorks__title">Tequilas</div>
               <div class="myWorks__media"><img src="app/media/myWorks/3.jpg" alt=""></div>
               <div class="myWorks__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, voluptatum.</div>
-              <div class="myWorks__btm btn">Просмотр</div>
+              <a class="myWorks__btm btn" href="https://dove-crimson-hccc.squarespace.com/">Просмотр</a>
             </div>
             <div class="myWorks__item">
-              <div class="myWorks__title">Title</div>
+              <div class="myWorks__title">Macs</div>
               <div class="myWorks__media"><img src="app/media/myWorks/4.jpg" alt=""></div>
               <div class="myWorks__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, voluptatum.</div>
-              <div class="myWorks__btm btn">Просмотр</div>
+              <a class="myWorks__btm btn" href="https://macs.school/">Просмотр</a>
             </div>
             <div class="myWorks__item">
-              <div class="myWorks__title">Title</div>
+              <div class="myWorks__title">Nt-mdt</div>
               <div class="myWorks__media"><img src="app/media/myWorks/5.jpg" alt=""></div>
               <div class="myWorks__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, voluptatum.</div>
-              <div class="myWorks__btm btn">Просмотр</div>
+              <a class="myWorks__btm btn" href="http://ntmdteu.pitech.ru/">Просмотр</a>
+            </div>
+            <div class="myWorks__item">
+              <div class="myWorks__title">Musthavelab</div>
+              <div class="myWorks__media"><img src="app/media/myWorks/6.jpg" alt=""></div>
+              <div class="myWorks__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, voluptatum.</div>
+              <a class="myWorks__btm btn" href="https://pitech.ru/musthavelab/index.html">Просмотр</a>
             </div>
           </div>
         </div>
@@ -65,7 +77,7 @@
     </div>
   </section>
 
-  <section class="section section_gray">
+  <section class="section section_gray" data-anchor="section-2">
     <div class="section__title">В работе использую</div>
     <div class="container">
       <div class="row skills">
@@ -101,14 +113,24 @@
           <div class="skills__itemTitle">Gulp</div>
           <img src="app/media/skills/8.png" alt="">
         </div>
-        <div class="col-sm-12 skills__description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas perferendis beatae, consequuntur quibusdam maiores consequatur labore, ipsa error facilis molestiae cumque sint dicta quaerat vero non. Ab dolor quis omnis magnam quod nam dolore ea sunt eum asperiores quidem ex nostrum harum adipisci qui, iure! Facere laborum beatae voluptatum, architecto nostrum ratione reiciendis laboriosam, optio omnis ex, et quae. Officiis ipsum facere eius nesciunt veritatis ipsa, in totam harum similique eum, reprehenderit voluptate fugiat necessitatibus sequi? Odio ducimus pariatur vel, rem iure voluptatem, veritatis laudantium, atque tempora dolorem maxime eaque doloribus nulla assumenda! Neque autem asperiores ex delectus rem dolor.
+      </div>
+    </div>
+  </section>
+
+  <section class="section" data-anchor="section-3">
+    <div class="section__title">Обо мне</div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="aboutMe">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dolores cupiditate delectus reprehenderit consequuntur neque esse atque, obcaecati quibusdam harum aliquam iure illum, voluptate ducimus enim repudiandae nobis nemo. Doloribus modi ex aut tempore consectetur, magnam distinctio. Excepturi minima voluptate earum, consequatur quas nulla! Odio laboriosam maiores dicta, accusantium consequuntur, rem libero corrupti aliquid. Eum dignissimos perspiciatis inventore! Doloribus expedita aperiam, omnis reiciendis esse rem tenetur beatae dolor consequatur, rerum doloremque voluptatem. Explicabo qui perferendis vitae ullam maiores ipsum odit adipisci eligendi natus dicta ratione et, obcaecati nostrum corporis aliquam nam sequi voluptatem sint pariatur ducimus amet error. Temporibus vitae laudantium sapiente necessitatibus velit dolore, ut consequatur minima perspiciatis soluta qui, dolores eum at recusandae repellendus, asperiores ab dolorem quisquam.
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section section_cell">
+  <section class="section section_cell" data-anchor="section-4">
   <div class="section__title">Есть вопросы? Напиши мне</div>
     <div class="container">
       <div class="row">
@@ -126,7 +148,7 @@
     </div>
   </section>
 
-  <section class="section section_black">
+  <section class="section section_black"  data-anchor="section-5">
     <div class="container">
       <div class="row">
         <div class="col">

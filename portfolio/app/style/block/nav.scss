@@ -1,0 +1,25 @@
+
+.nav {
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nav__link {
+  font-size: 30px;
+  font-family: 'OzHandicraft';
+  color: #000;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &_active {
+    color: #44a5f5;
+  }
+}

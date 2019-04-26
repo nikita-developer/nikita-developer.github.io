@@ -6400,6 +6400,7 @@ html {
   height: 100%;
   width: 100%;
 }
+
 .face {
   background-image: url("../../media/face/bg.jpg");
   background-repeat: no-repeat;
@@ -6546,6 +6547,8 @@ html {
 }
 
 .myWorks__item {
+  padding: .5rem 0 1.5rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -6556,6 +6559,8 @@ html {
   padding-left: 50px;
   margin-bottom: 1rem;
   font-size: 24px;
+  font-weight: 700;
+  color: #656565;
 }
 
 .myWorks__title::before {
@@ -6583,6 +6588,8 @@ html {
 }
 
 .myWorks__description {
+  padding-right: .5rem;
+  padding-left: .5rem;
   margin-bottom: 1rem;
   color: #656565;
 }
@@ -6590,6 +6597,10 @@ html {
 .myWorks__btm {
   border-radius: 2px;
   color: #fff;
+}
+
+.myWorks__btm:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 992px) {
@@ -6603,9 +6614,37 @@ html {
     font-size: 18px;
   }
 }
+.nav {
+  position: fixed;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nav__link {
+  font-size: 30px;
+  font-family: 'OzHandicraft';
+  color: #000;
+}
+
+.nav__link:hover {
+  text-decoration: none;
+}
+
+.nav__link_active {
+  color: #44a5f5;
+}
 .section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background-color: #fff;
 }
 
