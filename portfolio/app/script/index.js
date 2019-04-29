@@ -43,6 +43,11 @@ $(document).ready(function () {
 
   $(window).scroll(() => {
     const windscroll = $(window).scrollTop()
+    if($('.face').height() <= windscroll) {
+      $('.nav__burger').addClass('nav__burger_black')
+    } else {
+      $('.nav__burger').removeClass('nav__burger_black')
+    }
     $('section').each(function $this(i) {
       if ($(this).offset().top <= windscroll - 400) {
         $('.nav a').removeClass('nav__link_active')
@@ -50,4 +55,13 @@ $(document).ready(function () {
       }
     })
   }).scroll()
+
+  //nav open
+  $('.js-nav__burger').click(function() {
+    $(this).parent().toggleClass('nav_active')
+  })
+
+  $('.nav__link').click(function() {
+    $(this).parent().toggleClass('nav_active')
+  })
 })

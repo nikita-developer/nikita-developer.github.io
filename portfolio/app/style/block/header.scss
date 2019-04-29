@@ -40,10 +40,6 @@
 }
 
 @media (max-width: 992px) {
-  .header__myFace {
-    max-width: 150px;
-  }
-
   .header__title {
     font-size: 25px;
   }
@@ -54,12 +50,8 @@
 }
 
 @media (max-width: 576px) {
-  .header__myFace {
-    max-width: 100px;
-  }
-
   .header__title {
-    line-height: 1.2;
+    line-height: 1.4;
     font-size: 20px;
   }
 
