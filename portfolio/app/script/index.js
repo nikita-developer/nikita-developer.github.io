@@ -11,6 +11,9 @@ $(document).ready(function () {
     margin: 32,
     items: 3,
     navText: ['', ''],
+    autoplay:true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
     responsive: {
       0 : {
         items: 1,
@@ -52,6 +55,8 @@ $(document).ready(function () {
       if ($(this).offset().top <= windscroll - 400) {
         $('.nav a').removeClass('nav__link_active')
         $('.nav a').eq(i).addClass('nav__link_active')
+      } else {
+        $('.nav a').eq(i).removeClass('nav__link_active')
       }
     })
   }).scroll()

@@ -30,3 +30,9 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+p {
+  & + & {
+    margin-top: 15px;
+  }
+}
