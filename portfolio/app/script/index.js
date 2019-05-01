@@ -28,8 +28,7 @@ $(document).ready(function () {
   })
 
   //scroll boot
-  $('.js-header__scrollBot').click(function (even) {
-      even.preventDefault();
+  $('.js-header__scrollBot').click(function () {
       var $height = $('.face').height();
       $('html, body').animate({scrollTop:$height}, 500);
   })
