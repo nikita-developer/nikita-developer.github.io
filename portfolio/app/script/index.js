@@ -11,15 +11,15 @@ $(document).ready(function () {
     margin: 32,
     items: 3,
     navText: ['', ''],
-    autoplay:true,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: true,
     responsive: {
       0 : {
         items: 1,
       },
       768 : {
         items: 2,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
       },
       992 : {
         items: 3,
