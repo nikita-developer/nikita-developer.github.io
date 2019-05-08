@@ -1,0 +1,46 @@
+
+.productTape {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.productTape__title {
+  width: 100%;
+  margin-bottom: 1rem;
+  line-height: 20px;
+  font-weight: 700;
+  color: #464747;
+}
+
+.productTape__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #E5E5E5;
+  cursor: pointer;
+
+  &_active {
+    border: 2px solid #9EC400;
+    color: #9EC400;
+  }
+
+  & + & {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .productTape__item {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+
+    & + & {
+      margin-left: 1rem;
+    }
+  }
+}

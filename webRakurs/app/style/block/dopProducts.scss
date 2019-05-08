@@ -1,0 +1,40 @@
+
+.dopProducts__title {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 36px;
+  color: #464747;
+}
+
+.dopProducts__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: #F6F6F6;
+}
+
+.dopProducts__media {
+  margin-bottom: 1rem;
+}
+
+.dopProducts__itemName {
+  font-size: 15px;
+  color: #464747;
+  margin-bottom: .5rem;
+}
+
+.dopProducts__itemPrice {
+  font-size: 20px;
+  font-weight: 700;
+  color: #464747;
+  margin-bottom: .5rem;
+}
+
+.dopProducts__itemIntro {
+  font-size: 13px;
+  color: #999;
+}

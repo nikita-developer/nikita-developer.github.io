@@ -1,0 +1,154 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.header__item {
+  padding: 20px 0;
+  font-size: 13px;
+  line-height: 20px;
+  color: #464747;
+  transition: .3s;
+
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
+
+  & + & {
+    margin-left: 2.5rem;
+  }
+
+  &_brand {
+    margin-right: auto;
+  }
+
+  &_bell {
+    color: #999;
+  }
+
+  &_delivery {
+    position: relative;
+    padding-right: 2.5rem;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 20px;
+      background-color: #E5E5E5;
+      content: '';
+    }
+  }
+
+  &_phone {
+    display: flex;
+
+    & img {
+      margin-right: .5rem;
+    }
+  }
+
+  &_basket {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #9EC400;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      background-color: #b3de00;
+    }
+  }
+}
+
+.header__quantity {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  background-color: #fff;
+  border-radius: 50%;
+  font-size: 9px;
+  line-height: 1;
+  padding: 2px;
+}
+
+@media (max-width: 1340px) {
+  .header {
+    flex-wrap: wrap;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .header__item {
+    & + & {
+      margin-left: 2rem;
+    }
+
+    &_delivery {
+      padding-right: 2rem;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    justify-content: flex-start;
+  }
+
+  .header__item {
+    & + & {
+      margin-left: 0;
+      margin-right: 2rem;
+
+      &_basket {
+        margin-left: auto;
+        margin-right: 0;
+      }
+    }
+
+    &_brand {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .header__item {
+    padding: 5px;
+    text-align: center;
+
+    &_delivery {
+      padding-right: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    & + & {
+      margin-right: 0;
+
+      &_basket {
+        margin-left: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  width: 140px;
+  height: 60px;
+  border: 1px solid #DDDDDD;
+  background-color: #fff;
+}
+
+.quantity__step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.quantity__nomber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  border-right: 1px solid #DDDDDD;
+  border-left: 1px solid #DDDDDD;
+}
+
+@media (max-width: 576px) {
+  .quantity {
+    margin-right: 2rem;
+  }
+}

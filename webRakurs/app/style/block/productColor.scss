@@ -1,0 +1,28 @@
+
+.productColor {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.productColor__title {
+  width: 100%;
+  margin-bottom: 1rem;
+  line-height: 20px;
+  font-weight: 700;
+  color: #464747;
+}
+
+.productColor__color {
+  width: 70px;
+  height: 40px;
+  background: #A72D2D;
+}
+
+.productColor__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: .5rem;
+  cursor: pointer;
+}

@@ -1,0 +1,28 @@
+
+.help {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  background-color: #F6F6F6;
+}
+
+.help__title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #464747;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.help__titleIntro {
+  font-size: 20px;
+  color: #999;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 576px) {
+  .help__title {
+    font-size: 35px;
+    line-height: 1;
+  }
+}

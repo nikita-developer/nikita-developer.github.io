@@ -1,0 +1,47 @@
+
+.breadcrumb {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-right: 1rem;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -3px;
+    content: '-';
+  }
+
+  & + & {
+    margin-left: 1rem;
+  }
+
+  &_active {
+    padding-right: 0;
+
+    &::before {
+      display: none;
+    }
+
+    .breadcrumb__link {
+      color: #000;
+    }
+  }
+}
+
+.breadcrumb__link {
+  display: inline-block;
+  padding: 5px;
+  color: #9EC400;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
