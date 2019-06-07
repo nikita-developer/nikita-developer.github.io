@@ -6693,6 +6693,10 @@ html {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 
+.nav__burger {
+  display: none;
+}
+
 .nav__link {
   font-size: 30px;
   font-family: 'OzHandicraft';
@@ -6738,10 +6742,6 @@ html {
     -ms-flex-direction: column;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.95);
-  }
-
-  .nav_active .nav__burger span {
-    background-color: #fff;
   }
 
   .nav_active .nav__link {
