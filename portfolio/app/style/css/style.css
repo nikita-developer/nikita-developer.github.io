@@ -6651,6 +6651,10 @@ html {
   margin-bottom: 1rem;
 }
 
+.myWorks__media img {
+  height: auto;
+}
+
 .myWorks__description {
   padding-right: .5rem;
   padding-left: .5rem;

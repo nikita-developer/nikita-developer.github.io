@@ -77,6 +77,10 @@
 
 .myWorks__media {
   margin-bottom: 1rem;
+
+  & img {
+    height: auto;
+  }
 }
 
 .myWorks__description {
