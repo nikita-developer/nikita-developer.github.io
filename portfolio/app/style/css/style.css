@@ -6705,9 +6705,13 @@ html {
   font-size: 30px;
   font-family: 'OzHandicraft';
   color: #000;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
 }
 
 .nav__link:hover {
+  color: #44a5f5;
   text-decoration: none;
 }
 

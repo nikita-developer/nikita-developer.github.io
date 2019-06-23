@@ -18,8 +18,11 @@
   font-size: 30px;
   font-family: 'OzHandicraft';
   color: #000;
+  transition: .3s;
+  cursor: pointer;
 
   &:hover {
+    color: #44a5f5;
     text-decoration: none;
   }
 

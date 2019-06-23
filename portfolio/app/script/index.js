@@ -35,8 +35,11 @@ $(document).ready(function () {
 
   //nav scrollTop
   $('.nav a').on('click', function menuSroll() {
+    $('.nav a').removeClass('nav__link_active')
+    $(this).addClass('nav__link_active')
     const scrollAnchor = $(this).attr('data-scroll')
-    const scrollPoint = $(`section[data-anchor="${scrollAnchor}"]`).offset().top
+    const scrollPoint = $('.section[data-anchor='+ scrollAnchor +']').offset().top
+
     $('body,html').animate({
       scrollTop: scrollPoint - 71,
     }, 500)
