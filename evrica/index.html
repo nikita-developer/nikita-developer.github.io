@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evrica</title>
+    <link rel="stylesheet" href="app/style/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <div class="logo"></div>
+      <div class="header__contact">
+        <div class="header__company">Агентство недвижимости</div>
+        <div class="header__address"><img src="app/media/header/metro.png" alt="" class="header__address">Москва, «Беляево», ул. Миклухо-Маклая, д. 43</div>
+      </div>
+      <div class="header__contact">
+        <div class="header__phone"><a href="tel:+74952760303">+7 (495) 276-03-03</a></div>
+        <div class="header__workingHours">Пн—Пт: с 09.00 до 21.00, Сб—Вс: с 10.00 до 17.00</div>
+      </div>
+      <div class="header__btn btn">Бесплатная консультация</div>
+      <nav class="nav">
+        <div class="nav__item"><a href="#">новостройки</a></div>
+        <div class="nav__item"><a href="#">элитная недвижимость</a></div>
+        <div class="nav__item"><a href="#">вторичная недвижимость</a></div>
+        <div class="nav__item"><a href="#">коммерческая недвижимость</a></div>
+        <div class="nav__item"><a href="#">ипотека</a></div>
+        <div class="nav__item"><a href="#">услуги</a></div>
+        <div class="nav__item"><a href="#">контакты</a></div>
+        <div class="nav__item nav__item_search"><img src="app/media/nav/search.png" alt="Поиск"></div>
+      </nav>
+    </header>
+  </div>
+
+  <section class="section section_gray">
+    <div class="callback">
+      <div class="callback__item callback__phone"><img src="app/media/callback/phone.png" alt="">Обратный звонок</div>
+      <div class="callback__item callback__calendar"><img src="app/media/callback/calendar.png" alt="">Записаться на показ</div>
+    </div>
+    <div class="container">
+      <div class="buy">
+        <h1 class="buy__title">Купить квартиру в новостройке</h1>
+        <div class="calculator">
+          <form class="calculator__form" action="">
+            <div class="calculator__title">Стоимость, млн руб.</div>
+            <div class="calculator__polzunok"></div>
+            <div class="calculator__cities">
+              <label>
+                <input type="checkbox" checked>
+                Москва и Новая Москва
+              </label>
+              <label>
+                <input type="checkbox">
+                Московская область
+              </label>
+            </div>
+            <div class="calculator__filter">
+              <select>
+                <option value="">Станция метро</option>
+                <option value="">Станция метро2</option>
+                <option value="">Станция метро3</option>
+              </select>
+              <select >
+                <option value="">Тип жилья</option>
+                <option value="">Станция метро2</option>
+                <option value="">Станция метро3</option>
+              </select>
+              <select >
+                <option value="">Площадь</option>
+                <option value="">Станция метро2</option>
+                <option value="">Станция метро3</option>
+              </select>
+              <select >
+                <option value="">Тип отделки</option>
+                <option value="">Станция метро2</option>
+                <option value="">Станция метро3</option>
+              </select>
+              <select >
+                <option value="">Срок сдачи</option>
+                <option value="">Станция метро2</option>
+                <option value="">Станция метро3</option>
+              </select>
+              <input class="btn calculator__btn" type="submit" value="Найти">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Не совсем понял как этот блок должен себя вести, поэтому не стал его адаптировать -->
+  <section class="section section_houses">
+    <div class="houses">
+      <div class="houses__item houses__item_active">
+        <div class="houses__arrow"></div>
+        <div class="houses__close"><span></span><span></span></div>
+        <div class="houses__title">ЖК Премиум-квартал JAZZ</div>
+        <div class="houses__intro"><img src="app/media/houses/metro.png" alt=""><span>Марьина роща</span> 2 минуты пешком</div>
+        <div class="houses__addres">Марьина роща, ул. Сущевский вал, 49</div>
+        <div class="houses__count">1-комнатные от 30 м² <span>6 900 000 р.</span></div>
+        <div class="houses__count">2-комнатные от 75 м² <span>от 22 900 000 р.</span></div>
+        <div class="houses__count">3-комнатные от 74 м² <span>от 17 400 000 р.</span></div>
+        <div class="houses__count">4-комнатные от 177 м² <span>от 63 200 000 р.</span></div>
+        <div class="houses__readiness">Стадия готовности:<span>На заселении</span></div>
+        <div class="houses__readiness">Ипотека:<span>Есть</span></div>
+        <div class="houses__readiness">Отделка:<span>Возможна</span></div>
+        <div class="houses__btn btn">Заказать просмотр</div>
+      </div>
+      <div class="houses__label houses__label_one js-houses__label">3</div>
+      <div class="houses__item">
+        <div class="houses__arrow"></div>
+        <div class="houses__close"><span></span><span></span></div>
+        <div class="houses__title">ЖК Премиум-квартал JAZZ</div>
+        <div class="houses__intro"><img src="app/media/houses/metro.png" alt=""><span>Марьина роща</span> 2 минуты пешком</div>
+        <div class="houses__addres">Марьина роща, ул. Сущевский вал, 49</div>
+        <div class="houses__count">1-комнатные от 30 м² <span>6 900 000 р.</span></div>
+        <div class="houses__count">2-комнатные от 75 м² <span>от 22 900 000 р.</span></div>
+        <div class="houses__count">3-комнатные от 74 м² <span>от 17 400 000 р.</span></div>
+        <div class="houses__count">4-комнатные от 177 м² <span>от 63 200 000 р.</span></div>
+        <div class="houses__readiness">Стадия готовности:<span>На заселении</span></div>
+        <div class="houses__readiness">Ипотека:<span>Есть</span></div>
+        <div class="houses__readiness">Отделка:<span>Возможна</span></div>
+        <div class="houses__btn btn">Заказать просмотр</div>
+      </div>
+      <div class="houses__label houses__label_two js-houses__label">4</div>
+      <div class="houses__item">
+        <div class="houses__arrow"></div>
+        <div class="houses__close"><span></span><span></span></div>
+        <div class="houses__title">ЖК Премиум-квартал JAZZ</div>
+        <div class="houses__intro"><img src="app/media/houses/metro.png" alt=""><span>Марьина роща</span> 2 минуты пешком</div>
+        <div class="houses__addres">Марьина роща, ул. Сущевский вал, 49</div>
+        <div class="houses__count">1-комнатные от 30 м² <span>6 900 000 р.</span></div>
+        <div class="houses__count">2-комнатные от 75 м² <span>от 22 900 000 р.</span></div>
+        <div class="houses__count">3-комнатные от 74 м² <span>от 17 400 000 р.</span></div>
+        <div class="houses__count">4-комнатные от 177 м² <span>от 63 200 000 р.</span></div>
+        <div class="houses__readiness">Стадия готовности:<span>На заселении</span></div>
+        <div class="houses__readiness">Ипотека:<span>Есть</span></div>
+        <div class="houses__readiness">Отделка:<span>Возможна</span></div>
+        <div class="houses__btn btn">Заказать просмотр</div>
+      </div>
+      <div class="houses__label houses__label_three js-houses__label">1</div>
+      <div class="houses__item">
+        <div class="houses__arrow"></div>
+        <div class="houses__close"><span></span><span></span></div>
+        <div class="houses__title">ЖК Премиум-квартал JAZZ</div>
+        <div class="houses__intro"><img src="app/media/houses/metro.png" alt=""><span>Марьина роща</span> 2 минуты пешком</div>
+        <div class="houses__addres">Марьина роща, ул. Сущевский вал, 49</div>
+        <div class="houses__count">1-комнатные от 30 м² <span>6 900 000 р.</span></div>
+        <div class="houses__count">2-комнатные от 75 м² <span>от 22 900 000 р.</span></div>
+        <div class="houses__count">3-комнатные от 74 м² <span>от 17 400 000 р.</span></div>
+        <div class="houses__count">4-комнатные от 177 м² <span>от 63 200 000 р.</span></div>
+        <div class="houses__readiness">Стадия готовности:<span>На заселении</span></div>
+        <div class="houses__readiness">Ипотека:<span>Есть</span></div>
+        <div class="houses__readiness">Отделка:<span>Возможна</span></div>
+        <div class="houses__btn btn">Заказать просмотр</div>
+      </div>
+      <div class="houses__label houses__label_four js-houses__label">6</div>
+    </div>
+  </section>
+
+  <section class="section section_product">
+    <div class="container">
+      <div class="product">
+        <div class="product__content">
+          <div class="product__title">Микрорайон Некрасовка</div>
+          <div class="product__intro"><img src="app/media/houses/metro.png" alt="">Марьина роща <span>2 минуты пешком</span></div>
+          <div class="produst__description">Москва, ЮВАО, район Некрасовка, Люберецкие поля аэрации</div>
+          <div class="product__box">
+            <table>
+              <tr>
+                <td>1-комнатные от 30 м²</td>
+                <td>6 900 000 р.</td>
+              </tr>
+              <tr>
+                <td>2-комнатные от 75 м²</td>
+                <td>от 22 900 000 р.</td>
+              </tr>
+              <tr>
+                <td>3-комнатные от 74 м²</td>
+                <td>от 17 400 000 р.</td>
+              </tr>
+              <tr>
+                <td>4-комнатные от 177 м²</td>
+                <td>от 63 200 000 р.</td>
+              </tr>
+              <tr>
+                <td>Стадия готовности:</td>
+                <td>Монтаж завершен. Ввод дома в эксплуатацию в 4 квартале 2019 года / На заселении.</td>
+              </tr>
+              <tr>
+                <td>Ипотека:</td>
+                <td>Есть</td>
+              </tr>
+              <tr>
+                <td>Отделка:</td>
+                <td>Возможна</td>
+              </tr>
+            </table>
+          </div>
+          <div class="product__bonus">
+            <div class="product__bonus-item"><img src="app/media/product/house.png" alt="">Ипотека</div>
+            <div class="product__bonus-item"><img src="app/media/product/calendar.png" alt="">Рассрочка</div>
+            <div class="product__bonus-item"><img src="app/media/product/percentage.png" alt="">Скидки</div>
+            <div class="product__bonus-item"><img src="app/media/product/ruble.png" alt="">Субсидии</div>
+          </div>
+        </div>
+        <div class="product__media">
+          <div class="product__dop">
+            <div class="product__dop-item"><img src="app/media/product/present.png" alt="">Подарочные сертификаты</div>
+            <div class="product__dop-item"><img src="app/media/product/stock.png" alt="">Акция</div>
+          </div>
+          <div class="product__btn btn">Подробнее</div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product__content">
+          <div class="product__title">Микрорайон Некрасовка</div>
+          <div class="product__intro"><img src="app/media/houses/metro.png" alt="">Марьина роща <span>2 минуты пешком</span></div>
+          <div class="produst__description">Москва, ЮВАО, район Некрасовка, Люберецкие поля аэрации</div>
+          <div class="product__box">
+            <table>
+              <tr>
+                <td>1-комнатные от 30 м²</td>
+                <td>6 900 000 р.</td>
+              </tr>
+              <tr>
+                <td>2-комнатные от 75 м²</td>
+                <td>от 22 900 000 р.</td>
+              </tr>
+              <tr>
+                <td>3-комнатные от 74 м²</td>
+                <td>от 17 400 000 р.</td>
+              </tr>
+              <tr>
+                <td>4-комнатные от 177 м²</td>
+                <td>от 63 200 000 р.</td>
+              </tr>
+              <tr>
+                <td>Стадия готовности:</td>
+                <td>Монтаж завершен. Ввод дома в эксплуатацию в 4 квартале 2019 года / На заселении.</td>
+              </tr>
+              <tr>
+                <td>Ипотека:</td>
+                <td>Есть</td>
+              </tr>
+              <tr>
+                <td>Отделка:</td>
+                <td>Возможна</td>
+              </tr>
+            </table>
+          </div>
+          <div class="product__bonus">
+            <div class="product__bonus-item"><img src="app/media/product/house.png" alt="">Ипотека</div>
+            <div class="product__bonus-item"><img src="app/media/product/calendar.png" alt="">Рассрочка</div>
+            <div class="product__bonus-item"><img src="app/media/product/percentage.png" alt="">Скидки</div>
+            <div class="product__bonus-item"><img src="app/media/product/ruble.png" alt="">Субсидии</div>
+          </div>
+        </div>
+        <div class="product__media">
+          <div class="product__dop">
+            <div class="product__dop-item"><img src="app/media/product/present.png" alt="">Подарочные сертификаты</div>
+            <div class="product__dop-item"><img src="app/media/product/stock.png" alt="">Акция</div>
+          </div>
+          <div class="product__btn btn">Подробнее</div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product__content">
+          <div class="product__title">Микрорайон Некрасовка</div>
+          <div class="product__intro"><img src="app/media/houses/metro.png" alt="">Марьина роща <span>2 минуты пешком</span></div>
+          <div class="produst__description">Москва, ЮВАО, район Некрасовка, Люберецкие поля аэрации</div>
+          <div class="product__box">
+            <table>
+              <tr>
+                <td>1-комнатные от 30 м²</td>
+                <td>6 900 000 р.</td>
+              </tr>
+              <tr>
+                <td>2-комнатные от 75 м²</td>
+                <td>от 22 900 000 р.</td>
+              </tr>
+              <tr>
+                <td>3-комнатные от 74 м²</td>
+                <td>от 17 400 000 р.</td>
+              </tr>
+              <tr>
+                <td>4-комнатные от 177 м²</td>
+                <td>от 63 200 000 р.</td>
+              </tr>
+              <tr>
+                <td>Стадия готовности:</td>
+                <td>Монтаж завершен. Ввод дома в эксплуатацию в 4 квартале 2019 года / На заселении.</td>
+              </tr>
+              <tr>
+                <td>Ипотека:</td>
+                <td>Есть</td>
+              </tr>
+              <tr>
+                <td>Отделка:</td>
+                <td>Возможна</td>
+              </tr>
+            </table>
+          </div>
+          <div class="product__bonus">
+            <div class="product__bonus-item"><img src="app/media/product/house.png" alt="">Ипотека</div>
+            <div class="product__bonus-item"><img src="app/media/product/calendar.png" alt="">Рассрочка</div>
+            <div class="product__bonus-item"><img src="app/media/product/percentage.png" alt="">Скидки</div>
+            <div class="product__bonus-item"><img src="app/media/product/ruble.png" alt="">Субсидии</div>
+          </div>
+        </div>
+        <div class="product__media">
+          <div class="product__dop">
+            <div class="product__dop-item"><img src="app/media/product/present.png" alt="">Подарочные сертификаты</div>
+            <div class="product__dop-item"><img src="app/media/product/stock.png" alt="">Акция</div>
+          </div>
+          <div class="product__btn btn">Подробнее</div>
+        </div>
+      </div>
+      <div class="product__add">
+        <div class="product__add-btn btn">Все предложения</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section_aboutUs">
+    <div class="container">
+      <div class="aboutUs">
+        <div class="aboutUs__title">Офис Миэль «В Беляево»</div>
+        <div class="aboutUs__description">— это команда профессиональных экспертов и агентов по недвижимости с большим багажом риелторской и юридической практики. Основные направления Миэль «В Беляево» – это продажа элитной недвижимости и квартир в новостройках.</div>
+        <div class="aboutUs__intro">Наши специалисты выполняют широкий спектр операций, связанных с недвижимостью:</div>
+        <div class="aboutUs__job">
+          <div class="aboutUs__job-item">Подбор квартир</div>
+          <div class="aboutUs__job-item">Проверка застройщика и/или собственника</div>
+          <div class="aboutUs__job-item">Проверка и оформление документов</div>
+          <div class="aboutUs__job-item">Юридическая поддержка</div>
+          <div class="aboutUs__job-item">Сопровождение сделки</div>
+        </div>
+        <p>Если вы хотите купить квартиру в элитном жилом комплексе, то мы поможем вам это сделать не только максимально комфортно и безопасно, но и выгодно – мы всегда сообщаем о самых интересных акциях и выбираем действительно горячие предложения. Кроме того, мы готовы помочь оформить выгодную ипотеку. Каждый клиент становится для нас партнером, которого мы готовы защитить от всевозможных рисков и поддержать на всех этапах проведения сделки.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <footer class="footer">
+        <div class="footer_copy">© 2009–2016 Офис «В Беляево». При использовании материалов ссылка на сайт обязательна</div>
+        <div class="footer__company"><img src="app/media/footer/lamp.png" alt="">Разработка и продвижение — «ЭВРИКА»</div>
+      </footer>
+    </div>
+  </section>
+
+  <script src="app/script/jquery.js"></script>
+  <script src="app/script/plugin.js"></script>
+	<script src="app/script/index.js"></script>
+</body>
+</html>
