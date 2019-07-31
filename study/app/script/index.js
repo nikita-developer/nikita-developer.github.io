@@ -1,22 +1,16 @@
 
 $(document).ready(function() {
-  var $language = ["Action Script", "C++/CLI", "C++", "ColdFusion", "Delphi",
-			      "Java", "Objective-C", "JavaScript", "Python", "Visual Basic"];
-
-    $('.language__addItem').autocomplete({
-        source: $language
-    })
-
-    $('button').click(function() {
-      var $val = $('.language__addItem').val();
-      if (!$val == '') {
-        $('.language').prepend('<div class="language__item">' + $val + ' <span class="close">x</span></div>');
-        $('.language__addItem').val('');
-      }
-    });
-
-    $('.language').on('click', '.close',function () {
-      $(this).parent().remove();
-    })
-
+  const image = document.getElementById('image');
+  const cropper = new Cropper(image, {
+    crop(event) {
+      var $top = event.detail.y;
+      var $right = event.detail.x + event.detail.width;
+      var $bottom = event.detail.y + event.detail.height;
+      var $left = event.detail.x;
+      console.log('left ' + $left + ' px');
+      console.log('top ' + $top + ' px');
+      console.log('right ' + $right + ' px');
+      console.log('bottom ' + $bottom + ' px');
+    },
+  });
 });
