@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js фичи</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="app/style/css/style.css">
 </head>
 <body>
 
-  <div class="wrapper">
-    <div class="item" style="background-color: #2b2626; z-index: 1;"></div>
-    <div class="item" style="background-color: #bf5252;"></div>
-    <div class="item" style="background-color: #3b3a94;"></div>
-    <div class="item" style="background-color: #3bab68;"></div>
-    <div class="item" style="background-color: #b1788b;"></div>
+  <div class="ui-widget">
+    <div class="wrap">
+      <label for="acInput">Выберите название языка</label>
+      <div class="language">
+        <div class="language__item">php <span class="close">x</span></div>
+        <input class="language__addItem" type="text">
+      </div>
+      <button>добавить</button>
+    </div>
   </div>
 
   <script src="app/script/jquery.js"></script>
-  <script src="app/script/plugin.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="app/script/index.js"></script>
 </body>
 </html>
