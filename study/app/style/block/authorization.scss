@@ -1,0 +1,22 @@
+
+.authorization {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 80px;
+  margin-bottom: 10rem;
+}
+
+.authorization__logo {
+  width: 140px;
+}
+
+.authorization__item_right {
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .authorization {
+    margin-bottom: 3rem;
+  }
+}
