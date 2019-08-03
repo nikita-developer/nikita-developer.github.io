@@ -2,9 +2,14 @@
 .authorization {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
   min-height: 80px;
   margin-bottom: 10rem;
+}
+
+.authorization__item {
+  cursor: pointer;
 }
 
 .authorization__logo {

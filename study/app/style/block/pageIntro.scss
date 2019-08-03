@@ -1,0 +1,55 @@
+
+.pageIntro {
+  padding-top: 5rem;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.pageIntro__title {
+  margin-bottom: 3rem;
+  color: #1d1d1d;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.pageIntro__description {
+  margin-bottom: 3rem;
+  color: #1d1d1d;
+  font-size: 28px;
+  font-weight: 400;
+
+  & span {
+    display: block;
+    color: #1d1d1d;
+    font-size: 28px;
+    font-weight: 400;
+  }
+}
+
+.pageIntro__count {
+  margin-bottom: 2.5rem;
+  color: #1d1d1d;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .pageIntro__title {
+    margin-bottom: 1.5rem;
+    font-size: 40px;
+  }
+
+  .pageIntro__description {
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+
+    & span {
+      font-size: 20px;
+    }
+  }
+
+  .pageIntro__count {
+    margin-bottom: 1.5rem;
+    font-size: 22px;
+  }
+}

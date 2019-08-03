@@ -1,13 +1,21 @@
 
 .btn {
   display: inline-block;
-  padding: .5rem 1rem;
-  background-color: #000;
-  background-color: rgba(68, 165, 245, 1);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background-color: rgb(60, 213, 45);
   cursor: pointer;
   transition: .3s;
+  color: #fff;
 
   &:hover {
-    background-color: rgba(68, 165, 245, 0.8);
+    background-color: rgba(60, 213, 45, .8);
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 1rem;
+    font-size: 14px;
   }
 }

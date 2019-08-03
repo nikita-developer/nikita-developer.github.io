@@ -1,0 +1,39 @@
+
+.request {
+  display: flex;
+  justify-content: center;
+}
+
+.request__form {
+  display: flex;
+
+  & input {
+    padding: 1rem;
+    border-radius: 5px 0 0 5px;
+    background-color: #000000;
+    color: #fff;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  & button {
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .request__form {
+    flex-direction: column;
+
+    & input {
+      margin-bottom: .5rem;
+      border-radius: 5px;
+    }
+
+    & button {
+      border-radius: 5px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+
+.header {
+  display: flex;
+  width: 100%;
+  margin-right: 15px;
+  margin-bottom: auto;
+  margin-left: 15px;
+  padding-top: 3rem;
+}
+
+.header__logo {
+  width: 160px;
+}
+
+.header__entrance {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header__logo {
+    width: 110px;
+  }
+}

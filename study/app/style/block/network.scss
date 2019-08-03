@@ -1,0 +1,29 @@
+
+.network {
+  display: flex;
+  flex-direction: column;
+}
+
+.network__title {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.network__box {
+  display: flex;
+}
+
+.network__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1px solid #3cd52d;
+
+  & + & {
+    margin-left: 1rem;
+  }
+}

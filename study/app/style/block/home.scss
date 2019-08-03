@@ -101,14 +101,17 @@
   top: 0;
   left: 0;
   z-index: 1;
+  display: block;
   padding: 1rem 2rem;
   text-align: center;
   cursor: pointer;
   transition: .3s;
+  color: #fff;
 
   &:hover {
     top: 8px;
     left: -8px;
+    text-decoration: none;
   }
 
   &::before {

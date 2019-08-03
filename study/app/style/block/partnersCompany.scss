@@ -1,0 +1,36 @@
+
+.partnersCompany {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partnersCompany__description {
+  width: calc(50% - 100px);
+  color: #1d1d1d;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.partnersCompany__search {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .partnersCompany__description {
+    width: calc(50% - 50px);
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partnersCompany__description {
+    margin-bottom: 2rem;
+    width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+}

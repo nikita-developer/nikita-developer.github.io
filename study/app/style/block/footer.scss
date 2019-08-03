@@ -1,0 +1,40 @@
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+// .footer__box {}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.footer__copyright {
+  width: 100%;
+}
+
+@media (max-width: 980px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer__box {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .network__icon {
+    width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer__box {
+    flex-direction: column;
+  }
+}
