@@ -90,7 +90,7 @@ video {
 body {
   font-size: 16px;
   line-height: 1.2;
-  font-family: 'Roboto', sans-serif, Tahoma, Verdana;
+  font-family: 'Formular', sans-serif, Tahoma, Verdana;
   font-weight: 300;
 }
 
@@ -201,7 +201,19 @@ html {
     font-size: 14px;
   }
 }
+@font-face {
+  font-family: 'formular';
+  src: url("../../fonts/formular/formular-medium.woff2") format("woff2"), url("../../fonts/formular/formular-medium.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'formular';
+  src: url("../../fonts/formular/formular-light.woff2") format("woff2"), url("../../fonts/formular/formular-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -591,7 +603,7 @@ html {
 
 @media (max-width: 768px) {
   .authorization {
-    margin-bottom: 3rem;
+    margin-bottom: 0;
   }
 }
 .footer {
@@ -848,7 +860,7 @@ html {
 .home__description {
   margin-bottom: 1.5rem;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 24px;
 }
 
 .home__description span {
@@ -984,21 +996,49 @@ html {
 
 @media (max-width: 768px) {
   .home {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
   .home__working {
-    width: auto;
-    margin-bottom: 6rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    text-align: center;
   }
 
   .home__employer {
-    width: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .home__title span {
+    display: inline;
+  }
+
+  .home__description {
+    max-width: 320px;
+    font-size: 16px;
+  }
+
+  .home__description span {
+    display: inline;
+    font-size: 16px;
+  }
+
+  .home__count {
+    margin-bottom: 1rem;
+  }
+
+  .home__count span {
+    display: inline;
   }
 
   .home__more::after {
@@ -1329,7 +1369,7 @@ html {
 
 @media (max-width: 768px) {
   .pageHome {
-    background: linear-gradient(176deg, #111111 0%, #111111 50%, #39d52c 50.1%, #39d52c 100%);
+    background: linear-gradient(170deg, #111111 0%, #111111 50%, #39d52c 50.1%, #39d52c 100%);
   }
 }
 .pageIntro {
@@ -1363,7 +1403,7 @@ html {
   margin-bottom: 2.5rem;
   color: #1d1d1d;
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {

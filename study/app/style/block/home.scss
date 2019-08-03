@@ -44,7 +44,7 @@
 .home__description {
   margin-bottom: 1.5rem;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 24px;
 
   & span {
     display: block;
@@ -181,18 +181,46 @@
 
 @media (max-width: 768px) {
   .home {
-    flex-direction: column;
+    flex-wrap: wrap;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
   .home__working {
-    width: auto;
-    margin-bottom: 6rem;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    text-align: center;
   }
 
   .home__employer {
-    width: auto;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .home__title {
+    & span {
+      display: inline;
+    }
+  }
+
+  .home__description {
+    max-width: 320px;
+      font-size: 16px;
+
+    & span {
+      display: inline;
+      font-size: 16px;
+    }
+  }
+
+  .home__count {
+    margin-bottom: 1rem;
+
+    & span {
+      display: inline;
+    }
   }
 
   .home__more {
