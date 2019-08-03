@@ -27,3 +27,9 @@
     margin-left: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .network__icon {
+    width: 40px;
+  }
+}

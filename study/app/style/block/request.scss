@@ -1,17 +1,24 @@
 
 .request {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .request__form {
   display: flex;
+  width: 100%;
+  max-width: 450px;
+  margin-right: auto;
+  margin-left: auto;
 
   & input {
+    flex: 1;
+    width: 100%;
     padding: 1rem;
     border-radius: 5px 0 0 5px;
     background-color: #000000;
     color: #fff;
+    padding: 1.5rem 2rem;
 
     &::placeholder {
       color: #fff;
@@ -26,8 +33,10 @@
 @media (max-width: 768px) {
   .request__form {
     flex-direction: column;
+    align-items: center;
 
     & input {
+      padding: 1rem;
       margin-bottom: .5rem;
       border-radius: 5px;
     }

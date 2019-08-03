@@ -23,8 +23,8 @@
       & span:first-child {
         position: absolute;
         top: 50%;
-        left: 0;
-        transform: rotate(-45deg);
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
       }
 
       & span:nth-child(2) {
@@ -34,8 +34,8 @@
       & span:last-child {
         position: absolute;
         top: 50%;
-        left: 0;
-        transform: rotate(45deg);
+        left: 50%;
+        transform: translateX(-50%) rotate(-45deg);
       }
     }
 
