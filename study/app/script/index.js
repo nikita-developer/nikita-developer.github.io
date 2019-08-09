@@ -212,6 +212,7 @@ $(document).ready(function() {
 
   $('.filter__range').slider({
     range: true,
+    step: 1000,
     min: 0,
     max: 200000,
     values: [0, 200000],
