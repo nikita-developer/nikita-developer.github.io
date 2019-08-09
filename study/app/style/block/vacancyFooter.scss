@@ -1,0 +1,26 @@
+
+.vacancyFooter__btn_add {
+  margin-left: .5rem;
+  border: 1px solid #3cd52d;
+  background-color: #fff;
+  color: #3cd52d;
+
+  &:hover {
+    background-color: #3cd52d;
+    color: #fff;
+  }
+}
+
+@media (max-width: 980px) {
+  .vacancyFooter__btn {
+    padding: .5rem 1rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vacancyFooter__btn_add {
+    margin-top: .5rem;
+    margin-left: 0;
+  }
+}

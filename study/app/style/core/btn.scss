@@ -7,6 +7,21 @@
   cursor: pointer;
   transition: .3s;
   color: #fff;
+  border: 1px solid transparent;
+
+  &_orange {
+    background-color: #ffcb5b;
+  }
+
+  &_white {
+    background-color: #fff;
+    color: #3cd52d;
+    border: 1px solid #3cd52d;
+
+    &:hover {
+      color: #fff;
+    }
+  }
 
   &:hover {
     background-color: rgba(60, 213, 45, .8);

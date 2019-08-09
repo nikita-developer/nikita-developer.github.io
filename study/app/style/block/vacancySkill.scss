@@ -1,0 +1,25 @@
+
+.vacancySkill {
+  display: flex;
+  margin-right: -1rem;
+  margin-left: -1rem;
+  padding: 1.5rem 1rem;
+  border-top: 2px solid rgba(128, 128, 128, .09);
+  border-bottom: 2px dashed rgba(128, 128, 128, .09);
+}
+
+.vacancySkill__item {
+  & + & {
+    margin-left: 3rem;
+  }
+}
+
+.vacancySkill__title {
+  margin-bottom: .5rem;
+  font-weight: 400;
+}
+
+.vacancySkill__description {
+  color: #808080;
+  font-size: 14px;
+}

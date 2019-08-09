@@ -11,10 +11,13 @@
 }
 
 .nav__link {
+  padding: 5px;
   font-weight: 400;
   color: #7c7d7d;
+  transition: .3s;
 
   &:hover {
+    color: #39d52c;
     text-decoration: none;
   }
 }

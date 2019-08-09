@@ -1,0 +1,23 @@
+
+.vacancyTools {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.vacancyTools__title {
+  margin-bottom: .5rem;
+  width: 100%;
+  font-weight: 400;
+}
+
+.vacancyTools__item {
+  padding: 4px 1rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  background-color: #f5f7f6;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  font-size: 14px;
+  cursor: pointer;
+}

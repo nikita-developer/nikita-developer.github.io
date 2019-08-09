@@ -1,0 +1,47 @@
+
+.card {
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 7px 0px rgba(0, 0, 0, .3);
+  overflow: hidden;
+
+  & + & {
+    margin-top: 3rem;
+  }
+
+}
+
+.card__head {
+  padding: 1rem;
+  background-color: #f5f7f6;
+}
+
+.card__title {
+  font-weight: 400;
+}
+
+.card__body {
+  padding: 1rem;
+}
+
+.card__body-item {
+  display: flex;
+  align-items: center;
+
+  & + & {
+    margin-top: .5rem;
+  }
+
+  & img {
+    margin-right: .5em;
+  }
+
+  & a {
+    font-size: 14px;
+    color: #000;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

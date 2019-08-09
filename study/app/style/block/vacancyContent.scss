@@ -1,0 +1,27 @@
+
+.vacancyContent {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.vacancyContent__title {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 18px;
+  color: #3cd52d;
+}
+
+.vacancyContent__list {
+  margin-left: 1rem;
+  font-size: 14px;
+  font-weight: 400;
+  list-style-type: disc;
+
+  & + & {
+    margin-top: 1.5rem;
+  }
+
+  & p {
+    margin-top: .5rem;
+  }
+}

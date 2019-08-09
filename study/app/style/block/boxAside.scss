@@ -1,0 +1,27 @@
+
+.boxAside {
+  display: flex;
+}
+
+.boxAside__item {
+  & + & {
+    min-width: 280px;
+    width: 280px;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .boxAside {
+    flex-direction: column;
+  }
+
+  .boxAside__item {
+    & + & {
+      width: 100%;
+      min-width: 100%;
+      margin-top: 1rem;
+      margin-left: 0;
+    }
+  }
+}

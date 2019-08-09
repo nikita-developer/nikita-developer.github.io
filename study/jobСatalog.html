@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Буду</title>
+    <link sizes="16x16" rel="shortcut icon" type="image/png" href="app/media/favicon/favicon-16x16.png">
+    <link sizes="32x32" rel="icon" type="image/png" href="app/media/favicon/favicon-32x32.png">
+    <link sizes="192x192" rel="icon" type="image/png" href="app/media/favicon/android-chrome-192x192.png">
+    <link sizes="180x180" rel="apple-touch-icon" href="app/media/favicon/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="app/style/css/style.css?3">
+</head>
+<body>
+
+  <section class="section_inner">
+    <header class="header header_inner">
+      <a href="index.html" class="header__logo logo"><img src="app/media/logo/logo-black.svg" alt=""></a>
+      <div class="navOpen js-navOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav">
+        <div class="nav__item"><a class="nav__link" href="">Резюме</a></div>
+        <div class="nav__item"><a class="nav__link" href="">Тарифы</a></div>
+      </nav>
+      <div class="header__heart"><img src="app/media/header/icon2.svg" alt="Лайк"></div>
+      <div class="header__entrance"><img src="app/media/header/icon.svg" alt="Вход"></div>
+    </header>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="search">
+        <form class="search__form">
+          <input class="search__input" type="text" placeholder="Должность...">
+          <div class="search__icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+        </form>
+      </div>
+      <div class="filter">
+        <div class="filter__btn filter__btn_open btn js-filter__btn_open">Фильтр</div>
+        <div class="filter__btn filter__btn_reset btn js-filter__btn_reset">Сбросить фильтр</div>
+        <div class="filter__box">
+          <div class="filter__btn filter__btn_repeat filter__btn_reset btn js-filter__btn_reset">Сбросить фильтр</div>
+          <div class="filter__box-close btn">Применить</div>
+          <div class="filter__category">Город <span class="filter__category-count"></span>
+            <div class="filter__list">
+              <div class="filter__input">
+                <input type="text" placeholder="Введите город">
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Воронеж</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Воронеж</span>
+              </div>
+            </div>
+          </div>
+          <div class="filter__category">Дата публикации <span class="filter__category-count"></span>
+            <div class="filter__list">
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Воронеж</span>
+              </div>
+            </div>
+          </div>
+          <div class="filter__category">Зарплата <span class="filter__category-count"></span>
+            <div class="filter__list">
+              <div class="filter__item">
+                <div class="filter__rangeBox">
+                  <label>От
+                    <input type="text" class="filter__price1">
+                  </label>
+                  <label>До
+                    <input type="text" class="filter__price2">
+                  </label>
+                  <div class="filter__range"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter__category">Специализация <span class="filter__category-count"></span>
+            <div class="filter__list">
+              <div class="filter__input">
+                <input type="text" placeholder="Введите город">
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Воронеж</span>
+              </div>
+            </div>
+          </div>
+          <div class="filter__category">Тип занятости <span class="filter__category-count"></span>
+            <div class="filter__list">
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Москва</span>
+              </div>
+              <div class="filter__item">
+                <div class="filter__checkbox"></div><span>Воронеж</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__title section__title_catalog">Каталон вакансий</div>
+      <div class="jobOpenings jobOpenings_catalog">
+        <a href="vacancy.html" class="jobOpenings__item">
+          <div class="jobOpenings__head">
+            <div class="jobOpenings__head-icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+            <div class="jobOpenings__head-icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+            <div class="jobOpenings__head-icon jobOpenings__head-icon_last"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+          </div>
+          <div class="jobOpenings__media"><img src="http://satyr.io/150x70/gray?delay=3g" alt=""></div>
+          <div class="jobOpenings__title">Web Designer</div>
+          <div class="jobOpenings__intro">OOO Pearl Fashion Group</div>
+          <div class="jobOpenings__price">
+            <img src="http://satyr.io/30x30/gray?delay=3g" alt="">
+            <span>90 000</span>
+          </div>
+          <div class="jobOpenings__city">город Москва</div>
+          <div class="jobOpenings__footer">
+            <div class="jobOpenings__footer-item">Figma <span>Lorem ipsum dolor.</span></div>
+            <div class="jobOpenings__footer-item">Sketch <span>Lorem ipsum dolor.</span></div>
+            <div class="jobOpenings__footer-item">Adobe <span>Lorem ipsum dolor.</span></div>
+          </div>
+        </a>
+        <a href="vacancy.html" class="jobOpenings__item">
+          <div class="jobOpenings__head">
+            <div class="jobOpenings__head-icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+            <div class="jobOpenings__head-icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+            <div class="jobOpenings__head-icon jobOpenings__head-icon_last"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+          </div>
+          <div class="jobOpenings__media"><img src="http://satyr.io/150x70/gray?delay=3g" alt=""></div>
+          <div class="jobOpenings__title">Web Designer</div>
+          <div class="jobOpenings__intro">OOO Pearl Fashion Group</div>
+          <div class="jobOpenings__price">
+            <img src="http://satyr.io/30x30/gray?delay=3g" alt="">
+            <span>90 000</span>
+          </div>
+          <div class="jobOpenings__city">город Москва</div>
+          <div class="jobOpenings__footer">
+            <div class="jobOpenings__footer-item">Figma <span>Lorem ipsum dolor.</span></div>
+            <div class="jobOpenings__footer-item">Sketch <span>Lorem ipsum dolor.</span></div>
+            <div class="jobOpenings__footer-item">Adobe <span>Lorem ipsum dolor.</span></div>
+          </div>
+        </a>
+        <a href="vacancy.html" class="jobOpenings__item">
+          <div class="jobOpenings__head">
+            <div class="jobOpenings__head-icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+            <div class="jobOpenings__head-icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+            <div class="jobOpenings__head-icon jobOpenings__head-icon_last"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+          </div>
+          <div class="jobOpenings__media"><img src="http://satyr.io/150x70/gray?delay=3g" alt=""></div>
+          <div class="jobOpenings__title">Web Designer</div>
+          <div class="jobOpenings__intro">OOO Pearl Fashion Group</div>
+          <div class="jobOpenings__price">
+            <img src="http://satyr.io/30x30/gray?delay=3g" alt="">
+            <span>90 000</span>
+          </div>
+          <div class="jobOpenings__city">город Москва</div>
+          <div class="jobOpenings__footer">
+            <div class="jobOpenings__footer-item">Figma<span>Lorem ipsum dolor.</span></div>
+            <div class="jobOpenings__footer-item">Sketch<span>Lorem.</span></div>
+            <div class="jobOpenings__footer-item">Adobe<span>dolor.</span></div>
+          </div>
+        </a>
+        <a href="vacancy.html" class="jobOpenings__item">
+          <div class="jobOpenings__head">
+            <div class="jobOpenings__head-icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+            <div class="jobOpenings__head-icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+            <div class="jobOpenings__head-icon jobOpenings__head-icon_last"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+          </div>
+          <div class="jobOpenings__media"><img src="http://satyr.io/150x70/gray?delay=3g" alt=""></div>
+          <div class="jobOpenings__title">Web Designer</div>
+          <div class="jobOpenings__intro">OOO Pearl Fashion Group</div>
+          <div class="jobOpenings__price">
+            <img src="http://satyr.io/30x30/gray?delay=3g" alt="">
+            <span>90 000</span>
+          </div>
+          <div class="jobOpenings__city">город Москва</div>
+          <div class="jobOpenings__footer">
+            <div class="jobOpenings__footer-item">Figma<span>Figma трали вали</span></div>
+            <div class="jobOpenings__footer-item">Sketch<span>Figma трали вали</span></div>
+            <div class="jobOpenings__footer-item">Adobe<span>Figma трали вали</span></div>
+          </div>
+        </a>
+        <a href="vacancy.html" class="jobOpenings__item">
+          <div class="jobOpenings__head">
+            <div class="jobOpenings__head-icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+            <div class="jobOpenings__head-icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+            <div class="jobOpenings__head-icon jobOpenings__head-icon_last"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+          </div>
+          <div class="jobOpenings__media"><img src="http://satyr.io/150x70/gray?delay=3g" alt=""></div>
+          <div class="jobOpenings__title">Web Designer</div>
+          <div class="jobOpenings__intro">OOO Pearl Fashion Group</div>
+          <div class="jobOpenings__price">
+            <img src="http://satyr.io/30x30/gray?delay=3g" alt="">
+            <span>90 000</span>
+          </div>
+          <div class="jobOpenings__city">город Москва</div>
+          <div class="jobOpenings__footer">
+            <div class="jobOpenings__footer-item">Figma<span>Figma трали вали</span></div>
+            <div class="jobOpenings__footer-item">Sketch<span>Figma трали вали</span></div>
+            <div class="jobOpenings__footer-item">Adobe<span>Figma трали вали</span></div>
+          </div>
+        </a>
+        <a href="vacancy.html" class="jobOpenings__item">
+          <div class="jobOpenings__head">
+            <div class="jobOpenings__head-icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+            <div class="jobOpenings__head-icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+            <div class="jobOpenings__head-icon jobOpenings__head-icon_last"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+          </div>
+          <div class="jobOpenings__media"><img src="http://satyr.io/150x70/gray?delay=3g" alt=""></div>
+          <div class="jobOpenings__title">Web Designer</div>
+          <div class="jobOpenings__intro">OOO Pearl Fashion Group</div>
+          <div class="jobOpenings__price">
+            <img src="http://satyr.io/30x30/gray?delay=3g" alt="">
+            <span>90 000</span>
+          </div>
+          <div class="jobOpenings__city">город Москва</div>
+          <div class="jobOpenings__footer">
+            <div class="jobOpenings__footer-item">Figma <span>Figma трали вали</span></div>
+            <div class="jobOpenings__footer-item">Sketch<span>Figma трали вали</span></div>
+            <div class="jobOpenings__footer-item">Adobe<span>Figma трали вали</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="pagination">
+      <div class="pagination__item">1</div>
+      <div class="pagination__item">2</div>
+      <div class="pagination__item">3</div>
+      <div class="pagination__item">4</div>
+    </div>
+  </div>
+
+  <section class="section section_000">
+    <div class="container">
+      <footer class="footer">
+        <div class="footer__box">
+          <a href="index.html" class="footer__logo logo"><img src="app/media/logo/logo-white.svg" alt="Логотип"></a>
+          <div class="network">
+            <div class="network__title">Подписывайся на нас</div>
+            <div class="network__box">
+              <a href="#" class="network__icon"><img src="app/media/network/fb.svg" alt=""></a>
+              <a href="#" class="network__icon"><img src="app/media/network/in.svg" alt=""></a>
+              <a href="#" class="network__icon"><img src="app/media/network/te.svg" alt=""></a>
+              <a href="#" class="network__icon"><img src="app/media/network/vk.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <nav class="footerNav">
+          <div class="footerNav__item">
+            <div class="footerNav__list"><a class="footerNav__link" href="#">О компании</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Наши вакансии</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Контакты</a></div>
+          </div>
+          <div class="footerNav__item">
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Соискатели</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Вакансии</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">О компании</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Блог</a></div>
+          </div>
+          <div class="footerNav__item">
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Работодателям</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Тарифы</a></div>
+          </div>
+        </nav>
+        <div class="footer__copyright">© 2019 Буду</div>
+      </footer>
+    </div>
+  </section>
+
+  <script src="app/script/jquery.js?3"></script>
+  <script src="app/script/plugin.js?3"></script>
+	<script src="app/script/index.js?3"></script>
+</body>
+</html>

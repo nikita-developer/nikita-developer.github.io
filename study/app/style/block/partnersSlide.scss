@@ -26,6 +26,16 @@
   }
 }
 
+.partnersSlide__item {
+  & img {
+    // border: 1px solid #000;
+
+    &:last-child {
+      margin-top: 2rem;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .partnersSlide {
     width: 100%;

@@ -1,0 +1,116 @@
+
+.checkIn {
+  min-width: 50%;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.checkIn__head {
+  margin-bottom: 1.5rem;
+}
+
+.checkIn__title {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 24px;
+  color: #808080;
+  text-align: center;
+}
+
+.checkIn__tabs {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.checkIn__tabs-item {
+  padding: .5rem 1rem;
+  border-radius: 3px;
+  transition: .3s;
+  cursor: pointer;
+  border: 1px dashed #3cd52d;
+
+  & + & {
+    margin-left: .5rem;
+  }
+
+  &_active {
+    color: #fff;
+    background-color: #3cd52d;
+    border: 1px dashed transparent
+    ;
+
+    &:hover {
+      background-color: #15f700;
+    }
+  }
+}
+
+.checkIn__callback-error {
+  position: fixed;
+  z-index: 5;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem 3rem 1rem 1rem;
+  background-color: red;
+  color: #fff;
+}
+
+.checkIn__callback-success {
+  position: fixed;
+  z-index: 5;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem 3rem 1rem 1rem;
+  background-color: #3cd52d;
+  color: #fff;
+}
+
+.checkIn__callback-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  padding: 1rem;
+
+  & span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 10px;
+    height: 1px;
+    background-color: #fff;
+
+    &:last-child {
+
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+  }
+}
+
+.checkIn__footer {
+  text-align: center;
+  color: #969696;
+
+  & a {
+    color: #3cd52d;
+  }
+}
+
+.checkIn__logIn {
+  margin-left: .5rem;
+}
+
+@media (max-width: 768px) {
+  .checkIn {
+    min-width: 100%;
+    padding: 1rem;
+  }
+
+  .checkIn__tabs-item {
+    font-size: 14px;
+  }
+}
