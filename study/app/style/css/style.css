@@ -3765,7 +3765,7 @@ a.ui-button:active,
     padding: 1rem;
     width: 100%;
     position: static;
-    max-height: 100%;
+    max-height: auto;
     overflow: visible;
   }
 
