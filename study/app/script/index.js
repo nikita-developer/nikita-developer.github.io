@@ -234,6 +234,28 @@ $(document).ready(function() {
     $('.filter__range').slider('values', 1, $(this).val());
   });
 
+  $('.profileForm__range').slider({
+    range: true,
+    step: 1000,
+    min: 0,
+    max: 200000,
+    values: [30000, 80000],
+    slide: function(event, ui) {
+      $('.profileForm__price1').val(ui.values[0]);
+      $('.profileForm__price2').val(ui.values[1]);
+    }
+  });
+
+  $('.profileForm__price1').val($('.profileForm__range').slider('values', 0));
+  $('.profileForm__price2').val($('.profileForm__range').slider('values', 1));
+
+  $('.profileForm__price1').change(function() {
+    $('.profileForm__range').slider('values', 0, $(this).val());
+  });
+  $('.profileForm__price2').change(function() {
+    $('.profileForm__range').slider('values', 1, $(this).val());
+  });
+
   $(function () {
     var availableTags = [
       "1C","C/C++","C#","CoffeeScript","Elixir ","Erlang ","Flow ","Go (Golang)","Groovy ","HTML/CSS ","Perl","Java","Javascript","Kotlin","Node.js","Objective C","PHP","Python","R","Ruby ","Scala","Swift","TypeScript ","RxJava","ASP.NET MVC","UML","C","Assembler","C++","РАСТ","Hardware","СХД ","Нахе","SWIFT Aliance","RxSwift","UCC","springboot","Apache","Cassandra","MariaDB","MongoDB","MSSQL","MySQL","Oracle ","PostgreSQL ","Redis ","Scylla","Tarantool","Hadoop","noSQL ","Delphi","Greenplum","PaaS","LaaS","IaaS","Google Cloud","Google BigQuery","FireBird","CRM","GIT, SVN ","PowerDesigner ","erwin","Pentaho","Сlickhouse","SAP HANA","Android ","ASP.Net","BI","Data mining","Docker ","iOS ","Jenkins ","Linux","Machine Learning","Nginx ","Selenium ","SQL ","RabbitMQ ","Kafka ","IBM Websphere MQ ","SOA ","XML XSD WSDL ","TOGAF","OpenGL","RTOS","NLP ","CEPH","Openstack","Atlassian Jira","JMS ","Canvas","Nagios","GrayLog ","Zabbix ","JVM ","ASP.NET MVC 5 ","Web Dynpro",".NET","Angular","Backbone.js","Bootstrap","Cucumber.js","Django ","Ember.js ","Flask ","GWT ","jQuery ","JSF ","Jest ","Laravel ","Matrialize ","Qt ","React ","Redux","React Native","Ruby on Rails ","Spring ","Symfony","Unity3D","Vert.x","Vue.js","Yii ","Zend ","Kubernetes ","Bitrix ","j2ee","Babel","PLM","SID","Яндекс.Метрика","AppsFlyer","Firebase","Apache Spark","Flink","bash","DWH","Tableau","AngularJS","Viper ","SAP","LVM","Аpache","LAMP","Luigi ","css ","SASS/SCSS ","tornado ","t-sql ","Unreal Engine ","Blueprints ","BIRT ","Power BI ",".NET Core ","Selenium WD ","Xamarin ","MainMap ","Test case ","DAX 2012 ","mobx ","Google Analytics","UIKit","AVKit ","Maven ","ВКС ","WebGL","Debian","CentOS","CCNP","CCDE","CCIE","Cisco","Brocade","Allied Telesis","Juniper","Mikro Tik","UTM","Extreme","Asterisk","АТС Panasonic","Google Adwords","Трекинг системы","Fraud analyst","Яндекс Дисплей","MES","AfterEffects","AXAPTA","PL SQL","Trainee","API","Mocha.js","E-Staff","Periscope Data","Apache Airflow","Mindbox"

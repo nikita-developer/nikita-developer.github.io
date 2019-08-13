@@ -61,8 +61,11 @@
               <div class="profileForm__box">
                 <div class="profileForm__intro">Уровень ЗП</div>
                 <div class="profileForm__wrapField">
-                  <input type="text" name="zpMin" placeholder="ЗП от">
-                  <input type="text" name="zpMax" value="" placeholder="ЗП до">
+                  <div class="profileForm__rangeBox">
+                    <label>От<input class="profileForm__price1" type="text" name="zpMin"></label>
+                    <label>До<input class="profileForm__price2" type="text" name="zpMax" value=""></label>
+                    <div class="profileForm__range"></div>
+                  </div>
                 </div>
                 <div class="profileForm__wrapField profileForm__wrapField_radio">
                   <label><input name="idTypeZP" value="1" type="radio"><div class="profileForm__radioActive">До вычета НДФЛ</div></label>

@@ -5687,6 +5687,37 @@ a.ui-button:active,
   cursor: pointer;
 }
 
+.profileForm__rangeBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.profileForm__rangeBox label {
+  width: calc(50% - 1rem);
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.profileForm__rangeBox input {
+  margin-top: 4px;
+  text-align: center;
+}
+
+.profileForm__range {
+  width: 100%;
+  margin-top: 1rem;
+  margin-right: .5rem;
+  margin-left: .5rem;
+}
+
 .profileForm__fio {
   display: none;
   -ms-flex-wrap: wrap;
