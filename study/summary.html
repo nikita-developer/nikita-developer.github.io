@@ -29,119 +29,131 @@
     </header>
   </section>
 
-  <section class="section">
+  <section class="section section_pb0">
     <div class="container">
-      <div class="search">
-        <form class="search__form">
-          <input class="search__input" type="text" placeholder="Должность...">
-          <div class="search__icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
-        </form>
-      </div>
-      <div class="filter">
-        <div class="filter__btn filter__btn_open btn js-filter__btn_open">Фильтр</div>
-        <div class="filter__btn filter__btn_reset btn js-filter__btn_reset">Сбросить фильтр</div>
-        <div class="filter__box">
-          <div class="filter__btn filter__btn_repeat filter__btn_reset btn js-filter__btn_reset">Сбросить фильтр</div>
-          <div class="filter__box-close btn">Применить</div>
-          <div class="filter__category">Город <span class="filter__category-count"></span>
-            <div class="filter__list">
-              <div class="filter__input">
-                <input type="text" placeholder="Введите город">
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Воронеж</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Воронеж</span>
+      <form action="">
+        <div class="search">
+          <div class="search__form">
+            <input class="search__input" type="text" placeholder="Должность...">
+            <div class="search__icon"><img src="http://satyr.io/30x30/gray?delay=3g" alt=""></div>
+          </div>
+        </div>
+        <div class="filter">
+          <div class="filter__box">
+            <div class="filter__btn filter__btn_repeat filter__btn_reset btn js-filter__btn_reset">Сбросить фильтр</div>
+            <div class="filter__box-close btn">Применить</div>
+            <div class="filter__category">Город <span class="filter__category-count"></span>
+              <div class="filter__list">
+                <div class="filter__input">
+                  <input type="text" placeholder="Введите город">
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox"><div class="filter__checkbox"></div><span>Москва</span>
+                  </label>
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox"><div class="filter__checkbox"></div><span>Москва</span>
+                  </label>
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox"><div class="filter__checkbox"></div><span>Москва</span>
+                  </label>
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox"><div class="filter__checkbox"></div><span>Москва</span>
+                  </label>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="filter__category">Дата публикации <span class="filter__category-count"></span>
-            <div class="filter__list">
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Воронеж</span>
+            <div class="filter__category">Дата публикации <span class="filter__category-count"></span>
+              <div class="filter__list">
+                <div class="filter__item">
+                  <label class="filter__label">
+                    <input type="radio" name="date"><div class="filter__checkbox filter__checkbox_radio"></div><span>Москва</span>
+                  </label>
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label">
+                    <input type="radio" name="date"><div class="filter__checkbox filter__checkbox_radio"></div><span>Москва</span>
+                  </label>
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label">
+                    <input type="radio" name="date"><div class="filter__checkbox filter__checkbox_radio"></div><span>Москва</span>
+                  </label>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="filter__category">Зарплата <span class="filter__category-count"></span>
-            <div class="filter__list">
-              <div class="filter__item">
-                <div class="filter__rangeBox">
-                  <label>От
-                    <input type="text" class="filter__price1">
+            <div class="filter__category">Зарплата <span class="filter__category-count"></span>
+              <div class="filter__list">
+                <div class="filter__item">
+                  <div class="filter__rangeBox">
+                    <label>От
+                      <input type="text" class="filter__price1">
+                    </label>
+                    <label>До
+                      <input type="text" class="filter__price2">
+                    </label>
+                    <div class="filter__range"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter__category">Специализация <span class="filter__category-count"></span>
+              <div class="filter__list">
+                <div class="filter__input">
+                  <input type="text" placeholder="Введите специализацию">
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox"><div class="filter__checkbox"></div><span>Москва</span>
                   </label>
-                  <label>До
-                    <input type="text" class="filter__price2">
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox"><div class="filter__checkbox"></div><span>Москва</span>
                   </label>
-                  <div class="filter__range"></div>
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox"><div class="filter__checkbox"></div><span>Москва</span>
+                  </label>
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label">
+                    <input type="checkbox"><div class="filter__checkbox"></div><span>Москва</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="filter__category">Тип занятости <span class="filter__category-count"></span>
+              <div class="filter__list">
+                <div class="filter__item">
+                  <label class="filter__label">
+                    <input type="radio" name="tip"><div class="filter__checkbox filter__checkbox_radio"></div><span>Москва</span>
+                  </label>
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label">
+                    <input type="radio" name="tip"><div class="filter__checkbox filter__checkbox_radio"></div><span>Москва</span>
+                  </label>
+                </div>
+                <div class="filter__item">
+                  <label class="filter__label">
+                    <input type="radio" name="tip"><div class="filter__checkbox filter__checkbox_radio"></div><span>Москва</span>
+                  </label>
                 </div>
               </div>
             </div>
           </div>
-          <div class="filter__category">Специализация <span class="filter__category-count"></span>
-            <div class="filter__list">
-              <div class="filter__input">
-                <input type="text" placeholder="Введите город">
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Воронеж</span>
-              </div>
-            </div>
-          </div>
-          <div class="filter__category">Тип занятости <span class="filter__category-count"></span>
-            <div class="filter__list">
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Москва</span>
-              </div>
-              <div class="filter__item">
-                <div class="filter__checkbox"></div><span>Воронеж</span>
-              </div>
-            </div>
-          </div>
+          <div class="filter__btn filter__btn_open btn js-filter__btn_open">Фильтр</div>
+          <div class="filter__btn filter__btn_reset btn js-filter__btn_reset">Сбросить фильтр</div>
         </div>
-      </div>
+      </form>
     </div>
   </section>
 

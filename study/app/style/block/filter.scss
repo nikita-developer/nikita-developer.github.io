@@ -86,11 +86,6 @@
 }
 
 .filter__item {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  cursor: pointer;
-
   & + & {
     margin-top: 1rem;
   }
@@ -123,6 +118,48 @@
   width: 100%;
 }
 
+.filter__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  & input {
+    position: absolute;
+    z-index: -100;
+    visibility: hidden;
+    opacity: 0;
+
+    &:checked ~ .filter__checkbox {
+      border: 1px solid #3cd52d;
+
+      &::before {
+        position: absolute;
+        top: 4px;
+        left: 3px;
+        transform: rotate(-45deg);
+        width: 12px;
+        height: 7px;
+        border-bottom: 2px solid #3cd52d;
+        border-left: 2px solid #3cd52d;
+        content: '';
+      }
+    }
+
+    &:checked ~ .filter__checkbox_radio {
+      &::before {
+        top: 5px;
+        left: 5px;
+        transform: rotate(0);
+        width: 8px;
+        height: 8px;
+        border: 0;
+        border-radius: 50%;
+        background-color: #3cd52d;
+      }
+    }
+  }
+}
+
 .filter__checkbox {
   position: relative;
   border: 1px solid rgb(232, 232, 232);
@@ -132,26 +169,23 @@
   border-radius: 3px;
   margin-right: .5rem;
 
-  &_active::before {
-    position: absolute;
-    top: 4px;
-    left: 3px;
-    transform: rotate(-45deg);
-    width: 12px;
-    height: 7px;
-    border-bottom: 2px solid #3cd52d;
-    border-left: 2px solid #3cd52d;
-    content: '';
+  &_radio {
+    border-radius: 50%;
   }
 }
 
 .filter__btn {
   font-size: 14px;
   padding: .5rem 1rem;
+  margin-top: 4px;
   margin-right: 4px;
   margin-left: 4px;
 
   &_open {
+    display: none;
+  }
+
+  &_reset {
     display: none;
   }
 
@@ -160,6 +194,14 @@
     top: .5rem;
     left: .5rem;
     display: none;
+  }
+}
+
+@media (min-width: 981px) {
+  .filter__btn {
+    &_repeat {
+      display: none !important;
+    }
   }
 }
 
@@ -199,8 +241,6 @@
     border: 1px solid transparent;
 
     &:hover {
-      border: 2px solid #f19494;
-
       & span {
         background-color: #f19494;
       }
@@ -266,7 +306,4 @@
       display: block;
     }
   }
-}
-
-@media (max-width: 768px) {
 }

@@ -185,21 +185,23 @@ $(document).ready(function() {
 
   var $filterCount = 0
   $('.filter__list').on('click', '.filter__item', function () {
-    $(this).children('.filter__checkbox').toggleClass('filter__checkbox_active')
-    $filterCount = $(this).parents('.filter__list').find('.filter__checkbox_active').length
+    $filterCount = $(this).parents('.filter__list').find('input:checked').length
     if ($filterCount == 0) {
       $(this).parents('.filter__category').children('.filter__category-count').hide()
+      $('.js-filter__btn_reset').hide()
     } else {
+      $('.js-filter__btn_reset').show()
       $(this).parents('.filter__category').children('.filter__category-count').show().text($filterCount)
     }
   })
 
   $('.js-filter__btn_reset').click(function (){
+    $filterCount = 0
+    $('.js-filter__btn_reset').hide()
     $('.filter__category-count').hide()
     $('.filter__category').removeClass('filter__category_active')
     $('.filter__list').fadeOut()
-    $('.filter__checkbox').removeClass('filter__checkbox_active')
-    $filterCount = 0
+    $('.filter__label').children('input').prop('checked', false)
   })
 
   $('.filter__box-close').click(function (){
@@ -231,4 +233,44 @@ $(document).ready(function() {
   $('.filter__price2').change(function() {
     $('.filter__range').slider('values', 1, $(this).val());
   });
+
+  $(function () {
+    var availableTags = [
+      "1C","C/C++","C#","CoffeeScript","Elixir ","Erlang ","Flow ","Go (Golang)","Groovy ","HTML/CSS ","Perl","Java","Javascript","Kotlin","Node.js","Objective C","PHP","Python","R","Ruby ","Scala","Swift","TypeScript ","RxJava","ASP.NET MVC","UML","C","Assembler","C++","РАСТ","Hardware","СХД ","Нахе","SWIFT Aliance","RxSwift","UCC","springboot","Apache","Cassandra","MariaDB","MongoDB","MSSQL","MySQL","Oracle ","PostgreSQL ","Redis ","Scylla","Tarantool","Hadoop","noSQL ","Delphi","Greenplum","PaaS","LaaS","IaaS","Google Cloud","Google BigQuery","FireBird","CRM","GIT, SVN ","PowerDesigner ","erwin","Pentaho","Сlickhouse","SAP HANA","Android ","ASP.Net","BI","Data mining","Docker ","iOS ","Jenkins ","Linux","Machine Learning","Nginx ","Selenium ","SQL ","RabbitMQ ","Kafka ","IBM Websphere MQ ","SOA ","XML XSD WSDL ","TOGAF","OpenGL","RTOS","NLP ","CEPH","Openstack","Atlassian Jira","JMS ","Canvas","Nagios","GrayLog ","Zabbix ","JVM ","ASP.NET MVC 5 ","Web Dynpro",".NET","Angular","Backbone.js","Bootstrap","Cucumber.js","Django ","Ember.js ","Flask ","GWT ","jQuery ","JSF ","Jest ","Laravel ","Matrialize ","Qt ","React ","Redux","React Native","Ruby on Rails ","Spring ","Symfony","Unity3D","Vert.x","Vue.js","Yii ","Zend ","Kubernetes ","Bitrix ","j2ee","Babel","PLM","SID","Яндекс.Метрика","AppsFlyer","Firebase","Apache Spark","Flink","bash","DWH","Tableau","AngularJS","Viper ","SAP","LVM","Аpache","LAMP","Luigi ","css ","SASS/SCSS ","tornado ","t-sql ","Unreal Engine ","Blueprints ","BIRT ","Power BI ",".NET Core ","Selenium WD ","Xamarin ","MainMap ","Test case ","DAX 2012 ","mobx ","Google Analytics","UIKit","AVKit ","Maven ","ВКС ","WebGL","Debian","CentOS","CCNP","CCDE","CCIE","Cisco","Brocade","Allied Telesis","Juniper","Mikro Tik","UTM","Extreme","Asterisk","АТС Panasonic","Google Adwords","Трекинг системы","Fraud analyst","Яндекс Дисплей","MES","AfterEffects","AXAPTA","PL SQL","Trainee","API","Mocha.js","E-Staff","Periscope Data","Apache Airflow","Mindbox"
+    ];
+
+    $('.profileForm__autocompleteInput').autocomplete({
+      source: availableTags
+    })
+  })
+
+  $('.profileForm__autocompleteLabel').on('keydown', '.profileForm__autocompleteInput', function(e) {
+    if(e.keyCode === 13) {
+      e.preventDefault()
+      var $val = $.trim($(this).val())
+      if ($val.length == 0 || $(this).val() == ' ') {
+        $(this).val('')
+      } else {
+        $('.profileForm__autocompleteBox').append('<div class="profileForm__autocompleteSkills js-profileForm__autocompleteSkills">'+ $val +'</div>')
+        $(this).val('')
+      }
+    }
+  })
+
+  $('.profileForm__autocompleteLabel').on('click', '.js-profileForm__autocompleteAdd', function(e) {
+    var $val = $.trim($('.profileForm__autocompleteInput').val())
+    if ($val.length == 0 || $(this).val() == ' ') {
+      $(this).val('')
+    } else {
+      $('.profileForm__autocompleteBox').append('<div class="profileForm__autocompleteSkills js-profileForm__autocompleteSkills">'+ $val +'</div>')
+      $(this).val('')
+    }
+  })
+
+  $('.profileForm__autocompleteBox').on('click', '.js-profileForm__autocompleteSkills', function () {
+    $(this).remove()
+  })
+
+
+
 })

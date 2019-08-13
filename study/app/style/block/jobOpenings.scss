@@ -279,32 +279,19 @@
 }
 
 .jobOpenings__check {
+  width: 30px;
+  height: 30px;
   margin-right: .5rem;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
 
-  &_expectation {
-    background-color: #e0e0e0;
-
-    & + span {
-      color: #e0e0e0;
-    }
-  }
-
-  &_false {
-    background-color: #fd0000;
-
-    & + span {
-      color: #fd0000;
-    }
+  &:hover {
+    text-decoration: none;
   }
 
   &_true {
-    background-color: #ffca5c;
+    background-color: #3cd52d;
 
     & + span {
-      color: #ffca5c;
+      color: #3cd52d;
     }
   }
 }

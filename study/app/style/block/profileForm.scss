@@ -1,0 +1,244 @@
+
+// .profileForm {}
+
+.profileForm__item {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.1);
+}
+
+.profileForm__title {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.profileForm__box {
+  margin-bottom: 2.5rem;
+
+  & label {
+    color: #5a5a5a;
+  }
+
+  & input {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #cacaca;
+  }
+
+  & textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: .5rem;
+    border: 1px solid #cacaca;
+    resize: vertical;
+  }
+
+  & select {
+    width: 100%;
+    border: 1px solid #cacaca;
+  }
+
+  .profileForm__autocompleteBox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -4px;
+    margin-left: -4px;
+    margin-bottom: .5rem;
+  }
+
+  .profileForm__autocompleteSkills {
+    position: relative;
+    margin: 2px 4px;
+    background-color: #3cd52d;
+    padding: 4px 1.3rem 4px 1rem;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      right: 4px;
+      top: 50%;
+      width: 6px;
+      height: 1px;
+      background-color: #fff;
+      content: '';
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    &::after {
+      position: absolute;
+      right: 4px;
+      top: 50%;
+      width: 6px;
+      height: 1px;
+      background-color: #fff;
+      content: '';
+      transform: translateX(-50%) rotate(-45deg);
+    }
+  }
+
+  .profileForm__autocompleteInput {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #cacaca;
+  }
+
+  .profileForm__autocompleteBoxInput {
+    display: flex;
+  }
+
+  .profileForm__autocompleteAdd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px 4px;
+    background-color: #3cd52d;
+    padding: 4px 1.3rem 4px 1rem;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.profileForm__skillsSelect {
+  width: 100%;
+  padding: .5rem;
+  border: 1px solid #cacaca;
+  padding: 0;
+
+  & option {
+    padding: .5rem;
+
+    & + option {
+      border-top: 1px solid #f7f7f7;
+    }
+  }
+}
+
+.profileForm__intro {
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.profileForm__wrapField {
+  display: flex;
+  margin-bottom: 1rem;
+
+  & input + input {
+    border-left: 0;
+  }
+
+  &_radio {
+    & label {
+      width: 100%;
+    }
+
+    & input {
+      position: absolute;
+      left: -100000px;
+      z-index: -999;
+      visibility: hidden;
+
+      &:checked + .profileForm__radioActive {
+        background-color: #3cd52d;
+        border: 1px dashed #3cd52d;
+        color: #fff;
+      }
+    }
+  }
+
+  &_check {
+    flex-direction: column;
+
+    & label {
+      display: flex;
+      width: 100%;
+
+      & + label {
+        margin-top: 1rem;
+      }
+    }
+
+    & input {
+      position: absolute;
+      left: -100000px;
+      z-index: -999;
+      visibility: hidden;
+
+      &:checked + .profileForm__check {
+        position: relative;
+        border-color: #3cd52d;
+
+        &::before {
+          position: absolute;
+          top: 4px;
+          left: 3px;
+          transform: rotate(-45deg);
+          width: 10px;
+          height: 6px;
+          border-bottom: 2px solid #3cd52d;
+          border-left: 2px solid #3cd52d;
+          content: '';
+        }
+      }
+    }
+  }
+}
+
+.profileForm__radioActive {
+  border: 1px dashed #cacaca;
+  padding: .5rem 1rem;
+  text-align: center;
+  color: #777777;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.profileForm__citySelect {
+  padding: .5rem;
+
+  & option {
+    padding: .5rem 0;
+
+    & + option {
+      border-top: 1px solid #f7f7f7;
+    }
+  }
+}
+
+.profileForm__check {
+  width: 18px;
+  height: 18px;
+  margin-right: .5rem;
+  border: 1px solid #cacaca;
+  border-radius: 3px;
+}
+
+@media (max-width: 480px) {
+  .profileForm__box  {
+    .profileForm__wrapField {
+      &_radio {
+        flex-direction: column;
+      }
+    }
+
+    .profileForm__autocompleteAdd {
+      margin-top: .5rem;
+      margin-right: 0;
+      margin-left: 0;
+      padding: .5rem 0;
+    }
+
+    .profileForm__autocompleteBoxInput {
+      flex-direction: column;
+    }
+  }
+}
