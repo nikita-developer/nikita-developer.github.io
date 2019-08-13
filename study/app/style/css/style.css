@@ -3527,7 +3527,6 @@ a.ui-button:active,
   background-color: #fff;
   -webkit-box-shadow: 4px 5px 16px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 4px 5px 16px 0px rgba(0, 0, 0, 0.4);
-  overflow-y: auto;
 }
 
 .filter__list::before {
@@ -3764,7 +3763,6 @@ a.ui-button:active,
     padding: 1rem;
     width: 100%;
     position: static;
-    overflow: visible;
   }
 
   .filter__list::before {
