@@ -3686,6 +3686,7 @@ a.ui-button:active,
 
 @media (max-width: 980px) {
   .filter__box {
+    display: block;
     position: fixed;
     top: 0;
     bottom: 0;
