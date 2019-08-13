@@ -271,6 +271,9 @@ $(document).ready(function() {
     $(this).remove()
   })
 
+  $('.profileForm__phone').mask('+0-000-000-00-00')
 
-
+  $('.profileForm__openFio').change(function () {
+    $('.profileForm__fio').toggleClass('profileForm__fio_active')
+  })
 })

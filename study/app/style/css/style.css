@@ -221,7 +221,7 @@ p + p {
 
 @media (max-width: 768px) {
   .btn {
-    padding: 1rem;
+    padding: .5rem 1rem;
     font-size: 14px;
   }
 }
@@ -5687,6 +5687,26 @@ a.ui-button:active,
   cursor: pointer;
 }
 
+.profileForm__fio {
+  display: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.profileForm__fio input {
+  width: calc(33% - .5rem);
+  margin-bottom: 1rem;
+}
+
+.profileForm__fio_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .profileForm__skillsSelect {
   width: 100%;
   padding: .5rem;
@@ -5801,6 +5821,8 @@ a.ui-button:active,
 }
 
 .profileForm__check {
+  min-width: 18px;
+  min-height: 18px;
   width: 18px;
   height: 18px;
   margin-right: .5rem;
@@ -5808,12 +5830,34 @@ a.ui-button:active,
   border-radius: 3px;
 }
 
+@media (max-width: 980px) {
+  .profileForm__fio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .profileForm__fio input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
 @media (max-width: 480px) {
+  .profileForm__intro {
+    font-size: 16px;
+  }
+
   .profileForm__box .profileForm__wrapField_radio {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .profileForm__box .profileForm__wrapField_check label {
+    font-size: 14px;
   }
 
   .profileForm__box .profileForm__autocompleteAdd {

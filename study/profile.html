@@ -86,11 +86,18 @@
               <div class="profileForm__box">
                 <div class="profileForm__intro">Контактная информация</div>
                 <div class="profileForm__wrapField profileForm__wrapField_check">
-                  <label>
+                  <label class="profileForm__openFio">
     								<input type="checkbox" name="vivodContInfo" value="vivodContInfo">
                     <div class="profileForm__check"></div>
     								Указать контактную информацию
     							</label>
+                </div>
+                <div class="profileForm__fio">
+                  <input type="text" name="fio" placeholder="Имя Фамилия Отчество">
+                  <input type="text" name="email" placeholder="Почта">
+                  <input class="profileForm__phone" type="text" name="tel">
+                  <div class="profileForm__intro">Комментарий (удобное время для звонка по этому номеру)</div>
+                  <textarea id="message" name="commentContInfo" placeholder="Сообщение"></textarea>
                 </div>
               </div>
               <div class="profileForm__box">
