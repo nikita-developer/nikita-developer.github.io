@@ -1,6 +1,6 @@
 
 .section {
-  background-color: #ffffff;
+  background-color: #fff;
   padding-top: 5rem;
   padding-bottom: 5rem;
 
@@ -26,6 +26,15 @@
 
   &_pb0 {
     padding-bottom: 0;
+  }
+
+  &_HeightFull {
+    min-height: 100vh;
+  }
+
+  &_centerStart {
+    align-items: flex-start;
+    justify-content: center;
   }
 }
 

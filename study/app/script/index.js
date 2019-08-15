@@ -81,7 +81,7 @@ $(document).ready(function() {
     } else {
       $('.nav').toggleClass('nav_active')
       $('.nav').css('display', 'flex')
-      $('.nav').css('zIndex', '2')
+      $('.nav').css('zIndex', '3')
       $('.nav').stop().animate({opacity: "1"}, 300)
     }
     $('html body').toggleClass('hideScroll')
@@ -256,6 +256,28 @@ $(document).ready(function() {
     $('.profileForm__range').slider('values', 1, $(this).val());
   });
 
+  $('.js-form__range').slider({
+    range: true,
+    step: 1000,
+    min: 0,
+    max: 200000,
+    values: [30000, 80000],
+    slide: function(event, ui) {
+      $('.form__field_min').val(ui.values[0]);
+      $('.form__field_max').val(ui.values[1]);
+    }
+  });
+
+  $('.form__field_min').val($('.js-form__range').slider('values', 0));
+  $('.form__field_max').val($('.js-form__range').slider('values', 1));
+
+  $('.form__field_min').change(function() {
+    $('.js-form__range').slider('values', 0, $(this).val());
+  });
+  $('.form__field_max').change(function() {
+    $('.js-form__range').slider('values', 1, $(this).val());
+  });
+
   $(function () {
     var availableTags = [
       "1C","C/C++","C#","CoffeeScript","Elixir ","Erlang ","Flow ","Go (Golang)","Groovy ","HTML/CSS ","Perl","Java","Javascript","Kotlin","Node.js","Objective C","PHP","Python","R","Ruby ","Scala","Swift","TypeScript ","RxJava","ASP.NET MVC","UML","C","Assembler","C++","РАСТ","Hardware","СХД ","Нахе","SWIFT Aliance","RxSwift","UCC","springboot","Apache","Cassandra","MariaDB","MongoDB","MSSQL","MySQL","Oracle ","PostgreSQL ","Redis ","Scylla","Tarantool","Hadoop","noSQL ","Delphi","Greenplum","PaaS","LaaS","IaaS","Google Cloud","Google BigQuery","FireBird","CRM","GIT, SVN ","PowerDesigner ","erwin","Pentaho","Сlickhouse","SAP HANA","Android ","ASP.Net","BI","Data mining","Docker ","iOS ","Jenkins ","Linux","Machine Learning","Nginx ","Selenium ","SQL ","RabbitMQ ","Kafka ","IBM Websphere MQ ","SOA ","XML XSD WSDL ","TOGAF","OpenGL","RTOS","NLP ","CEPH","Openstack","Atlassian Jira","JMS ","Canvas","Nagios","GrayLog ","Zabbix ","JVM ","ASP.NET MVC 5 ","Web Dynpro",".NET","Angular","Backbone.js","Bootstrap","Cucumber.js","Django ","Ember.js ","Flask ","GWT ","jQuery ","JSF ","Jest ","Laravel ","Matrialize ","Qt ","React ","Redux","React Native","Ruby on Rails ","Spring ","Symfony","Unity3D","Vert.x","Vue.js","Yii ","Zend ","Kubernetes ","Bitrix ","j2ee","Babel","PLM","SID","Яндекс.Метрика","AppsFlyer","Firebase","Apache Spark","Flink","bash","DWH","Tableau","AngularJS","Viper ","SAP","LVM","Аpache","LAMP","Luigi ","css ","SASS/SCSS ","tornado ","t-sql ","Unreal Engine ","Blueprints ","BIRT ","Power BI ",".NET Core ","Selenium WD ","Xamarin ","MainMap ","Test case ","DAX 2012 ","mobx ","Google Analytics","UIKit","AVKit ","Maven ","ВКС ","WebGL","Debian","CentOS","CCNP","CCDE","CCIE","Cisco","Brocade","Allied Telesis","Juniper","Mikro Tik","UTM","Extreme","Asterisk","АТС Panasonic","Google Adwords","Трекинг системы","Fraud analyst","Яндекс Дисплей","MES","AfterEffects","AXAPTA","PL SQL","Trainee","API","Mocha.js","E-Staff","Periscope Data","Apache Airflow","Mindbox"
@@ -274,6 +296,11 @@ $(document).ready(function() {
         $(this).val('')
       } else {
         $('.profileForm__autocompleteBox').append('<div class="profileForm__autocompleteSkills js-profileForm__autocompleteSkills">'+ $val +'</div>')
+        $('.profileForm__arrayLangSelect').append('<option>' + $val + '</option>')
+        $('.profileForm__arrayLangSelect').find('option').remove()
+        $('.profileForm__autocompleteSkills').each(function (index, value) {
+          $('.profileForm__arrayLangSelect').append('<option>' + $(this).text() + '</option>')
+        });
         $(this).val('')
       }
     }
@@ -285,12 +312,21 @@ $(document).ready(function() {
       $(this).val('')
     } else {
       $('.profileForm__autocompleteBox').append('<div class="profileForm__autocompleteSkills js-profileForm__autocompleteSkills">'+ $val +'</div>')
-      $(this).val('')
+      $('.profileForm__arrayLangSelect').append('<option>' + $val + '</option>')
+      $('.profileForm__arrayLangSelect').find('option').remove()
+      $('.profileForm__autocompleteSkills').each(function (index, value) {
+        $('.profileForm__arrayLangSelect').append('<option>' + $(this).text() + '</option>')
+      });
+      $('.profileForm__autocompleteInput').val('')
     }
   })
 
   $('.profileForm__autocompleteBox').on('click', '.js-profileForm__autocompleteSkills', function () {
     $(this).remove()
+    $('.profileForm__arrayLangSelect').find('option').remove()
+    $('.profileForm__autocompleteSkills').each(function (index, value) {
+      $('.profileForm__arrayLangSelect').append('<option>' + $(this).text() + '</option>')
+    });
   })
 
   $('.profileForm__phone').mask('+7 000-000-00-00')
@@ -298,4 +334,17 @@ $(document).ready(function() {
   $('.profileForm__openFio').change(function () {
     $('.profileForm__fio').toggleClass('profileForm__fio_active')
   })
+
+  $('.infoSummary').on('click', '.js-form__item-addForm_lang', function () {
+    $(this).parents('.form__item').after('<div class="form__item"><div class="form__item-title">Язык</div><div class="form__item-intro">Укажите язык</div><div class="form__btnAddForm"></div><label class="form__label form__label_textCenter"><select class="form__select" name="language[]"><option value="1">азербайджанский</option><option value="2">аккадский</option><option value="3">албанский</option><option value="4">английский</option><option value="5">арабский</option><option value="6">армянский</option><option value="7">африкаанс</option><option value="8">ацтекский</option><option value="9">белорусский</option><option value="10">болгарский</option><option value="11">венгерский</option><option value="12">венетский</option><option value="13">вьетнамский</option><option value="14">голландский</option><option value="15">грузинский</option><option value="16">датский</option><option value="17">иврит</option><option value="18">еврейский (идиш)</option><option value="19">индонезийский</option><option value="20">ирландский</option><option value="21">исландский</option><option value="22">испанский</option><option value="23">итальянский</option><option value="24">казахский</option><option value="25">кетский</option><option value="26">кечуа</option><option value="27">киргизский</option><option value="28">китайский</option><option value="29">корейский</option><option value="30">латинский</option><option value="31">латышский</option><option value="32">литовский</option><option value="33">македонский</option><option value="34">малайский</option><option value="35">молдавский</option><option value="36">монгольский</option><option value="37">немецкий</option><option value="38">нидерландский</option><option value="39">персидский</option><option value="40">польский</option><option value="41">португальский</option><option value="42">прусский</option><option value="43">румынский</option><option value="44">русский</option><option value="45">сербский</option><option value="46">словацкий</option><option value="47">словенский</option><option value="48">татарский</option><option value="49">тирольский (триентский)</option><option value="50">турецкий</option><option value="51">украинский</option><option value="52">фарлинго</option><option value="53">фарси</option><option value="54">финский</option><option value="55">фламандский</option><option value="56">французский</option><option value="57">хорватский</option><option value="58">чероки</option><option value="59">чешский</option><option value="60">шведский</option><option value="61">швейцарско-ретороманский</option><option value="62">шумерский</option><option value="63">энецкий</option><option value="64">эстонский</option><option value="65">японский</option></select></label><div class="form__item"><label class="form__label form__label_textCenter"><input class="form__fieldCheckbox" name="id_uroven1" value="1" type="radio"><div class="form__checkbox"></div>Базовый</label><label class="form__label form__label_textCenter"><input class="form__fieldCheckbox" name="id_uroven1" value="2" type="radio"><div class="form__checkbox"></div>Разговорный</label><label class="form__label form__label_textCenter"><input class="form__fieldCheckbox" name="id_uroven1" value="3" type="radio"><div class="form__checkbox"></div>Свободный</label></div><div class="form__item-addForm js-form__item-addForm_lang"></div></div>')
+  })
+
+  $('.infoSummary').on('click', '.js-form__item-addForm_study', function () {
+    $(this).parents('.form__item').after('<div class="form__item"><div class="form__item-title">Образование</div><div class="form__item-intro">Укажите образование</div><div class="form__btnAddForm"></div><div class="form__addForm"><div class="form__item"><label class="form__label"><select class="form__select" name="typeObraz1" data-id="1"><option value="1">Высшее</option><option value="2">Бакалавр</option><option value="3">Магистр</option><option value="4">Кандидат наук</option><option value="5">Доктор наук</option><option value="6">Неоконченное высшее</option><option value="7">Среднее</option><option value="8">Среднее специальное</option></select></label></div><div class="form__item"><label class="form__label"><input class="form__field" type="text" name="zavedenie1" placeholder="Учебное заведение" value=""></label><label class="form__label"><input class="form__field" type="text" name="facultet1" placeholder="Факультет" value=""></label><label class="form__label"><input class="form__field" type="text" name="specializacija1" placeholder="Специализация" value=""></label><label class="form__label"><input class="form__number" type="number" name="year1" placeholder="Число" min="1" max="31"></label></div></div><div class="form__item-addForm js-form__item-addForm_study"></div></div>')
+  })
+
+  $('.infoSummary').on('click', '.js-form__item-addForm_skill', function () {
+    $(this).parents('.form__item').after('<div class="form__item"><div class="form__item-title">Опыт работы</div><div class="form__btnAddForm"></div><div class="form__item form__item_row"><div class="form__item"><label class="form__label"><div class="form__item-intro">Начало работы</div><select class="form__select" name="monthNach1"><option value="1">Январь</option><option value="2">Февраль</option><option value="3">Март</option><option value="4">Апрель</option><option value="5">Май</option><option value="6">Июнь</option><option value="7">Июль</option><option value="8">Август</option><option value="9">Сентябрь</option><option value="10">Октябрь</option><option value="11">Ноябрь</option><option value="12">Декабрь</option></select></label></div><div class="form__item"><label class="form__label"><div class="form__item-intro">Окончание работы</div><input class="form__field" type="number" name="yearNach1" placeholder="Число" min="1" max="31"></label></div><div class="form__item form__item_wFull"><label class="form__label form__label_textCenter form__label_margin"><input class="form__fieldCheckbox" type="checkbox" name="nv1" checked="" value="1" placeholder="Число" min="1" max="31"><div class="form__checkbox"></div>По настоящее время</label></div><div class="form__item"><label class="form__label"><select class="form__select" name="monthKon1"><option value="1">Январь</option><option value="2">Февраль</option><option value="3">Март</option><option value="4">Апрель</option><option value="5">Май</option><option value="6">Июнь</option><option value="7">Июль</option><option value="8">Август</option><option value="9">Сентябрь</option><option value="10">Октябрь</option><option value="11">Ноябрь</option><option value="12">Декабрь</option></select></label></div><div class="form__item"><label class="form__label"><input class="form__field" type="number" name="yearKon1" placeholder="Число" min="1" max="31"></label></div></div><div class="form__item"><label class="form__label"><input class="form__field" type="text" name="organizacija1" placeholder="Организация" value=""></label><label class="form__label"><input class="form__field" type="text" name="doljnost1" placeholder="Должность" value=""></label><label class="form__label"><textarea id="message" class="form__textarea" name="opisanie1" rows="4" placeholder="Описание"></textarea></label></div><div class="form__item-addForm js-form__item-addForm_skill"></div></div>')
+  })
+
 })

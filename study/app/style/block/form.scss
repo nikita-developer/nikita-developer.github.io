@@ -1,0 +1,269 @@
+
+.form__item {
+  & + & {
+    margin-top: 2rem;
+  }
+
+  &_mt1 {
+    & + & {
+      margin-top: 1rem;
+    }
+  }
+
+  &_range {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & .form__item-title {
+      width: 100%;
+    }
+
+    & .form__label {
+      width: calc(50% - 1rem);
+    }
+  }
+
+  &_row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    & .form__item {
+      margin-top: 0;
+      width: calc(50% - 1rem);
+
+      &_wFull {
+        width: 100%;
+      }
+    }
+  }
+
+  & .profileForm__autocompleteInput {
+    padding: 12px 1rem !important;
+    border: 0 !important;
+  }
+}
+
+.form__item-title {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.form__item-intro {
+  margin-bottom: .5rem;
+  font-size: 14px;
+}
+
+.form__field {
+  width: 100%;
+  color: #afafaf;
+  padding: 12px 1rem;
+  box-shadow: 0 0 7px 0px #e8e8e8;
+}
+
+.form__number {
+  color: #afafaf;
+  padding: 12px 1rem;
+  box-shadow: 0 0 7px 0px #e8e8e8;
+}
+
+.form__range {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 3px;
+  border: 0 !important;
+  background-color: #fff;
+
+  & .ui-slider-range {
+    background-color: #3cd52d;
+  }
+
+  & .ui-slider-handle {
+    width: 25px;
+    height: 25px;
+    top: -11px;
+    border-radius: 50%;
+    border-color: #3cd52d;
+    background-color: #fff;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 13px;
+      height: 13px;
+      background-color: #3cd52d;
+      border-radius: 50%;
+      content: '';
+    }
+  }
+}
+
+.form__select {
+  position: relative;
+  width: 100%;
+  color: #afafaf;
+  padding: 12px 1rem;
+  box-shadow: 0 0 7px 0px #e8e8e8;
+  border: 0;
+  background-color: #fff;
+  appearance: none;
+  padding-right: 2rem;
+  background-image: url('http://www.free-icons-download.net/images/small-down-arrow-icon-15593.png');
+  background-repeat:no-repeat;
+	background-size: 16px 17px;
+	background-position: calc(100% - .5rem) center;
+
+  & option {
+    padding: 1rem 0;
+  }
+}
+
+.form__fieldCheckbox,
+.form__fieldRadio {
+  position: fixed;
+  left: -999999px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -999;
+}
+
+.form__fieldRadio:checked + .form__radio {
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 9px;
+    height: 9px;
+    background-color: #676767;
+    border-radius: 50%;
+    content: '';
+  }
+}
+
+.form__radio {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: .5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 7px 0px #e4e4e4;
+  cursor: pointer;
+}
+
+.form__label {
+  width: 100%;
+  display: inline-block;
+
+  & + & {
+    margin-top: .5rem;
+  }
+
+  &_textCenter {
+    display: inline-flex;
+    align-items: center;
+    margin: .5rem;
+    cursor: pointer;
+  }
+
+  &_margin {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &_icon {
+    display: flex;
+  }
+}
+
+.form__field-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 39px;
+  background-color: #fff;
+}
+
+.form__checkbox {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: .5rem;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 0 7px 0px #e4e4e4;
+  cursor: pointer;
+}
+
+.form__fieldCheckbox:checked + .form__checkbox {
+  &::before {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 12px;
+    height: 7px;
+    border-bottom: 2px solid #676767;
+    border-left: 2px solid #676767;
+    transform: rotate(-45deg);
+    content: '';
+  }
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px 1rem;
+  resize: vertical;
+  border: 0;
+  box-shadow: 0 0 7px 0px #e4e4e4;
+}
+
+.form__item-addForm {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-top: 1rem;
+  margin-left: .5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 7px 0px #e4e4e4;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 20px;
+    height: 3px;
+    background-color: #3cd52d;
+    content: '';
+  }
+
+  &::after {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 20px;
+    height: 3px;
+    background-color: #3cd52d;
+    transform: rotate(90deg);
+    content: '';
+  }
+}
+
+.form__addLink {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #3cd52d;
+  font-size: 14px;
+  padding: .5rem 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 7px 0px #e4e4e4;
+  cursor: pointer;
+}

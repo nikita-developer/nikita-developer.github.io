@@ -96,15 +96,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2px 4px;
+    margin-left: .5rem;
     background-color: #3cd52d;
     padding: 4px 1.3rem 4px 1rem;
-    border-radius: 3px;
     font-size: 14px;
     line-height: 1;
     color: #fff;
     cursor: pointer;
   }
+}
+
+.profileForm__arrayLangSelect {
+  display: none;
 }
 
 .profileForm__rangeBox {
@@ -129,8 +132,6 @@
 .profileForm__range {
   width: 100%;
   margin-top: 1rem;
-  margin-right: .5rem;
-  margin-left: .5rem;
 }
 
 .profileForm__fio {

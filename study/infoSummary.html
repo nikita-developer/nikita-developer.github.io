@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Буду</title>
+    <link sizes="16x16" rel="shortcut icon" type="image/png" href="app/media/favicon/favicon-16x16.png">
+    <link sizes="32x32" rel="icon" type="image/png" href="app/media/favicon/favicon-32x32.png">
+    <link sizes="192x192" rel="icon" type="image/png" href="app/media/favicon/android-chrome-192x192.png">
+    <link sizes="180x180" rel="apple-touch-icon" href="app/media/favicon/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="app/style/css/style.css?1">
+</head>
+<body>
+
+  <section class="section_inner">
+    <header class="header header_inner">
+      <a href="index.html" class="header__logo logo"><img src="app/media/logo/logo-black.svg" alt=""></a>
+      <div class="navOpen js-navOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav">
+        <div class="nav__item"><a class="nav__link" href="">Тарифы</a></div>
+        <div class="nav__item"><a class="nav__link" href="">Резюме</a></div>
+      </nav>
+      <div class="header__heart"><img src="app/media/header/icon2.svg" alt="Лайк"></div>
+      <div class="header__entrance"><img src="app/media/header/icon4.svg" alt="Вход"></div>
+    </header>
+  </section>
+
+  <section class="section">
+  	<div class="container">
+      <form class="form" action="">
+        <div class="boxAside">
+          <div class="boxAside__item">
+            <div class="infoSummary infoSummary_f5f7f6">
+              <div class="infoSummary__title">Расскажите нам больше о себе</div>
+
+              <div class="form__item form__item_row">
+                <div class="form__item-title">Зарплата</div>
+                <div class="form__item">
+                  <label class="form__label">
+                    <input name="zpMin" type="text" class="form__field form__field_min" placeholder="ЗП от">
+                  </label>
+                </div>
+                <div class="form__item">
+                  <label class="form__label">
+                    <input name="zpMax" type="text" class="form__field form__field_max" placeholder="ЗП до">
+                  </label>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__range js-form__range" type="text"></div>
+              </div>
+
+              <div class="form__item form__item_row">
+                <div class="form__item">
+                  <div class="form__item-title">Профессия</div>
+                  <label class="form__label">
+                    <input class="form__field" id="inputGroup1_2" type="text" name="professija" placeholder="Веб дизайнер" value="">
+                  </label>
+                </div>
+                <div class="form__item">
+                  <div class="form__item-title">Город</div>
+                  <select class="form__select" name="citys">
+    								<option value="1">Москва</option>
+                    <option value="2">Санкт-Петербург</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__item-title">Ваш уровень</div>
+                <label class="form__label form__label_textCenter">
+                  <input class="form__fieldRadio" name="id_urovenExpert" value="1" type="radio" checked>
+                  <span class="form__radio"></span>Новичек
+                </label>
+                <label class="form__label form__label_textCenter">
+                  <input class="form__fieldRadio" name="id_urovenExpert" value="2" type="radio">
+                  <span class="form__radio"></span>Уверенный
+                </label>
+                <label class="form__label form__label_textCenter">
+                  <input class="form__fieldRadio" name="id_urovenExpert" value="3" type="radio">
+                  <span class="form__radio"></span>Эксперт
+                </label>
+              </div>
+
+              <div class="form__item">
+                <div class="form__item-title">Занятость</div>
+                <label class="form__label form__label_textCenter">
+                  <input type="checkbox" class="form__fieldCheckbox" name="zaniatost[]" value="1" checked>
+                  <div class="form__checkbox"></div>Полная занятость
+                </label>
+                <label class="form__label form__label_textCenter">
+                  <input type="checkbox" class="form__fieldCheckbox" name="zaniatost[]" value="2">
+                  <div class="form__checkbox"></div>Частичная занятость
+                </label>
+                <label class="form__label form__label_textCenter">
+                  <input type="checkbox" class="form__fieldCheckbox" name="zaniatost[]" value="3">
+                  <div class="form__checkbox"></div>Проектная/Временная работа
+                </label>
+                <label class="form__label form__label_textCenter">
+                  <input type="checkbox" class="form__fieldCheckbox" name="zaniatost[]" value="4">
+                  <div class="form__checkbox"></div>Стажировка
+                </label>
+              </div>
+
+              <div class="form__item">
+                <div class="form__item-title">График работы</div>
+                <label class="form__label form__label_textCenter">
+                  <input type="checkbox" class="form__fieldCheckbox" name="grafik[]" value="1">
+                  <div class="form__checkbox"></div>Полный день
+                </label>
+                <label class="form__label form__label_textCenter">
+                  <input type="checkbox" class="form__fieldCheckbox" name="grafik[]" value="2">
+                  <div class="form__checkbox"></div>Сменный график
+                </label>
+                <label class="form__label form__label_textCenter">
+                  <input type="checkbox" class="form__fieldCheckbox" name="grafik[]" value="3">
+                  <div class="form__checkbox"></div>Гибкий график
+                </label>
+                <label class="form__label form__label_textCenter">
+                  <input type="checkbox" class="form__fieldCheckbox" name="grafik[]" value="4">
+                  <div class="form__checkbox"></div>Удаленная работа
+                </label>
+              </div>
+
+              <div class="form__item">
+                <div class="form__item-title">Напиши о себе</div>
+                <label class="form__label">
+                  <textarea class="form__textarea" name="oSebe" id="message"></textarea>
+                </label>
+              </div>
+
+              <div class="form__item profileForm__box">
+                <div class="form__item-title">Список программ и технологий</div>
+                <div class="form__item-intro">Укажите от 1 до 10 проф навыка в порядке их важности для вас</div>
+                <!-- Добавление элементов и выборки в select -->
+                <select class="profileForm__arrayLangSelect" name="arrayLang"></select>
+                <div class="profileForm__autocomplete">
+                  <label class="profileForm__autocompleteLabel">
+                    <div class="profileForm__autocompleteBox"></div>
+                    <div class="profileForm__autocompleteBoxInput">
+                      <input class="profileForm__autocompleteInput" placeholder="Skills">
+                      <div class="profileForm__autocompleteAdd js-profileForm__autocompleteAdd">Добавить</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__item-title">Язык</div>
+                <div class="form__item-intro">Укажите язык</div>
+                <div class="form__btnAddForm"></div>
+                <label class="form__label form__label_textCenter">
+                  <select class="form__select" name="language[]">
+                    <option value="1">азербайджанский</option>
+                    <option value="2">аккадский</option>
+                    <option value="3">албанский</option>
+                    <option value="4">английский</option>
+                    <option value="5">арабский</option>
+                    <option value="6">армянский</option>
+                    <option value="7">африкаанс</option>
+                    <option value="8">ацтекский</option>
+                    <option value="9">белорусский</option>
+                    <option value="10">болгарский</option>
+                    <option value="11">венгерский</option>
+                    <option value="12">венетский</option>
+                    <option value="13">вьетнамский</option>
+                    <option value="14">голландский</option>
+                    <option value="15">грузинский</option>
+                    <option value="16">датский</option>
+                    <option value="17">иврит</option>
+                    <option value="18">еврейский (идиш)</option>
+                    <option value="19">индонезийский</option>
+                    <option value="20">ирландский</option>
+                    <option value="21">исландский</option>
+                    <option value="22">испанский</option>
+                    <option value="23">итальянский</option>
+                    <option value="24">казахский</option>
+                    <option value="25">кетский</option>
+                    <option value="26">кечуа</option>
+                    <option value="27">киргизский</option>
+                    <option value="28">китайский</option>
+                    <option value="29">корейский</option>
+                    <option value="30">латинский</option>
+                    <option value="31">латышский</option>
+                    <option value="32">литовский</option>
+                    <option value="33">македонский</option>
+                    <option value="34">малайский</option>
+                    <option value="35">молдавский</option>
+                    <option value="36">монгольский</option>
+                    <option value="37">немецкий</option>
+                    <option value="38">нидерландский</option>
+                    <option value="39">персидский</option>
+                    <option value="40">польский</option>
+                    <option value="41">португальский</option>
+                    <option value="42">прусский</option>
+                    <option value="43">румынский</option>
+                    <option value="44">русский</option>
+                    <option value="45">сербский</option>
+                    <option value="46">словацкий</option>
+                    <option value="47">словенский</option>
+                    <option value="48">татарский</option>
+                    <option value="49">тирольский (триентский)</option>
+                    <option value="50">турецкий</option>
+                    <option value="51">украинский</option>
+                    <option value="52">фарлинго</option>
+                    <option value="53">фарси</option>
+                    <option value="54">финский</option>
+                    <option value="55">фламандский</option>
+                    <option value="56">французский</option>
+                    <option value="57">хорватский</option>
+                    <option value="58">чероки</option>
+                    <option value="59">чешский</option>
+                    <option value="60">шведский</option>
+                    <option value="61">швейцарско-ретороманский</option>
+                    <option value="62">шумерский</option>
+                    <option value="63">энецкий</option>
+                    <option value="64">эстонский</option>
+                    <option value="65">японский</option>
+                  </select>
+                </label>
+                <div class="form__item">
+                  <label class="form__label form__label_textCenter">
+                    <input class="form__fieldCheckbox" name="id_uroven1" value="1" type="radio" checked="">
+                    <div class="form__checkbox"></div>Базовый
+                  </label>
+                  <label class="form__label form__label_textCenter">
+                    <input class="form__fieldCheckbox" name="id_uroven1" value="2" type="radio">
+                    <div class="form__checkbox"></div>Разговорный
+                  </label>
+                  <label class="form__label form__label_textCenter">
+                    <input class="form__fieldCheckbox" name="id_uroven1" value="3" type="radio">
+                    <div class="form__checkbox"></div>Свободный
+                  </label>
+                </div>
+                <div class="form__item-addForm js-form__item-addForm_lang"></div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__item-title">Образование</div>
+                <div class="form__item-intro">Укажите образование</div>
+                <div class="form__btnAddForm"></div>
+                <div class="form__addForm">
+                <div class="form__item">
+                  <label class="form__label">
+                    <select class="form__select" name="typeObraz1" data-id="1">
+                      <option value="1">Высшее</option>
+                      <option value="2">Бакалавр</option>
+                      <option value="3">Магистр</option>
+                      <option value="4">Кандидат наук</option>
+                      <option value="5">Доктор наук</option>
+                      <option value="6">Неоконченное высшее</option>
+                      <option value="7">Среднее</option>
+                      <option value="8">Среднее специальное</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="form__item">
+                  <label class="form__label">
+                    <input class="form__field" type="text" name="zavedenie1" placeholder="Учебное заведение" value="">
+                  </label>
+                  <label class="form__label">
+                    <input class="form__field" type="text" name="facultet1" placeholder="Факультет" value="">
+                  </label>
+                  <label class="form__label">
+                    <input class="form__field" type="text" name="specializacija1" placeholder="Специализация" value="">
+                  </label>
+                  <label class="form__label">
+                    <input class="form__number" type="number" name="year1" placeholder="Число" min="1" max="31">
+                  </label>
+                </div>
+                </div>
+                <div class="form__item-addForm js-form__item-addForm_study"></div>
+              </div>
+
+              <div class="form__item">
+                <div class="form__item-title">Опыт работы</div>
+                <div class="form__btnAddForm"></div>
+                <div class="form__item form__item_row">
+                  <div class="form__item">
+                    <label class="form__label">
+                      <div class="form__item-intro">Начало работы</div>
+                      <select class="form__select" name="monthNach1">
+                        <option value="1">Январь</option>
+                        <option value="2">Февраль</option>
+                        <option value="3">Март</option>
+                        <option value="4">Апрель</option>
+                        <option value="5">Май</option>
+                        <option value="6">Июнь</option>
+                        <option value="7">Июль</option>
+                        <option value="8">Август</option>
+                        <option value="9">Сентябрь</option>
+                        <option value="10">Октябрь</option>
+                        <option value="11">Ноябрь</option>
+                        <option value="12">Декабрь</option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <div class="form__item">
+                    <label class="form__label">
+                      <div class="form__item-intro">Окончание работы</div>
+                      <input class="form__field" type="number" name="yearNach1" placeholder="Число" min="1" max="31">
+                    </label>
+                  </div>
+
+                  <div class="form__item form__item_wFull">
+                    <label class="form__label form__label_textCenter form__label_margin">
+                      <input class="form__fieldCheckbox" type="checkbox" name="nv1" checked="" value="1" placeholder="Число" min="1" max="31">
+                      <div class="form__checkbox"></div>По настоящее время
+                    </label>
+                  </div>
+
+                  <div class="form__item">
+                    <label class="form__label">
+                      <select class="form__select" name="monthKon1">
+                        <option value="1">Январь</option>
+                        <option value="2">Февраль</option>
+                        <option value="3">Март</option>
+                        <option value="4">Апрель</option>
+                        <option value="5">Май</option>
+                        <option value="6">Июнь</option>
+                        <option value="7">Июль</option>
+                        <option value="8">Август</option>
+                        <option value="9">Сентябрь</option>
+                        <option value="10">Октябрь</option>
+                        <option value="11">Ноябрь</option>
+                        <option value="12">Декабрь</option>
+                      </select>
+                    </label>
+                  </div>
+
+                  <div class="form__item">
+                    <label class="form__label">
+                      <input class="form__field" type="number" name="yearKon1" placeholder="Число" min="1" max="31">
+                    </label>
+                  </div>
+
+                </div>
+
+                <div class="form__item">
+                  <label class="form__label">
+                    <input class="form__field" type="text" name="organizacija1" placeholder="Организация" value="">
+                  </label>
+                  <label class="form__label">
+                    <input class="form__field" type="text" name="doljnost1" placeholder="Должность" value="">
+                  </label>
+                  <label class="form__label">
+                    <textarea id="message" class="form__textarea" name="opisanie1" rows="4" placeholder="Описание"></textarea>
+                  </label>
+                </div>
+
+                <div class="form__item-addForm js-form__item-addForm_skill"></div>
+              </div>
+
+              <div class="form__item">
+                <input class="form__button btn" type="submit" name="addRezume" placeholder="Организация" value="Готово">
+              </div>
+
+            </div>
+          </div>
+          <div class="boxAside__item">
+            <div class="infoSummary infoSummary_f5f7f6">
+              <div class="form__item-title">Контакты</div>
+              <div class="form__item form__item_mt1">
+                <label class="form__label">
+                  <input class="form__field" name="" type="text" placeholder="Номер телефона *">
+                </label>
+              </div>
+              <div class="form__item form__item_mt1">
+                <label class="form__label">
+                  <input class="form__field" name="tel" type="text" placeholder="Код подтверждения">
+                </label>
+              </div>
+              <div class="form__item form__item_mt1">
+                <label class="form__label">
+                  <input class="form__field" name="mail" type="email" placeholder="Почта">
+                </label>
+              </div>
+              <div class="form__item form__item_mt1">
+                <label class="form__label">
+                  <input class="form__field" name="skype" type="text" placeholder="Skype">
+                </label>
+              </div>
+              <div class="form__item form__item_mt1">
+                <label class="form__label form__label_icon">
+                  <div class="form__field-icon"><img src="http://satyr.io/20x20/gray?delay=3g" alt=""></div>
+                  <input class="form__field" type="text" placeholder="Telegram" value="">
+                </label>
+              </div>
+              <div class="form__item form__item_mt1">
+                <label class="form__label form__label_icon">
+                  <div class="form__field-icon"><img src="http://satyr.io/20x20/gray?delay=3g" alt=""></div>
+                  <input class="form__field" type="text" placeholder="WhatsApp" value="">
+                </label>
+              </div>
+              <div class="form__item form__item_mt1">
+                <label class="form__label form__label_icon">
+                  <div class="form__field-icon"><img src="http://satyr.io/20x20/gray?delay=3g" alt=""></div>
+                  <input class="form__field" type="text" placeholder="Phone" value="">
+                </label>
+              </div>
+              <div class="form__item form__item_mt1">
+                <div class="form__item-title">Ссылки на портфолио</div>
+                <label class="form__label">
+                  <input class="form__field" type="text" placeholder="Ссылка на портфолио" value="">
+                </label>
+                <div class="form__addLink">Добавить ссылку +</div>
+              </div>
+            </div>
+            <div class="progressBar">
+              <div class="progressBar__item"><div class="progressBar__item-polosa"></div></div>
+              <div class="progressBar__description">Ваш профиль заполнен на 42%</div>
+            </div>
+          </div>
+        </div>
+      </form>
+  	</div>
+  </section>
+
+  <section class="section section_000">
+    <div class="container">
+      <footer class="footer">
+        <div class="footer__box">
+          <a href="index.html" class="footer__logo logo"><img src="app/media/logo/logo-white.svg" alt="Логотип"></a>
+          <div class="network">
+            <div class="network__title">Подписывайся на нас</div>
+            <div class="network__box">
+              <a href="#" class="network__icon"><img src="app/media/network/fb.svg" alt=""></a>
+              <a href="#" class="network__icon"><img src="app/media/network/in.svg" alt=""></a>
+              <a href="#" class="network__icon"><img src="app/media/network/te.svg" alt=""></a>
+              <a href="#" class="network__icon"><img src="app/media/network/vk.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <nav class="footerNav">
+          <div class="footerNav__item">
+            <div class="footerNav__list"><a class="footerNav__link" href="#">О компании</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Наши вакансии</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Контакты</a></div>
+          </div>
+          <div class="footerNav__item">
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Соискатели</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Вакансии</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">О компании</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Блог</a></div>
+          </div>
+          <div class="footerNav__item">
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Работодателям</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Тарифы</a></div>
+          </div>
+        </nav>
+        <div class="footer__copyright">© 2019 Буду</div>
+      </footer>
+    </div>
+  </section>
+
+  <script src="app/script/jquery.js?3"></script>
+  <script src="app/script/plugin.js?3"></script>
+	<script src="app/script/index.js?3"></script>
+</body>
+</html>

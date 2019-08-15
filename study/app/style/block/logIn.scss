@@ -1,0 +1,32 @@
+
+.logIn {
+  min-width: 500px;
+  padding: 2rem 3rem 3rem 3rem;
+  border-radius: 5px;
+  box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.logIn__title {
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .logIn {
+    min-width: 300px;
+    padding: 2rem 3rem 3rem 3rem;
+    border-radius: 5px;
+    box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 480px) {
+  .logIn {
+    padding: 1rem;
+  }
+}
