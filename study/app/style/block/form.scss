@@ -1,5 +1,7 @@
 
 .form__item {
+  position: relative;
+
   & + & {
     margin-top: 2rem;
   }
@@ -43,6 +45,12 @@
     padding: 12px 1rem !important;
     border: 0 !important;
   }
+
+  &:hover {
+    & .form__item-close {
+      opacity: 1;
+    }
+  }
 }
 
 .form__item-title {
@@ -61,6 +69,10 @@
   color: #afafaf;
   padding: 12px 1rem;
   box-shadow: 0 0 7px 0px #e8e8e8;
+
+  &_linkPortfolio {
+    padding-right: 2rem;
+  }
 }
 
 .form__number {
@@ -157,6 +169,7 @@
 }
 
 .form__label {
+  position: relative;
   width: 100%;
   display: inline-block;
 
@@ -167,7 +180,7 @@
   &_textCenter {
     display: inline-flex;
     align-items: center;
-    margin: .5rem;
+    margin-bottom: .5rem;
     cursor: pointer;
   }
 
@@ -224,12 +237,12 @@
   box-shadow: 0 0 7px 0px #e4e4e4;
 }
 
-.form__item-addForm {
+.form__item-add {
   position: relative;
+  display: inline-block;
   width: 40px;
   height: 40px;
   margin-top: 1rem;
-  margin-left: .5rem;
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0 0 7px 0px #e4e4e4;
@@ -257,6 +270,40 @@
   }
 }
 
+.form__item-close {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: .3s;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 16px;
+    left: 9px;
+    width: 15px;
+    height: 2px;
+    background-color: #808080;
+    transform: rotate(-45deg);
+    content: '';
+  }
+
+  &::after {
+    position: absolute;
+    top: 16px;
+    left: 9px;
+    width: 15px;
+    height: 2px;
+    background-color: #808080;
+    transform: rotate(45deg);
+    content: '';
+  }
+}
+
 .form__addLink {
   display: inline-block;
   margin-top: 1rem;
@@ -266,4 +313,54 @@
   background-color: #fff;
   box-shadow: 0 0 7px 0px #e4e4e4;
   cursor: pointer;
+}
+
+.form__label_close {
+  position: absolute;
+  top: 50%;
+  right: .5rem;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &:hover {
+    &::before {
+      transform: translate(-50%, -50%) rotate(0);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(0);
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 1px;
+    background-color: #808080;
+    transform: translate(-50%, -50%) rotate(45deg);
+    content: '';
+    transition: .3s;
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 1px;
+    background-color: #808080;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    content: '';
+    transition: .3s;
+  }
+}
+
+@media (max-width: 768px) {
+  .form__item-close {
+    opacity: 1;
+  }
 }
