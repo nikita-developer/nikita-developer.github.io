@@ -1,0 +1,38 @@
+
+.container {
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  width: auto;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 980px){
+  .container {
+    max-width: 748px;
+  }
+}
+
+@media (max-width: 768px){
+  .container {
+    max-width: 460px;
+  }
+}
+
+@media (max-width: 480px){
+  .container {
+    max-width: auto;
+  }
+}

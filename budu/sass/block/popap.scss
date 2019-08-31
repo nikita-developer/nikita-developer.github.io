@@ -1,0 +1,141 @@
+
+.popap {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, .7);
+}
+
+.popap__container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 87px 145px;
+	min-width: 700px;
+	max-width: 700px;
+	background-color: #ffffff;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.17);
+}
+
+.popap__title {
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 25px;
+
+	& span {
+		font-size: 18px;
+		font-weight: 400;
+	}
+}
+
+.popap__form-item {
+	& + & {
+		margin-top: 30px;
+	}
+}
+
+.popap__field {
+	width: 100%;
+	height: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 14px;
+
+	&::placeholder { color: #fff; }
+}
+
+.popap__checkbox {
+	visibility: hidden;
+	position: fixed;
+	left: -99999px;
+	z-index: -999;
+	opacity: 0;
+
+	&:checked + .popap__divCheckbox_active {
+		&::before {
+			position: absolute;
+			top: 5px;
+			left: 7px;
+			height: 7px;
+			width: 10px;
+			border-top: 1px solid #3cd52e;
+			border-right: 1px solid #3cd52e;
+			content: '';
+			transform: rotate(128deg);
+		}
+	}
+}
+
+.popap__divCheckbox {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	min-width: 25px;
+	height: 22px;
+	margin-right: 11px;
+	border: 1px solid #3cd52e;
+	border-radius: 5px;
+	vertical-align: middle;
+}
+
+.popap__personData {
+	font-size: 14px;
+	user-select: none;
+}
+
+.popap__btn {
+	padding-top: 17.5px;
+	padding-bottom: 17.5px;
+	width: 100%;
+}
+
+.popap__form-footer {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.popap__form-login {
+	color: #000000;
+	font-weight: 400;
+}
+
+@media(max-width: 1200px) {
+	.popap__container {
+		padding: 3rem;
+		min-width: 416px;
+	}
+}
+
+@media(max-width: 768px) {
+	.popap__labelPersonData {
+		display: flex;
+	}
+}
+
+@media(max-width: 480px) {
+	.popap__container {
+		padding: 2rem;
+		max-width: 280px;
+		min-width: 280px;
+	}
+
+	.popap__title {
+		margin-bottom: 1rem;
+		font-size: 14px;
+		line-height: 20px;
+
+		& span {
+			font-size: 14px;
+		}
+	}
+}

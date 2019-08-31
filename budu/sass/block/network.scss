@@ -1,0 +1,32 @@
+
+.network {
+  display: flex;
+  flex-direction: column;
+}
+
+.network__box {
+  display: flex;
+}
+
+.network__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+
+  & + & {
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .network__icon {
+    min-width: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .network__box {
+    margin-top: 2rem;
+  }
+}

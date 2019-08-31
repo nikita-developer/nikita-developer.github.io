@@ -1,0 +1,204 @@
+
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 7px 0px rgba(0, 0, 0, .3);
+  border-radius: 5px;
+}
+
+.portfolio__checBox {
+  margin-left: auto;
+
+  & .portfolioCheck {
+    position: relative;
+    width: 60px;
+    height: 26px;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    border-radius: 25px;
+    background-color: #e2e2e2;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 28px;
+      height: 28px;
+      border: 1px solid #e8e8e8;
+      border-radius: 50%;
+      box-shadow: 0 0 7px 0px rgba(0, 0, 0, .1);
+      background-color: #f5f5f5;
+      transition: .3s;
+      content: '';
+    }
+
+    &_active {
+      background-color: #3cd52d;
+
+      &::before {
+        left: 33px;
+      }
+    }
+  }
+}
+
+.portfolio__checBox-title {
+  margin-bottom: .5rem;
+  font-weight: 400;
+}
+
+.portfolio__head {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.portfolio__face {
+  margin-right: 1rem;
+}
+
+.portfolio__name {
+  margin-bottom: .5rem;
+  color: #808080;
+
+  & span {
+    margin-left: .5rem;
+    font-size: 14px;
+    font-style: italic;
+    color: #808080;
+  }
+}
+
+.portfolio__profession {
+  margin-bottom: .5rem;
+  font-weight: 400;
+}
+
+.portfolio__geo,
+.portfolio__price,
+.portfolio__fullDay {
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem;
+  font-style: italic;
+  color: #808080;
+
+  & img {
+    width: 30px;
+    max-width: 30px;
+    min-width: 30px;
+    margin-right: .5rem;
+    font-style: italic;
+    color: #808080;
+  }
+}
+
+.portfolio__title {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 22px;
+
+  &_home {
+    color: #3cd52d;
+  }
+}
+
+.portfolio__aboutMe {
+  margin-bottom: 3rem;
+}
+
+.portfolio__aboutMe-description {
+  font-size: 14px;
+
+  & .more {
+    font-size: 14px;
+    color: #3cd52d;
+  }
+}
+
+.portfolio__skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.portfolio__skills-item {
+  padding: 4px 1rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  background-color: #f5f7f6;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.portfolio__education {
+  margin-bottom: 3rem;
+}
+
+.portfolio__courses {
+  margin-bottom: 3rem;
+}
+
+.portfolio__intro {
+  width: 100%;
+  margin-bottom: .5rem;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.portfolio__yers {
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+.portfolio__experience {
+  margin-bottom: 3rem;
+}
+
+.portfolio__experience-text {
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+.portfolio__language {
+  margin-bottom: 3rem;
+}
+
+.portfolio__language-text {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .portfolio__head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio__face {
+    margin-right: 0;
+    margin-bottom: .5rem;
+  }
+
+  .portfolio__box {
+    text-align: center;
+  }
+
+  .portfolio__geo,
+  .portfolio__price,
+  .portfolio__fullDay {
+    justify-content: center;
+    flex-direction: column;
+
+    & img {
+      margin-right: 0;
+      margin-bottom: 4px;
+    }
+  }
+}

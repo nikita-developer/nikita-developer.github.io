@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Буду</title>
+    <link sizes="16x16" rel="shortcut icon" type="image/png" href="/media/favicon/favicon-16x16.png">
+    <link sizes="32x32" rel="icon" type="image/png" href="/media/favicon/favicon-32x32.png">
+    <link sizes="192x192" rel="icon" type="image/png" href="/media/favicon/android-chrome-192x192.png">
+    <link sizes="180x180" rel="apple-touch-icon" href="/media/favicon/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="css/style.css?1">
+</head>
+<body>
+
+  <section class="section_inner">
+    <header class="header header_inner">
+      <a href="index.html" class="header__logo logo"><img src="/media/logo/logo-black.svg" alt=""></a>
+      <div class="navOpen js-navOpen">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav">
+        <div class="nav__item nav__item_line"><a class="nav__link" href="">Тарифы</a></div>
+        <div class="nav__item nav__item_line"><a class="nav__link js-asideBar-open" href="">Левая менюшка</a></div>
+      </nav>
+      <div class="header__notifications"><img src="/media/header/icon5.svg" alt="Уведомления"></div>
+      <div class="header__heart"><img src="/media/header/icon2.svg" alt="Лайк"></div>
+      <div class="profileMenu js-profileMenu">
+        <div class="profileMenu__title">Компания</div>
+        <div class="profileMenu__arrow"><img src="/media/header/icon4.svg" alt=""></div>
+        <div class="profileMenu__list">
+          <div class="profileMenu__item"><a href="#" class="profileMenu__link"><img class="profileMenu__icon" src="http://satyr.io/30x30/gray?delay=3g" alt="Профиль">Профиль</a></div>
+          <div class="profileMenu__item"><a href="#" class="profileMenu__link"><img class="profileMenu__icon" src="http://satyr.io/30x30/gray?delay=3g" alt="Настройки">Настройки</a></div>
+          <div class="profileMenu__item"><a href="#" class="profileMenu__link"><img class="profileMenu__icon" src="http://satyr.io/30x30/gray?delay=3g" alt="Выход">Выход</a></div>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <section class="section section_f5f7f6">
+    <div class="container">
+			<form class="addSummary">
+				<div class="addSummary__container">
+					<div class="addSummary__item">
+						<div class="addSummary__item-head">
+							<div class="addSummary__title">О компании</div>
+						</div>
+						<div class="addSummary__item-body">
+							<div class="addSummary__gridField">
+								<div class="addSummary__box">
+									<div class="addSummary__containerField">
+										<div class="addSummary__containerField-title">Название компании</div>
+										<input class="addSummary__field" name="nameCompany" type="text">
+									</div>
+									<div class="addSummary__containerField">
+										<div class="addSummary__containerField-title">О компании</div>
+										<input class="addSummary__field" name="aboutCompany" type="text">
+									</div>
+									<div class="addSummary__containerField">
+										<div class="addSummary__containerField-title">Сайт</div>
+										<input class="addSummary__field" name="site" type="text">
+									</div>
+								</div>
+								<div class="addSummary__box addSummary__box_logo">
+									<div class="addSummary__containerField">
+										<div class="addSummary__logo"><img src="/media/addSummary/logo.png" alt=""></div>
+										<div class="addSummary__addLogo">Добавить лого</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="addSummary__item">
+						<div class="addSummary__item-head">
+							<div class="addSummary__title">О вакансии</div>
+						</div>
+						<div class="addSummary__item-body">
+							<div class="addSummary__box">
+								<div class="addSummary__containerField">
+									<div class="addSummary__gridField">
+										<div class="addSummary__gridItem">
+											<div class="addSummary__containerField-title">Должность</div>
+											<input class="addSummary__field" name="position" type="text" placeholder="Веб Дизайнер">
+										</div>
+										<div class="addSummary__gridItem">
+											<div class="addSummary__containerField-title">Город</div>
+											<select class="addSummary__select" name="city" placeholder="Выбрать город">
+												<option value="">Москва</option>
+												<option value="">Питер</option>
+											</select>
+										</div>
+									</div>
+								</div>
+
+								<div class="addSummary__containerField">
+									<div class="addSummary__gridField">
+										<div class="addSummary__gridItem">
+											<div class="addSummary__containerField-title">Специализация</div>
+											<select class="addSummary__select" name="specialization" placeholder="Выбрать специализацию">
+												<option value="">Дизайн</option>
+												<option value="">Разработка</option>
+												<option value="">Реклама</option>
+											</select>
+										</div>
+										<div class="addSummary__gridItem"></div>
+									</div>
+								</div>
+
+								<div class="addSummary__containerField">
+									<div class="addSummary__containerField-title">Форма работы</div>
+									<div class="addSummary__gridField">
+										<label class="addSummary__label addSummary__label_mr">
+											<input class="addSummary__radio" type="radio" checked name="couple">
+											<div class="addSummary__divRadio"></div>
+											<span>работа</span>
+										</label>
+										<label class="addSummary__label">
+											<input class="addSummary__radio" type="radio" name="couple">
+											<div class="addSummary__divRadio"></div>
+											<span>стажировка</span>
+										</label>
+									</div>
+								</div>
+
+								<div class="addSummary__containerField">
+									<div class="addSummary__containerField-title">Тип занятости</div>
+									<label class="addSummary__label addSummary__label_vertical">
+										<input class="addSummary__radio" type="radio" checked name="couple2">
+										<div class="addSummary__divRadio"></div>
+										<span>полный день</span>
+									</label>
+									<label class="addSummary__label addSummary__label_vertical">
+										<input class="addSummary__radio" type="radio" name="couple2">
+										<div class="addSummary__divRadio"></div>
+										<span>частичная занятость</span>
+									</label>
+									<label class="addSummary__label addSummary__label_vertical">
+										<input class="addSummary__radio" type="radio" name="couple2">
+										<div class="addSummary__divRadio"></div>
+										<span>гибкий график</span>
+									</label>
+									<label class="addSummary__label addSummary__label_vertical">
+										<input class="addSummary__radio" type="radio" name="couple2">
+										<div class="addSummary__divRadio"></div>
+										<span>удаленная работа</span>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="addSummary__item">
+						<div class="addSummary__item-head">
+							<div class="addSummary__title">Что ждем от тебя</div>
+						</div>
+						<div class="addSummary__item-body">
+							<div class="addSummary__box">
+								<div class="addSummary__containerField">
+									<div class="addSummary__containerField-title">Опыт работы</div>
+									<label class="addSummary__label addSummary__label_vertical">
+										<input class="addSummary__radio" type="radio" checked name="couple3">
+										<div class="addSummary__divRadio"></div>
+										<span>без опыта</span>
+									</label>
+									<label class="addSummary__label addSummary__label_vertical">
+										<input class="addSummary__radio" type="radio" name="couple3">
+										<div class="addSummary__divRadio"></div>
+										<span>до 1 года</span>
+									</label>
+									<label class="addSummary__label addSummary__label_vertical">
+										<input class="addSummary__radio" type="radio" name="couple3">
+										<div class="addSummary__divRadio"></div>
+										<span>от 1 до 3-х лет</span>
+									</label>
+									<label class="addSummary__label addSummary__label_vertical">
+										<input class="addSummary__radio" type="radio" name="couple3">
+										<div class="addSummary__divRadio"></div>
+										<span>свыше 3-х лет</span>
+									</label>
+								</div>
+
+								<div class="addSummary__containerField">
+									<div class="addSummary__containerField-title">Навыки и инструменты</div>
+									<div class="addSkills">
+										<div class="addSkills__description">Укажите от 1 до 10 профессиональных навыка кандидата по степени важности к вакансии</div>
+										<div class="addSkills__mySkills">
+											<div class="addSkills__mySkills-item">Adobe After Effects</div>
+										</div>
+										<div class="addSkills__line"></div>
+										<div class="addSkills__field"></div>
+										<div class="addSkills__defaultSkills">
+											<div class="addSkills__defaultSkills-item">PHP</div>
+											<div class="addSkills__defaultSkills-item">HTML</div>
+											<div class="addSkills__defaultSkills-item">JAVA</div>
+											<div class="addSkills__defaultSkills-item">Adobe After Effects</div>
+											<div class="addSkills__defaultSkills-item">PHP</div>
+											<div class="addSkills__defaultSkills-item">Adobe After Effects</div>
+											<div class="addSkills__defaultSkills-item">PHP</div>
+											<div class="addSkills__defaultSkills-item">Adobe After Effects</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="addSummary__containerField">
+									<div class="addSummary__containerField-title">Требования</div>
+									<textarea class="addSummary__textarea" name="requirements" placeholder="Пример текста. Поле должно увеличиваться по  мере заполнения строк"></textarea>
+								</div>
+
+								<div class="addSummary__containerField">
+									<div class="addSummary__containerField-title">Что будет плюсом</div>
+									<textarea class="addSummary__textarea" name="requirements" placeholder="Не обязательно к заполнению"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="addSummary__item">
+						<div class="addSummary__item-head">
+							<div class="addSummary__title">Что будешь делать <img class="addSummary__title-icon" src="/media/addSummary/edits.png" alt=""></div>
+							<input type="text" class="addSummary__field addSummary__field_loop" name="editsName1">
+						</div>
+						<div class="addSummary__item-body">
+							<div class="addSummary__box">
+								<div class="addSummary__containerField">
+									<textarea class="addSummary__textarea" name="textarea1" placeholder="Любой текст"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="addSummary__item">
+						<div class="addSummary__item-head">
+							<div class="addSummary__title">Что предлагаем <img class="addSummary__title-icon" src="/media/addSummary/edits.png" alt=""></div>
+							<input type="text" class="addSummary__field addSummary__field_loop" name="editsName2">
+						</div>
+						<div class="addSummary__item-body">
+							<div class="addSummary__box">
+								<div class="addSummary__containerField">
+									<div class="addSummary__containerField-title">Зарплата</div>
+									<div class="addSummary__gridField">
+										<input type="text" class="addSummary__rangeFied addSummary__rangeFied_1" name="salary-ot">
+										<input type="text" class="addSummary__rangeFied addSummary__rangeFied_2" name="salary-do">
+									</div>
+									<div class="addSummary__range"></div>
+								</div>
+								<div class="addSummary__containerField">
+									<div class="addSummary__containerField-title">Опыт работы</div>
+									<label class="addSummary__label addSummary__label_vertical">
+										<input class="addSummary__radio" type="radio" checked name="couple4">
+										<div class="addSummary__divRadio"></div>
+										на собеседование
+									</label>
+									<label class="addSummary__label addSummary__label_vertical">
+										<input class="addSummary__radio" type="radio" name="couple4">
+										<div class="addSummary__divRadio"></div>
+										без компенсации
+									</label>
+								</div>
+								<div class="addSummary__containerField">
+									<div class="addSummary__containerField-title">Дополнительно</div>
+									<input class="addSummary__field" name="additionally" placeholder="Дополнительно">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="addSummary__footer">
+						<div class="addSummary__data">
+							Крайний срок отклика
+							<input class="addSummary__dataField" type="date" name="calendar">
+						</div>
+						<div class="addSummary__containerBtn">
+							<div class="addSummary__submit addSummary__submit_save">Сохранить</div>
+							<div class="addSummary__submit addSummary__submit_publish">Опубликовать</div>
+						</div>
+					</div>
+				</div>
+			</form>
+    </div>
+  </section>
+
+  <section class="section section_000">
+    <div class="container">
+      <footer class="footer">
+        <div class="footer__box">
+          <a href="index.html" class="footer__logo logo"><img src="/media/logo/logo-white.svg" alt="Логотип"></a>
+          <div class="network">
+            <div class="network__title">Подписывайся на нас</div>
+            <div class="network__box">
+              <a href="#" class="network__icon"><img src="/media/network/fb.svg" alt=""></a>
+              <a href="#" class="network__icon"><img src="/media/network/in.svg" alt=""></a>
+              <a href="#" class="network__icon"><img src="/media/network/te.svg" alt=""></a>
+              <a href="#" class="network__icon"><img src="/media/network/vk.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <nav class="footerNav">
+          <div class="footerNav__item">
+
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Наши вакансии</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Контакты</a></div>
+          </div>
+          <div class="footerNav__item">
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Соискатели</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Вакансии</a></div>
+
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Блог</a></div>
+          </div>
+          <div class="footerNav__item">
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Работодателям</a></div>
+            <div class="footerNav__list"><a class="footerNav__link" href="#">Тарифы</a></div>
+          </div>
+        </nav>
+        <div class="footer__copyright">© 2019 Буду</div>
+      </footer>
+    </div>
+  </section>
+
+  <script src="js/jquery.js?4"></script>
+  <script src="js/plugin.js?4"></script>
+	<script src="js/index.js?4"></script>
+</body>
+</html>

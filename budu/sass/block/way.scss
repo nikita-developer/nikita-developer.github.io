@@ -1,0 +1,139 @@
+
+.way {
+  display: flex;
+  justify-content: space-between;
+}
+
+.way__item {
+  position: relative;
+  width: 262px;
+  padding-bottom: 2rem;
+  border: 20px solid #fff;
+  background-color: #f5f7f6;
+  text-align: center;
+  box-shadow: 0 0 23px #eaeaea;
+
+   & + & {
+     &::before {
+       position: absolute;
+       top: 50%;
+       left: -51px;
+       height: 4px;
+       width: 32px;
+       background-color: #61dc56;
+       transform: translateY(-50%);
+       content: '';
+     }
+   }
+}
+
+.way__title {
+  margin-top: 36px;
+  margin-bottom: 35px;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 0.75;
+
+  &_colorGreen {
+    color: #61dc56;
+  }
+}
+
+.way__description {
+  font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+  .way__item {
+    border-width: 1rem;
+    padding: 2rem .5rem 2rem;
+
+    & + & {
+      margin-left: 1rem;
+
+      &::before {
+        width: 1rem;
+        left: -2rem;
+      }
+    }
+  }
+
+  .way__title  {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 70px;
+  }
+
+  .way__description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .way {
+    flex-wrap: wrap;
+  }
+
+  .way__item {
+    margin-bottom: 2rem;
+    width: calc(50% - 1rem);
+
+    & + & {
+      margin-left: 0;
+    }
+
+    &:nth-child(2)::before {
+      width: 2rem;
+      left: -3rem;
+    }
+
+    &:nth-child(4)::before {
+      width: 4px;
+      height: 2rem;
+      top: -2rem;
+      left: 50%;
+    }
+
+    &:nth-child(3)::before {
+      width: 2rem;
+      left: auto;
+      right: -3rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .way__item {
+    margin-bottom: 2rem;
+    width: 262px;
+    margin-right: auto;
+    margin-left: auto;
+
+    & + & {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &:nth-child(2)::before {
+      width: 4px;
+      height: 2rem;
+      top: -2rem;
+      left: 50%;
+    }
+
+    &:nth-child(3)::before {
+      width: 4px;
+      height: 2rem;
+      top: -2rem;
+      left: 50%;
+    }
+
+    &:nth-child(4)::before {
+      width: 4px;
+      height: 2rem;
+      top: -2rem;
+      left: 50%;
+    }
+  }
+}
