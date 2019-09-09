@@ -1,8 +1,8 @@
 
 .section {
   background-color: #fff;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 68px;
+  padding-bottom: 68px;
 
   &_face {
     display: flex;
@@ -41,17 +41,18 @@
   }
 
   &_partnersCompany {
+    margin-top: -100px;
     padding-top: 135px;
     padding-bottom: 55px;
-    background: url(../../media/section/bg1.png) no-repeat center left;
+    margin-bottom: 68px;
+    background: url(../../media/section/bg1.png) no-repeat left top;
   }
 
   &_request {
     position: relative;
     z-index: 1;
-    padding-top: 0;
-    padding-bottom: 130px;
-    background: url(../../media/section/bg1.png) no-repeat center right;
+    padding-bottom: 268px;
+    background: url(../../media/section/bg1.png) no-repeat bottom right;
   }
 
   &_footer {
@@ -62,7 +63,8 @@
   &_jobOpenings {
     margin-bottom: -160px;
     padding-bottom: 240px;
-    background: url(../../media/section/bg2.png) no-repeat bottom center;
+    background: url(../../media/section/bg2.png) no-repeat center center;
+    background-size: 100% auto;
   }
 
   &_whyBudu {
@@ -94,11 +96,12 @@
 }
 
 .section__title {
-  margin-bottom: 70px;
+  margin-bottom: 68px;
   color: #1d1d1d;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 400;
   text-align: center;
+  line-height: 38px;
 
   &_catalog {
     font-size: 26px;
@@ -112,7 +115,7 @@
   & span {
     display: block;
     color: #1d1d1d;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 400;
   }
 
@@ -124,31 +127,35 @@
   &_tariffs {
     margin-bottom: 45px;
   }
+  
+  &_mb18 {
+    margin-bottom: 18px;
+  }
 }
 
 .section__info {
   &_jobOpenings {
     margin-right: auto;
-    margin-bottom: 95px;
+    margin-bottom: 68px;
     margin-left: auto;
     text-align: center;
     max-width: 600px;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 400;
 
     & span {
-      font-size: 26px;
+      font-size: 20px;
       font-weight: 300;
     }
   }
 
   &_request {
     margin-right: auto;
-    margin-bottom: 71px;
+    margin-bottom: 48px;
     margin-left: auto;
     text-align: center;
-    max-width: 660px;
-    font-size: 25px;
+    max-width: 500px;
+    font-size: 20px;
   }
 }
 
@@ -165,6 +172,10 @@
 
 .section__btn {
   text-align: center;
+
+  &_mt134 {
+    margin-top: 134px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -179,9 +190,13 @@
     &_jobOpenings {
       padding-bottom: 240px;
     }
+    
+    &_request {
+      padding-bottom: 134px;
+    }
 
-    &_footer {
-      margin-top: 0;
+    &_partnersCompany {
+      padding-top: 120px;
     }
   }
 
@@ -207,6 +222,14 @@
     &_jobOpenings {
       padding-bottom: 240px;
     }
+
+    &_partnersCompany {
+      padding-top: 120px;
+    }
+
+    &_request {
+      padding-bottom: 134px;
+    }
   }
 }
 
@@ -222,15 +245,25 @@
     &_jobOpenings {
       padding-bottom: 240px;
     }
+
+    &_request {
+      padding-bottom: 134px;
+    }
+
+    &_partnersCompany {
+      padding-top: 120px;
+    }
   }
 
   .section__title {
-    margin-bottom: 1.5rem;
     font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 34px;
 
     & span {
       display: inline;
       font-size: 28px;
+      line-height: 32px;
     }
 
     &_catalog {
@@ -246,5 +279,19 @@
 
   .section__intro {
     font-size: 20px;
+  }
+
+  .section__info {
+    &_jobOpenings {
+      font-size: 16px;
+
+      & span {
+        font-size: 16px;
+      }
+    }
+
+    &_request {
+      font-size: 16px;
+    }
   }
 }

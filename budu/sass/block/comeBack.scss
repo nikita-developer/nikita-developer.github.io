@@ -1,0 +1,26 @@
+
+.comeBack {
+  margin-bottom: 2rem;
+  max-width: 750px;
+}
+
+.comeBack__btn {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: #3cd52e;
+  cursor: pointer;
+
+  & img {
+    display: inline-block;
+    width: 40px;
+    margin-right: 1rem;
+  }
+}
+
+@media(max-width: 768px) {
+  .comeBack__btn {
+    font-size: 18px;
+  }
+}

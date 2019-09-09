@@ -8,10 +8,15 @@ $(document).ready(function() {
   var $skillCount = 1;
   var $portfolioLink = 1;
 
+  new WOW().init();
+
   $('.js-partnersSlide').owlCarousel({
     loop: true,
     doth: true,
     margin: 64,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
     responsive : {
         0 : {
           items: 2,
@@ -26,17 +31,24 @@ $(document).ready(function() {
   $('.js-jobOpenings').owlCarousel({
     doth: true,
     loop: true,
-    items: 3,
-    stagePadding: 14,
-    margin: 32,
-    responsive : {
-        0 : {
-          items: 1,
-        },
+    stagePadding: 16,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    margin: 8,
+    responsive: {
+      0: {
+        items: 1,
+        margin: 16
+      },
 
-        768 : {
-          items: 3,
-        }
+      768: {
+        items: 2,
+      },
+
+      980: {
+        items: 3,
+      }
     }
   })
 
@@ -397,30 +409,41 @@ $(document).ready(function() {
     $(this).parents('.addSummary__title').next().fadeToggle()
   })
 
-  $('.boxAside_profile').not($('.boxAside_profile').eq(0)).hide()
-
-  $('.profile__nav').on('click', '.profile__nav-item', function () {
-    var $index = $(this).index()
-    $('.boxAside_profile').not($('.boxAside_profile').eq($index)).stop().hide()
-    $('.boxAside_profile').eq($index).stop().show()
-    $('.profile__nav-item').removeClass('profile__nav-item_active')
-    $('.profile__nav-item').eq($index).addClass('profile__nav-item_active')
-    // console.log($index);
+  $('.profile__card-head').click(function () {
+    $('.profile__card-body').slideToggle()
   })
 
-  $('.profile__footer-btn_next').click(function () {
-    var $index = $(this).parents('.boxAside_profile').index()
-    $('.boxAside_profile').stop().hide()
-    $('.boxAside_profile').eq($index).stop().show()
-    $('.profile__nav-item').removeClass('profile__nav-item_active')
-    $('.profile__nav-item').eq($index).addClass('profile__nav-item_active')
-    // console.log($index);
+  $('.st0').click(function() {
+    $(this).toggleClass('st1')
   })
 
-  $('.profile__footer-btn_back').click(function () {
-    var $index = $(this).parents('.boxAside_profile').index()
-    $('.boxAside_profile').stop().hide()
-    $('.boxAside_profile').eq($index - 2).stop().show()
+  $('.js-navOpen').click(function () {
+    $(this).toggleClass('navOpen_active')
+    $('.filter__box').css('left', '-400px')
+    if ($('.nav').hasClass('nav_active')) {
+      $('.nav').removeClass('nav_active')
+      $('.nav').stop().animate({opacity: "0"}, 300, function() {
+        $('.nav').css('display', 'none')
+      })
+      $('.asideBar').removeClass('asideBar_active')
+    } else {
+      $('.nav').toggleClass('nav_active')
+      $('.nav').css('display', 'flex')
+      $('.nav').css('zIndex', '3')
+      $('.nav').stop().animate({opacity: "1"}, 300)
+    }
+    $('html body').toggleClass('hideScroll')
   })
 
+  $('.js-request__field').keyup(function() {
+    if ($(this).val().length > 0 || $(this).val().length > " ")
+      $('.request__field_hide').fadeIn()
+    else
+      $('.request__field_hide').fadeOut()
+  })
+
+  $('.tariffs__item_hover').click(function () {
+    $('.tariffs__item_hover').not($(this)).removeClass('tariffs__item_active')
+    $(this).addClass('tariffs__item_active')
+  })
 });

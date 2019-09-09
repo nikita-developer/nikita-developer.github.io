@@ -6,9 +6,9 @@
 }
 
 .whyBudu__item {
-  width: 363px;
+  width: 358px;
   background-color: #f5f7f6;
-  padding: 0 31px 52px 31px;
+  padding: 0 31px 48px 31px;
 }
 
 .whyBudu__media {
@@ -18,15 +18,12 @@
 }
 
 .whyBudu__title {
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   font-weight: 400;
-  font-size: 24px;
-}
-
-.whyBudu__description {
-  font-weight: 300;
   font-size: 18px;
 }
+
+// .whyBudu__description {}
 
 @media (max-width: 1200px) {
   .whyBudu__item {

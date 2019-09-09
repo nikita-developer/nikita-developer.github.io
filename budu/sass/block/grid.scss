@@ -5,6 +5,15 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
+  &_home {
+    margin-top: -88px;
+  }
+
+  &__slide {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 }
 
 .container-fluid {
@@ -16,6 +25,10 @@
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+
+    &_home {
+      margin-top: -140px;
+    }
   }
 }
 
@@ -28,11 +41,21 @@
 @media (max-width: 768px){
   .container {
     max-width: 460px;
+    
   }
 }
 
 @media (max-width: 480px){
   .container {
     max-width: auto;
+
+    &_home {
+      margin-top: -50px;
+    }
+  }
+
+  .container__slide {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

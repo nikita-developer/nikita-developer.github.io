@@ -1,0 +1,22 @@
+
+.responseSent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 750px;
+  background-color: #ffffff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.responseSent__description {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+@media(max-width: 768px) {
+  .responseSent__description {
+    font-size: 22px;
+  }
+}
