@@ -1,0 +1,721 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Буду</title>
+    <link sizes="16x16" rel="shortcut icon" type="image/png" href="assets/media/favicon/favicon-16x16.png">
+    <link sizes="32x32" rel="icon" type="image/png" href="assets/media/favicon/favicon-32x32.png">
+    <link sizes="192x192" rel="icon" type="image/png" href="assets/media/favicon/android-chrome-192x192.png">
+    <link sizes="180x180" rel="apple-touch-icon" href="assets/media/favicon/apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+		<section class="section_inner">
+		  <header class="header header_inner">
+		    <a href="/index.html" class="header__logo logo">
+		      <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 163 72"><title>Лого для фронта страниц-01</title><path d="M82.27,21.32c0-10.76,7.11-18.92,19.06-18.92,12.94,0,19.14,8.86,19.14,18.5,0,10.69-7.11,18.92-19.14,18.92C88.53,39.68,82.27,31,82.27,21.32Zm10-.56c0,5.7,2.6,11,9.08,11,7,0,9.22-5.49,9.22-10.41,0-5.63-2.67-11-9.22-11C94.44,10.41,92.26,15.9,92.26,20.75Z"/><polygon points="69.01 22.11 58.74 44.95 51.6 22.11 42.24 22.11 53.22 57.23 47.21 70.61 56.73 70.61 78.53 22.11 69.01 22.11"/><polygon points="151.68 22.11 141.41 44.95 134.27 22.11 124.91 22.11 135.89 57.23 129.88 70.61 139.4 70.61 161.2 22.11 151.68 22.11"/><polygon points="39.05 3.39 2.04 3.39 1.8 3.39 1.8 19.62 11.77 19.62 11.77 12.29 39.05 12.29 39.05 3.39"/><polygon points="80.93 40.82 80.93 57.04 90.9 57.04 90.9 49.72 111.83 49.72 111.83 57.04 121.8 57.04 121.8 40.82 80.93 40.82"/><path d="M39.8,38.7c0,10.76-7.11,18.92-19.06,18.92C7.79,57.62,1.6,48.76,1.6,39.12c0-10.69,7.11-18.92,19.14-18.92C33.54,20.33,39.8,29,39.8,38.7Zm-10,.56c0-5.7-2.6-11-9.08-11-7,0-9.22,5.49-9.22,10.41,0,5.63,2.67,11,9.22,11C27.63,49.6,29.81,44.11,29.81,39.26Z"/></svg>
+		    </a>
+		    <a class="perekrestok" href="#">
+		      <div class="perekrestok__logo">
+		        <div class="perekrestok__media perekrestok__media_1"></div>
+		        <div class="perekrestok__media perekrestok__media_2"></div>
+		      </div>
+		    </a>
+		    <a class="perekrestok perekrestok_rb" href="#">
+		      <div class="perekrestok__logo">
+		        <div class="perekrestok__media perekrestok__media_1 perekrestok__media_raiffeisen"></div>
+		        <div class="perekrestok__media perekrestok__media_2 perekrestok__media_raiffeisen"></div>
+		      </div>
+		    </a>
+		    <div class="navOpen js-navOpen">
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		    </div>
+		    <nav class="nav nav_other">
+		      <div class="nav__logo"><img src="assets/media/logo/logo-black.svg" alt=""></div>
+		      <div class="nav__item"><a class="nav__link nav__link_line" href=""><img src="assets/media/nav/icon1.png" alt="иконка навигации">  Кабинет</a></div>
+		      <div class="nav__item"><a class="nav__link nav__link_line" href=""><img src="assets/media/nav/icon2.png" alt="иконка навигации">  Вакансии</a></div>
+		      <div class="nav__item"><a class="nav__link nav__link_line" href=""><img src="assets/media/nav/icon3.png" alt="иконка навигации">  Тарифы</a></div>
+		    </nav>
+		    <div class="profileMenu">
+		      <div class="profileMenu__icon js-profileMenu__icon">
+		        <div class="profileMenu__face"><img src="assets/media/jobSummary/face.jpg" alt=""></div>
+		      </div>
+		      <div class="profileMenu__list js-profileMenu__list">
+		        <div class="profileMenu__item">
+		          <a href="#" class="profileMenu__link">
+		            <svg viewBox="0 0 15 15">
+		              <g><path d="M14.08,6.77a.43.43,0,0,0-.43-.33,1.46,1.46,0,0,1-1-2.54.37.37,0,0,0,0-.5,6.55,6.55,0,0,0-1-1.06.37.37,0,0,0-.5,0,1.53,1.53,0,0,1-1.65.37A1.47,1.47,0,0,1,8.6,1.31.37.37,0,0,0,8.27.93a6.61,6.61,0,0,0-1.49,0,.37.37,0,0,0-.33.38,1.47,1.47,0,0,1-.91,1.41,1.53,1.53,0,0,1-1.64-.37.37.37,0,0,0-.5,0A6.57,6.57,0,0,0,2.34,3.36a.37.37,0,0,0,0,.5,1.47,1.47,0,0,1,.37,1.65,1.53,1.53,0,0,1-1.44.89.36.36,0,0,0-.38.32,6.63,6.63,0,0,0,0,1.51.44.44,0,0,0,.43.33,1.45,1.45,0,0,1,1.36.91,1.47,1.47,0,0,1-.37,1.64.37.37,0,0,0,0,.5,6.57,6.57,0,0,0,1,1.06.37.37,0,0,0,.5,0,1.52,1.52,0,0,1,1.65-.37,1.47,1.47,0,0,1,.9,1.44.37.37,0,0,0,.32.39,6.59,6.59,0,0,0,1.49,0,.37.37,0,0,0,.33-.38,1.47,1.47,0,0,1,.91-1.41,1.53,1.53,0,0,1,1.64.37.37.37,0,0,0,.5,0,6.59,6.59,0,0,0,1.07-1.06.37.37,0,0,0,0-.5,1.47,1.47,0,0,1-.37-1.65,1.48,1.48,0,0,1,1.35-.9h.08a.37.37,0,0,0,.39-.32A6.62,6.62,0,0,0,14.08,6.77Zm-6.57,3A2.21,2.21,0,1,1,9.72,7.51,2.21,2.21,0,0,1,7.51,9.72Z"/></g>
+		            </svg>
+		            Настройки
+		          </a>
+		        </div>
+		        <div class="profileMenu__item">
+		          <a href="#" class="profileMenu__link">
+		            <svg viewBox="0 0 15 15">
+		              <path d="M7.48,12.93H2.59A.54.54,0,0,1,2,12.39V2.61a.54.54,0,0,1,.54-.54H7.48A.54.54,0,0,0,7.48,1H2.59A1.63,1.63,0,0,0,1,2.61v9.78A1.63,1.63,0,0,0,2.59,14H7.48a.54.54,0,1,0,0-1.09Z"/>
+		              <path d="M13.88,7.11l-3.3-3.26a.54.54,0,1,0-.76.77L12.18,7H5.85A.54.54,0,0,0,5.85,8h6.33L9.81,10.37a.54.54,0,1,0,.76.77l3.3-3.26a.54.54,0,0,0,0-.77Z"/>
+		            </svg>
+		            Выход
+		          </a>
+		        </div>
+		      </div>
+		    </div>
+		  </header>
+		</section>
+    <section class="section section_f5f7f6 section_pt0">
+      <div class="container container_profile">
+        <form class="form profile">
+          <div class="progressBar-container">
+            <div class="progressBar">
+              <div class="progressBar__item progressBar__item_invisible">
+                <div class="progressBar__item-line"></div>
+                <div class="progressBar__item-bgc"></div>
+                <div class="progressBar__icon">
+                  <img class="progressBar__hide" src="assets/media/progressBar/icon1.png" alt="">
+                </div>
+                <div class="progressBar__name">О себе</div>
+              </div>
+              <div class="progressBar__item progressBar__item_active">
+                <div class="progressBar__item-line"></div>
+                <div class="progressBar__item-bgc"></div>
+                <div class="progressBar__icon">
+                  <img class="progressBar__hide" src="assets/media/progressBar/icon2.png" alt="">
+                </div>
+                <div class="progressBar__name">Образование</div>
+              </div>
+              <div class="progressBar__item">
+                <div class="progressBar__item-line"></div>
+                <div class="progressBar__item-bgc"></div>
+                <div class="progressBar__icon">
+                  <img class="progressBar__hide" src="assets/media/progressBar/icon3.png" alt="">
+                </div>
+                <div class="progressBar__name">Активности</div>
+              </div>
+              <div class="progressBar__item">
+                <div class="progressBar__item-line"></div>
+                <div class="progressBar__item-bgc"></div>
+                <div class="progressBar__icon">
+                  <img class="progressBar__hide" src="assets/media/progressBar/icon4.png" alt="">
+                </div>
+                <div class="progressBar__name">Опыт работы</div>
+              </div>
+              <div class="progressBar__item">
+                <div class="progressBar__item-bgc"></div>
+                <div class="progressBar__icon">
+                  <img class="progressBar__hide" src="assets/media/progressBar/icon5.png" alt="">
+                </div>
+                <div class="progressBar__name">Просмотр</div>
+              </div>
+            </div>
+          </div>
+          <div class="boxAside js-boxAside">
+            <div class="boxAside__item">
+              <div class="profile__container">
+                <div class="profile__title">О себе</div>
+                <div class="profile__box profile__box_group">
+                  <div class="profile__box-item">
+                    <div class="profile__face js-openCropper">
+                      <div class="profile__face-btn"><img src="assets/media/addSummary/addLogo.svg" alt=""></div>
+                      <div class="profile__photo crop__result-img"></div>
+                    </div>
+                  </div>
+                  <div class="profile__box-item profile__box-item_por">
+                    <div class="crop">
+                      <div class="crop__box">
+                        <div class="crop__media">
+                          <img class="crop__img" src="assets/media/tariffs/card-prem.png" alt="">
+                        </div>
+                      </div>
+                      <div class="crop__box crop__box_group">
+                        <div class="crop__btn crop__ready">Сохранить</div>
+                        <div class="crop__btn crop__cancellation">Закрыть</div>
+                      </div>
+                    </div>
+                    <div class="profile__fio">
+                      <div class="form__box">
+                        <input type="text" name="name" class="form__field" placeholder="Имя*">
+                      </div>
+                      <div class="form__box">
+                        <input type="text" name="fam" class="form__field" placeholder="Фамилия*">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__box profile__box_group">
+                  <div class="profile__box-item">
+                    <div class="form__box">
+                      <div class="profile__box-title">Дата рождения</div>
+                      <input type="date" class="form__field">
+                    </div>
+                  </div>
+                  <div class="profile__box-item">
+                    <div class="profile__box-title">Пол</div>
+                    <div class="form__box form__box_group profile__pol">
+                      <div class="form__box-item">
+                        <label class="form__label">
+                          <input type="radio" name="pol" class="form__radio" checked>
+                          <div class="profile__divRadio">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45.984px" height="45.984px" viewBox="0 0 45.984 45.984" style="enable-background:new 0 0 45.984 45.984;"xml:space="preserve">
+                              <g>
+                                <path d="M22.991,0C9.736,0,1.503,10.664,1.503,27.831c0,7.999,4.905,14.718,9.309,15.745c0.302,0.072,0.623-0.003,0.863-0.202
+                                  c0.24-0.198,0.375-0.498,0.362-0.812l-0.026-0.709c0.844,1.641,1.813,3.233,2.664,3.912c0.18,0.145,0.399,0.219,0.623,0.219
+                                  c0.143,0,0.285-0.03,0.42-0.094c0.344-0.158,0.567-0.498,0.58-0.877c0.002-0.068,0.162-4.272,1.674-7.586
+                                  c1.597,0.527,3.295,0.816,5.045,0.816c1.73,0,3.414-0.284,4.996-0.804c1.508,3.311,1.672,7.503,1.674,7.571
+                                  c0.014,0.379,0.236,0.719,0.58,0.877c0.344,0.16,0.746,0.109,1.043-0.125c0.852-0.678,1.818-2.271,2.664-3.912l-0.027,0.709
+                                  c-0.014,0.313,0.123,0.611,0.361,0.812c0.24,0.2,0.562,0.272,0.865,0.202c4.494-1.049,9.309-7.626,9.309-15.745
+                                  C44.479,10.664,36.245,0,22.991,0z M11.739,26.266c-0.21,0.102-0.441,0.158-0.684,0.158c-0.974,0-1.754-0.898-1.754-2.007
+                                  c0-1.104,0.778-2.002,1.75-2.005c0.269,0.459,0.574,0.9,0.924,1.321c-0.325-1.117-0.504-2.266-0.504-3.406
+                                  c0-0.372,0.021-0.732,0.059-1.086h14.415c0.553,0,1-0.447,1-1v-2.656l3.135,3.342c0.188,0.2,0.453,0.314,0.729,0.314h3.646
+                                  c0.035,0.354,0.058,0.714,0.058,1.085c0,1.142-0.179,2.29-0.504,3.406c0.351-0.422,0.655-0.861,0.924-1.32
+                                  c0.972,0.003,1.75,0.898,1.75,2.005s-0.78,2.007-1.754,2.007c-0.228,0-0.44-0.056-0.64-0.145
+                                  c-1.596,4.629-6.032,7.965-11.271,7.965C17.771,34.246,13.329,30.903,11.739,26.266z M24.723,26.473c0,0.432-0.875,0.78-1.957,0.78
+                                  c-1.08,0-1.955-0.351-1.955-0.78c0-0.435,0.875-0.782,1.955-0.782C23.848,25.69,24.723,26.04,24.723,26.473z M19.323,21.676
+                                  c0,1.03-0.838,1.868-1.868,1.868c-1.03,0-1.868-0.838-1.868-1.868c0-1.029,0.838-1.867,1.868-1.867
+                                  C18.485,19.809,19.323,20.644,19.323,21.676z M29.95,21.676c0,1.03-0.84,1.868-1.869,1.868s-1.869-0.838-1.869-1.868
+                                  c0-1.029,0.84-1.867,1.869-1.867C29.11,19.808,29.95,20.644,29.95,21.676z"/>
+                              </g>
+                            </svg>женский
+                          </div>
+                        </label>
+                      </div>
+                      <div class="form__box-item">
+                        <label class="form__label">
+                          <input type="radio" name="pol" class="form__radio">
+                          <div class="profile__divRadio">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48.937px" height="48.937px" viewBox="0 0 48.937 48.937" style="enable-background:new 0 0 48.937 48.937;" xml:space="preserve"><g>
+                              <g>
+                                <ellipse cx="24.521" cy="34.999" rx="2.5" ry="1"/>
+                                <circle cx="17.729" cy="28.867" r="2.25"/>
+                                <circle cx="31.313" cy="28.867" r="2.25"/>
+                                <path d="M44.645,24.421c1.249-1.011,2.108-2.938,1.75-6.517c0,0-0.832-11.498-8.667-10.332c0,0-2.441-7.721-17.783-4.875
+                                  c-0.863-1.02-2.41-2.186-5.142-2.697c0,0,0.833,1.722,0.956,3.589C13.607,3.734,0.43,5.256,2.728,20.572
+                                  c0,0,0.214,2.983,1.667,4.493v3.217c-0.857,1.123-1.375,2.545-1.375,4.094c0,2.969,1.885,5.484,4.463,6.291
+                                  c3.261,6.242,9.805,10.271,17.068,10.271c7.269,0,13.821-4.041,17.08-10.295c2.54-0.832,4.389-3.327,4.389-6.271
+                                  c0-1.549-0.517-2.975-1.375-4.098L44.645,24.421L44.645,24.421z M39.78,34.937c-0.29,0-0.564-0.065-0.818-0.182
+                                  c-2.039,5.918-7.712,10.182-14.408,10.182c-6.703,0-12.383-4.272-14.415-10.2c-0.269,0.129-0.563,0.2-0.874,0.2
+                                  c-1.244,0-2.242-1.145-2.242-2.562c0-1.414,0.998-2.563,2.242-2.563c0.023,0,0.045,0.008,0.069,0.008
+                                  c0.004-0.582,0.046-1.266,0.117-1.985c1.521-0.433,3.223-2.115,4.326-4.48c0.33-0.708,0.575-1.417,0.745-2.103
+                                  c0.479,1.038,1.443,2.343,3.376,2.987c0,0-0.167-4.666,1.833-5.666c0,0,2.166,2.5,1.833,4c0,0,5.131-1.72,6.224-4.395
+                                  c-0.255,0.693-0.793,2.589,0.275,4.061c0,0,1.5-3.168,2.832-3.5c0,0,1.777,3.459,4.699,5.267c1.112,2.053,2.668,3.484,4.063,3.848
+                                  c0.067,0.713,0.108,1.387,0.112,1.961c0.005,0,0.007-0.002,0.009-0.002c1.243,0,2.24,1.148,2.24,2.564
+                                  C42.02,33.79,41.024,34.937,39.78,34.937z"/>
+                              </g>
+                            </svg>
+                            мужской
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__box profile__box_group">
+                  <div class="profile__box-item">
+                    <div class="form__box">
+                      <div class="profile__box-title">Город</div>
+                      <select class="form__select form__select_style" name="city">
+                        <option value="">Москва</option>
+                        <option value="">Москва</option>
+                        <option value="">Москва</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="profile__box-item">
+                    <div class="profile__box-title">Сфера деятельности</div>
+                    <div class="form__box">
+                      <select class="form__select form__select_style" name="sfera">
+                        <option value="">Дизайн</option>
+                        <option value="">Москва</option>
+                        <option value="">Москва</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__box">
+                  <div class="profile__box-title">Тип занятости</div>
+                  <div class="form__box form__box_checkList">
+                    <label class="form__label">
+                      <input type="checkbox" name="full-day" class="form__checkbox" checked>
+                      <div class="profile__checkbox">Полный день</div>
+                    </label>
+                    <label class="form__label">
+                      <input type="checkbox" name="responsive-day" class="form__checkbox">
+                      <div class="profile__checkbox">Гибкий график </div>
+                    </label>
+                    <label class="form__label">
+                      <input type="checkbox" name="partiall-day" class="form__checkbox">
+                      <div class="profile__checkbox">Частичная занятость</div>
+                    </label>
+                    <label class="form__label">
+                      <input type="checkbox" name="remove-day" class="form__checkbox">
+                      <div class="profile__checkbox">Удаленная работа</div>
+                    </label>
+                  </div>
+                </div>
+                <div class="profile__box">
+                  <div class="profile__box-title">Ваши навыки</div>
+                  <div class="profile__mySkills">
+                    <div class="profile__mySkills-item">Adobe After Effects</div>
+                    <div class="profile__mySkills-item">CSS</div>
+                    <div class="profile__mySkills-item">PHP</div>
+                  </div>
+                  <div class="profile__line"></div>
+                  <div class="profile__defaultSkills">
+                    <div class="profile__defaultSkills-item">PHP</div>
+                    <div class="profile__defaultSkills-item">After Effects</div>
+                    <div class="profile__defaultSkills-item">PHP</div>
+                    <div class="profile__defaultSkills-item">CSS</div>
+                    <div class="profile__defaultSkills-item">JAVA</div>
+                    <div class="profile__defaultSkills-item">HTML</div>
+                    <div class="profile__defaultSkills-item">HTML</div>
+                    <div class="profile__defaultSkills-item">Adobe After Effects</div>
+                    <div class="profile__defaultSkills-item">CSS</div>
+                    <div class="profile__defaultSkills-item">JAVA</div>
+                    <div class="profile__defaultSkills-item">After Effects</div>
+                  </div>
+                </div>
+                <div class="profile__box">
+                  <div class="profile__box-title">Языки</div>
+                  <div class="form__box form__box_group">
+                    <div class="form__box-item">
+                      <input type="text" class="form__field" placeholder="Язык">
+                    </div>
+                    <div class="form__box-item">
+                      <select class="form__select form__select_styler" name="language-type">
+                        <option value="">Разговорный</option>
+                        <option value="">Свободный</option>
+                        <option value="">Средний</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__box form__box_group profile__lang">
+                    <div class="profile__addFields-close"><span></span><span></span></div>
+                    <div class="form__box-item">
+                      <input type="text" class="form__field" placeholder="Язык">
+                    </div>
+                    <div class="form__box-item">
+                      <select class="form__select form__select_styler" name="language-type">
+                        <option value="">Разговорный</option>
+                        <option value="">Свободный</option>
+                        <option value="">Средний</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__box form__box_group">
+                    <div class="profile_addLanguage">Добавить еще язык <span>+</span></div>
+                  </div>
+                </div>
+                <div class="profile__footer profile__footer_show">
+                  <div class="profile__btn profile__btn_next btn">Далее</div>
+                </div>
+              </div>
+            </div>
+            <div class="boxAside__item">
+              <div class="profile__container profile__container_aside">
+                <div class="profile__title">Контакты</div>
+                <div class="profile__box">
+                  <div class="form__box">
+                    <input type="tel" class="form__field" placeholder="Номер телефона*" required>
+                  </div>
+                  <div class="form__box">
+                    <input type="mail" class="form__field" placeholder="Почта">
+                  </div>
+                  <div class="form__box">
+                    <input type="text" class="form__field" placeholder="Telegram">
+                  </div>
+                </div>
+                <div class="profile__box">
+                  <div class="profile__box-title">Ссылки на портфолио</div>
+                  <div class="form__box">
+                    <input type="text" class="form__field" placeholder="Github / Behance / Dribble">
+                  </div>
+                  <div class="form__box profile__portfolio">
+                    <div class="profile__addFields-close"><span></span><span></span></div>
+                    <input type="text" class="form__field" placeholder="Github / Behance / Dribble">
+                  </div>
+                  <div class="form__box">
+                    <div class="profile__addLink">Добавить ссылку +</div>
+                  </div>
+                </div>
+                <div class="profile__footer profile__footer_hide">
+                  <div class="profile__btn profile__btn_next btn">Далее</div>
+                </div>
+              </div>
+              <div class="hints">
+                <div class="hints__head">Подсказка</div>
+                <div class="hints__body">
+                  <div class="hints__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis maxime sed doloribus mollitia rerum, id debitis fugiat tenetur neque inventore. Quis, maiores. At nulla magnam non nostrum quisquam odit molestiae?</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="boxAside">
+            <div class="boxAside__item">
+              <div class="profile__container">
+                <div class="profile__title">Образование</div>
+                <div class="profile__addFields">
+                  <div class="profile__box">
+                    <div class="profile__box-title">Университет</div>
+                    <div class="form__box">
+                      <input type="text" class="form__field" name="school" placeholder="Хогвартс">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="profile__box-title">Факультет</div>
+                    <div class="form__box">
+                      <input type="text" class="form__field" name="faculty">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="profile__box-title">Специализация</div>
+                    <div class="form__box">
+                      <input type="text" class="form__field" name="specialization">
+                    </div>
+                  </div>
+                  <div class="profile__box profile__box_group">
+                    <div class="profile__box-item">
+                      <div class="profile__box-title">Начало</div>
+                      <div class="form__box">
+                        <input type="date" class="form__field" name="start">
+                      </div>
+                    </div>
+                    <div class="profile__box-item">
+                      <div class="profile__box-title">Конец</div>
+                      <div class="form__box">
+                        <input type="date" class="form__field" name="finished">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="form__box form__box_group">
+                      <div class="form__box-item">
+                        <label class="form__label">
+                          <input type="radio" name="skill" class="form__radio" checked>
+                          <div class="form__divRadio"></div>
+                          Бакалавр
+                        </label>
+                      </div>
+                      <div class="form__box-item">
+                        <label class="form__label">
+                          <input type="radio" name="skill" class="form__radio">
+                          <div class="form__divRadio"></div>
+                          Магистр
+                        </label>
+                      </div>
+                      <div class="form__box-item">
+                        <label class="form__label">
+                          <input type="radio" name="skill" class="form__radio">
+                          <div class="form__divRadio"></div>
+                          Специалист
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="profile__box-item">
+                      <div class="profile__box-title">Средний балл</div>
+                      <div class="form__box form__box_group">
+                        <div class="profile__ball">
+                          <input type="text" class="form__field profile__ballField" name="ball1" placeholder="Балл">
+                          <span>из 5</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__addFields">
+                  <div class="profile__addFields-close"><span></span><span></span></div>
+                  <div class="profile__box">
+                    <div class="profile__box-title">Университет</div>
+                    <div class="form__box">
+                      <input type="text" class="form__field" name="school" placeholder="Хогвартс">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="profile__box-title">Факультет</div>
+                    <div class="form__box">
+                      <input type="text" class="form__field" name="faculty">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="profile__box-title">Специализация</div>
+                    <div class="form__box">
+                      <input type="text" class="form__field" name="specialization">
+                    </div>
+                  </div>
+                  <div class="profile__box profile__box_group">
+                    <div class="profile__box-item">
+                      <div class="profile__box-title">Начало</div>
+                      <div class="form__box">
+                        <input type="date" class="form__field" name="start">
+                      </div>
+                    </div>
+                    <div class="profile__box-item">
+                      <div class="profile__box-title">Конец</div>
+                      <div class="form__box">
+                        <input type="date" class="form__field" name="finished">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="form__box form__box_group">
+                      <div class="form__box-item">
+                        <label class="form__label">
+                          <input type="radio" name="skill" class="form__radio" checked>
+                          <div class="form__divRadio"></div>
+                          Бакалавр
+                        </label>
+                      </div>
+                      <div class="form__box-item">
+                        <label class="form__label">
+                          <input type="radio" name="skill" class="form__radio">
+                          <div class="form__divRadio"></div>
+                          Магистр
+                        </label>
+                      </div>
+                      <div class="form__box-item">
+                        <label class="form__label">
+                          <input type="radio" name="skill" class="form__radio">
+                          <div class="form__divRadio"></div>
+                          Специалист
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="profile__box-item">
+                      <div class="profile__box-title">Средний балл</div>
+                      <div class="form__box form__box_group">
+                        <div class="profile__ball">
+                          <input type="text" class="form__field profile__ballField" name="ball1" placeholder="Балл">
+                          <span>из 5</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__box">
+                  <div class="profile__add">
+                    Добавить университет +
+                  </div>
+                </div>
+                <div class="profile__footer">
+                  <div class="profile__btn profile__btn_back btn">Назад</div>
+                  <div class="profile__btn profile__btn_next btn">Далее</div>
+                </div>
+              </div>
+            </div>
+            <div class="boxAside__item boxAside__item_hide"></div>
+          </div>
+          <div class="boxAside">
+            <div class="boxAside__item">
+              <div class="profile__container">
+                <div class="profile__title">Активности</div>
+                <div class="profile__addFields">
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Название</div>
+                      <input type="text" name="name2" class="form__field">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Описание</div>
+                      <input type="text" name="description" class="form__field">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Роль</div>
+                      <input type="text" name="role" class="form__field">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title profile__box-title_count">Результат <span>0/300</span></div>
+                      <textarea class="form__textarea" name="result3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__addFields">
+                  <div class="profile__addFields-close"><span></span><span></span></div>
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Название</div>
+                      <input type="text" name="name2" class="form__field">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Описание</div>
+                      <input type="text" name="description" class="form__field">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Роль</div>
+                      <input type="text" name="role" class="form__field">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Результат</div>
+                      <textarea class="form__textarea" name="result3"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__box">
+                  <div class="profile__add">
+                    Добавить активность +
+                  </div>
+                </div>
+                <div class="profile__footer">
+                  <div class="profile__btn profile__btn_back btn">Назад</div>
+                  <div class="profile__btn profile__btn_next btn">Далее</div>
+                </div>
+              </div>
+            </div>
+            <div class="boxAside__item boxAside__item_hide"></div>
+          </div>
+          <div class="boxAside">
+            <div class="boxAside__item">
+              <div class="profile__container">
+                <div class="profile__title">Опыт работы</div>
+                <div class="profile__addFields">
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Где работал</div>
+                      <input type="text" name="job" class="form__field">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Кем работал</div>
+                      <input type="text" name="who-worked" class="form__field">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Задачи</div>
+                      <input type="text" name="tasks" class="form__field">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Результаты и достижения</div>
+                      <textarea class="form__textarea profile__textarea" name="result3"></textarea>
+                    </div>
+                  </div>
+                  <div class="profile__box profile__box_group">
+                    <div class="profile__box-item">
+                      <div class="form__box">
+                        <div class="profile__box-title">Начал</div>
+                        <input type="date" name="start2" class="form__field">
+                      </div>
+                    </div>
+                    <div class="profile__box-item">
+                      <div class="form__box">
+                        <div class="profile__box-title">Закончил</div>
+                        <input type="date" name="finished" class="form__field">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__addFields">
+                  <div class="profile__addFields-close"><span></span><span></span></div>
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Где работал</div>
+                      <input type="text" name="job" class="form__field">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Кем работал</div>
+                      <input type="text" name="who-worked" class="form__field">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Задачи</div>
+                      <input type="text" name="tasks" class="form__field">
+                    </div>
+                  </div>
+                  <div class="profile__box">
+                    <div class="form__box">
+                      <div class="profile__box-title">Результаты и достижения</div>
+                      <textarea class="form__textarea profile__textarea" name="result3"></textarea>
+                    </div>
+                  </div>
+                  <div class="profile__box profile__box_group">
+                    <div class="profile__box-item">
+                      <div class="form__box">
+                        <div class="profile__box-title">Начал</div>
+                        <input type="date" name="start2" class="form__field">
+                      </div>
+                    </div>
+                    <div class="profile__box-item">
+                      <div class="form__box">
+                        <div class="profile__box-title">Закончил</div>
+                        <input type="date" name="finished" class="form__field">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__box">
+                  <div class="profile__add">
+                    Добавить опыт работы +
+                  </div>
+                </div>
+                <div class="profile__footer">
+                  <div class="profile__btn profile__btn_back btn">Назад</div>
+                  <div class="profile__btn profile__btn_next btn">Далее</div>
+                </div>
+              </div>
+            </div>
+            <div class="boxAside__item boxAside__item_hide"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+		<section class="section section_000 js-section">
+		  <div class="container">
+		    <footer class="footer">
+		      <div class="footer__box">
+		        <a href="/" class="footer__logo logo"><img src="assets/media/logo/logo-white.svg" alt="Логотип"></a>
+		        <div class="social">
+		          <div class="social__box">
+		            <a href="#" class="social__icon"><img src="assets/media/social/fb.svg" alt=""></a>
+		            <a href="#" class="social__icon"><img src="assets/media/social/in.svg" alt=""></a>
+		            <a href="#" class="social__icon"><img src="assets/media/social/te.svg" alt=""></a>
+		            <a href="#" class="social__icon"><img src="assets/media/social/vk.svg" alt=""></a>
+		          </div>
+		        </div>
+		      </div>
+		      <nav class="footerNav">
+		        <div class="footerNav__item">
+		          <div class="footerNav__list"><a class="footerNav__link" href="/about">О компании</a></div>
+		          <div class="footerNav__list"><a class="footerNav__link" href="/documents">Документы</a></div>
+		        </div>
+		        <div class="footerNav__item">
+		          <div class="footerNav__list"><a class="footerNav__link" href="/">Соискателям</a></div>
+		          <div class="footerNav__list"><a class="footerNav__link" href="/vacancies">Вакансии</a></div>
+		        </div>
+		        <div class="footerNav__item">
+		          <div class="footerNav__list"><a class="footerNav__link" href="/employer">Работодателям</a></div>
+		          <div class="footerNav__list"><a class="footerNav__link" href="/pricing">Тарифы</a></div>
+		        </div>
+		      </nav>
+		      <div class="footer__copyright">© 2019 Буду <a class="footer__copyright__email"
+		          href="mailto:hello@budu.jobs">hello@budu.jobs</a></div>
+		    </footer>
+		  </div>
+		</section>
+    <script src="assets/js/bundle.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
