@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nicozero</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-
+    <%- include('block/head') %>
     <body>
         <div class="wrap">
             <section class="section section_face wow fadeIn" data-wow-duration="1s">
@@ -20,72 +13,11 @@
                             <h1 class="face__title">Бросить
                                 <span>курить</span>
                                 <span>легко!</span></h1>
-                            <div class="advantages">
-    <div class="advantages__item">
-        <div class="advantages__media">
-            <img src="../media/advantages/icon1.png" alt="">
-        </div>
-        <div class="advantages__title">Без тяги <span>к сигаретам</span></div>
-    </div>
-    <div class="advantages__item">
-        <div class="advantages__media">
-            <img src="../media/advantages/icon2.png" alt="">
-        </div>
-        <div class="advantages__title">Без абстинентного <span>синдрома</span></div>
-    </div>
-    <div class="advantages__item">
-        <div class="advantages__media">
-            <img src="../media/advantages/icon3.png" alt="">
-        </div>
-        <div class="advantages__title">Без книг <span>и гипноза</span></div>
-    </div>
-    <div class="advantages__item">
-        <div class="advantages__media">
-            <img src="../media/advantages/icon4.png" alt="">
-        </div>
-        <div class="advantages__title">Без медикаментов <span>и пластырей</span></div>
-    </div>
-</div>
-
+                            <%- include('block/advantages') %>
                         </div>
                         <div class="face__box face__box_eggs">
-                            <div class="order face__order">
-    <div class="order__title">Закажите сейчас <span>со скидкой</span></div>
-    <div class="order__price">
-        <span>€ 599</span>
-        <span>€ 99</span>
-    </div>
-    <div class="order__form">
-        <label class="order__item">
-            <span>Ваше имя:</span>
-            <input class="order__field" type="text" name="name">
-        </label>
-        <label class="order__item">
-            <span>Страна:</span>
-            <input class="order__field" type="text" name="country">
-        </label>
-        <label class="order__item">
-            <span>Телефон:</span>
-            <input class="order__field" type="text" name="phone">
-        </label>
-        <div class="order__item order__item_btn">
-            <button class="order__btn">Заказать</button>
-        </div>
-    </div>
-</div>
-
-                            <div class="eggs">
-    <div class="eggs__item">
-        <img src="../media/eggs/img1.png" alt="">
-    </div>
-    <div class="eggs__item">
-        <img src="../media/eggs/img2.png" alt="">
-    </div>
-    <div class="eggs__item">
-        <img src="../media/eggs/img3.png" alt="">
-    </div>
-</div>
-
+                            <%- include('block/order') %>
+                            <%- include('block/eggs') %>
                         </div>
                         <div class="face__product">
                             <div class="face__arrow"><img src="../media/face/arrow.png" alt=""></div>
@@ -459,72 +391,11 @@
                             <h1 class="face__title">Бросить
                                 <span>курить</span>
                                 <span>легко!</span></h1>
-                            <div class="advantages">
-    <div class="advantages__item">
-        <div class="advantages__media">
-            <img src="../media/advantages/icon1.png" alt="">
-        </div>
-        <div class="advantages__title">Без тяги <span>к сигаретам</span></div>
-    </div>
-    <div class="advantages__item">
-        <div class="advantages__media">
-            <img src="../media/advantages/icon2.png" alt="">
-        </div>
-        <div class="advantages__title">Без абстинентного <span>синдрома</span></div>
-    </div>
-    <div class="advantages__item">
-        <div class="advantages__media">
-            <img src="../media/advantages/icon3.png" alt="">
-        </div>
-        <div class="advantages__title">Без книг <span>и гипноза</span></div>
-    </div>
-    <div class="advantages__item">
-        <div class="advantages__media">
-            <img src="../media/advantages/icon4.png" alt="">
-        </div>
-        <div class="advantages__title">Без медикаментов <span>и пластырей</span></div>
-    </div>
-</div>
-
+                            <%- include('block/advantages') %>
                         </div>
                         <div class="face__box face__box_eggs">
-                            <div class="order face__order">
-    <div class="order__title">Закажите сейчас <span>со скидкой</span></div>
-    <div class="order__price">
-        <span>€ 599</span>
-        <span>€ 99</span>
-    </div>
-    <div class="order__form">
-        <label class="order__item">
-            <span>Ваше имя:</span>
-            <input class="order__field" type="text" name="name">
-        </label>
-        <label class="order__item">
-            <span>Страна:</span>
-            <input class="order__field" type="text" name="country">
-        </label>
-        <label class="order__item">
-            <span>Телефон:</span>
-            <input class="order__field" type="text" name="phone">
-        </label>
-        <div class="order__item order__item_btn">
-            <button class="order__btn">Заказать</button>
-        </div>
-    </div>
-</div>
-
-                            <div class="eggs">
-    <div class="eggs__item">
-        <img src="../media/eggs/img1.png" alt="">
-    </div>
-    <div class="eggs__item">
-        <img src="../media/eggs/img2.png" alt="">
-    </div>
-    <div class="eggs__item">
-        <img src="../media/eggs/img3.png" alt="">
-    </div>
-</div>
-
+                            <%- include('block/order') %>
+                            <%- include('block/eggs') %>
                         </div>
                         <div class="face__product"></div>
                     </div>
@@ -538,10 +409,6 @@
                 </div>
             </footer>
         </div>
-        
-<script src="../js/jquery.js"></script>
-<script src="../js/plugin.js"></script>
-<script src="../js/index.js"></script>
-
+        <%- include('block/script') %>
     </body>
 </html>
