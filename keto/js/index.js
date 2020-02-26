@@ -3,12 +3,18 @@ $(document).ready(function() {
     $('.js-join__slide').owlCarousel({
         items: 1,
         loop: true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
         nav: true
     });
 
     $('.js-commit__slide').owlCarousel({
         items: 1,
         loop: true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
         responsive : {
             0 : {
                 nav: false,
