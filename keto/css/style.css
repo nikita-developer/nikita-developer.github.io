@@ -1454,6 +1454,22 @@ textarea {
   align-items: center;
 }
 
+.contact__item .error {
+  display: block;
+  border-color: red;
+  color: red;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.contact__item .valid {
+  display: block;
+  border-color: #4ec452;
+  color: #b0b0b0;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
 .contact__select {
   width: 100%;
   border: 1px solid #c5c5c5;
@@ -1510,6 +1526,14 @@ textarea {
 
 .contact__btn:hover {
   background-color: #4ecec6;
+}
+
+.contact__btn_orange {
+  background-color: #ffd897;
+}
+
+.contact__btn_orange:hover {
+  background-color: #ffc25d;
 }
 .container {
   width: 100%;
@@ -1606,7 +1630,7 @@ textarea {
 .form__item .valid {
   display: block;
   border-color: #4ec452;
-  color: #4ec452;
+  color: #b0b0b0;
   font-size: 14px;
   margin-top: 3px;
 }
@@ -1616,6 +1640,10 @@ textarea {
   padding: 6.5px;
   border: 1px solid #b0b0b0;
   border-radius: 4px;
+  color: #b0b0b0;
+}
+
+.form__select option {
   color: #b0b0b0;
 }
 
@@ -2639,6 +2667,43 @@ textarea {
     line-height: 1.4;
   }
 }
+.messageError {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 15px;
+  right: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid red;
+}
+
+.messageError__title {
+  font-size: 18px;
+}
+
+.messageError__title span {
+  display: block;
+}
+
+.messageSuccess {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 15px;
+  right: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid green;
+}
+
+.messageSuccess__title {
+  font-size: 18px;
+}
+
+.messageSuccess__title span {
+  display: block;
+}
 .pay {
   width: 390px;
   border-radius: 25px;
@@ -3010,6 +3075,7 @@ textarea {
 }
 
 .priceList__container {
+  margin-bottom: 5px;
   border: 3px dashed #ddd;
   border-radius: 5px;
   padding: 15px;
@@ -3024,18 +3090,20 @@ textarea {
   font-family: 'Bebas';
   font-size: 42px;
   font-weight: 700;
-  color: #5a1e78;
+  color: #c83c8a;
   background-color: transparent;
 }
 
 .priceList__subTitle {
+  margin-bottom: 5px;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
-  color: #5a1e78;
+  color: #c83c8a;
 }
 
 .priceList__description {
+  margin-bottom: 5px;
   font-size: 14px;
   font-weight: 400;
   color: #52585d;

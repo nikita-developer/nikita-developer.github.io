@@ -777,27 +777,16 @@
         <div class="container">
             <div class="contact">
                 <div class="contact__title">Contact Us</div>
-                <div class="contact__description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+                <div class="contact__description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit</div>
                 <form class="contact__form">
                     <div class="contact__item">
-                        <select class="contact__select">
-                            <option>Name</option>
-                            <option>name</option>
-                            <option>name</option>
-                        </select>
+                        <input name="name" type="text" class="contact__field" placeholder="Name" required>
                     </div>
                     <div class="contact__item">
-                        <input type="text" class="contact__field" placeholder="Email Address">
+                        <input name="email" type="text" class="contact__field" placeholder="Email Address" required>
                     </div>
                     <div class="contact__item">
-                        <input type="text" class="contact__field" placeholder="Telephone">
-                    </div>
-                    <div class="contact__item">
-                        <select class="contact__select">
-                            <option>name</option>
-                            <option>name</option>
-                            <option>name</option>
-                        </select>
+                        <input name="tel" type="text" class="contact__field" placeholder="Telephone" required>
                     </div>
                     <div class="contact__item">
                         <textarea class="contact__textarea" placeholder="Enter your Message here"></textarea>
@@ -809,10 +798,19 @@
                     <div class="contact__item">
                         <div class="contact__btn">Close</div>
                     </div>
+                    <div class="contact__item">
+                        <input class="contact__btn contact__btn_orange" type="submit" placeholder="Send">
+                    </div>
                 </form>
             </div>
         </div>
     </section>
+    <div class="messageSuccess">
+        <div class="messageError__title">Оплата прошла успешно! <span>Спасибо.</span></div>
+    </div>
+    <div class="messageError">
+        <div class="messageError__title">Оплата не прошла <span>Нам очень жаль, но ваша оплата не прошла.</span></div>
+    </div>
     <%- include('block/script') %>
 </body>
 

@@ -110,28 +110,56 @@ $(document).ready(function() {
         }
     });
 
-    $('.form__field').on("blur", function(){
-        if($('.form').valid()) {
-            $('.form__btn').removeAttr("disabled");
+    $('.contact__form').validate({
+        rules:{
+            email:{
+                email: true,
+                required: true
+            },
+            tel:{
+                required: true,
+                number: true
+            }
         }
     });
 
     $(".form").submit(function () {
-        // Получение ID формы
         var formID = $(this);
         $.ajax({
             type: "POST",
             url: 'mail.php',
             data: formID.serialize(),
             success: function () {
-                // Вывод текста результата отправки
-                console.log(1)
+                showSucses ()
             },
             error: function () {
-                // Вывод текста ошибки отправки
-                console.log(2)
+                showError()
             }
         });
         return false;
+    });
+
+    function showError () {
+        $('.messageError').fadeIn();
+        setTimeout(hideError, 3000);
+    }
+
+    function hideError () {
+        $('.messageError').fadeOut();
+    }
+
+    function showSucses () {
+        $('.messageSuccess').fadeIn();
+        setTimeout(hideError, 3000);
+    }
+
+    function hideSucses () {
+        $('.messageSuccess').fadeOut();
+    }
+
+    $('.form__field').on("blur", function(){
+        if($('.form').valid()) {
+            $('.form__btn').removeAttr("disabled");
+        }
     });
 });
