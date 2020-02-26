@@ -1,0 +1,239 @@
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &_header {
+        background-image: url("../media/section/header.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    &_steps {
+        background: rgb(75,174,158);
+        background: radial-gradient(circle, rgba(75,174,158,1) 0%, rgba(96,181,134,1) 0%, rgba(75,174,158,1) 100%);
+    }
+
+    &_works {
+        overflow: hidden;
+        background-image: url("../media/section/works.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    &_popular {
+        overflow: hidden;
+        background-image: url("../media/section/popular.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-color: #f4f4f4;
+        padding-top: 100px;
+    }
+
+    &_join {
+        background-image: url("../media/section/join.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-color: #fff;
+        padding-bottom: 190px;
+    }
+
+    &_brand {
+        position: relative;
+        background-image: url("../media/section/brand.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-color: #fff;
+        padding-top: 230px;
+        padding-bottom: 190px;
+    }
+
+    &_science {
+        overflow: hidden;
+        background: rgb(255,234,246);
+        background: linear-gradient(to top, rgba(255,234,246,1) 0%, rgba(255,248,252,1) 100%);
+    }
+
+    &_health {
+        background-color: #fff;
+    }
+
+    &_weight {
+        background: rgb(110,186,119);
+        background: linear-gradient(rgba(110,186,119,1) 0%, rgba(73,174,161,1) 100%);
+    }
+
+    &_commit {
+        position: relative;
+        background-image: url("../media/section/commit.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-color: #fff;
+    }
+
+    &_proces {
+        position: relative;
+        background-image: url("../media/section/proces.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-color: #fff;
+    }
+
+    &_popap {
+        display: none;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.2);
+        overflow-y: auto;
+    }
+}
+
+.section__btn {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.section__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #b1b1b1;
+
+    &:hover {
+        & span {
+            background-color: #ff6d6d;
+
+            &:first-child {
+                transform: rotate(-45deg);
+            }
+
+            &:last-child {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    & span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -1px;
+        margin-left: -10px;
+        width: 20px;
+        height: 2px;
+        background-color: #b1b1b1;
+        transition: .3s;
+
+        &:first-child {
+            transform: rotate(45deg);
+        }
+
+        &:last-child {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+@media(max-width: 1030px) {
+    .section {
+        &_header {
+            background-image: url("../media/section/header-1030.jpg");
+            background-size: auto;
+        }
+
+        &_steps {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        &_popular {
+            padding-top: 60px;
+            background-image: url("../media/section/popular-1030.jpg");
+        }
+
+        &_join {
+            background-image: url("../media/section/join-1030.jpg");
+        }
+
+        &_brand {
+            padding-top: 60px;
+            padding-bottom: 100px;
+            background-image: url("../media/section/brand-1030.jpg");
+            background-size: cover;
+        }
+
+        &_health {
+            padding-bottom: 60px;
+        }
+
+        &_proces {
+            background-image: url("../media/section/proces-1030.jpg");
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .section {
+        &_popular {
+            background-image: url("../media/section/popular-768.jpg");
+        }
+
+        &_join {
+            background-image: url("../media/section/join-768.jpg");
+        }
+
+        &_brand {
+            background-image: url("../media/section/brand-768.jpg");
+        }
+
+        &_proces {
+            background-image: url("../media/section/proces-768.jpg");
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        &_join {
+            padding-bottom: 220px;
+            background-image: url("../media/section/join-480.jpg");
+        }
+
+        &_brand {
+            padding-bottom: 60px;
+            background-image: url("../media/section/brand-480.jpg");
+        }
+
+        &_commit {
+            background-size: 200px;
+            background-position-x: -130px;
+        }
+
+        &_popular {
+            background-image: url("../media/section/popular-480.jpg");
+        }
+    }
+}
+
+@media(max-width: 370px) {
+    .section {
+        &_popular {
+            background-image:none;
+        }
+    }
+}

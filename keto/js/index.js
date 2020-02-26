@@ -20,8 +20,16 @@ $(document).ready(function() {
     });
 
     var clock;
+    var clock2;
 
-    clock = $('.clock').FlipClock({
+    clock = $('.js-timerOne').FlipClock({
+        clockFace: 'DailyCounter',
+        autoStart: false,
+        countdown: true,
+        language: 'ru'
+    });
+
+    clock2 = $('.js-timerTwo').FlipClock({
         clockFace: 'DailyCounter',
         autoStart: false,
         countdown: true,
@@ -39,6 +47,91 @@ $(document).ready(function() {
     var $result = getSecondsToTomorrow();
 
     clock.setTime($result);      //Устанавливаем нужное время в секундах
-    clock.setCountdown(true);   //Устанавливаем отсчет назад
-    clock.start();              //Запускаем отсчет
+    clock.setCountdown(true);     //Устанавливаем отсчет назад
+    clock.start();                //Запускаем отсчет
+    clock2.setTime($result);      //Устанавливаем нужное время в секундах
+    clock2.setCountdown(true);   //Устанавливаем отсчет назад
+    clock2.start();              //Запускаем отсчет
+
+    $('.js-openPopap').click(function () {
+        $('.js-popap').fadeIn();
+        $('body, html').addClass('hide_body');
+    })
+
+    $('.section__close').click(function () {
+        $('.js-popap').fadeOut();
+        $('body, html').removeClass('hide_body');
+    })
+
+
+    $(document).mouseup(function (e){
+		var div = $('.js-popap .container');
+		if (!div.is(e.target) && div.has(e.target).length === 0) {
+            $('body, html').removeClass('hide_body');
+			$('.js-popap').fadeOut();
+		}
+	});
+
+    $('.purchase__btn').click(function (){
+        $('.purchase__btn').text('SELECTED PACKAGE!');
+        $('.purchase__item').removeClass('purchase__item_active');
+        $(this).text('SELECTED!').parents('.purchase__item').addClass('purchase__item_active');
+        var price = $(this).prev().text();
+        $('.js-price').text(price);
+    })
+
+    $('.form').validate({
+        rules:{
+            tel:{
+                minlength: 6,
+                maxlength: 18,
+                number: true
+            },
+            ZipCode:{
+                minlength: 2,
+                maxlength: 18,
+                number: true
+            }
+        }
+    });
+
+    $('.pay__form').validate({
+        rules:{
+            card:{
+                minlength: 16,
+                maxlength: 16,
+                number: true
+            },
+            cvv:{
+                minlength: 3,
+                maxlength: 3,
+                number: true
+            }
+        }
+    });
+
+    $('.form__field').on("blur", function(){
+        if($('.form').valid()) {
+            $('.form__btn').removeAttr("disabled");
+        }
+    });
+
+    $(".form").submit(function () {
+        // Получение ID формы
+        var formID = $(this);
+        $.ajax({
+            type: "POST",
+            url: 'mail.php',
+            data: formID.serialize(),
+            success: function () {
+                // Вывод текста результата отправки
+                console.log(1)
+            },
+            error: function () {
+                // Вывод текста ошибки отправки
+                console.log(2)
+            }
+        });
+        return false;
+    });
 });
