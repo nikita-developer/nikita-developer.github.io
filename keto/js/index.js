@@ -180,12 +180,14 @@ $(document).ready(function() {
 	});
 
     $('.footer__item').click(function () {
+        $('body, html').addClass('hide_body');
         var index = $(this).index()
         $('.popup').fadeOut();
         $('.popup').eq(index).fadeIn();
     })
 
     $('.popup__close').click(function () {
+        $('body, html').removeClass('hide_body');
         $('.popup').fadeOut();
     })
 });
