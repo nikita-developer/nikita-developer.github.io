@@ -3,18 +3,18 @@ $(document).ready(function() {
     $('.js-join__slide').owlCarousel({
         items: 1,
         loop: true,
-        autoplay:true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true,
+        // autoplay:true,
+        // autoplayTimeout:3000,
+        // autoplayHoverPause:true,
         nav: true
     });
 
     $('.js-commit__slide').owlCarousel({
         items: 1,
         loop: true,
-        autoplay:true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true,
+        // autoplay:true,
+        // autoplayTimeout:3000,
+        // autoplayHoverPause:true,
         responsive : {
             0 : {
                 nav: false,
@@ -68,7 +68,6 @@ $(document).ready(function() {
         $('.js-popap').fadeOut();
         $('body, html').removeClass('hide_body');
     })
-
 
     $(document).mouseup(function (e){
 		var div = $('.js-popap .container');
@@ -170,4 +169,23 @@ $(document).ready(function() {
             $('.form__btn').prop('disabled', true);
         }
     });
+
+    // Всплывающие волокна
+    $(document).mouseup(function (e){
+		var div = $('.popup .container');
+		if (!div.is(e.target) && div.has(e.target).length === 0) {
+            $('body, html').removeClass('hide_body');
+			$('.popup').fadeOut();
+		}
+	});
+
+    $('.footer__item').click(function () {
+        var index = $(this).index()
+        $('.popup').fadeOut();
+        $('.popup').eq(index).fadeIn();
+    })
+
+    $('.popup__close').click(function () {
+        $('.popup').fadeOut();
+    })
 });

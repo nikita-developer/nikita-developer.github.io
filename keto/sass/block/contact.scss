@@ -1,9 +1,16 @@
 
 .contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 738px;
+    height: 550px;
     border-radius: 25px;
-    overflow: hidden;
+    overflow-y: auto;
     border: 1px solid #b0b0b0;
     padding: 30px;
+    background-color: #fff;
 }
 
 .contact__title {
@@ -105,5 +112,12 @@
         &:hover {
             background-color: #ffc25d;
         }
+    }
+}
+
+@media(max-width: 768px) {
+    .contact {
+        width: 100%;
+        max-height: 100vh;
     }
 }
