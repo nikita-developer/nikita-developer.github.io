@@ -91,24 +91,28 @@ $(document).ready(function() {
 	});
 
     $('.purchase__item').click(function (){
+        var priceType = $('.js-priceDlivery');
         var price = $('.js-price');
         var priceRetail = $('.js-priceRetail');
         var priceSave = $('.js-priceSave b');
 
         if($(this).index() == 0) {
-            price.text('$136')
-            priceRetail.text('Retail: $264')
-            priceSave.text('You Save: $103')
+            priceType.text('€0')
+            price.text('€136')
+            priceRetail.text('Retail: €354')
+            priceSave.text('You Save: €218')
             console.log(1);
         } else if ($(this).index() == 1) {
-            price.text('$117')
-            priceRetail.text('Retail: $132')
-            priceSave.text('You Save: $44')
+            priceType.text('€0')
+            price.text('€117')
+            priceRetail.text('Retail: €236')
+            priceSave.text('You Save: €119')
             console.log(2);
         } else {
-            price.text('$5')
-            priceRetail.text('Retail: $44')
-            priceSave.text('You Save: $5')
+            priceType.text('€5')
+            price.text('€44')
+            priceRetail.text('Retail: €59')
+            priceSave.text('You Save: €20')
             console.log(3);
         }
 
