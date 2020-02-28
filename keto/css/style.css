@@ -2921,7 +2921,8 @@ textarea {
   top: 15px;
   right: 30px;
   padding: 20px;
-  background-color: #fff;
+  background-color: #ffd7d7;
+  color: #ff0000;
   border: 1px solid red;
 }
 

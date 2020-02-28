@@ -184,7 +184,7 @@ $(document).ready(function() {
 
     function showError () {
         $('.messageError').fadeIn();
-        setTimeout(hideError, 5000);
+        setTimeout(hideError, 7000);
     }
 
     function hideError () {
@@ -193,7 +193,7 @@ $(document).ready(function() {
 
     function showSucses () {
         $('.messageSuccess').fadeIn();
-        setTimeout(hideError, 5000);
+        setTimeout(hideError, 7000);
     }
 
     function hideSucses () {
