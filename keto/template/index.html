@@ -561,17 +561,17 @@
             </select>
         </div>
         <div class="form__item">
-            <input name="ZipCode" type="text" class="form__field" placeholder="Zip Code" required>
+            <input name="ZipCode" type="text" class="form__field" placeholder="Zip Code" required maxlength="18">
         </div>
         <div class="form__item">
             <input name="Email" type="email" class="form__field" placeholder="Email" required>
         </div>
         <div class="form__item">
-            <input name="tel" type="tel" class="form__field" placeholder="Telephone" required>
+            <input name="tel" type="tel" class="form__field" placeholder="Telephone" required maxlength="16">
         </div>
     </div>
     <div class="form__footer">
-        <input disabled="disabled" class="submit form__btn btn js-openPopap" type="submit" value="Заказать со скидкой">
+        <input class="submit form__btn btn js-openPopap" type="submit" value="Заказать со скидкой">
     </div>
 </form>
 
@@ -917,7 +917,7 @@
                 </div>
                 <div class="join__go">
                     <div class="join__go-title">Присоединяйтесь к уже похудевшим вместе с <span>keto diet!</span></div>
-                    <div class="join__go-btn js-openPopap">Присоединиться!</div>
+                    <div class="join__go-btn js-scrollTop">Присоединиться!</div>
                 </div>
             </div>
         </div>
@@ -961,7 +961,7 @@
                     </div>
                 </div>
                 <div class="section__btn">
-                    <div class="btn btn_orange js-openPopap">Заказать со скидкой</div>
+                    <div class="btn btn_orange js-scrollTop">Заказать со скидкой</div>
                 </div>
             </div>
         </div>
@@ -1026,7 +1026,7 @@
                     </div>
                 </div>
                 <div class="section__btn">
-                    <div class="btn btn_orange js-openPopap">Заказать <span>со скидкой</span></div>
+                    <div class="btn btn_orange js-scrollTop">Заказать <span>со скидкой</span></div>
                 </div>
             </div>
         </div>
@@ -1179,9 +1179,6 @@
             </div>
             <div class="group">
                 <div class="purchase">
-                    <div class="purchase__description">
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
-                    </div>
                     <div class="purchase__item">
                         <div class="purchase__head">
                             <div class="purchase__head-title">BUY 4 GET 2 FREE BOTTLES</div>
@@ -1190,7 +1187,6 @@
                         <div class="purchase__body">
                             <div class="purchase__body-check"></div>
                             <div class="purchase__media">
-                                <!-- <div class="purchase__savePrice">save <span>$103</span></div> -->
                                 <img src="../media/purchase/product-1.png" alt="">
                             </div>
                             <div class="purchase__info">
@@ -1208,7 +1204,6 @@
                         <div class="purchase__body">
                             <div class="purchase__body-check"></div>
                             <div class="purchase__media">
-                                <!-- <div class="purchase__savePrice">save <span>$44</span></div> -->
                                 <img src="../media/purchase/product-2.png" alt="">
                             </div>
                             <div class="purchase__info">
@@ -1225,7 +1220,6 @@
                         <div class="purchase__body">
                             <div class="purchase__body-check"></div>
                             <div class="purchase__media">
-                                <!-- <div class="purchase__savePrice">save <span>$20</span></div> -->
                                 <img src="../media/purchase/product-3.png" alt="">
                             </div>
                             <div class="purchase__info">
@@ -1269,8 +1263,8 @@
                                 <div class="priceList__footer-info js-price">$44.00</div>
                             </div>
                             <div class="priceList__footer-row">
-                                <div class="priceList__footer-name">Retail: $448.00</div>
-                                <div class="priceList__footer-info"><b>You Save: $300.00</b></div>
+                                <div class="priceList__footer-name js-priceRetail">Retail: $448.00</div>
+                                <div class="priceList__footer-info js-priceSave"><b>You Save: $300.00</b></div>
                             </div>
                         </div>
                     </div>
@@ -1301,26 +1295,38 @@
                             </div>
                             <div class="pay__item pay__item_group">
                                 <span>Date:</span>
-                                <select class="pay__select" required>
-                                    <option value="">1994</option>
-                                    <option value="">1995</option>
-                                    <option value="">1996</option>
-                                    <option value="">1997</option>
-                                    <option value="">1998</option>
+                                <select name="date" class="pay__select" required>
+                                    <option value="">YY</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                    <option value="2031">2031</option>
+                                    <option value="2032">2032</option>
+                                    <option value="2033">2033</option>
+                                    <option value="2034">2034</option>
+                                    <option value="2035">2035</option>
                                 </select>
-                                <select class="pay__select" required>
-                                    <option value="">Январь</option>
-                                    <option value="">Февраль</option>
-                                    <option value="">Март</option>
-                                    <option value="">Апрель</option>
-                                    <option value="">Май</option>
-                                    <option value="">Июнь</option>
-                                    <option value="">Июль</option>
-                                    <option value="">Август</option>
-                                    <option value="">Сентябрь</option>
-                                    <option value="">Октябрь</option>
-                                    <option value="">Ноябрь</option>
-                                    <option value="">Декабрь</option>
+                                <select name="month" class="pay__select" required>
+                                    <option value="Январь">Январь</option>
+                                    <option value="Февраль">Февраль</option>
+                                    <option value="Март">Март</option>
+                                    <option value="Апрель">Апрель</option>
+                                    <option value="Май">Май</option>
+                                    <option value="Июнь">Июнь</option>
+                                    <option value="Июль">Июль</option>
+                                    <option value="Август">Август</option>
+                                    <option value="Сентябрь">Сентябрь</option>
+                                    <option value="Октябрь">Октябрь</option>
+                                    <option value="Ноябрь">Ноябрь</option>
+                                    <option value="Декабрь">Декабрь</option>
                                 </select>
                             </div>
                             <div class="pay__item pay__item_group">
@@ -1328,7 +1334,7 @@
                                 <input name="cvv" type="password" class="pay__field" minlength="3" maxlength="3" required>
                             </div>
                             <div class="pay__btn">
-                                <input class="submit btn" type="submit" value="Заказать со скидкой">
+                                <input class="pay__submit btn" type="submit" value="Оплатить">
                             </div>
                         </form>
                         <div class="pay__footer">
@@ -1365,7 +1371,7 @@
                                 </div>
                             </div>
                             <div class="header__btn">
-                                <div class="btn js-openPopap">Заказать <span>со скидкой</span></div>
+                                <div class="btn js-scrollTop">Заказать <span>со скидкой</span></div>
                             </div>
                             <div class="header__logo">
                                 <div class="header__icons"><img src="../media/header/icon.png" alt=""></div>
@@ -1493,33 +1499,35 @@ In using this website you are deemed to have read and agreed to the following te
 </section>
 <section class="section section_popup popup">
     <div class="container">
-        <div class="contact">
-            <div class="contact__title">Contact Us</div>
-            <div class="contact__description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit</div>
-            <form class="contact__form">
-                <div class="contact__item">
-                    <input name="name" type="text" class="contact__field" placeholder="Name" required>
-                </div>
-                <div class="contact__item">
-                    <input name="email" type="text" class="contact__field" placeholder="Email Address" required>
-                </div>
-                <div class="contact__item">
-                    <input name="tel" type="text" class="contact__field" placeholder="Telephone" required>
-                </div>
-                <div class="contact__item">
-                    <textarea class="contact__textarea" placeholder="Enter your Message here"></textarea>
-                </div>
-                <div class="contact__item contact__item_group">
-                    <input type="text" class="contact__field contact__field_width" placeholder="Captcha">
-                    <div class="contact__captcha">gf3cwg</div>
-                </div>
-                <div class="contact__item">
-                    <div class="popup__close">Close</div>
-                </div>
-                <div class="contact__item">
-                    <input class="contact__btn contact__btn_orange" type="submit" placeholder="Send">
-                </div>
-            </form>
+        <div class="popup__box">
+            <div class="contact">
+                <div class="contact__title">Contact Us</div>
+                <div class="contact__description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit</div>
+                <form class="contact__form">
+                    <div class="contact__item">
+                        <input name="name" type="text" class="contact__field" placeholder="Name" required>
+                    </div>
+                    <div class="contact__item">
+                        <input name="email" type="text" class="contact__field" placeholder="Email Address" required>
+                    </div>
+                    <div class="contact__item">
+                        <input name="tel" type="text" class="contact__field" placeholder="Telephone" required>
+                    </div>
+                    <div class="contact__item">
+                        <textarea class="contact__textarea" placeholder="Enter your Message here"></textarea>
+                    </div>
+                    <div class="contact__item contact__item_group">
+                        <input type="text" class="contact__field contact__field_width" placeholder="Captcha">
+                        <div class="contact__captcha">gf3cwg</div>
+                    </div>
+                    <div class="contact__item">
+                        <div class="popup__close">Close</div>
+                    </div>
+                    <div class="contact__item">
+                        <input class="contact__btn contact__btn_orange" type="submit" placeholder="Send">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </section>
@@ -1528,7 +1536,11 @@ In using this website you are deemed to have read and agreed to the following te
         <div class="messageError__title">Оплата прошла успешно! <span>Спасибо.</span></div>
     </div>
     <div class="messageError">
-        <div class="messageError__title">Оплата не прошла <span>Нам очень жаль, но ваша оплата не прошла.</span></div>
+        <div class="messageError__title">Оплата не прошла</div>
+        <div class="messageError__description">
+            К сожалению, по техническим причинам оплата не может быть проведена.
+            <span>С вами свяжется в ближайшее время наш менеджер, и поможет оформить заказ.</span>
+        </div>
     </div>
     
 <script src="../js/jquery.js"></script>
