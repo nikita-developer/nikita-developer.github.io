@@ -200,17 +200,17 @@
     .support__subTitle {
         background: transparent !important;
         color: #171717 !important;
-        -webkit-text-fill-color: #171717;
+        -webkit-text-fill-color: #171717 !important;
 
         & span {
             background: transparent !important;
             color: #171717 !important;
-            -webkit-text-fill-color: #171717;
+            -webkit-text-fill-color: #171717 !important;
 
             &:last-child {
                 color: #171717 !important;
                 background: transparent !important;
-                -webkit-text-fill-color: #171717;
+                -webkit-text-fill-color: #171717 !important;
             }
         }
     }
