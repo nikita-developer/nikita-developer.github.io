@@ -4498,6 +4498,8 @@ html {
     .support__subTitle {
       background: transparent !important;
       color: #171717 !important;
+      -webkit-text-fill-color: transparent;
+      color: none;
     }
 
     .face__title span,
@@ -4515,6 +4517,8 @@ html {
     .support__subTitle span {
       background: transparent !important;
       color: #171717 !important;
+      -webkit-text-fill-color: transparent;
+      color: none;
     }
 
     .face__title span:last-child,
@@ -4532,6 +4536,8 @@ html {
     .support__subTitle span:last-child {
       color: #171717 !important;
       background: transparent !important;
+      -webkit-text-fill-color: transparent;
+      color: none;
     }
 }
 }
