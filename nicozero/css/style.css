@@ -4045,12 +4045,12 @@ html {
 }
 
 .effects__face_before {
-  background-image: url("../media/effects/human1.png");
+  background-image: url("../media/effects/man1.png");
 }
 
 .effects__face_after {
   display: none;
-  background-image: url("../media/effects/human2.png");
+  background-image: url("../media/effects/man2.png");
 }
 
 .effects__fadeLine {
@@ -4092,11 +4092,11 @@ html {
   }
 
   .effects__face_before {
-    background-image: url("../media/effects/human1-1280.png");
+    background-image: url("../media/effects/man1-1280.png");
   }
 
   .effects__face_after {
-    background-image: url("../media/effects/human2-1280.png");
+    background-image: url("../media/effects/man2-1280.png");
   }
 
   .effects__title {
@@ -4191,11 +4191,11 @@ html {
   }
 
   .effects__face_before {
-    background-image: url("../media/effects/human1-480.png");
+    background-image: url("../media/effects/man1-768.png");
   }
 
   .effects__face_after {
-    background-image: url("../media/effects/human2-480.png");
+    background-image: url("../media/effects/man2-768.png");
   }
 }
 
