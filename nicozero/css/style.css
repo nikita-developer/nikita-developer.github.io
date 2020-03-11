@@ -4308,7 +4308,7 @@ html {
   position: absolute;
   left: -15px;
   width: calc(100% + 30px);
-  height: 713px;
+  height: 770px;
   z-index: -1;
   bottom: -215px;
   background-image: url("../media/face/product.png");
@@ -5169,7 +5169,7 @@ html {
 }
 
 .order__item + .order__item_btn {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .order__item span {
@@ -5421,6 +5421,8 @@ html {
   background-image: url("../media/product/product.png");
   background-repeat: no-repeat;
   background-position: center bottom;
+  padding-bottom: 100px;
+  margin-bottom: -70px;
 }
 
 .product__title {
@@ -6227,7 +6229,7 @@ html {
   padding-bottom: 120px;
   background-image: url("../media/section/memories.png");
   background-repeat: no-repeat;
-  background-position: 350px top;
+  background-position: calc(50% - 350px) top;
   background-color: #fff;
 }
 
