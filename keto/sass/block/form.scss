@@ -1,0 +1,155 @@
+
+.form {
+    width: 348px;
+    background-color: #fff;
+    border: 1px solid #b0b0b0;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.form__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #efefef;
+}
+
+.form__head-name {
+    font-size: 18px;
+    font-family: 'Bebas';
+    color: #c83c8a;
+    font-weight: 700;
+}
+
+.form__head-price {
+    font-size: 64px;
+    font-family: 'Bebas';
+    color: #c83c8a;
+    font-weight: 700;
+    line-height: .8;
+}
+
+.form__head-priceOld {
+    font-size: 30px;
+    text-decoration: line-through;
+}
+
+.form__body {
+    padding: 20px 30px;
+}
+
+.form__item {
+    display: block;
+
+    & + & {
+        margin-top: 15px;
+    }
+
+    & > span {
+        display: block;
+        margin-bottom: 2px;
+        margin-left: 27px;
+        font-size: 14px;
+        color: #b0b0b0;
+        font-weight: 400;
+    }
+}
+
+.form__select {
+    position: relative;
+    width: 100%;
+    border: 1px solid #b0b0b0;
+    border-radius: 4px;
+    color: #b0b0b0 !important;
+    appearance: none;
+    background-image: url("../media/form/arrow.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 25px) center;
+
+    & option {
+        color: #b0b0b0;
+    }
+}
+
+.form__field {
+    width: 100%;
+    padding: 17.5px 25px;
+    border: 1px solid #b0b0b0;
+    border-radius: 50px;
+    color: #707070;
+    font-size: 14px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.form__footer {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.form__btn {
+    box-shadow: 11px 20px 51px -23px #02b387;
+
+    &_disabled {
+        color: #000;
+    }
+}
+
+.form__timer {
+    margin-bottom: 30px;
+}
+
+.form__timer-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media(max-width: 1030px) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    .form__head {
+        padding: 15px;
+    }
+
+    .form__body {
+        padding: 20px 15px;
+    }
+
+    .form__footer {
+        margin-bottom: 20px;
+    }
+
+    .form__head-name {
+        margin-bottom: 3px;
+        font-size: 16px;
+    }
+
+    .form__head-price {
+        font-size: 45px;
+    }
+
+    .form__head-nameOld {
+        font-size: 14px;
+    }
+
+    .form__head-priceOld {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 480px) {
+    .form {
+        width: 100%;
+        max-width: none;
+    }
+}

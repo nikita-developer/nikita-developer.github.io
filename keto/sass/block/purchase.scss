@@ -1,0 +1,338 @@
+
+.purchase {
+    max-width: 590px;
+}
+
+.purchase__item {
+    cursor: pointer;
+    border: 1px solid #dcdcdc;
+
+    &_active {
+        & .purchase__body {
+            background-color: #f0efdc;
+        }
+
+        & .purchase__body-check {
+            &::before {
+                display: block;
+            }
+        }
+    }
+}
+
+.purchase__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    background: rgb(200,60,138);
+    background: linear-gradient(130deg, rgba(200,60,138,1) 65%, rgba(87,154,236,1) 65%);
+
+    &_colorFull {
+        background: rgb(200,60,138);
+    }
+}
+
+.purchase__head-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.purchase__head-subTitle {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.purchase__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    padding-left: 40px;
+    background-color: #fff;
+}
+
+.purchase__body-check {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 23px;
+    height: 23px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-color: #fff;
+
+    &::before {
+        display: none;
+        position: absolute;
+        top: -8px;
+        left: 3px;
+        width: 15px;
+        height: 20px;
+        background-color: transparent;
+        border-right: 4px solid #8acd68;
+        border-bottom: 4px solid #8acd68;
+        content: '';
+        transform: rotate(45deg);
+    }
+}
+
+.purchase__media {
+    position: relative;
+    z-index: 1;
+}
+
+.purchase__media-save {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 78px;
+    height: 73px;
+    background-image: url('../media/purchase/save.png');
+    background-repeat: no-repeat;
+
+    & p {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: .9;
+        text-align: center;
+        margin-right: 8px;
+
+        & span {
+            display: block;
+            font-size: 14px;
+        }
+    }
+}
+
+.purchase__media-normal {
+    position: absolute;
+    top: 35px;
+    left: 55px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 145px;
+    height: 90px;
+    border: 2px dashed #c5c5c5;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: italic;
+    color: #c5c5c5;
+    padding: 15px 15px 15px 25px;
+    border-radius: 5px;
+
+    & span {
+        font-size: inherit;
+    }
+}
+
+.purchase__savePrice {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #bbaf14;
+    background: rgb(255,249,164);
+    background: linear-gradient(rgba(255,249,164,1) 0%, rgba(253,240,65,1) 50%, rgba(255,249,164,1) 100%);
+    font-size: 14px;
+    font-weight: 700;
+    color: #4f3c0d;
+
+    & span {
+        font-size: 24px;
+    }
+}
+
+.purchase__info {
+    width: calc(100% - 305px;)
+}
+
+.purchase__info-title {
+    font-weight: 700;
+    color: #c83c8a;
+    line-height: 1;
+
+    & span {
+        display: block;
+        font-size: 24px;
+    }
+}
+
+.purchase__price {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.purchase__btn {
+    display: inline-block;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 8px 30px;
+    background: rgb(164,205,56);
+    background: linear-gradient(rgba(164,205,56,1) 0%, rgba(68,175,145,1) 100%);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s background-color;
+
+    &:hover {
+        background-color: #4ecec6;
+    }
+}
+
+@media(max-width: 1030px) {
+    .purchase {
+        max-width: 440px;
+    }
+
+    .purchase__head {
+        background: linear-gradient(130deg, #c83c8a 60%, #579aec 60%);
+    }
+
+    .purchase__head-title {
+        font-size: 18px;
+    }
+
+    .purchase__head-subTitle {
+        font-size: 16px;
+    }
+
+    .purchase__media {
+        max-width: 210px;
+    }
+
+    .purchase__info {
+        width: calc(100% - 215px);
+    }
+
+    .purchase__info-title {
+        font-size: 14px;
+
+        & span {
+            font-size: inherit;
+        }
+    }
+
+    .purchase__btn {
+        font-size: 13px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .purchase__savePrice {
+        width: 50px;
+        height: 50px;
+        font-size: 12px;
+
+        & span {
+            font-size: 16px;
+        }
+    }
+
+    .purchase__media-save {
+        background-size: cover;
+        width: 60px;
+        height: 55px;
+
+        & p {
+            font-size: 16px;
+            margin-right: 5px;
+        }
+    }
+
+    .purchase__media-normal {
+        top: 23px;
+        left: 38px;
+        font-size: 16px;
+        width: 120px;
+        height: 60px;
+    }
+}
+
+@media(max-width: 768px) {
+    .purchase {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 480px) {
+
+    .purchase__head {
+        padding: 5px;
+    }
+
+    .purchase__head-title {
+        font-size: 14px;
+    }
+
+    .purchase__head-subTitle {
+        font-size: 14px;
+    }
+
+    .purchase__media  {
+        max-width: 160px;
+    }
+
+    .purchase__info {
+        width: calc(100% - 170px);
+    }
+
+    .purchase__info-title {
+        font-size: 12px;
+    }
+
+    .purchase__price  {
+        font-size: 26px;
+    }
+
+    .purchase__btn {
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .purchase__savePrice {
+        bottom: -20px;
+    }
+
+    .purchase__media-save {
+        width: 45px;
+        height: 44px;
+
+        & p {
+            line-height: 1;
+            font-size: 12px;
+            margin-right: 0;
+
+            & span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .purchase__media-normal {
+        top: 15px;
+        left: 33px;
+        font-size: 14px;
+        width: 110px;
+        height: 50px;
+        padding: 10px;
+        font-weight: 400;
+    }
+}
