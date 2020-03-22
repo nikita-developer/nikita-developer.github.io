@@ -1,0 +1,170 @@
+
+.section {
+    position: relative;
+
+    &_face {
+        z-index: 1;
+        background-color: transparent;
+        background-image: url("../media/section/face.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    &_cause {
+        margin-top: -170px;
+        background-image: url("../media/section/cause.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    &_demonstration {
+        margin-top: -80px;
+        background-image: url("../media/section/demonstration.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    &_help {
+        z-index: 1;
+        margin-top: -160px;
+        background-image: url("../media/section/help.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    &_innovation {
+        padding-top: 1015px;
+        padding-bottom: 130px;
+        margin-top: -253px;
+        background-image: url("../media/section/innovation.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    &_ingredients {
+        padding-bottom: 635px;
+        background-image: url("../media/section/ingredients.jpg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    &_professional {
+        padding-top: 100px;
+        padding-bottom: 80px;
+        background-image: url("../media/section/professional.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    &_face-footer {
+        padding-top: 222px;
+        margin-top: -132px;
+        background-image: url("../media/section/face-footer.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+}
+
+.section__title {
+    & span {
+        display: block;
+    }
+
+    & mark {
+        display: inline-block;
+        color: #0b2349;
+        background: linear-gradient(130deg, #fab730 0%, #ff8c8a 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media (max-width: 1030px) {
+    .section {
+        &_face {
+            background-image: url("../media/section/face-1030.png");
+            background-position: center bottom;
+        }
+
+        &_cause {
+            margin-top: -67px;
+            background-image: url("../media/section/cause-1030.jpg");
+        }
+
+        &_innovation {
+            padding-top: 500px;
+            margin-top: 0;
+            background-image: url("../media/section/innovation-1030.png");
+        }
+    }
+
+    .section__title {
+        font-size: 36px;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        &_face {
+            background-image: url("../media/section/face-768.jpg");
+        }
+
+        &_cause {
+            background-image: url("../media/section/cause-768.jpg");
+        }
+
+        &_demonstration {
+            margin-top: 0;
+            background-color: #eef8f8;
+            background-image: none;
+        }
+
+        &_help {
+            margin-top: 0;
+            background: linear-gradient(180deg, #fe917f 0%, #fbb23b 100%);
+        }
+
+        &_innovation {
+            background-image: url("../media/section/innovation-768.jpg");
+        }
+
+        &_ingredients {
+            padding-bottom: 635px;
+            background-image: url("../media/section/ingredients-768.jpg");
+        }
+
+        &_professional {
+            background-image: url("../media/section/professional-768.jpg");
+        }
+    }
+
+    .section__title {
+        font-size: 28px;
+        text-align: center;
+
+        & span {
+            display: inline;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        &_ingredients {
+            background-image: url("../media/section/ingredients-480.jpg");
+        }
+    }
+
+    .section__title {
+        font-size: 20px;
+    }
+}
