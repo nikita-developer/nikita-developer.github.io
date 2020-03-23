@@ -4220,6 +4220,11 @@ input:focus:-ms-input-placeholder {
     margin-top: 20px;
     margin-left: 0;
   }
+
+  .demonstration__media {
+    max-height: 250px;
+    overflow: hidden;
+  }
 }
 .face {
   position: relative;
@@ -4452,6 +4457,26 @@ input:focus:-ms-input-placeholder {
     height: 283px;
     margin-left: -115px;
   }
+
+  .face__theAppointment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .face__theAppointment-item {
+    width: 100%;
+    padding: 10px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .face__theAppointment-description span {
+    display: inline;
+  }
 }
 .form {
   width: 100%;
@@ -4553,11 +4578,30 @@ input:focus:-ms-input-placeholder {
   margin-top: 14px;
 }
 
+.form__label {
+  padding-bottom: 5px;
+  padding-left: 15px;
+  font-weight: 600;
+}
+
 .form__field {
   width: 100%;
   padding: 15px 25px;
   border: 2px solid #e8e8e8;
   border-radius: 25px;
+}
+
+.form__selcet {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../media/form/arrow.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 25px) center;
+}
+
+.form__selcet:focus {
+  outline: none;
 }
 
 .form__btn {
@@ -5154,13 +5198,13 @@ input:focus:-ms-input-placeholder {
 .section_face {
   z-index: 1;
   background-color: transparent;
-  background-image: url("../media/section/face.png");
+  background-image: url("../media/section/face-footer.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center bottom;
 }
 
 .section_cause {
-  margin-top: -170px;
+  margin-top: -130px;
   background-image: url("../media/section/cause.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -5210,7 +5254,7 @@ input:focus:-ms-input-placeholder {
   margin-top: -132px;
   background-image: url("../media/section/face-footer.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center bottom;
 }
 
 .section__title span {
@@ -5305,6 +5349,10 @@ input:focus:-ms-input-placeholder {
   .section {
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+
+  .section_face {
+    background-size: cover;
   }
 
   .section_ingredients {
