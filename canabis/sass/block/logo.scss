@@ -1,0 +1,23 @@
+
+.logo {
+    width: 100%;
+    margin-bottom: -25px;
+    text-align: center;
+
+    & span {
+        display: inline-block;
+        padding: 4.5px 13.5px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: #523d35;
+        border-radius: 25px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .logo {
+        margin-bottom: 20px;
+    }
+}
