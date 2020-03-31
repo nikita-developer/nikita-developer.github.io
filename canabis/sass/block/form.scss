@@ -67,20 +67,20 @@
 
 .form__count-item {
     position: relative;
-    width: 74px;
-    height: 70px;
-    padding-bottom: 20px;
+    width: 72px;
+    height: 49px;
     margin-right: 5px;
+    margin-bottom: 20px;
     margin-left: 5px;
     font-size: 31px;
     font-weight: 600;
-    line-height: 50px;
-    background-image: url("../media/form/count-border.png");
-    background-repeat: no-repeat;
+    line-height: 43px;
+    border: 3px solid #a8dd48;
+    border-radius: 20px;
 
     & span:last-child {
         position: absolute;
-        bottom: 0;
+        bottom: -22px;
         left: 50%;
         font-size: 13px;
         font-weight: 400;
