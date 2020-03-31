@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 .datepicker--cell-day.-other-month-,
 .datepicker--cell-year.-other-decade- {
     color: #dedede;
@@ -43,7 +45,6 @@
 /* -------------------------------------------------
     Datepicker cells
    ------------------------------------------------- */
-
 .datepicker--cells {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -249,7 +250,6 @@
 /* -------------------------------------------------
     Datepicker
    ------------------------------------------------- */
-
 .datepickers-container {
     position: absolute;
     left: 0;
@@ -458,7 +458,6 @@
 /* -------------------------------------------------
     Navigation
    ------------------------------------------------- */
-
 .datepicker--nav {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -614,7 +613,6 @@
 /* -------------------------------------------------
     Timepicker
    ------------------------------------------------- */
-
 .datepicker--time {
     border-top: 1px solid #efefef;
     display: -webkit-flex;
