@@ -35,4 +35,34 @@ $(document).ready(function() {
     /*init smoke*/
     init()
 
+    var $count = 0;
+    $('.look__amulets-item').click(function () {
+
+        if ($count == 0) {
+            if ( $('.look__data-call input').val() == 0 || $('.look__data-call input').val() == "" ) {
+                $('.look__data-call').addClass('look__data-call_active')
+            } else {
+                $count = 1;
+                $('.look__amulets-item').removeClass('look__amulets-item_active');
+                $(this).addClass('look__amulets-item_active');
+                $('.js-popup-look').fadeToggle();
+                $('.look__data-call').removeClass('look__data-call_active')
+            }
+            console.log(1);
+        } else {
+            $('.popup-look__title').text('Вы выйграли')
+            $('.popup-look__description').text('Вы уже выиграли, заказывайте скорее!')
+            $('.look__amulets-item').removeClass('look__amulets-item_active');
+            $(this).addClass('look__amulets-item_active');
+            $('.js-popup-look').fadeToggle();
+            $('.look__data-call').removeClass('look__data-call_active')
+            console.log(2);
+        }
+
+    });
+
+    $('.popup-look__close').click(function () {
+        $('.js-popup-look').fadeToggle();
+    })
+
 });
