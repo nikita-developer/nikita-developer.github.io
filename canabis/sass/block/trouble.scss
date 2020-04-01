@@ -1,0 +1,144 @@
+
+.trouble__title {
+    margin-bottom: 15px;
+    font-size: 115px;
+    font-weight: 800;
+    line-height: 63px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+
+    & mark {
+        display: inline-block;
+        font-size: 58px;
+        line-height: 63px;
+        color: #e6db2b;
+    }
+}
+
+.trouble__description {
+    margin-bottom: 25px;
+    font-size: 21px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+
+    & span {
+        display: block;
+    }
+}
+
+.trouble__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trouble__item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+}
+
+.trouble__media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 411px;
+    overflow: hidden;
+
+    & img {
+        max-width: none;
+        height: 100%;
+    }
+}
+
+.trouble__name {
+    position: absolute;
+    top: 391px;
+    left: 23px;
+    padding: 6px 10px;
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.trouble__decription {
+    padding: 29px 23px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #fff;
+    background-color: rgb(253, 115, 35);
+    background-image: linear-gradient(130deg, rgba(253, 115, 35, 1) 0%, rgba(246, 28, 97, 1) 32%, rgba(169, 14, 150, 1) 66%, rgba(96, 14, 184, 1) 100%);
+}
+
+@media (max-width: 1030px) {
+    .trouble__title {
+        font-size: 48px;
+        line-height: 1;
+
+        & mark {
+            display: inline;
+            font-size: inherit;
+            line-height: inherit;
+        }
+    }
+
+    .trouble__box {
+        align-items: flex-start;
+    }
+
+    .trouble__item {
+        width: 230px;
+    }
+
+    .trouble__name {
+        top: 395px;
+        font-size: 15px;
+    }
+
+    .trouble__decription {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .trouble__title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .trouble__description {
+        font-size: 16px;
+    }
+
+    .trouble__box {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .trouble__item {
+        width: 100%;
+        max-width: 335px;
+
+        & + & {
+            margin-top: 20px;
+        }
+    }
+
+    .trouble__name {
+        top: 335px;
+    }
+
+    .trouble__media {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .trouble__title {
+        font-size: 26px;
+    }
+}

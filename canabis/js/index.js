@@ -50,8 +50,8 @@ $(document).ready(function() {
             }
             console.log(1);
         } else {
-            $('.popup-look__title').text('Вы выйграли')
-            $('.popup-look__description').text('Вы уже выиграли, заказывайте скорее!')
+            $('.popup-look__title').text('Вы уже выиграли скидку')
+            $('.popup-look__description').text('Заказывайте скорее!')
             $('.look__amulets-item').removeClass('look__amulets-item_active');
             $(this).addClass('look__amulets-item_active');
             $('.js-popup-look').fadeToggle();

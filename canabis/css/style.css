@@ -2616,6 +2616,20 @@ textarea::placeholder {
   color: #232323;
   text-align: right;
 }
+
+@media (max-width: 600px) {
+  .popup-look__box {
+    width: 302px;
+    padding: 20px;
+    margin-left: -151px;
+    background-image: url("../media/popup-look/bg-600.png");
+  }
+
+  .popup-look__border {
+    width: 320px;
+    margin-left: -160px;
+  }
+}
 .section {
   position: relative;
   background-size: cover;
