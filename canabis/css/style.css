@@ -1677,14 +1677,17 @@ textarea::placeholder {
 
 .form__label {
   padding-bottom: 5px;
-  padding-left: 15px;
+  padding-left: 22px;
   font-size: 16px;
   font-weight: 500;
 }
 
 .form__field {
   width: 100%;
-  padding: 15px 25px;
+  padding: 15px 20px;
+  font-family: 'Montserrat', sans-serif, Tahoma, Verdana;
+  font-size: 16px;
+  font-weight: 500;
   border: 2px solid #e8e8e8;
   border-radius: 25px;
 }
