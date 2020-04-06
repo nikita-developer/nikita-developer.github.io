@@ -10,15 +10,28 @@ $(document).ready(function() {
     })
 
     /* Таймер */
+    for (var i = 0; i < $('.timer__count').length; i++) {
+        var clock = $('.timer__count').eq(i).FlipClock({
+            clockFace: 'DailyCounter',
+            language: 'ru',
+            HourlyCounter: false,
+            countdown: true
+        })
+        clock.setTime($('.timer__count').eq(i).data('time'));
+        clock.setCountdown(true);
+        clock.start();
+    }
 
-    var clock = $('.timer__count').FlipClock({
-        clockFace: 'DailyCounter',
-        language: 'ru',
-        HourlyCounter: false,
-        countdown: true
-    })
-
-    clock.setTime($('.timer__count').data('time'));
-    clock.setCountdown(true);
-    clock.start();
+    /*Слайдер*/
+    $('.js-commits__slide').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoHeight: true,
+        items: 1,
+        responsive : {
+            481 : {
+                nav: true,
+            }
+        }
+    });
 });
