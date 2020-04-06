@@ -34,4 +34,10 @@ $(document).ready(function() {
             }
         }
     });
+
+    /* Анимация */
+    wow = new WOW({
+        mobile: false
+    })
+    wow.init();
 });
