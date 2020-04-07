@@ -3801,6 +3801,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height: 95px;
   margin-right: auto;
   margin-left: auto;
+  font-size: 24px;
+  line-height: 71px;
+  color: #fff;
+  text-align: center;
   cursor: pointer;
   background-image: url("../media/chance/btn.png");
   background-repeat: no-repeat;
@@ -3898,6 +3902,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
   .chance__btn {
     margin-right: auto;
+    line-height: 71px;
   }
 
   .chance__sub-title {
@@ -4728,6 +4733,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   height: 95px;
   margin-right: auto;
   margin-left: auto;
+  font-size: 24px;
+  line-height: 71px;
+  color: #fff;
+  text-align: center;
   cursor: pointer;
   background-color: transparent;
   background-image: url("../media/chance/btn.png");
@@ -4759,6 +4768,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
   .form__btn {
     height: 115px;
+    line-height: 93px;
   }
 }
 
@@ -4816,7 +4826,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin-right: auto;
     margin-left: auto;
     font-size: 18px;
-    line-height: 55px;
+    line-height: 62px;
   }
 }
 
