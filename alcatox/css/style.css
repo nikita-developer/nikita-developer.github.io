@@ -3789,52 +3789,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .chance__sub-title {
-  font-size: 72px;
+  font-size: 51px;
   font-weight: 500;
-  line-height: 68px;
+  line-height: 58px;
   color: #fff;
   text-transform: uppercase;
 }
 
 .chance__btn {
-  width: 100%;
-  max-width: 299px;
-  height: 73px;
+  width: 321px;
+  height: 95px;
   margin-right: auto;
   margin-left: auto;
-  font-size: 24px;
-  line-height: 73px;
-  color: #fff;
-  text-align: center;
   cursor: pointer;
-  background-color: #f99740;
-  border: none;
-  border-radius: 50px;
-  -webkit-animation: bgcolor 15s linear infinite;
-  animation: bgcolor 15s linear infinite;
-}
-
-.chance__btn span {
-  font-weight: 500;
-}
-
-.chance__btn:hover {
-  font-size: 22px;
-  -webkit-box-shadow: inset 0 0 10px 4px #00000059;
-  box-shadow: inset 0 0 10px 4px #00000059;
-}
-
-.chance__btn:focus {
-  font-size: 22px;
-  outline: none;
-  -webkit-box-shadow: inset 0 0 10px 4px #00000059;
-  box-shadow: inset 0 0 10px 4px #00000059;
-}
-
-.chance__product {
-  position: absolute;
-  bottom: -110px;
-  left: -100px;
+  background-image: url("../media/chance/btn.png");
+  background-repeat: no-repeat;
 }
 
 .chance__list {
@@ -4189,7 +4158,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .drugs__sub-title mark {
   font-weight: 500;
   color: #fff;
-  background-color: #a0320c;
+  text-transform: uppercase;
+  background-color: #5e4c20;
 }
 
 .drugs__sub-title::before {
@@ -4380,22 +4350,24 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .face__check {
   width: 244px;
   margin-top: 120px;
-  margin-right: 50px;
+  margin-right: 27px;
   margin-bottom: 80px;
 }
 
 .face__check-item {
   position: relative;
-  padding-left: 55px;
-  font-size: 18px;
+  min-height: 64px;
+  padding-left: 65px;
+  font-size: 22px;
+  line-height: 64px;
 }
 
 .face__check-item::before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 44px;
-  height: 40px;
+  width: 63px;
+  height: 64px;
   content: '';
   background-image: url("../media/face/check.png");
   background-repeat: no-repeat;
@@ -4485,11 +4457,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin-bottom: 70px;
   }
 
-  .face__check-item {
-    min-height: 40px;
-    line-height: 40px;
-  }
-
   .face__appearance {
     font-size: 32px;
     line-height: 1;
@@ -4520,23 +4487,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
   .face__check {
     padding: 20px;
-    background-color: #fff;
+    background-color: #faffef;
     border: 1px solid #e8e8e8;
     border-radius: 10px;
-  }
-
-  .face__check-item {
-    min-height: 22px;
-    padding-left: 30px;
-    font-size: 16px;
-    line-height: 1;
-  }
-
-  .face__check-item::before {
-    top: -7px;
-    width: 24px;
-    height: 22px;
-    background-size: cover;
   }
 
   .face__appearance {
@@ -4574,7 +4527,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   max-width: 638px;
   padding: 50px 25px;
   margin-left: auto;
-  text-align: right;
   background-color: #ffeaeb;
   border: 3px solid  #da4d52;
 }
@@ -4582,20 +4534,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .facts__item {
   position: relative;
   min-height: 45px;
-  padding-right: 67px;
+  padding-left: 67px;
   font-size: 22px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
 .facts__item mark {
-  color: #da4d52;
+  color: #6b1f22;
 }
 
 .facts__item::before {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 45px;
   height: 45px;
   content: '';
@@ -4631,7 +4583,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   .facts__item {
-    padding-right: 55px;
+    padding-left: 55px;
     font-size: 14px;
   }
 }
@@ -4644,6 +4596,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   border-radius: 40px;
   -webkit-box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.13);
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.13);
+}
+
+.form::before {
+  position: absolute;
+  bottom: -120px;
+  left: -103px;
+  width: 221px;
+  height: 70px;
+  content: '';
+  background-image: url("../media/form/arrow.png");
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
 }
 
 .form__head {
@@ -4750,38 +4716,31 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .form__btn {
   width: 100%;
-  height: 73px;
-  font-size: 24px;
-  line-height: 73px;
-  color: #fff;
-  text-align: center;
-  background-color: #f99740;
+  height: 95px;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../media/chance/btn.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   border: none;
-  border-radius: 50px;
-  -webkit-animation: bgcolor 15s linear infinite;
-  animation: bgcolor 15s linear infinite;
-}
-
-.form__btn span {
-  font-weight: 500;
-}
-
-.form__btn:hover {
-  font-size: 22px;
-  -webkit-box-shadow: inset 0 0 10px 4px #00000059;
-  box-shadow: inset 0 0 10px 4px #00000059;
-}
-
-.form__btn:focus {
-  font-size: 22px;
   outline: none;
-  -webkit-box-shadow: inset 0 0 10px 4px #00000059;
-  box-shadow: inset 0 0 10px 4px #00000059;
+}
+
+@media (max-width: 1030px) {
+  .form::before {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   .form {
     width: 100%;
+  }
+
+  .form__btn {
+    height: 115px;
   }
 }
 
@@ -4833,7 +4792,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   .form__btn {
-    height: 55px;
+    display: block;
+    width: 258px;
+    height: 78px;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 18px;
     line-height: 55px;
   }
@@ -4849,11 +4812,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   50% {
-    background-color: #accb73;
+    background-color: #ffbc57;
   }
 
   75% {
-    background-color: #4cc9b6;
+    background-color: #db3934;
   }
 
   to {
@@ -4871,11 +4834,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   50% {
-    background-color: #accb73;
+    background-color: #ffbc57;
   }
 
   75% {
-    background-color: #4cc9b6;
+    background-color: #db3934;
   }
 
   to {
@@ -4932,7 +4895,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .help__item mark {
-  font-weight: 500;
   color: #cb9a16;
 }
 
@@ -4984,6 +4946,111 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    font-size: 16px;
+  }
+}
+.order__title {
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.order__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.order__item {
+  width: 187px;
+  text-align: center;
+}
+
+.order__media {
+  margin-bottom: 20px;
+}
+
+.order__step {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #2eb4ad;
+}
+
+.order__description {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media (max-width: 1030px) {
+  .order__item {
+    width: 160px;
+  }
+
+  .order__description {
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .order__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .order__title {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .order__item {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    min-height: 80px;
+    padding-left: 100px;
+    text-align: left;
+  }
+
+  .order__item + .order__item {
+    margin-top: 20px;
+  }
+
+  .order__media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 80px;
+    margin-bottom: 0;
+  }
+
+  .order__step {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .order__title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .order__description {
     font-size: 16px;
   }
 }
@@ -5197,6 +5264,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-image: url("../media/section/professional.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
 }
 
 .section_warning {
@@ -5294,8 +5362,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 .timer {
   position: absolute;
-  top: 380px;
-  left: -294px;
+  top: 470px;
+  left: -270px;
 }
 
 .timer__description {
@@ -5332,184 +5400,92 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 }
 .warning {
-  position: relative;
-}
-
-.warning__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  max-width: 500px;
-  margin-bottom: 35px;
-  font-size: 36px;
-  font-weight: 700;
-  color: #da4750;
-  text-transform: uppercase;
-}
-
-.warning__title span {
-  min-width: 106px;
-  margin-right: 20px;
-  text-transform: uppercase;
-}
-
-.warning__info {
-  max-width: 655px;
-  margin-bottom: 50px;
-  font-size: 23px;
-}
-
-.warning__info span {
-  display: block;
-  margin-top: 30px;
-  font-weight: 500;
-}
-
-.warning__product {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.warning__sub-title {
-  margin-bottom: 40px;
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.warning__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  border: 3px solid #3c9458;
 }
 
-.warning__item {
-  width: 187px;
-  text-align: center;
+.warning__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 35px;
 }
 
-.warning__media {
+.warning__title {
+  max-width: 500px;
   margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #da4750;
+  text-transform: uppercase;
 }
 
-.warning__step {
-  margin-bottom: 10px;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 24px;
-  color: #2eb4ad;
+.warning__info {
+  font-size: 16px;
 }
 
-.warning__description {
-  font-size: 18px;
-  line-height: 24px;
+.warning__product {
+  position: relative;
+  min-width: 477px;
+  min-height: 298px;
+  background-image: url("../media/warning/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.warning__product img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 1030px) {
-  .warning__info {
-    max-width: 410px;
-  }
-
-  .warning__item {
-    width: 160px;
-  }
-
-  .warning__description {
-    line-height: 1.4;
+  .warning__product {
+    min-width: 350px;
   }
 }
 
 @media (max-width: 768px) {
-  .warning__info {
-    max-width: none;
-    margin-bottom: 35px;
+  .warning {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .warning__product {
-    position: static;
-    margin-bottom: 35px;
+    min-width: 100%;
+    background-image: url("../media/warning/bg-768.jpg");
   }
 
-  .warning__box {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .warning__sub-title {
-    font-size: 24px;
-    text-align: left;
-  }
-
-  .warning__item {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-    min-height: 80px;
-    padding-left: 100px;
-    text-align: left;
-  }
-
-  .warning__item + .warning__item {
-    margin-top: 20px;
-  }
-
-  .warning__media {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 80px;
-    margin-bottom: 0;
-  }
-
-  .warning__step {
-    margin-bottom: 0;
-    font-size: 18px;
+  .warning__product img {
+    left: 44%;
   }
 }
 
 @media (max-width: 480px) {
   .warning__title {
     font-size: 22px;
-  }
-
-  .warning__title span {
-    width: 65px;
-    min-width: 65px;
-    margin-right: 10px;
+    text-align: center;
   }
 
   .warning__info {
     font-size: 16px;
     text-align: center;
-  }
-
-  .warning__info span {
-    margin-top: 10px;
-    font-size: 16px;
-  }
-
-  .warning__sub-title {
-    font-size: 22px;
-    text-align: center;
-  }
-
-  .warning__description {
-    font-size: 16px;
   }
 }
