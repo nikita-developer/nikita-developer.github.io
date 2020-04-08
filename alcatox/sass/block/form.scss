@@ -1,0 +1,227 @@
+
+.form {
+    position: relative;
+    width: 361px;
+    padding: 35px 30px;
+    background-color: #fff;
+    border: 1px solid #62905c;
+    border-radius: 40px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.13);
+
+    &::before {
+        position: absolute;
+        bottom: -120px;
+        left: -103px;
+        width: 221px;
+        height: 70px;
+        content: '';
+        background-image: url(../media/form/arrow.png);
+        background-repeat: no-repeat;
+        transform: rotate(-10deg);
+    }
+}
+
+.form__head {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.form__discount {
+    position: absolute;
+    bottom: -23px;
+    left: -11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 163px;
+    height: 161px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #fff;
+    background-image: url("../media/form/bg-discont.png");
+    background-repeat: no-repeat;
+
+    & span {
+        display: block;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1;
+    }
+}
+
+.form__price {
+    margin-left: auto;
+    font-size: 19px;
+    color: #67955f;
+
+    & span {
+        display: block;
+        font-size: 36px;
+    }
+}
+
+.form__label {
+    position: relative;
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #9b9b9b;
+    background-color: #f7f7f7;
+    border-radius: 50px;
+
+    & span {
+        position: absolute;
+        z-index: 1;
+        font-size: 18px;
+        transition: .3s;
+        transform: translate(25px, -38px);
+    }
+}
+
+.form__field {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 58px;
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: transparent;
+    border: 1px solid #ececec;
+    border-radius: 50px;
+
+    &_focus {
+        outline: none;
+
+        & + span {
+            font-size: 14px;
+            color: #67955f;
+            transform: translate(25px, -75px);
+        }
+    }
+}
+
+.form__btn {
+    width: 100%;
+    height: 95px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 24px;
+    line-height: 71px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("../media/chance/btn.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border: none;
+    outline: none;
+    transition: .3s transform;
+
+    &:hover {
+        transform: scale(.95);
+    }
+}
+
+@media (max-width: 1030px) {
+    .form {
+        &::before {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+
+    .form__btn {
+        height: 115px;
+        line-height: 93px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form {
+        padding: 20px 15px 40px 15px;
+    }
+
+    .form__head {
+        margin-bottom: 45px;
+    }
+
+    .form__discount {
+        left: -5px;
+        width: 150px;
+        height: 142px;
+        font-size: 14px;
+        line-height: 14px;
+        background-size: cover;
+
+        & span {
+            font-size: 28px;
+        }
+    }
+
+    .form__price {
+        font-size: 18px;
+
+        & span {
+            font-size: 26px;
+        }
+    }
+
+    .form__label {
+        & span {
+            font-size: 15px;
+            transform: translate(25px, -30px);
+        }
+    }
+
+    .form__field {
+        height: 45px;
+
+        &_focus {
+            & + span {
+                transform: translate(25px, -63px);
+            }
+        }
+    }
+
+    .form__btn {
+        display: block;
+        width: 258px;
+        height: 78px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 18px;
+        line-height: 62px;
+    }
+}
+
+@keyframes bgcolor {
+    from {
+        background-color: #f99740;
+    }
+
+    25% {
+        background-color: #db3934;
+    }
+
+    50% {
+        background-color: #ffbc57;
+    }
+
+    75% {
+        background-color: #db3934;
+    }
+
+    to {
+        background-color: #f99740;
+    }
+}

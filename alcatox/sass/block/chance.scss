@@ -1,0 +1,167 @@
+
+.chance {
+    position: relative;
+}
+
+.chance__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chance__title {
+    margin-bottom: 435px;
+    font-size: 63px;
+    font-weight: 500;
+    line-height: 72px;
+    color: #5eb052;
+    text-transform: uppercase;
+
+    & span {
+        display: block;
+    }
+
+    & mark {
+        color: #2eb4ad;
+    }
+}
+
+.chance__sub-title {
+    font-size: 51px;
+    font-weight: 500;
+    line-height: 58px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.chance__btn {
+    width: 321px;
+    height: 95px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 24px;
+    line-height: 71px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background-image: url("../media/chance/btn.png");
+    background-repeat: no-repeat;
+    transition: .3s transform;
+
+    &:hover {
+        transform: scale(.95);
+    }
+}
+
+.chance__list {
+    width: 100%;
+    max-width: 465px;
+}
+
+.chance__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 63px;
+    padding-left: 85px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+
+    & + & {
+        margin-top: 15px;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 63px;
+        height: 63px;
+        content: '';
+        background-image: url("../media/chance/check.png");
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 1030px) {
+    .chance__title {
+        line-height: 1;
+    }
+
+    .chance__btn {
+        margin-right: 0;
+    }
+
+    .chance__product {
+        left: 0;
+    }
+
+    .chance__sub-title {
+        font-size: 58px;
+        line-height: 1;
+    }
+
+    .chance__item {
+        font-size: 20px;
+    }
+
+    .chance__list {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .chance__footer {
+        flex-direction: column;
+    }
+
+    .chance__title {
+        margin-bottom: 20px;
+        font-size: 45px;
+    }
+
+    .chance__product {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .chance__btn {
+        margin-right: auto;
+        line-height: 71px;
+    }
+
+    .chance__sub-title {
+        margin-bottom: 30px;
+        font-size: 38px;
+    }
+
+    .chance__list {
+        width: 100%;
+    }
+
+    .chance__item {
+        min-height: 45px;
+        padding-left: 55px;
+        font-size: 14px;
+
+        &::before {
+            width: 45px;
+            height: 45px;
+            background-size: cover;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .chance__title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .chance__sub-title {
+        font-size: 32px;
+        text-align: center;
+    }
+}

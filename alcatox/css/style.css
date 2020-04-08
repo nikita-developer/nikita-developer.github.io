@@ -4783,8 +4783,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
   .form__discount {
     left: -5px;
-    width: 120px;
-    height: 118px;
+    width: 150px;
+    height: 142px;
     font-size: 14px;
     line-height: 14px;
     background-size: cover;
@@ -5211,8 +5211,26 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     font-size: 14px;
   }
 
+  .professional__footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
   .professional__name {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    margin-left: 20px;
     font-size: 14px;
+    line-height: 1;
   }
 }
 .section {

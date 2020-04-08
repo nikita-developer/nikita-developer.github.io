@@ -1,0 +1,129 @@
+
+.professional {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.professional__title {
+    margin-bottom: 50px;
+    font-size: 60px;
+    font-weight: 700;
+    color: #2eb4ad;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.professional__info {
+    max-width: 781px;
+    padding: 50px;
+    margin-left: auto;
+    font-size: 19px;
+    line-height: 30px;
+    background-color: rgba(255, 255, 255, 0.66);
+    border: 1px solid #79aa7b;
+    border-radius: 40px;
+
+    & p + p {
+        margin-top: 15px;
+    }
+}
+
+.professional__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.professional__name {
+    margin-right: 70px;
+}
+
+.professional__product {
+    position: absolute;
+    right: -30px;
+    bottom: -138px;
+}
+
+@media (max-width: 1100px) {
+    .professional__product {
+        right: 0;
+    }
+
+    .professional__name {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .professional__info {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .professional__footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .professional__name {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .professional__product {
+        bottom: -80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .professional__title {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    .professional__info {
+        padding: 25px;
+        font-size: 16px;
+        line-height: 1.4;
+        border-radius: 20px;
+    }
+
+    .professional__product {
+        position: static;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .professional__footer {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .professional__title {
+        margin-bottom: 20px;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .professional__info {
+        font-size: 14px;
+    }
+
+    .professional__footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .professional__name {
+        order: 1;
+        margin-left: 20px;
+        font-size: 14px;
+        line-height: 1;
+    }
+}

@@ -1,0 +1,182 @@
+
+.drugs {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        top: 605px;
+        left: 100px;
+        z-index: -1;
+        width: 902px;
+        height: 615px;
+        content: '';
+        background-image: url("../media/drugs/dependence.png");
+        background-repeat: no-repeat;
+    }
+}
+
+.drugs__title {
+    max-width: 570px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+
+    & mark {
+        font-weight: 500;
+        color: #a0320c;
+    }
+}
+
+.drugs__sub-title {
+    position: relative;
+    max-width: 765px;
+    min-height: 95px;
+    padding-left: 117px;
+    margin-bottom: 25px;
+    font-size: 24px;
+
+    & mark {
+        font-weight: 500;
+        color: #fff;
+        text-transform: uppercase;
+        background-color: #5e4c20;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 89px;
+        height: 95px;
+        content: '';
+        background-image: url("../media/drugs/alchogol.png");
+        background-repeat: no-repeat;
+    }
+}
+
+.drugs__description {
+    max-width: 715px;
+    margin-bottom: 220px;
+    font-size: 18px;
+
+    & b {
+        font-weight: 500;
+    }
+}
+
+.drugs__dependence {
+    font-size: 28px;
+    color: #fff;
+
+    & span {
+        display: block;
+        max-width: 415px;
+        margin-bottom: 25px;
+    }
+
+    & mark {
+        display: block;
+        max-width: 755px;
+        font-size: 61px;
+        font-weight: 500;
+        line-height: 61px;
+        color: #cb9a16;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 1030px) {
+    .drugs {
+        &::before {
+            top: 611px;
+            left: 147px;
+            width: 590px;
+            height: 357px;
+            background-image: url("../media/drugs/dependence-1030.png");
+        }
+    }
+
+    .drugs__dependence {
+        font-size: 24px;
+
+        & span {
+            max-width: 355px;
+        }
+
+        & mark {
+            font-size: 50px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .drugs {
+        &::before {
+            display: none;
+            background-image: none;
+        }
+    }
+
+    .drugs__title {
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    .drugs__sub-title {
+        font-size: 17px;
+    }
+
+    .drugs__description {
+        padding: 15px;
+        margin-bottom: 50px;
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0.66);
+        border-radius: 5px;
+    }
+
+    .drugs__dependence {
+        font-size: 20px;
+
+        & span {
+            max-width: 100%;
+        }
+
+        & mark {
+            font-size: 36px;
+            line-height: 1;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .drugs__title {
+        font-size: 28px;
+    }
+
+    .drugs__sub-title {
+        padding-left: 75px;
+
+        &::before {
+            width: 65px;
+            height: 69px;
+            background-size: cover;
+        }
+    }
+
+    .drugs__description {
+        margin-bottom: 25px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .drugs__dependence {
+        font-size: 18px;
+        text-align: center;
+
+        & mark {
+            font-size: 23px;
+        }
+    }
+}
