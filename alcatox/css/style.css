@@ -5121,17 +5121,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   font-size: 19px;
   font-weight: 500;
   line-height: 30px;
 }
 
-.professional__name {
-  margin-right: 70px;
+.professional__id {
+  margin-bottom: 30px;
 }
 
 .professional__product {
@@ -5143,10 +5143,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 @media (max-width: 1100px) {
   .professional__product {
     right: 0;
-  }
-
-  .professional__name {
-    margin-right: 40px;
   }
 }
 
@@ -5166,8 +5162,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   .professional__name {
-    margin-right: 0;
-    margin-bottom: 20px;
+    margin-left: auto;
   }
 
   .professional__product {
@@ -5231,6 +5226,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     margin-left: 20px;
     font-size: 14px;
     line-height: 1;
+  }
+
+  .professional__id {
+    margin-bottom: 0;
   }
 }
 .section {
