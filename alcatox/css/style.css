@@ -5125,6 +5125,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-left: 315px;
   font-size: 19px;
   font-weight: 500;
   line-height: 30px;
@@ -5159,14 +5160,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-  }
-
-  .professional__name {
-    margin-left: auto;
+    margin-left: 0;
   }
 
   .professional__product {
-    bottom: -80px;
+    bottom: -145px;
   }
 }
 
