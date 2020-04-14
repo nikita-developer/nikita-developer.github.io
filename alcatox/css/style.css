@@ -3834,7 +3834,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   align-items: center;
   min-height: 63px;
   padding-left: 85px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
@@ -4160,23 +4160,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   color: #a0320c;
 }
 
-.drugs__sub-title {
+.drugs__title span {
   position: relative;
-  max-width: 765px;
-  min-height: 95px;
   padding-left: 117px;
-  margin-bottom: 25px;
-  font-size: 24px;
+  line-height: 95px;
 }
 
-.drugs__sub-title mark {
-  font-weight: 500;
-  color: #fff;
-  text-transform: uppercase;
-  background-color: #5e4c20;
-}
-
-.drugs__sub-title::before {
+.drugs__title span::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -4185,6 +4175,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   content: '';
   background-image: url("../media/drugs/alchogol.png");
   background-repeat: no-repeat;
+}
+
+.drugs__sub-title {
+  position: relative;
+  max-width: 651px;
+  min-height: 95px;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.drugs__sub-title mark {
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 .drugs__description {
@@ -4392,6 +4395,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .face__appearance {
+  margin-top: 200px;
   margin-left: auto;
   font-size: 46px;
   font-weight: 500;
@@ -4425,6 +4429,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   .face__check {
     margin-top: 470px;
     margin-bottom: 0;
+  }
+
+  .face__appearance {
+    margin-top: 50px;
   }
 }
 
@@ -4531,7 +4539,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   font-size: 72px;
   font-weight: 500;
   line-height: 72px;
-  color: #da4d52;
+  color: #5e4c20;
   text-align: right;
   text-transform: uppercase;
 }
@@ -4540,6 +4548,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   width: 100%;
   max-width: 638px;
   padding: 50px 25px;
+  margin-bottom: 80px;
   margin-left: auto;
   background-color: #ffeaeb;
   border: 3px solid  #da4d52;
@@ -4571,6 +4580,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .facts__item + .facts__item {
   margin-top: 30px;
+}
+
+.facts__footer {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 60px;
+  color: #da4d52;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
@@ -5103,7 +5121,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .professional__info {
-  max-width: 781px;
+  max-width: 805px;
   padding: 50px;
   margin-left: auto;
   font-size: 19px;
@@ -5238,7 +5256,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .section_face {
   position: relative;
   z-index: 2;
-  padding-bottom: 500px;
+  padding-bottom: 250px;
   background-image: url("../media/section/face.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -5247,14 +5265,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .section_face::before {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
   z-index: -1;
-  width: 100%;
-  height: 754px;
+  width: 834px;
+  height: 624px;
   content: '';
   background-image: url("../media/section/face-human.png");
   background-repeat: no-repeat;
   background-position: center bottom;
+  background-size: cover;
+  -webkit-transform: translateX(-624px);
+  -ms-transform: translateX(-624px);
+  transform: translateX(-624px);
 }
 
 .section_footer {
@@ -5270,7 +5292,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .section_drugs {
-  margin-top: -101px;
   background-image: url("../media/section/drugs.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -5280,7 +5301,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   background-image: url("../media/section/facts.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
 }
 
 .section_help {
@@ -5304,10 +5324,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .section_professional {
+  background-color: #fff;
   background-image: url("../media/section/professional.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  background-position: center bottom;
 }
 
 .section_warning {
@@ -5320,8 +5340,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   .section_face::before {
+    left: 20px;
+    width: 518px;
     height: 388px;
-    background-image: url("../media/section/face-human-1030.png");
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
   }
 
   .section_footer {
@@ -5329,7 +5353,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   .section_drugs {
-    margin-top: -52px;
     background-size: cover;
   }
 
@@ -5362,8 +5385,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   .section_face::before {
+    width: 386px;
     height: 289px;
-    background-image: url("../media/section/face-human-768.png");
   }
 
   .section_footer {
@@ -5395,8 +5418,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
 
   .section_face::before {
+    width: 242px;
     height: 181px;
-    background-image: url("../media/section/face-human-480.png");
   }
 
   .section_footer {
