@@ -1,0 +1,21 @@
+
+.section {
+    &_face {
+        padding-top: 55px;
+        padding-bottom: 240px;
+        overflow-x: hidden;
+        background-image: url("../media/section/face.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    &_recommendations {
+        padding-top: 1px;
+        padding-bottom: 100px;
+        background-image: url("../media/section/recommendations.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
