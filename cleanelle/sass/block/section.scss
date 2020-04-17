@@ -10,6 +10,10 @@
         background-size: cover;
     }
 
+    &_footer {
+        padding-bottom: 60px;
+    }
+
     &_recommendations {
         padding-top: 1px;
         padding-bottom: 100px;
@@ -17,5 +21,46 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
+    }
+
+    &_advantages {
+        background-image: url("../media/section/advantages.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &_ingredients {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-image: url("../media/section/ingredients.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &_instructions {
+        padding-top: 60px;
+        padding-bottom: 250px;
+        overflow-x: hidden;
+        background-image: url("../media/section/instructions.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    &_regulations {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        &_face {
+            padding-bottom: 185px;
+        }
+
+        &_footer {
+            padding-bottom: 60px;
+        }
     }
 }
