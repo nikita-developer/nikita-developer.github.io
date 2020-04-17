@@ -51,6 +51,17 @@
     &_regulations {
         padding-bottom: 80px;
     }
+
+    &_job {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
+    &_cleanelle {
+        padding-top: 50px;
+        padding-bottom: 45px;
+        border-top: 4px solid #3f8cc9;
+    }
 }
 
 @media (max-width: 768px) {
@@ -61,6 +72,11 @@
 
         &_footer {
             padding-bottom: 60px;
+        }
+
+        &_cleanelle {
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     }
 }
