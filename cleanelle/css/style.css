@@ -33,7 +33,7 @@ html {
 
 body {
   min-width: 320px;
-  font-family: "rubik", sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
@@ -110,7 +110,6 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
   font-size: 1em;
 }
 
@@ -297,37 +296,37 @@ html [type="button"],
 /* stylelint-disable */
 
 @font-face {
-  font-family: 'rubik';
-  src: url("../fonts/rubik/Rubik-Regular.woff2") format("woff2"), url("../fonts/rubik/Rubik-Regular.woff") format("woff");
+  font-family: 'BebasNeue';
+  src: url("../fonts/bebasNeue/BebasNeueBold.woff2") format("woff2"), url("../fonts/bebasNeue/BebasNeueBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../fonts/Rubik/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'rubik';
-  src: url("../fonts/rubik/Rubik-Medium.woff2") format("woff2"), url("../fonts/rubik/Rubik-Medium.woff") format("woff");
+  font-family: 'Rubik';
+  src: url("../fonts/Rubik/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'rubik';
-  src: url("../fonts/rubik/Rubik-Bold.woff2") format("woff2"), url("../fonts/rubik/Rubik-Bold.woff") format("woff");
+  font-family: 'Rubik';
+  src: url("../fonts/Rubik/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'rubik';
-  src: url("../fonts/rubik/Rubik-Black.woff2") format("woff2"), url("../fonts/rubik/Rubik-Black.woff") format("woff");
+  font-family: 'Rubik';
+  src: url("../fonts/Rubik/Rubik-Black.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Black.woff") format("woff");
   font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'bebasNeue';
-  src: url("../fonts/bebasNeue/BebasNeueBold.woff2") format("woff2"), url("../fonts/bebasNeue/BebasNeueBold.woff") format("woff");
-  font-weight: 700;
   font-style: normal;
 }
 /* stylelint-disable */
@@ -618,7 +617,7 @@ html [type="button"],
 .advantages__title {
   max-width: 650px;
   margin-bottom: 55px;
-  font-family: "bebasNeue", sans-serif;
+  font-family: "BebasNeue", sans-serif;
   font-size: 60px;
   font-weight: 700;
   line-height: 48px;
@@ -725,7 +724,7 @@ html [type="button"],
   }
 }
 .cleanelle__title {
-  font-family: "bebasNeue", sans-serif;
+  font-family: "BebasNeue", sans-serif;
   font-size: 136px;
   font-weight: 700;
   color: #0056a9;
@@ -755,7 +754,7 @@ html [type="button"],
 
 .face__title {
   margin-bottom: 30px;
-  font-family: "bebasNeue", sans-serif;
+  font-family: "BebasNeue", sans-serif;
   font-size: 136px;
   font-weight: 700;
   line-height: 109px;
@@ -1168,7 +1167,7 @@ html [type="button"],
 
 .ingredients__title {
   margin-bottom: 125px;
-  font-family: "bebasNeue", sans-serif;
+  font-family: "BebasNeue", sans-serif;
   font-size: 60px;
   font-weight: 700;
 }
@@ -1385,7 +1384,7 @@ html [type="button"],
 }
 .instructions__title {
   margin-bottom: 70px;
-  font-family: "bebasNeue", sans-serif;
+  font-family: "BebasNeue", sans-serif;
   font-size: 60px;
   font-weight: 700;
   line-height: 70px;
@@ -1484,7 +1483,7 @@ html [type="button"],
 }
 .job__title {
   margin-bottom: 70px;
-  font-family: "bebasNeue", sans-serif;
+  font-family: "BebasNeue", sans-serif;
   font-size: 60px;
   font-weight: 700;
   line-height: 70px;
@@ -1584,7 +1583,7 @@ html [type="button"],
 .recommendations__title {
   position: relative;
   margin-bottom: 120px;
-  font-family: "bebasNeue", sans-serif;
+  font-family: "BebasNeue", sans-serif;
   font-size: 60px;
   font-weight: 700;
   line-height: 48px;
@@ -1833,7 +1832,7 @@ html [type="button"],
 .regulations__title {
   position: relative;
   margin-bottom: 80px;
-  font-family: "bebasNeue", sans-serif;
+  font-family: "BebasNeue", sans-serif;
   font-size: 60px;
   font-weight: 700;
   line-height: 48px;
