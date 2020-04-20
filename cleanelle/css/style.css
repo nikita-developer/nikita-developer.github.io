@@ -9,15 +9,8 @@
 
 @font-face {
   font-family: 'Rubik';
-  src: url("../fonts/Rubik/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Rubik';
-  src: url("../fonts/Rubik/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/Rubik/Rubik-Black.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Black.woff") format("woff");
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -30,8 +23,15 @@
 
 @font-face {
   font-family: 'Rubik';
-  src: url("../fonts/Rubik/Rubik-Black.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Black.woff") format("woff");
-  font-weight: 800;
+  src: url("../fonts/Rubik/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../fonts/Rubik/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Regular.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -52,8 +52,8 @@
   background-repeat: no-repeat;
 }
 
-::before,
-::after {
+::after,
+::before {
   text-decoration: inherit;
   vertical-align: inherit;
 }
@@ -187,7 +187,7 @@ svg:not(:root) {
 }
 
 small {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 sub,
@@ -227,8 +227,8 @@ th {
   text-align: left;
 }
 
-template,
-[hidden] {
+[hidden],
+template {
   display: none;
 }
 
@@ -1185,6 +1185,10 @@ html [type="button"],
   justify-content: space-between;
 }
 
+.ingredients__box:last-child {
+  margin-top: -180px;
+}
+
 .ingredients__name {
   margin-bottom: 20px;
   font-size: 21px;
@@ -1306,6 +1310,10 @@ html [type="button"],
 
   .ingredients__info b {
     font-weight: 500;
+  }
+
+  .ingredients__box:last-child {
+    margin-top: 0;
   }
 
   .ingredients__item {

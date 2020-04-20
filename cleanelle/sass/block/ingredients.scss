@@ -20,6 +20,12 @@
     justify-content: space-between;
 }
 
+.ingredients__box {
+    &:last-child {
+        margin-top: -180px;
+    }
+}
+
 .ingredients__name {
     margin-bottom: 20px;
     font-size: 21px;
@@ -124,6 +130,12 @@
 
         & b {
             font-weight: 500;
+        }
+    }
+
+    .ingredients__box {
+        &:last-child {
+            margin-top: 0;
         }
     }
 
