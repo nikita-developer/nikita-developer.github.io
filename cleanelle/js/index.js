@@ -7,4 +7,16 @@ $(document).ready(function() {
             $(this).removeClass('form__field_focus')
         }
     })
+
+    var wow = new WOW
+        ({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true,
+            scrollContainer: null
+        }
+    );
+    wow.init();
 });
