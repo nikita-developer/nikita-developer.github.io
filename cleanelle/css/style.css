@@ -953,12 +953,12 @@ html [type="button"],
     font-size: 18px;
   }
 
-  .face__item {
-    font-size: 14px;
-  }
-
   .face__item + .face__item {
     margin-top: 10px;
+  }
+
+  .face__item span {
+    min-width: 30px;
   }
 }
 .form {
@@ -1467,11 +1467,12 @@ html [type="button"],
 
 @media (max-width: 480px) {
   .instructions__title {
+    margin-bottom: 30px;
     font-size: 30px;
+    line-height: 1.1;
   }
 
   .instructions__body {
-    margin-top: -80px;
     margin-right: 0;
     margin-left: 0;
   }
@@ -1479,8 +1480,8 @@ html [type="button"],
   .instructions__item {
     width: calc(50% - 15px);
     padding-bottom: 10px;
-    margin-top: 60px;
     margin-right: 0;
+    margin-bottom: 70px;
     margin-left: 0;
   }
 
