@@ -930,6 +930,89 @@ html [type="button"],
     left: calc(100% + 50px);
   }
 }
+.memory {
+  position: relative;
+  z-index: 1;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.memory__media {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.memory__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 700px;
+}
+
+.memory__item {
+  position: relative;
+  padding: 15px;
+  letter-spacing: 1px;
+  cursor: default;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: 15px 15px 4px -12px rgba(0, 0, 0, 0.09);
+  box-shadow: 15px 15px 4px -12px rgba(0, 0, 0, 0.09);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.memory__item span {
+  font-size: 28px;
+  font-weight: 800;
+  color: #c8a77a;
+}
+
+.memory__item:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.memory__item:hover::before {
+  background-color: #ccc;
+}
+
+.memory__item:hover::after {
+  background-color: #ccc;
+}
+
+.memory__item::before {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  width: 80%;
+  height: 1px;
+  content: '';
+  background-color: transparent;
+  -webkit-transition: .3s background-color;
+  -o-transition: .3s background-color;
+  transition: .3s background-color;
+}
+
+.memory__item::after {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  width: 1px;
+  height: 80%;
+  content: '';
+  background-color: transparent;
+  -webkit-transition: .3s background-color;
+  -o-transition: .3s background-color;
+  transition: .3s background-color;
+}
 .myMoney {
   position: relative;
   display: -webkit-box;
@@ -1048,6 +1131,14 @@ html [type="button"],
   background-image: url("../media/section/myMoney.png");
   background-repeat: no-repeat;
   background-position: left top;
+}
+
+.section_memory {
+  background-image: url("../media/section/memory.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
 }
 
 .section__title {
