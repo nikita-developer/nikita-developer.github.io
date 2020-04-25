@@ -930,6 +930,102 @@ html [type="button"],
     left: calc(100% + 50px);
   }
 }
+.myMoney {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.myMoney__title {
+  width: 100%;
+}
+
+.myMoney__title.myMoney__title {
+  margin-bottom: 150px;
+}
+
+.myMoney__description {
+  position: relative;
+  max-width: 500px;
+  font-size: 18px;
+}
+
+.myMoney__description span {
+  position: relative;
+  display: block;
+  margin-bottom: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.myMoney__description span::before {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 30%;
+  height: 2px;
+  content: '';
+  background-color: #c8a77a;
+}
+
+.myMoney__description .myMoney__descriptio-border {
+  position: absolute;
+  top: -50px;
+  right: -40px;
+  width: 80%;
+  height: calc(100% + 100px);
+  content: '';
+  border-top: 4px solid #84888c;
+  border-right: 4px solid #84888c;
+  border-bottom: 4px solid #84888c;
+}
+
+.myMoney__description .myMoney__descriptio-border::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 25px;
+  content: '';
+  background-color: #84888c;
+}
+
+.myMoney__description .myMoney__descriptio-border::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  height: 25px;
+  content: '';
+  background-color: #84888c;
+}
+
+.myMoney__clearMoney {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  max-width: 360px;
+}
+
+.myMoney__clearMoney-icon {
+  position: absolute;
+  bottom: 35px;
+  left: -180px;
+  max-width: 135px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -937,7 +1033,7 @@ html [type="button"],
 
 .section_face {
   padding-top: 30px;
-  padding-bottom: 150px;
+  padding-bottom: 160px;
   background-image: url("../media/section/face.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -945,6 +1041,33 @@ html [type="button"],
   background-size: cover;
 }
 
-body {
-  height: 5000px;
+.section_myMoney {
+  padding-top: 160px;
+  padding-bottom: 130px;
+  margin-top: -100px;
+  background-image: url("../media/section/myMoney.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.section__title {
+  position: relative;
+  margin-bottom: 80px;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section__title::before {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 200px;
+  height: 2px;
+  content: '';
+  background-color: #c8a77a;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
