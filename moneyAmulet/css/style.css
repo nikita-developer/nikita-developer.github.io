@@ -930,6 +930,30 @@ html [type="button"],
     left: calc(100% + 50px);
   }
 }
+.help {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.help__description {
+  position: relative;
+  padding-left: 320px;
+  font-size: 22px;
+}
+
+.help__description span {
+  font-size: 26px;
+  font-weight: 800;
+  color: #c8a77a;
+  letter-spacing: 4px;
+}
+
+.help__media {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  max-width: 300px;
+}
 .memory {
   position: relative;
   z-index: 1;
@@ -1138,6 +1162,13 @@ html [type="button"],
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
+  background-size: cover;
+}
+
+.section_help {
+  background-image: url("../media/section/help.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
   background-size: cover;
 }
 
