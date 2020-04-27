@@ -7,4 +7,12 @@ $(document).ready(function() {
             $(this).removeClass('form__field_active')
         }
     })
+
+    $('.commit__description').liTextLength({
+        length: 150,
+        afterLength: '...',
+        fullText:true,
+        moreText: 'Подробнее',
+        lessText: 'Скрыть'
+    });
 });
