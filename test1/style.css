@@ -1,0 +1,1370 @@
+ .css-18moxll {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     z-index: 1;
+     background: rgba(0, 0, 0, 0.6);
+     opacity: 0
+ }
+
+ .touchevents-false .css-18moxll:hover {
+     opacity: 1
+ }
+
+ .css-1fquaub::before {
+     color: white;
+     border: none;
+     border-radius: 100%;
+     font-size: 45px;
+     height: 45px;
+     line-height: 45px;
+     width: 45px
+ }
+
+ .css-1fquaub:hover::before {
+     background: rgba(0, 0, 0, 0.5)
+ }
+
+ a {
+     background-color: transparent;
+     -webkit-text-decoration-skip: objects
+ }
+
+ a:active, a:hover {
+     outline-width: 0
+ }
+
+ svg:not(:root) {
+     overflow: hidden
+ }
+
+ button {
+     font-family: sans-serif;
+     font-size: 100%;
+     line-height: 1.15;
+     margin: 0
+ }
+
+ button {
+     overflow: visible
+ }
+
+ button {
+     text-transform: none
+ }
+
+ button {
+     -webkit-appearance: button
+ }
+
+ button::-moz-focus-inner {
+     border-style: none;
+     padding: 0
+ }
+
+ button:-moz-focusring {
+     outline: 1px dotted ButtonText
+ }
+
+ ::-webkit-file-upload-button {
+     -webkit-appearance: button;
+     font: inherit
+ }
+
+ @font-face {
+     font-family: 'Tiempos Text';
+     font-style: normal;
+     font-display: swap;
+     src: local('☺︎'), url('https://assets.medicalnewstoday.com/fonts/tiempos/v1/TiemposText-Regular.otf') format('opentype')
+ }
+
+ @font-face {
+     font-family: 'Tiempos Text';
+     font-style: italic;
+     font-weight: normal;
+     font-display: swap;
+     src: local('☺︎'), url('https://assets.medicalnewstoday.com/fonts/tiempos/v1/TiemposText-RegularItalic.otf') format('opentype')
+ }
+
+ @font-face {
+     font-family: 'Circular Pro';
+     font-style: normal;
+     font-weight: bold;
+     font-display: swap;
+     src: local('☺︎'), url('https://assets.medicalnewstoday.com/fonts/circular/v1/CircularPro-Bold.otf') format('opentype')
+ }
+
+ @font-face {
+     font-family: 'Circular Pro';
+     font-style: normal;
+     font-display: swap;
+     src: local('☺︎'), url('https://assets.medicalnewstoday.com/fonts/circular/v1/CircularPro-Book.otf') format('opentype')
+ }
+
+ * {
+     -moz-osx-font-smoothing: grayscale;
+     -webkit-font-smoothing: antialiased
+ }
+
+ *, *:before, *:after {
+     box-sizing: inherit
+ }
+
+ :-moz-ui-invalid {
+     box-shadow: none
+ }
+
+ html {
+     box-sizing: border-box;
+     text-size-adjust: 100%;
+     cursor: default;
+     font-size: 17px;
+     line-height: 1.15;
+     font-family: "Tiempos Text", Georgia, "Times New Roman", serif;
+     color: #231f20
+ }
+
+ html, body {
+     height: 100%;
+     width: 100%;
+     margin: 0;
+     overflow-anchor: auto
+ }
+
+ button {
+     font-family: "Circular Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+     font-weight: bold;
+     font-size: 16px;
+     line-height: 20px
+ }
+
+ figure {
+     margin: 0
+ }
+
+ h1 {
+     font-family: "Circular Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+     font-weight: bold;
+     font-size: 28px;
+     line-height: 38px;
+     margin-bottom: 15px;
+     margin-top: 25px
+ }
+
+ img {
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     user-select: none;
+     max-width: 100%
+ }
+
+ li {
+     font-size: 17px;
+     line-height: 30px;
+     margin-bottom: 8px
+ }
+
+ p {
+     font-family: "Tiempos Text", Georgia, "Times New Roman", serif;
+     font-size: 17px;
+     line-height: 30px;
+     margin-bottom: 20px;
+     margin-top: 20px
+ }
+
+ ul {
+     list-style-image: url("data:image/svg+xml,%3Csvg width='10' height='10' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='5' cy='5' r='2.5' fill='%23231F20'/%3E%3C/svg%3E")
+ }
+
+ .__chrome {
+     display: flex;
+     flex-direction: column;
+     min-height: 100%
+ }
+
+ #__next {
+     flex-grow: 1
+ }
+
+ body:not(.user-is-tabbing) :focus {
+     outline: none
+ }
+
+ @font-face {
+     font-family: 'healthline';
+     font-display: swap;
+     src: local('☺︎'), url('https://assets.medicalnewstoday.com/_next/_static/5/0kjhggz7ktwg==.woff') format('woff')
+ }
+
+ @font-face {
+     font-family: 'healthline-video';
+     font-display: swap;
+     src: local('☺︎'), url('https://assets.medicalnewstoday.com/_next/_static/mhze5frbrsgdxw==.woff') format('woff')
+ }
+
+ [class*="icon-hl"]::before, [class*="icon-hl"]::after {
+     font-family: "healthline";
+     font-style: normal;
+     font-weight: normal;
+     font-variant: normal;
+     text-transform: none;
+     speak: none;
+     line-height: 1
+ }
+
+ .icon-hl-facebook::before {
+     content: 'v'
+ }
+
+ .icon-hl-instagram::before {
+     content: ''
+ }
+
+ .icon-hl-pinterest::before {
+     content: 'z'
+ }
+
+ .icon-hl-twitter::before {
+     content: ''
+ }
+
+ .icon-hl-flipboard::before {
+     content: ''
+ }
+
+ .css-rwmw5v {
+     display: block;
+     text-align: center;
+     font-size: 0;
+     line-height: 0;
+     outline: none;
+     position: relative;
+     -webkit-touch-callout: none;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     user-select: none;
+     z-index: 0
+ }
+
+ .css-1617bl {
+     position: absolute;
+     left: 0;
+     bottom: 0
+ }
+
+ .css-16pk1is {
+     line-height: 0
+ }
+
+ .css-8yl26h {
+     display: inline-block;
+     overflow: hidden;
+     color: transparent;
+     width: 1px;
+     height: 1px;
+     margin-left: -1px
+ }
+
+ .css-yhe8zq {
+     margin: 25px -20px;
+     max-width: 1296px
+ }
+
+ .css-mjp0j9 {
+     display: block;
+     position: relative;
+     padding-bottom: 56.17283950617284%
+ }
+
+ .css-1fiyvwu {
+     color: #918f8f;
+     display: block;
+     font-size: 14px;
+     line-height: 20px;
+     margin-bottom: 5px;
+     margin-top: 5px;
+     text-align: left;
+     margin-bottom: 0;
+     margin-top: 0;
+     padding: 10px 20px;
+     font-family: "Circular Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+     font-size: 14px;
+     line-height: 20px;
+     color: #231f20;
+     overflow-wrap: break-word;
+     word-break: break-word;
+     word-wrap: break-word
+ }
+
+ .css-1egta35 {
+     cursor: pointer;
+     text-decoration: underline;
+     border-color: currentColor;
+     color: #231f20
+ }
+
+ .css-1egta35:hover {
+     color: #F73A6F
+ }
+
+ .css-1egta35:active {
+     color: #F73A6F
+ }
+
+ .css-wj03hc {
+     cursor: pointer;
+     text-decoration: underline;
+     border-color: currentColor;
+     color: #231f20;
+     color: inherit
+ }
+
+ .css-wj03hc:hover {
+     color: #F73A6F
+ }
+
+ .css-wj03hc:active {
+     color: #F73A6F
+ }
+
+ .css-d2znx6 {
+     margin-bottom: 25px
+ }
+
+ .css-17ztj4b {
+     display: flex;
+     flex-wrap: wrap;
+     list-style: none;
+     margin: 0;
+     margin-left: -12px;
+     padding: 0
+ }
+
+ .css-uksoej {
+     white-space: nowrap;
+     font-size: 16px;
+     line-height: 20px;
+     margin: 0;
+     padding: 0;
+     position: relative
+ }
+
+ .css-uksoej:after {
+     content: "";
+     background: #bcbfc5;
+     position: absolute;
+     top: 2px;
+     right: -1px;
+     bottom: 0;
+     height: 16px;
+     width: 1px;
+     margin: auto
+ }
+
+ .css-uksoej:last-child:after {
+     content: none
+ }
+
+ .css-12nlsmv {
+     cursor: pointer;
+     text-decoration: none;
+     border-color: currentColor;
+     color: #F73A6F;
+     font-size: 16px;
+     line-height: 32px;
+     padding: 0 12px
+ }
+
+ .css-12nlsmv:hover {
+     color: #B03457
+ }
+
+ .css-12nlsmv:active {
+     color: #B03457
+ }
+
+ .css-1qdahb7 {
+     margin-left: 20px;
+     order: 1;
+     flex: 1
+ }
+
+ .css-47twm5 {
+     position: fixed;
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+     width: 100%;
+     z-index: 402;
+     height: auto
+ }
+
+ .css-nfhy3k {
+     position: relative;
+     align-items: center;
+     display: flex;
+     padding: 8px 0;
+     width: 100%;
+     height: 50px
+ }
+
+ .css-1p4i9fu {
+     background-color: black;
+     border-bottom: none;
+     bottom: 0;
+     left: 0;
+     position: absolute;
+     right: 0;
+     top: 0;
+     z-index: 1
+ }
+
+ .css-stl7tm {
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 550px;
+     width: calc(100vw - 40px)
+ }
+
+ .css-5kzy8o {
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 550px;
+     width: calc(100vw - 40px);
+     align-items: center;
+     display: flex;
+     position: relative;
+     z-index: 1
+ }
+
+ .css-4fp6s3 {
+     width: 89px;
+     height: 24px;
+     display: inline-block
+ }
+
+ .css-4fp6s3 svg {
+     width: 100%;
+     height: 100%;
+     vertical-align: middle
+ }
+
+ .css-45mfor {
+     cursor: pointer;
+     text-decoration: none;
+     color: inherit;
+     display: block
+ }
+
+ .css-tx27ic {
+     background: transparent;
+     border: none;
+     cursor: pointer;
+     display: flex;
+     flex: none;
+     justify-content: center;
+     margin: 0;
+     padding: 0;
+     outline: none;
+     width: 20px;
+     order: 0
+ }
+
+ .css-tx27ic svg {
+     fill: white
+ }
+
+ .css-qmguim:hover:not(:focus) {
+     outline: none
+ }
+
+ .css-13sft9o {
+     display: block;
+     justify-content: space-between;
+     width: 100%
+ }
+
+ .css-z468a2 {
+     width: 100%;
+     max-width: 550px;
+     position: relative;
+     margin: 0 auto
+ }
+
+ .css-bjcoli {
+     color: #15BA8F
+ }
+
+ .css-7pdfx6 {
+     margin-bottom: 20px;
+     font-size: 14px;
+     font-family: "Circular Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+     font-weight: bold;
+     line-height: 20;
+     margin-top: -10px
+ }
+
+ .css-4nmqvw {
+     color: #231f20;
+     line-height: 20px;
+     align-items: center;
+     display: flex;
+     flex-wrap: nowrap
+ }
+
+ .css-12r7hj0 {
+     color: #231f20;
+     line-height: 20px;
+     white-space: pre-line;
+     max-width: 600px
+ }
+
+ .css-1u22pos p:first-of-type {
+     margin-top: 0;
+     padding-top: 0
+ }
+
+ .css-1tozvq9:hover:not(:focus) {
+     outline: none
+ }
+
+ .css-xhy9rp {
+     border-radius: 100%;
+     overflow: hidden;
+     background: #f7f7f7
+ }
+
+ .css-c8i40j {
+     flex: none;
+     height: 50px;
+     line-height: 0;
+     margin-right: 10px;
+     position: relative;
+     width: 50px
+ }
+
+ .css-qyiny3 {
+     cursor: pointer;
+     text-decoration: underline;
+     border-color: currentColor;
+     color: #231f20;
+     color: #231f20;
+     text-decoration: underline;
+     text-decoration: none;
+     color: #F73A6F
+ }
+
+ .css-qyiny3:hover {
+     color: #F73A6F
+ }
+
+ .css-qyiny3:active {
+     color: #F73A6F
+ }
+
+ .css-qyiny3:hover, .css-qyiny3:active {
+     color: #B03457
+ }
+
+ .css-qyiny3:visited {
+     color: #F73A6F
+ }
+
+ .css-1eqcyac {
+     margin-bottom: 20px;
+     margin-top: 20px;
+     font-family: "Circular Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+     font-weight: bold
+ }
+
+ .css-lyoco5 {
+     background-color: black;
+     padding-bottom: 50px;
+     color: #f7f7f7
+ }
+
+ .css-n10kkv {
+     display: flex;
+     flex-direction: column
+ }
+
+ .css-1vuitju {
+     margin-left: 0;
+     margin-right: 0;
+     max-width: none;
+     width: 100%;
+     padding-bottom: 20px
+ }
+
+ .css-oywxn9 {
+     margin-left: auto;
+     margin-right: auto;
+     max-width: 750px;
+ }
+
+ .css-yj47a {
+     display: inline-flex;
+     margin-bottom: 0;
+     padding: 0;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     width: 100%
+ }
+
+ .css-laemob {
+     display: flex;
+     align-items: center;
+     padding-bottom: 0;
+     margin-bottom: 32px;
+     text-align: center;
+     padding-top: 30px;
+     flex-wrap: wrap;
+     justify-content: center
+ }
+
+ .css-8tabwk {
+     width: 100%;
+     margin: 0px auto 25px
+ }
+
+ .css-e9r5kj {
+     cursor: pointer;
+     text-decoration: underline;
+     border-color: currentColor;
+     color: #231f20;
+     display: inline-flex;
+     text-decoration: none;
+     width: 20px;
+     height: 20px;
+     color: white;
+     margin-right: 25px;
+     width: 40px;
+     text-decoration: none;
+     width: 70px;
+     height: 70px;
+     background: url('https://images-prod.healthline.com/hlcmsresource/images/frontend-static/Greatist_Logo_G_White.svg') no-repeat
+ }
+
+ .css-e9r5kj:hover {
+     color: #F73A6F
+ }
+
+ .css-e9r5kj:active {
+     color: #F73A6F
+ }
+
+ .css-e9r5kj::before {
+     font-size: 20px
+ }
+
+ .css-e9r5kj:last-child {
+     margin-right: 0
+ }
+
+ .css-e9r5kj::before {
+     color: cyan;
+     font-size: 43px
+ }
+
+ .css-2ifhpt {
+     cursor: pointer;
+     text-decoration: underline;
+     border-color: currentColor;
+     color: #231f20;
+     display: inline-flex;
+     text-decoration: none;
+     width: 20px;
+     height: 20px;
+     color: white;
+     margin-right: 25px
+ }
+
+ .css-2ifhpt:hover {
+     color: #F73A6F
+ }
+
+ .css-2ifhpt:active {
+     color: #F73A6F
+ }
+
+ .css-2ifhpt::before {
+     font-size: 20px
+ }
+
+ .css-br4wbd {
+     cursor: pointer;
+     text-decoration: underline;
+     border-color: currentColor;
+     color: #231f20;
+     display: inline-flex;
+     text-decoration: none;
+     width: 20px;
+     height: 20px;
+     color: white;
+     margin-right: 25px;
+     width: 15px
+ }
+
+ .css-br4wbd:hover {
+     color: #F73A6F
+ }
+
+ .css-br4wbd:active {
+     color: #F73A6F
+ }
+
+ .css-br4wbd::before {
+     font-size: 20px
+ }
+
+ .css-g2s1o7 {
+     cursor: pointer;
+     text-decoration: underline;
+     border-color: currentColor;
+     color: #231f20;
+     display: inline-flex;
+     text-decoration: none;
+     width: 20px;
+     height: 20px;
+     color: white;
+     margin-right: 25px
+ }
+
+ .css-g2s1o7:hover {
+     color: #F73A6F
+ }
+
+ .css-g2s1o7:active {
+     color: #F73A6F
+ }
+
+ .css-g2s1o7::before {
+     font-size: 20px
+ }
+
+ .css-g2s1o7:last-child {
+     margin-right: 0
+ }
+
+ .css-g2s1o7:last-child {
+     margin-right: 0
+ }
+
+ .css-1dwikwf {
+     display: block;
+     flex-basis: 50%;
+     flex-shrink: 0;
+     margin: 0;
+     font-size: 14px;
+     line-height: 20px
+ }
+
+ .css-1qry8gn {
+     flex: 0;
+     display: flex;
+     flex-flow: wrap;
+     align-items: center;
+     align-content: center;
+     list-style: none;
+     margin: 30px 0 0 0;
+     padding: 0;
+     font-family: "Circular Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+     color: white
+ }
+
+ .css-z5ewba {
+     cursor: pointer;
+     text-decoration: underline;
+     border-color: currentColor;
+     color: #231f20;
+     color: white;
+     display: inline-block;
+     padding: 4px 0;
+     text-decoration: none
+ }
+
+ .css-z5ewba:hover {
+     color: #F73A6F
+ }
+
+ .css-z5ewba:active {
+     color: #F73A6F
+ }
+
+ .css-z5ewba:hover {
+     color: #F73A6F
+ }
+
+ @media (hover:hover) {
+     .css-tx27ic:hover>svg {
+         fill: #F73A6F
+     }
+ }
+
+ @media(min-width:550px) {
+     .css-yhe8zq {
+         margin-left: auto;
+         margin-right: auto
+     }
+
+     .css-1fiyvwu {
+         padding-left: 0;
+         padding-right: 0;
+         padding-bottom: 0
+     }
+ }
+
+ @media(min-width:768px) {
+     .css-18moxll {
+         align-items: flex-start;
+         justify-content: flex-start;
+         background: transparent;
+         padding: 20px;
+     }
+
+     .css-1fquaub::before {
+         content: "\7a";
+         width: 50px;
+         height: 50px;
+         font-size: 23px;
+         text-align: center;
+         line-height: 54px;
+         color: #231f20;
+         display: block;
+         position: absolute;
+         top: 20px;
+         left: 20px;
+         background-color: rgba(255, 255, 255, 0.9)
+     }
+
+     .css-1fquaub:hover::before {
+         background-color: rgba(255, 255, 255, 0.9);
+         color: #F73A6F
+     }
+
+     html {
+         font-size: 18px;
+         line-height: 1.44;
+     }
+
+     html, body {
+         overflow-anchor: none;
+     }
+
+     h1 {
+         font-size: 40px;
+         line-height: 56px;
+         margin-bottom: 30px;
+         margin-top: 30px;
+     }
+
+     li {
+         font-size: 18px;
+     }
+
+     p {
+         font-size: 18px;
+         margin-bottom: 25px;
+         margin-top: 25px;
+     }
+
+     .css-yhe8zq {
+         margin: 30px auto;
+     }
+
+     .css-17ztj4b {
+         margin-left: -15px;
+     }
+
+     .css-uksoej:after {
+         top: 4px;
+         height: 22px;
+         width: 2px;
+     }
+
+     .css-uksoej {
+         font-size: 28px;
+         line-height: 40px;
+     }
+
+     .css-12nlsmv {
+         font-size: 20px;
+         line-height: 40px;
+         padding: 0 15px;
+     }
+
+     .css-1qdahb7 {
+         margin-left: 35px;
+     }
+
+     .css-nfhy3k {
+         height: 70px;
+     }
+
+     .css-stl7tm {
+         max-width: 989px;
+         width: calc(100vw - 110px);
+     }
+
+     .css-5kzy8o {
+         max-width: 989px;
+         width: calc(100vw - 110px);
+     }
+
+     .css-4fp6s3 {
+         width: 126px;
+         height: 34px;
+     }
+
+     .css-tx27ic {
+         width: 30px;
+     }
+
+     .css-z468a2 {
+         max-width: 879px;
+     }
+
+     .css-7pdfx6 {
+         margin-top: -20px;
+     }
+
+     .css-1eqcyac {
+         margin-bottom: 30px;
+         margin-top: 30px;
+     }
+
+     .css-8tabwk {
+         margin: 30px auto 23px;
+     }
+
+     .css-e9r5kj {
+         margin-right: 20px;
+     }
+
+     .css-2ifhpt {
+         margin-right: 20px;
+     }
+
+     .css-br4wbd {
+         margin-right: 20px;
+     }
+
+     .css-g2s1o7 {
+         margin-right: 20px;
+     }
+
+     .css-1dwikwf {
+         flex-basis: 33.333%
+     }
+ }
+
+ @media(min-width:990px) {
+     .css-stl7tm {
+         max-width: 1100px;
+         width: calc(100vw - 90px);
+     }
+
+     .css-5kzy8o {
+         max-width: 1100px;
+         width: calc(100vw - 90px);
+     }
+
+     .css-13sft9o {
+         display: flex;
+     }
+
+     .css-z468a2 {
+         width: calc(100% - 350px);
+         max-width: 750px;
+     }
+
+     .css-7pdfx6 {
+         font-family: "Circular Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+         font-weight: bold
+     }
+
+     .css-7pdfx6 {
+         display: none
+     }
+
+     .css-7pdfx6 {
+         font-size: 16px;
+         line-height: 24;
+         margin-top: 27px;
+     }
+
+     .css-lyoco5 {
+         padding-bottom: 0
+     }
+
+     .css-n10kkv {
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-between;
+     }
+
+     .css-1vuitju {
+         margin-left: auto;
+         margin-right: auto;
+         max-width: 1100px;
+         width: calc(100vw - 90px);
+         padding-bottom: 60px;
+         padding-top: 40px;
+     }
+
+     .css-oywxn9 {
+         width: 100%;
+     }
+
+     .css-yj47a {
+         justify-content: flex-start;
+         flex-wrap: nowrap;
+     }
+
+     .css-laemob {
+         justify-content: left;
+         flex-wrap: nowrap;
+     }
+
+     .css-8tabwk {
+         width: auto;
+         margin: 0 40px 0 0;
+     }
+
+     .css-e9r5kj {
+         width: 50px;
+         height: 50px;
+     }
+ }
+
+ @media(min-width:1190px) {
+     .css-n10kkv {
+         flex-wrap: nowrap;
+     }
+
+     .css-1vuitju {
+         padding-top: 60px;
+     }
+ }
+
+ .css-1k01huw:hover:not(:focus) {
+     outline: none
+ }
+
+ .css-16ew93b:hover:not(:focus) {
+     outline: none
+ }
+
+ .css-v0kwxg:hover:not(:focus) {
+     outline: none
+ }
+
+ .css-zh08nh:hover:not(:focus) {
+     outline: none
+ }
+
+ .css-e8pqlp {
+     display: flex;
+     align-items: center;
+     width: 100%
+ }
+
+ .css-e8pqlp .button-wrapper {
+     height: 32px;
+     width: 100%;
+     background-color: white;
+     margin-left: 5px
+ }
+
+ .css-e8pqlp .button-wrapper:first-of-type {
+     margin-left: 0
+ }
+
+ .css-e8pqlp .button-wrapper .button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     border: none;
+     font-size: 14px;
+     text-decoration: none;
+     width: 100%;
+     height: 32px
+ }
+
+ .css-e8pqlp .button-wrapper .button:hover {
+     color: white;
+     background-color: #F73A6F
+ }
+
+ .css-e8pqlp .button-wrapper.pinterest {
+     width: 100%;
+     order: 1;
+     background-color: #bd081c
+ }
+
+ .css-e8pqlp .button-wrapper.facebook {
+     order: 2;
+     background-color: #415bac
+ }
+
+ .css-e8pqlp .button-wrapper.twitter {
+     order: 3;
+     background-color: #20abe4
+ }
+
+ .css-e8pqlp .button-wrapper.flipboard {
+     order: 4;
+     background-color: #e12828;
+     display: none
+ }
+
+ @media(min-width:768px) {
+     .css-e8pqlp .button-wrapper.pinterest {
+         width: 170px;
+     }
+
+     .css-e8pqlp .button-wrapper.flipboard {
+         display: block;
+     }
+
+     .css-e8pqlp .button-wrapper {
+         width: 36px;
+         margin-left: 10px;
+     }
+
+     .css-e8pqlp {
+         width: initial;
+     }
+ }
+
+ .css-1hl6t0x {
+     margin-top: 20px;
+     margin-bottom: 20px
+ }
+
+ @media(min-width:768px) {
+     .css-1hl6t0x {
+         margin-bottom: 20px;
+         margin-top: 0;
+         justify-content: flex-end
+     }
+ }
+
+ .css-151wpvp {
+     clear: both;
+     position: relative;
+     border-bottom: solid 1px #dcdbdb;
+     margin-bottom: 40px;
+     border-bottom: solid 2px black;
+     display: block;
+     margin-top: 0;
+     margin-bottom: 20px
+ }
+
+ @media(min-width:768px) {
+     .css-151wpvp {
+         margin-top: 20px;
+         margin-bottom: 30px;
+     }
+ }
+
+ @media(min-width:990px) {
+     .css-151wpvp {
+         margin-top: -10px;
+     }
+ }
+
+ .css-zz5y1j {
+     font-size: 11px;
+     font-family: "Circular Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+     font-weight: bold;
+     color: white;
+     display: block;
+     text-transform: uppercase;
+     margin-left: 5px
+ }
+
+ .pinterest .css-zz5y1j {
+     display: block
+ }
+
+ @media(min-width:768px) {
+     .css-zz5y1j {
+         display: none;
+     }
+ }
+
+ .css-44l46t {
+     clear: both;
+     position: relative;
+     border-bottom: solid 1px #dcdbdb;
+     margin-bottom: 40px;
+     border-bottom: solid 2px black;
+     margin-top: -5px;
+     margin-bottom: 30px
+ }
+
+ @media(min-width:768px) {
+     .css-44l46t {
+         margin-top: 30px;
+         margin-bottom: 40px;
+     }
+ }
+
+ .css-jkue49:hover:not(:focus) {
+     outline: none
+ }
+
+ @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+ @import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext');
+
+ .commits {
+     padding: 15px;
+     font-family: 'Roboto', sans-serif;
+     font-size: 16px;
+ }
+
+ .commits__title {
+     margin-bottom: 15px;
+     font-size: 24px;
+ }
+
+ .commits__item {
+     padding: 25px 0 0;
+ }
+
+ .commits__item.hide .commits__add {
+     display: none;
+ }
+
+ .commits__item+.commits__item {
+     margin-top: 20px;
+     border-top: 1px solid #eaeaea;
+ }
+
+ .commits__item:first-child {
+     padding-top: 0;
+ }
+
+ .commits__head {
+     display: flex;
+     align-items: center;
+     margin-bottom: 5px;
+ }
+
+ .commits__face {
+     width: 50px;
+     height: 50px;
+     margin-right: 10px;
+     background-color: gray;
+     overflow: hidden;
+ }
+
+ .commits__face img {
+     display: block;
+     width: 100%;
+ }
+
+ .commits__name {
+     font-size: 14px;
+ }
+
+ .commits__date {
+     font-size: 12px;
+ }
+
+ /* .commits__body {} */
+ .commits__description {
+     color: #000;
+     line-height: 24px;
+ }
+
+ .commits__media {
+     margin-top: 10px;
+ }
+
+ .commits__success {
+     display: inline-block;
+     padding: 5px 15px;
+     margin-top: 20px;
+     font-style: italic;
+     font-size: 12px;
+     background-color: #e2e2e2;
+ }
+
+ .commits__media img {
+     display: block;
+     max-width: 100%;
+ }
+
+ .commits__add-title {
+     margin-bottom: 10px;
+ }
+
+ .commits__field-name {
+     display: block;
+     width: 100%;
+     max-width: 230px;
+     margin-bottom: 10px;
+     padding: 5px;
+ }
+
+ .commits__field-message {
+     display: block;
+     width: 100%;
+     height: 100px;
+     max-width: 500px;
+     margin-bottom: 10px;
+     padding: 5px;
+     resize: none;
+ }
+
+ .error {
+     border-color: red;
+ }
+
+ @media(max-width: 480px) {
+     .commits__description {
+         font-size: 14px;
+     }
+ }
+
+ .wrap-btn {
+     margin-top: 50px;
+     margin-bottom: 50px;
+     text-align: center;
+ }
+
+ .wrap-btn__btn {
+     display: inline-block;
+     padding: 17px 40px 15px;
+     background-color: #000;
+     color: #fff;
+     font-weight: 700;
+     text-decoration: none;
+     line-height: 1;
+     -webkit-transition: .3s;
+     -o-transition: .3s;
+     transition: .3s;
+     line-height: 1.2;
+     font-size: 14px;
+ }
+
+ .wrap-btn__btn:hover {
+     background-color: #333;
+ }
+
+ h2 {
+     margin-bottom: 0;
+ }
+
+ h2+p {
+     margin-top: 5px;
+ }
