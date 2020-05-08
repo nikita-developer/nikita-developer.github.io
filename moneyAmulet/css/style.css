@@ -801,11 +801,21 @@ html [type="button"],
   position: absolute;
   bottom: 0;
   left: 50%;
-  max-width: 300px;
-  margin-left: -97px;
+  width: 681px;
+  height: 454px;
+  background-image: url("../media/face/bg-amylet.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .face__product-media {
+  position: absolute;
+  bottom: 0;
+  left: 260px;
+  width: 300px;
   -webkit-perspective: 500px;
   perspective: 500px;
   -webkit-transform-style: preserve-3d;
@@ -1129,7 +1139,7 @@ html [type="button"],
 
 .help__description {
   position: relative;
-  padding-left: 320px;
+  padding-left: 370px;
   font-size: 22px;
 }
 
@@ -1144,16 +1154,16 @@ html [type="button"],
   position: absolute;
   bottom: -60px;
   left: 0;
-  max-width: 300px;
+  max-width: 360px;
 }
 
 .help__title.section__title {
-  padding-left: 320px;
+  padding-left: 370px;
   text-align: left;
 }
 
 .help__title.section__title::before {
-  left: 320px;
+  left: 370px;
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
@@ -1337,6 +1347,30 @@ html [type="button"],
   background-color: #c8a77a;
 }
 
+.instruction__item_1::before {
+  background-color: #e1bfcd;
+}
+
+.instruction__item_2::before {
+  background-color: #bbc2d4;
+}
+
+.instruction__item_3::before {
+  background-color: #a3adb2;
+}
+
+.instruction__item_4::before {
+  background-color: #656b73;
+}
+
+.instruction__item_5::before {
+  background-color: #64a0c2;
+}
+
+.instruction__item_6::before {
+  background-color: #468578;
+}
+
 .instruction__item-title {
   position: absolute;
   top: 40px;
@@ -1393,6 +1427,11 @@ html [type="button"],
   right: 0;
   bottom: 0;
   z-index: -1;
+  height: 100%;
+}
+
+.memory__media img {
+  height: 100%;
 }
 
 .memory__box {
@@ -1406,29 +1445,43 @@ html [type="button"],
 
 .memory__item {
   position: relative;
-  padding: 15px;
-  letter-spacing: 1px;
+  padding: 10px 15px;
+  margin: 10px 10px 0 10px;
+  font-size: 19px;
   cursor: default;
+  background-color: #ecd8bc;
   border-bottom: 1px solid transparent;
+  border-radius: 5px;
   -webkit-box-shadow: 15px 15px 4px -12px rgba(0, 0, 0, 0.09);
   box-shadow: 15px 15px 4px -12px rgba(0, 0, 0, 0.09);
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
 }
 
-.memory__item span {
-  font-size: 28px;
-  font-weight: 800;
-  color: #c8a77a;
+.memory__item:nth-child(1) {
+  margin-left: 40px;
 }
 
-.memory__item:hover {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transform: scale(0.98);
-  -ms-transform: scale(0.98);
-  transform: scale(0.98);
+.memory__item:nth-child(2) {
+  margin-left: 40px;
+}
+
+.memory__item:nth-child(3) {
+  margin-left: 120px;
+}
+
+.memory__item:nth-child(4) {
+  margin-left: 100px;
+}
+
+.memory__item:nth-child(5) {
+  margin-left: 40px;
+}
+
+.memory__item:nth-child(7) {
+  margin-left: 30px;
+}
+
+.memory__item:nth-child(8) {
+  margin-left: 60px;
 }
 .myMoney {
   position: relative;
