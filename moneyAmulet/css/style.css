@@ -657,6 +657,8 @@ html [type="button"],
 }
 
 .face__box_left {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -917,6 +919,8 @@ html [type="button"],
   }
 }
 .form {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
