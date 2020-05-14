@@ -1,0 +1,170 @@
+.animation-moveRight {
+    animation: moveRight 1s ease-in-out;
+}
+
+.animation-ufo {
+    animation: ufo 1s ease-in;
+}
+
+.animation-moveLeft {
+    animation: moveLeft 1s ease-in-out;
+}
+
+@keyframes nuclear {
+    from {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        transform: translate(0, -50px);
+        opacity: 0;
+    }
+}
+
+@keyframes light {
+    from {
+        opacity: 0.3;
+    }
+
+    25% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.9;
+    }
+    to {
+        opacity: 0.4;
+    }
+}
+
+@keyframes ufo {
+    from {
+        transform: translate(-400px, 0) skew(60deg);
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    to {
+        transform: translate(200px, 100px) skew(60deg);
+        opacity: 0;
+    }
+}
+
+@keyframes moveRight {
+    from {
+        transform: translate(-200px, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translate(200px, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes fly {
+    from {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -30px);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(15px, 0);
+    }
+
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes arrow-after {
+    from {
+        transform: rotate(0deg) translate(20px, 0);
+    }
+
+    50% {
+        transform: rotate(10deg) translate(40px, 0);
+    }
+
+    to {
+        transform: rotate(0deg) translate(20px, 0);
+    }
+}
+
+@keyframes arrow-before {
+    from {
+        transform: rotate(0deg) translate(-70px, 0);
+    }
+
+    50% {
+        transform: rotate(-10deg) translate(-50px, 0);
+    }
+
+
+    to {
+        transform: rotate(0deg) translate(-70px, 0);
+    }
+}
+
+@keyframes btn {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
