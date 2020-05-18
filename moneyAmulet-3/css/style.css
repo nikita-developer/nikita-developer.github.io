@@ -373,6 +373,17 @@ html [type="button"],
   background-size: cover;
 }
 
+.section_commits {
+  background-color: #fff;
+}
+
+.section_secret {
+  background-image: url("../media/section/secret.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 .section__title {
   font-family: "OldKharkiv", sans-serif;
 }
@@ -1347,6 +1358,39 @@ html [type="button"],
   background-color: #fff;
 }
 
+.secret__title {
+  max-width: 565px;
+  margin-bottom: 50px;
+  font-size: 58px;
+  line-height: 58px;
+}
+
+.secret__btn {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #f4c742;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4c742), color-stop(70%, #f2a728));
+  background: -o-linear-gradient(top, #f4c742 0%, #f2a728 70%);
+  background: linear-gradient(180deg, #f4c742 0%, #f2a728 70%);
+  border-radius: 40px;
+  -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.secret__btn:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
 @media (max-width: 1030px) {
   .container {
     max-width: 768px;
@@ -1359,6 +1403,10 @@ html [type="button"],
 
   .section_help {
     background-image: url("../media/section/help-1030.jpg");
+  }
+
+  .section_secret {
+    background-image: url("../media/section/secret-1030.jpg");
   }
 
   .commits__item {
@@ -1444,6 +1492,17 @@ html [type="button"],
   .progress__item {
     width: calc(50% - 15px);
     margin-bottom: 30px;
+  }
+
+  .secret__title {
+    font-size: 47px;
+    line-height: .9;
+    color: #fff;
+  }
+
+  .secret__btn {
+    -webkit-box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -1701,6 +1760,15 @@ html [type="button"],
 
   .progress__description {
     padding: 20px 10px;
+  }
+
+  .secret {
+    text-align: center;
+  }
+
+  .secret__title {
+    font-size: 37px;
+    text-align: center;
   }
 }
 
