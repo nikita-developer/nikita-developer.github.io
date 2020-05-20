@@ -375,6 +375,8 @@ html [type="button"],
 }
 
 .section_expectation {
+  position: relative;
+  overflow: hidden;
   background-image: url("../media/section/expectation.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -1176,6 +1178,20 @@ html [type="button"],
   transform: translateY(-50%);
 }
 
+.form__label_select::before {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 8px;
+  height: 5px;
+  content: '';
+  background-image: url("../media/form/arrow.png");
+  background-repeat: no-repeat;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .form__field {
   width: 100%;
   height: 52px;
@@ -1517,6 +1533,165 @@ html [type="button"],
   font-weight: 500;
   line-height: 24px;
   color: #f2aa2a;
+}
+
+@media (min-width: 768px) {
+  .gold {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200px;
+    height: 240px;
+    margin-left: 375px;
+  }
+
+  .gold__item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+
+  .gold__item_1 {
+    width: 55px;
+    height: 49px;
+    background-image: url("../media/gold/item-1.png");
+    -webkit-transform: translate(-52px, -9px);
+    -ms-transform: translate(-52px, -9px);
+    transform: translate(-52px, -9px);
+    -webkit-animation: gold 3.9s infinite linear;
+    animation: gold 3.9s infinite linear;
+  }
+
+  .gold__item_2 {
+    width: 41px;
+    height: 40px;
+    background-image: url("../media/gold/item-2.png");
+    -webkit-transform: translate(55px, -37px);
+    -ms-transform: translate(55px, -37px);
+    transform: translate(55px, -37px);
+    -webkit-animation: gold 3s infinite ease;
+    animation: gold 3s infinite ease;
+  }
+
+  .gold__item_3 {
+    width: 41px;
+    height: 40px;
+    background-image: url("../media/gold/item-2.png");
+    -webkit-transform: translate(-96px, -14px);
+    -ms-transform: translate(-96px, -14px);
+    transform: translate(-96px, -14px);
+    -webkit-animation: gold 4s infinite ease-out;
+    animation: gold 4s infinite ease-out;
+  }
+
+  .gold__item_4 {
+    width: 41px;
+    height: 40px;
+    background-image: url("../media/gold/item-2.png");
+    -webkit-transform: translate(-21px, 80px);
+    -ms-transform: translate(-21px, 80px);
+    transform: translate(-21px, 80px);
+    -webkit-animation: gold 2.3s infinite ease-in-out;
+    animation: gold 2.3s infinite ease-in-out;
+  }
+
+  .gold__item_5 {
+    width: 41px;
+    height: 40px;
+    background-image: url("../media/gold/item-2.png");
+    -webkit-transform: translate(-76px, -96px);
+    -ms-transform: translate(-76px, -96px);
+    transform: translate(-76px, -96px);
+    -webkit-animation: gold 5.5s infinite ease;
+    animation: gold 5.5s infinite ease;
+  }
+
+  .gold__item_6 {
+    width: 41px;
+    height: 40px;
+    background-image: url("../media/gold/item-2.png");
+    -webkit-transform: translate(33px, -67px);
+    -ms-transform: translate(33px, -67px);
+    transform: translate(33px, -67px);
+    -webkit-animation: gold 4.1s infinite ease-in-out;
+    animation: gold 4.1s infinite ease-in-out;
+  }
+
+  .gold__item_7 {
+    width: 41px;
+    height: 40px;
+    background-image: url("../media/gold/item-2.png");
+    -webkit-transform: translate(-59px, -130px);
+    -ms-transform: translate(-59px, -130px);
+    transform: translate(-59px, -130px);
+    -webkit-animation: gold 4.8s infinite ease-out;
+    animation: gold 4.8s infinite ease-out;
+  }
+
+  .gold__item_8 {
+    width: 41px;
+    height: 40px;
+    background-image: url("../media/gold/item-2.png");
+    -webkit-transform: translate(18px, 35px);
+    -ms-transform: translate(18px, 35px);
+    transform: translate(18px, 35px);
+    -webkit-animation: gold 2.6s infinite ease;
+    animation: gold 2.6s infinite ease;
+  }
+
+  .gold__item_9 {
+    width: 41px;
+    height: 40px;
+    background-image: url("../media/gold/item-2.png");
+    -webkit-transform: translate(-65px, 50px);
+    -ms-transform: translate(-65px, 50px);
+    transform: translate(-65px, 50px);
+    -webkit-animation: gold 3.5s infinite linear;
+    animation: gold 3.5s infinite linear;
+  }
+
+  .gold__item_10 {
+    width: 41px;
+    height: 40px;
+    background-image: url("../media/gold/item-2.png");
+    -webkit-transform: translate(-40px, -118px);
+    -ms-transform: translate(-40px, -118px);
+    transform: translate(-40px, -118px);
+    -webkit-animation: gold 4.5s infinite ease-out;
+    animation: gold 4.5s infinite ease-out;
+  }
+
+@-webkit-keyframes gold {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      top: 50%;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+}
+
+@keyframes gold {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      top: 50%;
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+}
 }
 
 @media (max-width: 1030px) {
