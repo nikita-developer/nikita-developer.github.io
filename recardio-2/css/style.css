@@ -2795,8 +2795,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .extract__description {
-  max-width: 300px;
-  line-height: 20px;
+  max-width: 240px;
+  line-height: 1.4;
 }
 
 .extract__description ul {
@@ -3663,6 +3663,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     max-width: 100%;
   }
 
+  .delivery__wraning-description {
+    padding: 20px 10px;
+    background-color: #cd3625;
+  }
+
   .extract__item {
     width: 100%;
   }
@@ -3832,10 +3837,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .delivery__wraning-description {
-    padding: 20px 10px;
     font-size: 18px;
     line-height: 1.4;
-    background-color: #cd3625;
   }
 
   .extract__name {
