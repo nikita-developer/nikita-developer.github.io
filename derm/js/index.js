@@ -1,6 +1,7 @@
 
 $(document).ready(function() {
     AOS.init({
+        startEvent: 'load',
         offset: 60
     });
 
