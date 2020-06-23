@@ -1,5 +1,9 @@
 
 $(document).ready(function() {
+    AOS.init({
+        offset: 60
+    });
+
     $('.form__field').focus( function() {
         $(this).addClass('form__field_active')
     }).blur(function () {
@@ -61,10 +65,6 @@ $(document).ready(function() {
             timerId = setTimeout(tick, 1000);
         }, 1000);
     }
-
-    AOS.init({
-        offset: 60
-    });
 
     setTimeout(function() {
         $('body').addClass('loaded');
