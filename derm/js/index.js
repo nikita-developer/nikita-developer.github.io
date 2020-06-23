@@ -65,4 +65,8 @@ $(document).ready(function() {
     AOS.init({
         offset: 60
     });
+
+    setTimeout(function() {
+        $('body').addClass('loaded');
+    }, 600);
 });
