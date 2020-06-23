@@ -2325,10 +2325,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .count__title {
+  max-width: 780px;
+  margin-right: auto;
   margin-bottom: 30px;
+  margin-left: auto;
   font-size: 104px;
   line-height: 89px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .count__item {
@@ -2989,9 +2993,17 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   text-transform: uppercase;
 }
 
+.ingredients__name span {
+  display: block;
+}
+
 .ingredients__description {
   font-size: 17px;
   line-height: 22px;
+}
+
+.ingredients__description span {
+  display: block;
 }
 
 .problems {
@@ -3230,7 +3242,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .section_face {
   padding-top: 10px;
-  padding-bottom: 160px;
+  padding-bottom: 100px;
   background-image: url("../media/section/face.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -3778,10 +3790,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     height: 204px;
   }
 
-  .ingredients__item {
-    width: 100%;
-  }
-
   .problems {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -3839,6 +3847,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .section_problems {
     padding-bottom: 0;
+    background: none;
+  }
+
+  .section_facts {
+    background-color: #e7d8c1;
+    background-image: url("../media/section/facts-480.jpg");
+    background-position: right bottom;
+    background-size: auto;
   }
 
   .symptoms__name {

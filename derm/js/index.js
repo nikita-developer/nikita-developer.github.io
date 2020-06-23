@@ -63,7 +63,6 @@ $(document).ready(function() {
     }
 
     AOS.init({
-      once: false,
-      mirror: true
+        offset: 60
     });
 });
