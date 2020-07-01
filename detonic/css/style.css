@@ -3200,7 +3200,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   font-family: "PlayfairDisplay", serif;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 100%;
+  -webkit-transition: .3s background-size;
+  -o-transition: .3s background-size;
+  transition: .3s background-size;
+}
+
+.steps__item:hover {
+  background-size: 110%;
 }
 
 .steps__item:nth-child(1) {
@@ -3900,6 +3907,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     height: 92px;
   }
 
+  .fraud__subtitle {
+    text-align: center;
+  }
+
   .fraud__title {
     font-size: 32px;
   }
@@ -3937,7 +3948,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .ingredients__title {
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
   }
 
   .ingredients__product::before {
@@ -3951,16 +3964,23 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     padding-left: 15px;
   }
 
+  .section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   .section_ingredients {
-    padding-top: 60px;
+    padding-top: 30px;
   }
 
   .section__title {
     text-align: center;
   }
 
-  .container {
-    max-width: 100%;
+  .steps__title {
+    font-size: 29px;
+    line-height: 1.2;
+    text-transform: uppercase;
   }
 
   .symptoms__box .symptoms__item {
@@ -3975,10 +3995,27 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .treatment__title {
-    font-size: 33px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: uppercase;
   }
 
   .warning__title {
-    font-size: 32px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  .warning__title span {
+    display: inline;
+  }
+
+  .warning__subtitle {
+    font-size: 18px;
+  }
+
+  .warning__list-name {
+    font-size: 22px;
+    line-height: 1.2;
   }
 }
