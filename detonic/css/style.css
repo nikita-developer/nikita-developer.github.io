@@ -3201,9 +3201,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
-  -webkit-transition: .3s background-size;
-  -o-transition: .3s background-size;
-  transition: .3s background-size;
+  -webkit-transition: .3s !important;
+  -o-transition: .3s !important;
+  transition: .3s !important;
 }
 
 .steps__item:hover {
