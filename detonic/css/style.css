@@ -235,6 +235,10 @@ html [type="button"],
   appearance: button;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 /* stylelint-disable */
 
 .btn {
@@ -3200,7 +3204,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   font-family: "PlayfairDisplay", serif;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100%;
+  background-size: 101%;
   -webkit-transition: .3s !important;
   -o-transition: .3s !important;
   transition: .3s !important;
@@ -3853,11 +3857,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     padding: 15px;
   }
 
-  .face__logo {
-    display: block;
-    text-align: center;
-  }
-
   .face__check {
     max-width: 100%;
     font-size: 18px;
@@ -3964,6 +3963,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     padding-left: 15px;
   }
 
+  .professional__info p mark {
+    font-size: 19px;
+    line-height: 1;
+  }
+
   .section {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -3974,13 +3978,17 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .section__title {
-    text-align: center;
+    text-align: left;
+    text-transform: none;
   }
 
   .steps__title {
     font-size: 29px;
     line-height: 1.2;
-    text-transform: uppercase;
+  }
+
+  .steps__title mark {
+    display: block;
   }
 
   .symptoms__box .symptoms__item {
@@ -3996,14 +4004,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .treatment__title {
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.2;
-    text-transform: uppercase;
   }
 
   .warning__title {
     font-size: 20px;
-    text-transform: uppercase;
   }
 
   .warning__title span {
