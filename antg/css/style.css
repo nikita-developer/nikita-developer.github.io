@@ -3014,6 +3014,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     padding-left: 30px;
   }
 
+  .header__logo > a {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
   .header__logo_footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3028,15 +3035,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .header__logo_footer > a {
-    border-radius: 10px;
-  }
-
-  .header__logo > a {
-    width: 70px;
-    height: 70px;
     margin-right: 0;
     margin-bottom: 10px;
-    font-size: 16px;
+    border-radius: 10px;
   }
 
   .header__login {
