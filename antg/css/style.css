@@ -2686,7 +2686,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .section {
+    padding-top: 0;
     padding-right: 100px;
+    padding-bottom: 0;
     padding-left: 100px;
   }
 
