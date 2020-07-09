@@ -2409,7 +2409,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 300px;
   padding: 20px 23px;
   margin: 42px 20px 20px;
   background-color: #fff;
@@ -3085,7 +3084,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .commits__item {
-    width: 320px;
     padding: 20px 23px;
   }
 
@@ -3281,11 +3279,20 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .problems__media {
-    display: none;
+    right: 0;
+    bottom: -100px;
+    left: auto;
+    z-index: 1;
+    max-width: 100px;
+    margin-left: 0;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
   }
 
   .problems__body {
     max-width: 100%;
+    margin-bottom: 40px;
   }
 
   .professional__info {
@@ -3359,6 +3366,19 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     font-size: 18px;
   }
 
+  .face__title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .face__logo {
+    display: block;
+    max-width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
   .form {
     max-width: 100%;
   }
@@ -3377,6 +3397,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .problems__info {
     padding: 15px;
+  }
+
+  .problems__body {
+    margin-bottom: 70px;
   }
 
   .professional__info {

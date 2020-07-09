@@ -2,7 +2,7 @@
 $(document).ready(function() {
     AOS.init({
         startEvent: 'load',
-        offset: 60
+        offset: 40
     });
 
     $('.form__field').focus( function() {
@@ -26,7 +26,7 @@ $(document).ready(function() {
                 items: 2
             },
 
-            960 : {
+            1030 : {
                 items: 3
             }
         }
