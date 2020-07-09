@@ -257,6 +257,12 @@ html [type="button"],
   transition: 0.3s;
 }
 
+.btn:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #180d5b;
+}
+
 .btn_blue {
   color: #fff;
   background-color: #180d5b;
@@ -265,12 +271,6 @@ html [type="button"],
 .btn_blue:hover {
   color: #180d5b;
   background-color: #fff;
-}
-
-.btn:hover {
-  color: #fff;
-  text-decoration: none;
-  background-color: #180d5b;
 }
 
 .container {
@@ -2456,9 +2456,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .section {
-  padding-top: 165px;
+  padding-top: 82px;
   padding-right: 225px;
-  padding-bottom: 165px;
+  padding-bottom: 82px;
   padding-left: 225px;
 }
 
@@ -2599,6 +2599,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .section__description + .section__slider {
+  margin-top: 80px;
+}
+
+.section__description + .section__brand {
   margin-top: 80px;
 }
 
