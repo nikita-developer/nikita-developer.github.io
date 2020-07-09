@@ -1,0 +1,2115 @@
+article, footer, header, nav, section {
+    display: block
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6em
+}
+
+body {
+    font-family: sans-serif;
+    color: #222
+}
+
+a {
+    color: #0085bd;
+    text-decoration: none
+}
+
+a:hover {
+    color: #60a5dd;
+    text-decoration: none
+}
+
+a:focus {
+    outline: thin dotted
+}
+
+a:hover, a:active {
+    outline: 0
+}
+
+strong {
+    font-weight: bold
+}
+
+ul {
+    margin: 1em 0;
+    padding: 0 0 0 40px
+}
+
+nav ul {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+    max-width: 100%;
+    display: block;
+}
+
+/*! Squarespace LESS Compiler  (less.js language v1.3.3)  */
+.clear:after {
+    display: block;
+    visibility: hidden;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    content: "."
+}
+
+/*IE9_SPLIT_MARKER*/
+/*IE9_SPLIT_MARKER*/
+/*! Squarespace LESS Compiler  (less.js language v1.3.3)  */
+.sqs-block.vsize-1 .sqs-block-content {
+    height: 34px
+}
+
+.sqs-row {
+    width: auto !important
+}
+
+.sqs-row:before, .sqs-row:after {
+    content: "";
+    display: table
+}
+
+.sqs-row:after {
+    clear: both
+}
+
+[class*=sqs-col] {
+    float: left
+}
+
+[class*=sqs-col] .sqs-block {
+    padding-left: 17px;
+    padding-right: 17px
+}
+
+[class*=sqs-col]:last-child {
+    padding-right: 0
+}
+
+.sqs-col-12 {
+    width: 100%
+}
+
+.sqs-col-10 {
+    width: 83.3333%
+}
+
+#yui_3_17_2_1_1590148031267_107 {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sqs-col-1 {
+    width: 8.3333%
+}
+
+.sqs-layout>.sqs-row {
+    margin-left: -17px;
+    margin-right: -17px
+}
+
+.sqs-layout:not(.sqs-editing) .sqs-row .sqs-block:not(.float):not(.sqs-feature-gated-wrapper):first-child {
+    padding-top: 0
+}
+
+.sqs-layout:not(.sqs-editing)>.sqs-row:first-child>[class*=sqs-col]:first-child>.sqs-block:last-child {
+    padding-bottom: 17px
+}
+
+.sqs-block.sized .sqs-block-content {
+    overflow: hidden
+}
+
+.sqs-block {
+    position: relative;
+    height: auto;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    outline: none;
+    box-shadow: inset 0 0 0 1px rgba(128, 128, 128, 0);
+    -webkit-transition: box-shadow .2s ease-in-out;
+    -moz-transition: box-shadow .2s ease-in-out;
+    -o-transition: box-shadow .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out
+}
+
+.sqs-block:not(.sqs-block-html):not(.sqs-block-markdown) {
+    clear: both
+}
+
+/*IE9_SPLIT_MARKER*/
+.social-icons-color-standard.social-icons-style-border .sqs-svg-icon--wrapper:not(:hover) {
+    background-color: transparent
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .applepodcast:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .applepodcast:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 0, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .applepodcast:not(:hover) {
+    background-color: rgba(0, 0, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .bandsintown:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .bandsintown:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 180, 179, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .bandsintown:not(:hover) {
+    background-color: rgba(0, 180, 179, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .behance:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .behance:not(:hover) .sqs-use--mask {
+    fill: rgba(23, 105, 255, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .behance:not(:hover) {
+    background-color: rgba(23, 105, 255, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .chownow:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .chownow:not(:hover) .sqs-use--mask {
+    fill: rgba(220, 93, 84, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .chownow:not(:hover) {
+    background-color: rgba(220, 93, 84, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .codepen:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .codepen:not(:hover) .sqs-use--mask {
+    fill: rgba(34, 34, 34, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .codepen:not(:hover) {
+    background-color: rgba(34, 34, 34, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .dribbble:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .dribbble:not(:hover) .sqs-use--mask {
+    fill: rgba(234, 76, 137, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .dribbble:not(:hover) {
+    background-color: rgba(234, 76, 137, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .dropbox:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .dropbox:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 126, 229, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .dropbox:not(:hover) {
+    background-color: rgba(0, 126, 229, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .email:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .email:not(:hover) .sqs-use--mask {
+    fill: rgba(34, 34, 34, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .email:not(:hover) {
+    background-color: rgba(34, 34, 34, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .facebook:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .facebook:not(:hover) .sqs-use--mask {
+    fill: rgba(59, 89, 152, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .facebook:not(:hover) {
+    background-color: rgba(59, 89, 152, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .facebook-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .facebook-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(59, 89, 152, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .facebook-unauth:not(:hover) {
+    background-color: rgba(59, 89, 152, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .fivehundredpix:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .fivehundredpix:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 153, 229, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .fivehundredpix:not(:hover) {
+    background-color: rgba(0, 153, 229, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .fivehundredpix-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .fivehundredpix-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 153, 229, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .fivehundredpix-unauth:not(:hover) {
+    background-color: rgba(0, 153, 229, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .flickr:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .flickr:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 99, 220, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .flickr:not(:hover) {
+    background-color: rgba(0, 99, 220, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .flickr-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .flickr-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 99, 220, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .flickr-unauth:not(:hover) {
+    background-color: rgba(0, 99, 220, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .foursquare:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .foursquare:not(:hover) .sqs-use--mask {
+    fill: rgba(249, 72, 119, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .foursquare:not(:hover) {
+    background-color: rgba(249, 72, 119, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .foursquare-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .foursquare-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(249, 72, 119, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .foursquare-unauth:not(:hover) {
+    background-color: rgba(249, 72, 119, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .github:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .github:not(:hover) .sqs-use--mask {
+    fill: rgba(65, 131, 196, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .github:not(:hover) {
+    background-color: rgba(65, 131, 196, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .github-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .github-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(65, 131, 196, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .github-unauth:not(:hover) {
+    background-color: rgba(65, 131, 196, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .goodreads:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .goodreads:not(:hover) .sqs-use--mask {
+    fill: rgba(56, 33, 16, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .goodreads:not(:hover) {
+    background-color: rgba(56, 33, 16, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .googleplay:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .googleplay:not(:hover) .sqs-use--mask {
+    fill: rgba(90, 223, 203, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .googleplay:not(:hover) {
+    background-color: rgba(90, 223, 203, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .google:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .google:not(:hover) .sqs-use--mask {
+    fill: rgba(220, 78, 65, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .google:not(:hover) {
+    background-color: rgba(220, 78, 65, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .houzz:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .houzz:not(:hover) .sqs-use--mask {
+    fill: rgba(122, 193, 67, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .houzz:not(:hover) {
+    background-color: rgba(122, 193, 67, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .imdb:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .imdb:not(:hover) .sqs-use--mask {
+    fill: rgba(230, 185, 30, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .imdb:not(:hover) {
+    background-color: rgba(230, 185, 30, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .instagram:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .instagram:not(:hover) .sqs-use--mask {
+    fill: rgba(228, 64, 95, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .instagram:not(:hover) {
+    background-color: rgba(228, 64, 95, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .instagram-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .instagram-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(228, 64, 95, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .instagram-unauth:not(:hover) {
+    background-color: rgba(228, 64, 95, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .itunes:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .itunes:not(:hover) .sqs-use--mask {
+    fill: rgba(236, 70, 82, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .itunes:not(:hover) {
+    background-color: rgba(236, 70, 82, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .linkedin:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .linkedin:not(:hover) .sqs-use--mask {
+    fill: rgba(9, 118, 180, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .linkedin:not(:hover) {
+    background-color: rgba(9, 118, 180, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .linkedin-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .linkedin-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(9, 118, 180, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .linkedin-unauth:not(:hover) {
+    background-color: rgba(9, 118, 180, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .medium:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .medium:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 171, 108, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .medium:not(:hover) {
+    background-color: rgba(0, 171, 108, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .meetup:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .meetup:not(:hover) .sqs-use--mask {
+    fill: rgba(224, 57, 62, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .meetup:not(:hover) {
+    background-color: rgba(224, 57, 62, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .pinterest:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .pinterest:not(:hover) .sqs-use--mask {
+    fill: rgba(204, 33, 39, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .pinterest:not(:hover) {
+    background-color: rgba(204, 33, 39, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .pinterest-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .pinterest-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(204, 33, 39, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .pinterest-unauth:not(:hover) {
+    background-color: rgba(204, 33, 39, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .rdio:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .rdio:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 110, 210, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .rdio:not(:hover) {
+    background-color: rgba(0, 110, 210, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .reddit:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .reddit:not(:hover) .sqs-use--mask {
+    fill: rgba(255, 69, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .reddit:not(:hover) {
+    background-color: rgba(255, 69, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .rss:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .rss:not(:hover) .sqs-use--mask {
+    fill: rgba(34, 34, 34, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .rss:not(:hover) {
+    background-color: rgba(34, 34, 34, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .smugmug:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .smugmug:not(:hover) .sqs-use--mask {
+    fill: rgba(125, 187, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .smugmug:not(:hover) {
+    background-color: rgba(125, 187, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .smugmug-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .smugmug-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(125, 187, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .smugmug-unauth:not(:hover) {
+    background-color: rgba(125, 187, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .snapchat:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .snapchat:not(:hover) .sqs-use--mask {
+    fill: rgba(34, 34, 34, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .snapchat:not(:hover) {
+    background-color: rgba(34, 34, 34, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .soundcloud:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .soundcloud:not(:hover) .sqs-use--mask {
+    fill: rgba(255, 102, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .soundcloud:not(:hover) {
+    background-color: rgba(255, 102, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .soundcloud-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .soundcloud-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(255, 102, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .soundcloud-unauth:not(:hover) {
+    background-color: rgba(255, 102, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .spotify:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .spotify:not(:hover) .sqs-use--mask {
+    fill: rgba(132, 189, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .spotify:not(:hover) {
+    background-color: rgba(132, 189, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .spotify-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .spotify-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(132, 189, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .spotify-unauth:not(:hover) {
+    background-color: rgba(132, 189, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .squarespace:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .squarespace:not(:hover) .sqs-use--mask {
+    fill: rgba(34, 34, 34, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .squarespace:not(:hover) {
+    background-color: rgba(34, 34, 34, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .stitcher:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .stitcher:not(:hover) .sqs-use--mask {
+    fill: rgba(30, 169, 225, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .stitcher:not(:hover) {
+    background-color: rgba(30, 169, 225, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .stumbleupon:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .stumbleupon:not(:hover) .sqs-use--mask {
+    fill: rgba(235, 73, 36, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .stumbleupon:not(:hover) {
+    background-color: rgba(235, 73, 36, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .thedots:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .thedots:not(:hover) .sqs-use--mask {
+    fill: rgba(140, 128, 112, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .thedots:not(:hover) {
+    background-color: rgba(140, 128, 112, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .tidal:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .tidal:not(:hover) .sqs-use--mask {
+    fill: rgba(34, 34, 34, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .tidal:not(:hover) {
+    background-color: rgba(34, 34, 34, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .tripadvisor:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .tripadvisor:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 176, 135, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .tripadvisor:not(:hover) {
+    background-color: rgba(0, 176, 135, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .tumblr:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .tumblr:not(:hover) .sqs-use--mask {
+    fill: rgba(53, 70, 93, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .tumblr:not(:hover) {
+    background-color: rgba(53, 70, 93, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .tumblr-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .tumblr-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(53, 70, 93, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .tumblr-unauth:not(:hover) {
+    background-color: rgba(53, 70, 93, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .twitch:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .twitch:not(:hover) .sqs-use--mask {
+    fill: rgba(100, 65, 165, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .twitch:not(:hover) {
+    background-color: rgba(100, 65, 165, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .twitter:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .twitter:not(:hover) .sqs-use--mask {
+    fill: rgba(85, 172, 238, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .twitter:not(:hover) {
+    background-color: rgba(85, 172, 238, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .twitter-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .twitter-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(85, 172, 238, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .twitter-unauth:not(:hover) {
+    background-color: rgba(85, 172, 238, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .url:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .url:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 0, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .url:not(:hover) {
+    background-color: rgba(0, 0, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .vevo:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .vevo:not(:hover) .sqs-use--mask {
+    fill: rgba(255, 0, 49, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .vevo:not(:hover) {
+    background-color: rgba(255, 0, 49, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .vimeo:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .vimeo:not(:hover) .sqs-use--mask {
+    fill: rgba(26, 183, 234, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .vimeo:not(:hover) {
+    background-color: rgba(26, 183, 234, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .vimeo-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .vimeo-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(26, 183, 234, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .vimeo-unauth:not(:hover) {
+    background-color: rgba(26, 183, 234, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .vine:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .vine:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 180, 136, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .vine:not(:hover) {
+    background-color: rgba(0, 180, 136, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .vsco:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .vsco:not(:hover) .sqs-use--mask {
+    fill: rgba(174, 153, 90, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .vsco:not(:hover) {
+    background-color: rgba(174, 153, 90, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .yelp:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .yelp:not(:hover) .sqs-use--mask {
+    fill: rgba(196, 18, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .yelp:not(:hover) {
+    background-color: rgba(196, 18, 0, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .youtube:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .youtube:not(:hover) .sqs-use--mask {
+    fill: rgba(229, 45, 39, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .youtube:not(:hover) {
+    background-color: rgba(229, 45, 39, .4)
+}
+
+.social-icons-color-standard.social-icons-style-regular .sqs-svg-icon--list:hover .youtube-unauth:not(:hover) .sqs-use--icon, .social-icons-color-standard.social-icons-style-knockout .sqs-svg-icon--list:hover .youtube-unauth:not(:hover) .sqs-use--mask {
+    fill: rgba(229, 45, 39, .4)
+}
+
+.social-icons-color-standard.social-icons-style-solid .sqs-svg-icon--list:hover .youtube-unauth:not(:hover) {
+    background-color: rgba(229, 45, 39, .4)
+}
+
+.sqs-block-html {
+    clear: none
+}
+
+.sqs-block-html .sqs-block-content {
+    outline: none
+}
+
+.sqs-block-html .sqs-block-content *:not(h1):not(h2):not(h3) {
+    word-wrap: break-word
+}
+
+.sqs-block-html .sqs-block-content>*:first-child {
+    margin-top: 0
+}
+
+.sqs-block-html .sqs-block-content>*:last-child {
+    margin-bottom: 0
+}
+
+/*! WARNING: block .less requested, but unable to resolve css from system cache: calendar */
+/*! WARNING: block .less requested, but unable to resolve css from system cache: album */
+.sqs-block-spacer .sqs-block-content {
+    visibility: hidden
+}
+
+li>*:first-child::before {
+    white-space: pre
+}
+
+@font-face {
+    font-family: 'social-icon-font';
+    src: url('//assets.squarespace.com/universal/fonts/social-20141119/social-icon-font.eot');
+    src: url('//assets.squarespace.com/universal/fonts/social-20141119/social-icon-font.eot?#iefix') format('embedded-opentype'), url('//assets.squarespace.com/universal/fonts/social-20141119/social-icon-font.woff') format('woff'), url('//assets.squarespace.com/universal/fonts/social-20141119/social-icon-font.ttf') format('truetype'), url('//assets.squarespace.com/universal/fonts/social-20141119/social-icon-font.svg#social-icon-font') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-border .social-links .sqs-svg-icon--wrapper:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-border .social-links .sqs-svg-icon--wrapper:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-border .social-links .sqs-svg-icon--wrapper:not(:hover) {
+    background-color: transparent
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .applepodcast:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .applepodcast:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .applepodcast:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .applepodcast:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 0, 0, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .applepodcast:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .applepodcast:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .applepodcast:not(:hover) {
+    background-color: rgba(0, 0, 0, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .bandsintown:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .bandsintown:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .bandsintown:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .bandsintown:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 180, 179, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .bandsintown:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .bandsintown:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .bandsintown:not(:hover) {
+    background-color: rgba(0, 180, 179, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .behance:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .behance:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .behance:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .behance:not(:hover) .sqs-use--mask {
+    fill: rgba(23, 105, 255, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .behance:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .behance:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .behance:not(:hover) {
+    background-color: rgba(23, 105, 255, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .chownow:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .chownow:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .chownow:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .chownow:not(:hover) .sqs-use--mask {
+    fill: rgba(220, 93, 84, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .chownow:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .chownow:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .chownow:not(:hover) {
+    background-color: rgba(220, 93, 84, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .codepen:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .codepen:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .codepen:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .codepen:not(:hover) .sqs-use--mask {
+    fill: rgba(34, 34, 34, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .codepen:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .codepen:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .codepen:not(:hover) {
+    background-color: rgba(34, 34, 34, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .dribbble:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .dribbble:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .dribbble:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .dribbble:not(:hover) .sqs-use--mask {
+    fill: rgba(234, 76, 137, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .dribbble:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .dribbble:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .dribbble:not(:hover) {
+    background-color: rgba(234, 76, 137, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .dropbox:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .dropbox:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .dropbox:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .dropbox:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 126, 229, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .dropbox:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .dropbox:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .dropbox:not(:hover) {
+    background-color: rgba(0, 126, 229, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .email:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .email:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .email:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .email:not(:hover) .sqs-use--mask {
+    fill: rgba(34, 34, 34, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .email:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .email:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .email:not(:hover) {
+    background-color: rgba(34, 34, 34, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .facebook:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .facebook:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .facebook:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .facebook:not(:hover) .sqs-use--mask {
+    fill: rgba(59, 89, 152, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .facebook:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .facebook:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .facebook:not(:hover) {
+    background-color: rgba(59, 89, 152, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .fivehundredpix:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .fivehundredpix:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .fivehundredpix:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .fivehundredpix:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 153, 229, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .fivehundredpix:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .fivehundredpix:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .fivehundredpix:not(:hover) {
+    background-color: rgba(0, 153, 229, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .flickr:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .flickr:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .flickr:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .flickr:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 99, 220, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .flickr:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .flickr:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .flickr:not(:hover) {
+    background-color: rgba(0, 99, 220, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .foursquare:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .foursquare:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .foursquare:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .foursquare:not(:hover) .sqs-use--mask {
+    fill: rgba(249, 72, 119, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .foursquare:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .foursquare:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .foursquare:not(:hover) {
+    background-color: rgba(249, 72, 119, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .github:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .github:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .github:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .github:not(:hover) .sqs-use--mask {
+    fill: rgba(65, 131, 196, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .github:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .github:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .github:not(:hover) {
+    background-color: rgba(65, 131, 196, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .goodreads:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .goodreads:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .goodreads:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .goodreads:not(:hover) .sqs-use--mask {
+    fill: rgba(56, 33, 16, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .goodreads:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .goodreads:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .goodreads:not(:hover) {
+    background-color: rgba(56, 33, 16, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .googleplay:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .googleplay:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .googleplay:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .googleplay:not(:hover) .sqs-use--mask {
+    fill: rgba(90, 223, 203, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .googleplay:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .googleplay:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .googleplay:not(:hover) {
+    background-color: rgba(90, 223, 203, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .google:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .google:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .google:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .google:not(:hover) .sqs-use--mask {
+    fill: rgba(220, 78, 65, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .google:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .google:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .google:not(:hover) {
+    background-color: rgba(220, 78, 65, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .houzz:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .houzz:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .houzz:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .houzz:not(:hover) .sqs-use--mask {
+    fill: rgba(122, 193, 67, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .houzz:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .houzz:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .houzz:not(:hover) {
+    background-color: rgba(122, 193, 67, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .imdb:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .imdb:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .imdb:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .imdb:not(:hover) .sqs-use--mask {
+    fill: rgba(230, 185, 30, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .imdb:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .imdb:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .imdb:not(:hover) {
+    background-color: rgba(230, 185, 30, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .instagram:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .instagram:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .instagram:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .instagram:not(:hover) .sqs-use--mask {
+    fill: rgba(228, 64, 95, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .instagram:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .instagram:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .instagram:not(:hover) {
+    background-color: rgba(228, 64, 95, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .itunes:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .itunes:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .itunes:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .itunes:not(:hover) .sqs-use--mask {
+    fill: rgba(236, 70, 82, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .itunes:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .itunes:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .itunes:not(:hover) {
+    background-color: rgba(236, 70, 82, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .linkedin:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .linkedin:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .linkedin:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .linkedin:not(:hover) .sqs-use--mask {
+    fill: rgba(9, 118, 180, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .linkedin:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .linkedin:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .linkedin:not(:hover) {
+    background-color: rgba(9, 118, 180, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .medium:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .medium:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .medium:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .medium:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 171, 108, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .medium:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .medium:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .medium:not(:hover) {
+    background-color: rgba(0, 171, 108, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .meetup:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .meetup:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .meetup:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .meetup:not(:hover) .sqs-use--mask {
+    fill: rgba(224, 57, 62, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .meetup:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .meetup:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .meetup:not(:hover) {
+    background-color: rgba(224, 57, 62, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .pinterest:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .pinterest:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .pinterest:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .pinterest:not(:hover) .sqs-use--mask {
+    fill: rgba(204, 33, 39, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .pinterest:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .pinterest:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .pinterest:not(:hover) {
+    background-color: rgba(204, 33, 39, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .rdio:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .rdio:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .rdio:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .rdio:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 110, 210, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .rdio:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .rdio:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .rdio:not(:hover) {
+    background-color: rgba(0, 110, 210, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .reddit:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .reddit:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .reddit:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .reddit:not(:hover) .sqs-use--mask {
+    fill: rgba(255, 69, 0, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .reddit:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .reddit:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .reddit:not(:hover) {
+    background-color: rgba(255, 69, 0, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .rss:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .rss:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .rss:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .rss:not(:hover) .sqs-use--mask {
+    fill: rgba(34, 34, 34, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .rss:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .rss:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .rss:not(:hover) {
+    background-color: rgba(34, 34, 34, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .smugmug:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .smugmug:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .smugmug:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .smugmug:not(:hover) .sqs-use--mask {
+    fill: rgba(125, 187, 0, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .smugmug:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .smugmug:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .smugmug:not(:hover) {
+    background-color: rgba(125, 187, 0, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .snapchat:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .snapchat:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .snapchat:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .snapchat:not(:hover) .sqs-use--mask {
+    fill: rgba(34, 34, 34, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .snapchat:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .snapchat:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .snapchat:not(:hover) {
+    background-color: rgba(34, 34, 34, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .soundcloud:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .soundcloud:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .soundcloud:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .soundcloud:not(:hover) .sqs-use--mask {
+    fill: rgba(255, 102, 0, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .soundcloud:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .soundcloud:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .soundcloud:not(:hover) {
+    background-color: rgba(255, 102, 0, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .spotify:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .spotify:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .spotify:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .spotify:not(:hover) .sqs-use--mask {
+    fill: rgba(132, 189, 0, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .spotify:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .spotify:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .spotify:not(:hover) {
+    background-color: rgba(132, 189, 0, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .squarespace:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .squarespace:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .squarespace:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .squarespace:not(:hover) .sqs-use--mask {
+    fill: rgba(34, 34, 34, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .squarespace:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .squarespace:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .squarespace:not(:hover) {
+    background-color: rgba(34, 34, 34, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .stitcher:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .stitcher:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .stitcher:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .stitcher:not(:hover) .sqs-use--mask {
+    fill: rgba(30, 169, 225, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .stitcher:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .stitcher:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .stitcher:not(:hover) {
+    background-color: rgba(30, 169, 225, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .stumbleupon:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .stumbleupon:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .stumbleupon:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .stumbleupon:not(:hover) .sqs-use--mask {
+    fill: rgba(235, 73, 36, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .stumbleupon:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .stumbleupon:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .stumbleupon:not(:hover) {
+    background-color: rgba(235, 73, 36, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .thedots:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .thedots:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .thedots:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .thedots:not(:hover) .sqs-use--mask {
+    fill: rgba(140, 128, 112, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .thedots:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .thedots:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .thedots:not(:hover) {
+    background-color: rgba(140, 128, 112, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .tidal:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .tidal:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .tidal:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .tidal:not(:hover) .sqs-use--mask {
+    fill: rgba(34, 34, 34, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .tidal:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .tidal:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .tidal:not(:hover) {
+    background-color: rgba(34, 34, 34, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .tripadvisor:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .tripadvisor:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .tripadvisor:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .tripadvisor:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 176, 135, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .tripadvisor:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .tripadvisor:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .tripadvisor:not(:hover) {
+    background-color: rgba(0, 176, 135, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .tumblr:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .tumblr:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .tumblr:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .tumblr:not(:hover) .sqs-use--mask {
+    fill: rgba(53, 70, 93, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .tumblr:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .tumblr:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .tumblr:not(:hover) {
+    background-color: rgba(53, 70, 93, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .twitch:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .twitch:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .twitch:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .twitch:not(:hover) .sqs-use--mask {
+    fill: rgba(100, 65, 165, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .twitch:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .twitch:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .twitch:not(:hover) {
+    background-color: rgba(100, 65, 165, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .twitter:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .twitter:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .twitter:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .twitter:not(:hover) .sqs-use--mask {
+    fill: rgba(85, 172, 238, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .twitter:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .twitter:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .twitter:not(:hover) {
+    background-color: rgba(85, 172, 238, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .vevo:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .vevo:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .vevo:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .vevo:not(:hover) .sqs-use--mask {
+    fill: rgba(255, 0, 49, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .vevo:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .vevo:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .vevo:not(:hover) {
+    background-color: rgba(255, 0, 49, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .vimeo:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .vimeo:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .vimeo:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .vimeo:not(:hover) .sqs-use--mask {
+    fill: rgba(26, 183, 234, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .vimeo:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .vimeo:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .vimeo:not(:hover) {
+    background-color: rgba(26, 183, 234, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .vine:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .vine:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .vine:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .vine:not(:hover) .sqs-use--mask {
+    fill: rgba(0, 180, 136, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .vine:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .vine:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .vine:not(:hover) {
+    background-color: rgba(0, 180, 136, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .vsco:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .vsco:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .vsco:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .vsco:not(:hover) .sqs-use--mask {
+    fill: rgba(174, 153, 90, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .vsco:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .vsco:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .vsco:not(:hover) {
+    background-color: rgba(174, 153, 90, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .yelp:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .yelp:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .yelp:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .yelp:not(:hover) .sqs-use--mask {
+    fill: rgba(196, 18, 0, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .yelp:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .yelp:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .yelp:not(:hover) {
+    background-color: rgba(196, 18, 0, .4)
+}
+
+.tweak-template-social-icon-standard-color.social-icon-style-normal .social-links:hover .youtube:not(:hover) .sqs-use--icon, .tweak-template-social-icon-standard-color.social-icon-style-round .social-links:hover .youtube:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.social-icon-style-square .social-links:hover .youtube:not(:hover) .sqs-use--mask, .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-knockout .social-links:hover .youtube:not(:hover) .sqs-use--mask {
+    fill: rgba(229, 45, 39, .4)
+}
+
+.tweak-template-social-icon-standard-color.tweak-template-social-icon-style-circle-solid .social-links:hover .youtube:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-rounded-solid .social-links:hover .youtube:not(:hover), .tweak-template-social-icon-standard-color.tweak-template-social-icon-style-square-solid .social-links:hover .youtube:not(:hover) {
+    background-color: rgba(229, 45, 39, .4)
+}
+
+body {
+    background-image: none;
+    background-position: top left;
+    background-size: auto;
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-color: rgba(247, 247, 242, .75);
+    color: rgba(39, 52, 52, .75)
+}
+
+body #canvas {
+    background-color: #fcfcf7
+}
+
+body #topNav {
+    position: relative
+}
+
+body #topNav ul {
+    background-color: #fcfcf7
+}
+
+body #topNav ul>li>a {
+    border-bottom-color: transparent;
+    border-bottom-style: solid
+}
+
+body #topNav a {
+    color: #868583
+}
+
+body #topNav a:hover {
+    color: #9baf71;
+    border-bottom-color: #f4f4ec
+}
+
+body h1 {
+    color: rgba(39, 52, 52, .75)
+}
+
+body h1.entry-title a, body h1.entry-title a:link, body h1.entry-title a:visited {
+    color: rgba(39, 52, 52, .75)
+}
+
+body h1.entry-title a:hover, body h1.entry-title a:active {
+    color: rgba(152, 164, 157, .85)
+}
+
+body a, body a:link, body a:visited {
+    color: #c37492
+}
+
+body a:hover, body a:active {
+    color: rgba(152, 164, 157, .85)
+}
+
+body a:focus {
+    outline: none
+}
+
+body {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    line-height: 1.8em;
+    font-size: 13px;
+    font-family: Source Sans Pro;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.7em;
+    font-size: 16px;
+    text-transform: none;
+    text-decoration: none
+}
+
+p {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    line-height: 1.8em;
+    font-family: Source Sans Pro;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.7em;
+    font-size: 18px;
+    text-transform: none;
+    text-decoration: none;
+    margin: 0 0 1.7em
+}
+
+ul {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    line-height: 1.8em;
+    font-size: 13px;
+    font-family: Source Sans Pro;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.7em;
+    font-size: 16px;
+    text-transform: none;
+    text-decoration: none;
+    margin: 1em 0
+}
+
+h1 {
+    margin: 1em 0 .3em
+}
+
+h1 {
+    font-family: Varela Round, arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.2em;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: ltc-bodoni-175;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.3em;
+    font-size: 2.5em;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: .8px
+}
+
+nav ul {
+    margin: 0
+}
+
+#topNav nav ul, #mobileNav nav ul, #topNav .subnav ul li a {
+    font-family: Varela Round, arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.6em;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2em;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.49px
+}
+
+#topNav nav ul, #mobileNav nav ul, #topNav .subnav ul li, #topNav .subnav ul li a {
+    text-decoration: none
+}
+
+.collection-type-blog article .entry-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2em;
+    font-size: 30px;
+    text-decoration: none;
+    letter-spacing: 2px
+}
+
+#footer p {
+    font-family: Varela Round, arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-family: Source Sans Pro;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.6em;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px
+}
+
+#canvas {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 25px 25px 0
+}
+
+#header {
+    position: relative
+}
+
+#topNav {
+    z-index: 1000
+}
+
+#page {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    opacity: 1;
+    position: relative
+}
+
+#upper-logo, #lower-logo {
+    line-height: 0
+}
+
+.logo-image .logo {
+    line-height: 0;
+    margin: 0;
+    display: block;
+    max-height: 180px
+}
+
+.logo-image .logo a {
+    line-height: 0;
+    font-size: 0;
+    letter-spacing: 0;
+    display: block
+}
+
+.logo-image .logo img {
+    height: auto;
+    width: auto;
+    max-height: 180px;
+    max-width: 100%
+}
+
+.custom-info {
+    text-align: left
+}
+
+#topNav nav {
+    float: left;
+    width: 100%;
+    text-align: center
+}
+
+#topNav nav ul {
+    width: auto;
+    margin: auto
+}
+
+#topNav nav li {
+    float: left;
+    position: relative
+}
+
+#topNav nav li:not(.filter)+li {
+    margin-left: 18px
+}
+
+#topNav nav li a {
+    display: inline-block
+}
+
+#topNav nav ul li.folder-collection>a {
+    cursor: pointer;
+    border-bottom-width: 0 !important
+}
+
+#topNav nav ul li.folder-collection .subnav {
+    position: absolute;
+    top: 100%;
+    left: -9px;
+    background: rgba(247, 247, 242, .75);
+    height: 0;
+    overflow: hidden;
+    opacity: 1;
+    min-width: 100%;
+    z-index: 1000
+}
+
+#topNav nav ul li.folder-collection ul {
+    overflow: hidden;
+    padding: .5em 0;
+    display: block;
+    border-style: solid;
+    border-color: #f4f4ec
+}
+
+#topNav nav ul li.folder-collection ul li {
+    margin: 0;
+    display: block;
+    width: 100%
+}
+
+#topNav nav ul li.folder-collection ul li a {
+    padding: 0;
+    margin: 0;
+    line-height: normal;
+    white-space: nowrap;
+    display: block;
+    padding: .5em 1em;
+    border-width: 0 !important;
+    text-align: left
+}
+
+#topNav nav ul li.folder-collection:hover .subnav, #topNav nav ul li.folder-collection:active .subnav, #topNav nav ul li.folder-collection:focus .subnav, #topNav nav ul li.folder-collection .subnav:hover {
+    height: auto !important
+}
+
+#upper-logo, #lower-logo, #topNav {
+    float: left
+}
+
+#mobileMenuLink {
+    display: none;
+    visibility: hidden;
+    margin: 15px 0 0
+}
+
+#mobileNav {
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transition: max-height, .3s;
+    -moz-transition: max-height, .3s;
+    -o-transition: max-height, .3s;
+    transition: max-height, .3s
+}
+
+.header-subtitle-custom .custom-info {
+    display: block
+}
+
+.canvas-style-normal #canvas {
+    margin: 25px auto;
+    border-style: solid;
+    border-color: #f4f4ec
+}
+
+.canvas-style-normal #canvas {
+    border-width: 0
+}
+
+.canvas-style-normal #upper-logo, .canvas-style-normal #topNav {
+    width: 100%;
+    text-align: center
+}
+
+.canvas-style-normal #lower-logo {
+    display: none
+}
+
+.canvas-style-normal #topNav {
+    margin-top: 11px
+}
+
+.canvas-style-normal #topNav nav, .canvas-style-normal #topNav ul, .canvas-style-normal #topNav li {
+    display: inline-block;
+    line-height: 1.2em
+}
+
+.canvas-style-normal #topNav nav>ul {
+    padding: 0 18px
+}
+
+.canvas-style-normal #topNav .page-divider {
+    line-height: 1.2em;
+    margin-top: -1.2em;
+    margin-bottom: 1.2em;
+    font-size: 13px
+}
+
+.canvas-style-normal .top-divider {
+    display: none
+}
+
+.canvas-style-normal .custom-info {
+    clear: left;
+    padding-top: 1.5em
+}
+
+#footer {
+    border-style: solid;
+    border-color: #f4f4ec;
+    border-width: 0;
+    padding-top: 32px;
+    padding-bottom: 32px
+}
+
+#footerBlock {
+    float: none;
+    width: auto;
+    min-height: 15px
+}
+
+.page-divider {
+    border-bottom: 1px solid #f4f4ec
+}
+
+.page-borders-thick .page-divider {
+    border-bottom-width: 2px
+}
+
+.page-borders-thick #footer {
+    border-top-width: 2px
+}
+
+.page-borders-thick #canvas {
+    border-width: 2px
+}
+
+.page-borders-thick #topNav ul>li>a {
+    border-bottom-width: 2px
+}
+
+.page-borders-thick #topNav .folder-collection .subnav ul {
+    border-width: 2px
+}
+
+.page-borders-thick #mobileNav .wrapper {
+    border-bottom-width: 2px
+}
+
+.page-borders-thick #mobileMenuLink {
+    border-bottom-width: 2px
+}
+
+.page-borders-thick.collection-type-blog .pagination {
+    border-width: 2px 0px
+}
+
+.collection-type-blog article header {
+    margin: 0em auto 30px
+}
+
+.collection-type-blog article .entry-title {
+    margin-top: 0
+}
+
+.collection-type-blog article .date, .collection-type-blog article .author {
+    font-size: .85em;
+    letter-spacing: 2px;
+    font-style: italic
+}
+
+.collection-type-blog article .meta, .collection-type-blog article .meta a {
+    color: rgba(39, 52, 52, .75)
+}
+
+.collection-type-blog article header .meta span+span {
+    margin-left: .5em
+}
+
+.collection-type-blog article header .meta span+span:before {
+    content: "/";
+    padding-right: .5em
+}
+
+.collection-type-blog article .body {
+    margin: 0em auto 24px
+}
+
+.collection-type-blog.blog-layout-center article header {
+    text-align: center
+}
+
+.collection-type-blog.blog-layout-center article .body, .collection-type-blog.blog-layout-center article header {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    max-width: 100%
+}
+
+.collection-type-blog .pagination {
+    margin: 30px 0;
+    padding: 7.5px 0;
+    border: 1px solid #f4f4ec;
+    border-width: 1px 0
+}
+
+.collection-type-blog .pagination a {
+    display: block;
+    width: 50%;
+    float: left;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.collection-type-blog .pagination a.next-item {
+    float: right;
+    text-align: right
+}
+
+.hide-article-author article header .meta .author {
+    display: none
+}
+
+@media only screen and (max-width:1240px) {
+    .canvas-style-normal #canvas {
+        margin: 25px
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .canvas-style-normal #canvas {
+        margin: 0px auto;
+        border-width: 0px !important
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .sqs-layout [class*=sqs-col] {
+        float: none !important;
+        width: auto !important
+    }
+
+    .sqs-layout .spacer-block {
+        display: none
+    }
+
+    .sqs-layout .sqs-row .sqs-block:first-child {
+        padding-top: 17px !important
+    }
+
+    .sqs-layout .sqs-row .sqs-block:last-child {
+        padding-bottom: 17px !important
+    }
+
+    #canvas {
+        padding: 12.5px 12.5px 0
+    }
+
+    #page {
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
+
+    .canvas-style-normal #header {
+        padding-top: 30px
+    }
+
+    .canvas-style-normal #topNav nav>ul li+li {
+        margin-left: 1em
+    }
+
+    #header {
+        margin-bottom: 30px
+    }
+
+    .logo-image #topNav nav li a {
+        padding: 11px 0 0
+    }
+
+    .article-wrapper {
+        margin: 0 !important
+    }
+
+    .collection-type-blog article .body {
+        margin-top: 17.5px
+    }
+}
+
+@media only screen and (max-width:640px) {
+    #canvas {
+        padding: 0 17px
+    }
+
+    #header {
+        text-align: center
+    }
+
+    #lower-logo, #upper-logo {
+        float: none
+    }
+
+    .logo-image .logo {
+        height: auto;
+        width: auto;
+        text-align: center
+    }
+
+    .logo-image .logo img {
+        height: auto;
+        width: auto;
+        margin: auto;
+        max-height: 180px
+    }
+
+    #header #topNav {
+        display: none
+    }
+
+    #mobileMenuLink {
+        margin: 0;
+        display: block;
+        font-family: Varela Round, arial, sans-serif;
+        font-weight: normal;
+        line-height: 1.6em;
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-family: Source Sans Pro;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.2em;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1.49px;
+        padding: 0 0 15px;
+        background-color: #fcfcf7;
+        text-align: center;
+        border-bottom-style: solid;
+        border-bottom-color: #f4f4ec;
+        visibility: visible
+    }
+
+    #mobileMenuLink a {
+        cursor: pointer;
+        display: block;
+        margin: 0;
+        font-size: 16px !important;
+        color: #868583
+    }
+
+    #mobileNav {
+        background: #fcfcf7;
+        margin: 0 0 15px
+    }
+
+    #mobileNav .wrapper {
+        padding: 1em 0;
+        border-bottom-style: solid;
+        border-bottom-color: #f4f4ec
+    }
+
+    #mobileNav nav ul li {
+        display: block;
+        text-align: center;
+        float: none !important
+    }
+
+    #mobileNav a {
+        font-family: Varela Round, arial, sans-serif;
+        font-weight: normal;
+        line-height: 1.6em;
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-family: Source Sans Pro;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.2em;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1.49px;
+        color: rgba(134, 133, 131, .7);
+        font-size: 16px !important;
+        line-height: 2em !important
+    }
+
+    #mobileNav li a:hover {
+        color: #868583
+    }
+
+    #mobileNav li a:after {
+        display: none !important
+    }
+
+    .collection-type-blog article .body, .collection-type-blog article header {
+        width: 100%;
+        max-width: 100% !important
+    }
+
+    .collection-type-blog article header {
+        margin: 0em auto 1em
+    }
+
+    .collection-type-blog article .entry-title {
+        font-size: 1.2em;
+        line-height: 1.2em
+    }
+
+    .collection-type-blog article .body {
+        padding-top: 0
+    }
+}
+
+/*! Squarespace LESS Compiler  (less.js language v1.3.3)  */
+.HeaderButton {
+    font-family: 'Source Sans Pro';
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px #868583;
+    background-color: #b3bcb8;
+    padding: 10px 0px 10px 0px;
+    border-radius: 0px;
+    width: 100%;
+    border-bottom: 2px solid #868583;
+    text-align: center;
+    color: #5d7e5e;
+    margin-top: 0px !important;
+    letter-spacing: .8px;
+    font-size: 15px;
+    background-image: url('img/ayurvedic_bkrd.png');
+    background-position: center bottom;
+    background-repeat: repeat-x
+}
+
+.HeaderButtonMobile {
+    display: none
+}
+
+.HeaderButton a {
+    color: #fff !important
+}
+
+#topNav nav ul li.folder-collection ul {
+    overflow: hidden;
+    padding: 1em 0;
+    display: block;
+    border-top: none;
+    border-right: solid;
+    border-left: solid;
+    border-bottom: solid;
+    border-color: #f6f6ee;
+    border-color: #ddc5d0;
+    background-color: rgba(252, 252, 247, .8)
+}
+
+#topNav nav ul li.folder-collection .subnav {
+    background-color: rgba(232, 232, 230, .2) important
+}
+
+#mobileMenuLink {
+    border: none
+}
+
+#mobileMenuLink a {
+    color: #6f563c
+}
+
+#mobileMenuLink a {
+    visibility: hidden
+}
+
+#mobileMenuLink a:before {
+    visibility: visible;
+    font-family: 'squarespace-ui-font';
+    font-size: 2.8em;
+    font-style: normal;
+    speak: none;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    content: "\e030";
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 55px
+}
+
+.canvas-style-normal #topNav .page-divider {
+    border-bottom: 2px solid #868583
+}
+
+#topNav nav li:not(.filter)+li {
+    margin-left: 40px
+}
+
+ul {
+    color: #777;
+    line-height: .5em;
+    padding-top: 0px
+}
+
+#canvas {
+    background-image: url('img/ayurvedic_bkrd_light.png');
+    background-position: center bottom;
+    background-repeat: repeat-x
+}
+
+@media only screen and (max-width:1100px) {
+    .HeaderButton {
+        margin-top: 0px !important;
+        float: none !important;
+        margin: 0 auto;
+        size: 14px
+    }
+}
+
+@media screen and (max-width:768px) {
+    #topNav nav li:not(.filter)+li {
+        margin-left: 18.5px
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .logo-image .logo {
+        padding-top: 17px;
+        width: 300px;
+        margin: 0 auto
+    }
+
+    .HeaderButton {
+        display: none
+    }
+
+    .HeaderButtonMobile {
+        display: inline-block;
+        text-shadow: 1px 1px 4px #868583;
+        font-family: 'Source Sans Pro';
+        background-color: #b3bcb8;
+        padding: 10px 0px 10px 0px;
+        border-radius: 0px;
+        width: 100%;
+        border-bottom: 2px solid #868583;
+        text-align: center;
+        color: #5d7e5e;
+        margin-top: 0px !important;
+        background-image: url('img/ayurvedic_bkrd.png');
+        background-position: center bottom;
+        background-repeat: repeat-x;
+        letter-spacing: .8px;
+        font-size: 17px;
+        line-height: 30px
+    }
+}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+
+.gridflex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #fff;
+    padding: 25px 0;
+}
+
+.gridflex>span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+}
+
+.gridflex>span:first-child {
+    margin-right: 50px;
+}
+
+.gridflex>span>small {
+    margin-top: 15px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.flleft {
+    margin-right: 25px;
+    float: left;
+    margin-bottom: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 155px;
+            flex: 0 0 155px;
+    margin-bottom: auto;
+}
+
+.ramka {
+    padding: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
+}
+
+.ramka__p p:last-child {
+    margin-bottom: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@media(max-width: 480px) {
+    .ramka {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .flleft {
+        margin-bottom: 25px;
+    }
+}.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
+
+.commits {
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.commits__title {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.commits__item {
+    padding: 25px 0 0;
+}
+
+.commits__item.hide .commits__add {
+    display: none;
+}
+
+.commits__item+.commits__item {
+    margin-top: 20px;
+    border-top: 1px solid #eaeaea;
+}
+
+.commits__item:first-child {
+    padding-top: 0;
+}
+
+.commits__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.commits__face {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: gray;
+    overflow: hidden;
+}
+
+.commits__face img {
+    display: block;
+    width: 100%;
+}
+
+.commits__name {
+    font-size: 14px;
+}
+
+.commits__date {
+    font-size: 12px;
+}
+
+/* .commits__body {} */
+
+.commits__description {
+    color: #000;
+    line-height: 24px;
+}
+
+.commits__media {
+    margin-top: 10px;
+}
+
+.commits__success {
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 12px;
+    background-color: #e2e2e2;
+}
+
+.commits__media img {
+    display: block;
+    max-width: 100%;
+}
+
+.commits__add-title {
+    margin-bottom: 10px;
+}
+
+.commits__field-name {
+    display: block;
+    width: 100%;
+    max-width: 230px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.commits__field-message {
+    display: block;
+    width: 100%;
+    height: 100px;
+    max-width: 500px;
+    margin-bottom: 10px;
+    padding: 5px;
+    resize: none;
+}
+
+.commits__item_hide {
+    display: none;
+}
+
+.commits_error {
+    border-color: red;
+}
+
+@media(max-width: 480px) {
+    .commits__description {
+        font-size: 14px;
+    }
+}
+
+.wrap-btn {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.btn {
+    max-width: 280px;
+    display: inline-block;
+    padding: 15px 80px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #ce7492;
+    letter-spacing: 5px;
+    color: #fff !important;
+    font-family: sans-serif;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #ea7fa3;
+}
