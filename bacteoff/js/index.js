@@ -72,10 +72,31 @@ $(document).ready(function() {
     }, 600);
 
     $('.pain__pulse-media').hover(function() {
+        clearInterval(itervalItem);
+        $('.pain__item').children('.pain__pulse').children('.pain__pulse-line').removeClass('pain__pulse-line_active');
+        $('.pain__item').children('.pain__head').css('opacity', '0');
         $(this).parent().children('.pain__pulse-line').addClass('pain__pulse-line_active');
         $(this).parents('.pain__item').children('.pain__head').css('opacity', '1');
     }, function() {
-        $(this).parent().children('.pain__pulse-line').removeClass('pain__pulse-line_active');
-        $(this).parents('.pain__item').children('.pain__head').css('opacity', '0');
+        startItem();
+        $('.pain__item').children('.pain__pulse').children('.pain__pulse-line').removeClass('pain__pulse-line_active');
+        $('.pain__item').children('.pain__head').css('opacity', '0');
     })
+
+    var itervalItem;
+    startItem();
+    function startItem() {
+        itervalItem = setInterval(function() {
+            var $index = randomInteger(1, 6);
+            $('.pain__item').children('.pain__pulse').children('.pain__pulse-line').removeClass('pain__pulse-line_active');
+            $('.pain__item').children('.pain__head').css('opacity', '0');
+            $('.pain__item').eq($index).children('.pain__pulse').children('.pain__pulse-line').addClass('pain__pulse-line_active');
+            $('.pain__item').eq($index).children('.pain__head').css('opacity', '1');
+        }, 1500);
+
+        function randomInteger(min, max) {
+            var rand = min - 0.5 + Math.random() * (max - min + 1);
+            return Math.round(rand);
+        }
+    }
 });
