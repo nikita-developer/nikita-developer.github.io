@@ -92,7 +92,7 @@ $(document).ready(function() {
             $('.pain__item').children('.pain__head').css('opacity', '0');
             $('.pain__item').eq($index).children('.pain__pulse').children('.pain__pulse-line').addClass('pain__pulse-line_active');
             $('.pain__item').eq($index).children('.pain__head').css('opacity', '1');
-        }, 1500);
+        }, 3000);
 
         function randomInteger(min, max) {
             var rand = min - 0.5 + Math.random() * (max - min + 1);
