@@ -235,6 +235,10 @@ html [type="button"],
   appearance: button;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 /* stylelint-disable */
 
 .btn {
