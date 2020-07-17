@@ -1,9 +1,20 @@
 
 $(document).ready(function() {
     $('.header__nav-burger').click(function () {
-        $('.header__nav-body').toggleClass('header__nav-body_active');
-        $(this).toggleClass('header__nav-burger_active');
+        $('.header__burger').addClass('header__burger_active')
+        $('.header__nav-body').addClass('header__nav-body_active');
+        $(this).addClass('header__nav-burger_active');
+        $('body, html').css('overflow', 'hidden');
     })
+
+    $('.header__burger').mouseup(function (e) { // событие клика по веб-документу
+		if (!$('.header__nav-body').is(e.target) && $('.header__nav-body').has(e.target).length === 0) {
+            $('.header__burger').removeClass('header__burger_active')
+            $('.header__nav-body').removeClass('header__nav-body_active');
+            $('.header__nav-burger').removeClass('header__nav-burger_active');
+            $('body, html').css('overflow', 'visible');
+		}
+	});
 
     $('.face').owlCarousel({
         loop: true,
