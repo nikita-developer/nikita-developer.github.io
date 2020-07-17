@@ -1065,6 +1065,10 @@ html [type="button"],
   text-transform: uppercase;
 }
 
+.logo {
+  text-decoration: none;
+}
+
 .pay {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -7,7 +7,7 @@ $(document).ready(function() {
         $('body, html').css('overflow', 'hidden');
     })
 
-    $('.header__burger').mouseup(function (e) { // событие клика по веб-документу
+    $('.header__burger').mouseup(function (e) {
 		if (!$('.header__nav-body').is(e.target) && $('.header__nav-body').has(e.target).length === 0) {
             $('.header__burger').removeClass('header__burger_active')
             $('.header__nav-body').removeClass('header__nav-body_active');
@@ -23,15 +23,33 @@ $(document).ready(function() {
         items: 1
     });
 
-    $(window).scroll(function(){
-        var height = $('.header__head').outerHeight();
-        var navHeight = $('.header__nav').outerHeight();
-        if ($(this).scrollTop() >= height) {
-            $('.header__nav').addClass('header__nav_mobile');
-            $('.section_face').css('margin-top', navHeight);
-        } else {
-            $('.header__nav').removeClass('header__nav_mobile');
-            $('.section_face').css('margin-top', 0);
-        }
+    if ($(window).width() <= 1024) {
+        $(window).scroll(function(){
+            var height = $('.header__head').outerHeight();
+            var navHeight = $('.header__nav').outerHeight();
+            if ($(this).scrollTop() >= height) {
+                $('.header__nav').addClass('header__nav_mobile');
+                $('.section_face').css('margin-top', navHeight);
+            } else {
+                $('.header__nav').removeClass('header__nav_mobile');
+                $('.section_face').css('margin-top', 0);
+            }
+        });
+    };
+
+    $(window).resize(function(){
+        if ($(window).width() <= 1024) {
+            $(window).scroll(function(){
+                var height = $('.header__head').outerHeight();
+                var navHeight = $('.header__nav').outerHeight();
+                if ($(this).scrollTop() >= height) {
+                    $('.header__nav').addClass('header__nav_mobile');
+                    $('.section_face').css('margin-top', navHeight);
+                } else {
+                    $('.header__nav').removeClass('header__nav_mobile');
+                    $('.section_face').css('margin-top', 0);
+                }
+            });
+        };
     });
 });
