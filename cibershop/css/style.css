@@ -898,6 +898,7 @@ html [type="button"],
   font-size: 30px;
   font-weight: 400;
   color: #fff;
+  text-decoration: none;
 }
 
 .footer__body {
