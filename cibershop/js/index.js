@@ -23,6 +23,13 @@ $(document).ready(function() {
         items: 1
     });
 
+    $('.rek').owlCarousel({
+        loop: true,
+        margin: 30,
+        autoHeight: true,
+        items: 3
+    });
+
     if ($(window).width() <= 1024) {
         $(window).scroll(function(){
             var height = $('.header__head').outerHeight();
