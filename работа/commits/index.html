@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Комментарии</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="post"></div>
+    <div class="commits">
+        <div class="commits__title">Комментарии</div>
+        <div class="commits__item">
+            <div class="commits__head">
+                <div class="commits__face"><img src="img/face1.jpg" alt=""></div>
+                <div class="commits__info">
+                    <div class="commits__name">Name</div>
+                    <div class="commits__date"></div>
+                </div>
+            </div>
+            <div class="commits__body">
+                <div class="commits__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio voluptatem quam at repellat aliquam laboriosam sed provident, beatae reprehenderit amet!</div>
+            </div>
+        </div>
+        <div class="commits__item">
+            <div class="commits__head">
+                <div class="commits__face"><img src="img/face1.jpg" alt=""></div>
+                <div class="commits__info">
+                    <div class="commits__name">Name</div>
+                    <div class="commits__date"></div>
+                </div>
+            </div>
+            <div class="commits__body">
+                <div class="commits__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum laborum quisquam asperiores distinctio dolores. Odit repudiandae, beatae quasi iusto quibusdam sed ut, adipisci, officia possimus vero repellat animi velit deleniti iste et, cum commodi laudantium perspiciatis. Cumque fugiat harum sequi aut ducimus quas atque eum neque excepturi mollitia aperiam, facere fuga quod doloribus optio nesciunt amet necessitatibus similique labore nobis provident. Eveniet voluptates obcaecati fugit autem voluptatibus praesentium illo consectetur, iste odio, natus ipsa excepturi nemo? Eos itaque mollitia, ex blanditiis, necessitatibus fugit temporibus doloremque fuga officia sunt. Dolorum iste officiis quae possimus accusantium suscipit tempora maiores, beatae inventore nesciunt!
+                    <div class="commits__media"><img src="img/face1.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="commits__item">
+            <div class="commits__head">
+                <div class="commits__face"><img src="img/face1.jpg" alt=""></div>
+                <div class="commits__info">
+                    <div class="commits__name">Name</div>
+                    <div class="commits__date"></div>
+                </div>
+            </div>
+            <div class="commits__body">
+                <div class="commits__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum laborum quisquam asperiores distinctio dolores. Odit repudiandae, beatae quasi iusto quibusdam sed ut, adipisci, officia possimus vero repellat animi velit deleniti iste et, cum commodi laudantium perspiciatis. Cumque fugiat harum sequi aut ducimus quas atque eum neque excepturi mollitia aperiam, facere fuga quod doloribus optio nesciunt amet necessitatibus similique labore nobis provident. Eveniet voluptates obcaecati fugit autem voluptatibus praesentium illo consectetur, iste odio, natus ipsa excepturi nemo? Eos itaque mollitia, ex blanditiis, necessitatibus fugit temporibus doloremque fuga officia sunt. Dolorum iste officiis quae possimus accusantium suscipit tempora maiores, beatae inventore nesciunt!
+                    <div class="commits__media"><img src="img/face1.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="commits__item">
+            <div class="commits__add">
+                <div class="commits__add-title">Хотите написать сообщение?</div>
+                <div class="commits__add-box">
+                    <input id="myName" class="commits__field-name" type="text" placeholder="Name">
+                    <textarea id="myMessage" class="commits__field-message" placeholder="Message"></textarea>
+                    <button id="mySend" class="commits__add-btn">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            var $date = document.getElementsByClassName('commits__date'),
+                $name = document.getElementById('myName'),
+                $message = document.getElementById('myMessage'),
+                $send = document.getElementById('mySend'),
+                /*айдишник вешаем на дату поста*/
+                $post = document.getElementById('post');
+            addDate();
+
+            /*проверка на заполненность полей*/
+            mySend.onclick = function () {
+                if ($name.value == 0 || $name.value == "") {
+                    $name.classList.add('error');
+                } else {
+                    $name.classList.remove('error');
+                    if ($message.value == 0 || $message.value == "") {
+                        $message.classList.add('error');
+                    } else {
+                        $message.classList.remove('error');
+                        sendMessage();
+                    }
+                }
+            }
+
+            /*добавление даты*/
+            function addDate () {
+                /*пробегаемся по всем классам и устанавливаем время*/
+                for (var i = $date.length - 1; i >= 0; i--) {
+                    var d = new Date();
+                    d.setDate(d.getDate() - (($date.length - 1) - i));
+                    $date[i].innerHTML = formatDate(d);
+
+                    if ($post) {
+                        $post.innerHTML = formatDate(d);
+                    }
+                }
+            }
+
+            /*форматируем дату*/
+            function formatDate(date) {
+                var dd = date.getDate();
+                if (dd < 10) dd = '0' + dd;
+                var mm = date.getMonth() + 1;
+                if (mm < 10) mm = '0' + mm;
+                var yy = date.getFullYear() % 100;
+                if (yy < 10) yy = '0' + yy;
+                return dd + '.' + mm + '.' + yy;
+            }
+
+            /*проверяем писал ли пользователь комментарий*/
+            if (localStorage.getItem('commit') == 1) {
+                var $item = document.getElementsByClassName('commits__item');
+                $item[$item.length - 1].classList.add('hide');
+
+                $item[$item.length - 2].insertAdjacentHTML('afterend', '<div class="commits__item"><div class="commits__head"><div class="commits__face"></div><div class="commits__info"><div class="commits__name">' + localStorage.getItem('$name') + '</div><div class="commits__date"></div></div></div><div class="commits__body"><div class="commits__description">' + localStorage.getItem('$message') +'</div></div><div class="commits__success">Ваш комментарии проходит модерацию</div></div>');
+
+                addDate();
+            }
+
+            /*вставляем новый комментарий*/
+            function sendMessage() {
+                var $item = document.getElementsByClassName('commits__item');
+
+                $item[$item.length - 2].insertAdjacentHTML('afterend', '<div class="commits__item"><div class="commits__head"><div class="commits__face"></div><div class="commits__info"><div class="commits__name">' + $name.value + '</div><div class="commits__date"></div></div></div><div class="commits__body"><div class="commits__description">' + $message.value +'</div></div><div class="commits__success">Ваш комментарии проходит модерацию</div></div>');
+                addDate();
+
+                $item[$item.length - 1].classList.add('hide');
+                localStorage.$name = $name.value;
+                localStorage.$message = $message.value;
+
+                /*нужно постоянно менять число и на 116 строке тоже самое*/
+                localStorage.commit = 1;
+            }
+        }
+    </script>
+</body>
+</html>
