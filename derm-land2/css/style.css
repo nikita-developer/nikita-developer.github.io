@@ -4166,22 +4166,24 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .commits__box .owl-nav {
     position: absolute;
-    top: 31px;
+    top: 65px;
     left: 0;
     right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .commits__box .owl-nav button {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     background-image: url("../media/commits/next.svg") !important;
     background-repeat: no-repeat !important;
   }
