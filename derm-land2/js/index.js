@@ -23,11 +23,13 @@ $(document).ready(function() {
         autoHeight: true,
         responsive : {
             320 : {
-                items: 1
+                items: 1,
+                nav: true
             },
 
             768 : {
-                items: 2
+                items: 2,
+                nav: false
             },
 
             960 : {
@@ -35,6 +37,46 @@ $(document).ready(function() {
             }
         }
     });
+
+    var slider = $('.step__body');
+    if ($(window).width() <= 480) {
+        slider.owlCarousel({
+            loop: true,
+            margin: 20,
+            autoHeight: true,
+            items: 1
+        });
+    }
+
+    $(window).resize(function () {
+        if ($(window).width() > 380) {
+            slider.owlCarousel('destroy')
+        } else {
+            slider.owlCarousel({
+                loop: true,
+                margin: 20,
+                autoHeight: true,
+                items: 1
+            });
+        }
+    })
+
+    // var slider = $('.step__body');
+    // var sld = function() {
+    //     if ($(window).width() < 480) {
+    //         slider.bxSlider({
+    //             auto: true,
+    //             pause: 2000,
+    //             autoHover: true
+    //         });
+    //         console.log(1);
+    //     } else {
+    //         slider.destroy();
+    //     }
+    // };
+
+    // sld();
+    // $(window).resize(sld);
 
     Start();
     function Start() {
