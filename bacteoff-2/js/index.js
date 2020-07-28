@@ -15,8 +15,7 @@ $(document).ready(function() {
 
     $('.js-commits__box').owlCarousel({
         loop: true,
-        margin: 20,
-        autoHeight: true,
+        margin: 45,
         responsive : {
             320 : {
                 items: 1
@@ -100,23 +99,29 @@ $(document).ready(function() {
         }
     }
 
-    var $csrollTop = $(this).scrollTop();
-    var $offsetTop = $('.count__body').offset().top;
+    countAnimate();
+    $(window).resize(function () {
+        countAnimate ();
+    });
+    function countAnimate () {
+        var $height = 120; /* на какой высоте будет срабатывать анимация*/
+            $hWindow = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
+            $csrollTop = $(window).scrollTop() + $hWindow - $height,
+            $offsetTop = $('.count__body').offset().top;
 
-    if($csrollTop > $offsetTop - 200) {
-        $('.count__body').addClass('count__body_active');
-    } else {
-        $('.count__body').removeClass('count__body_active');
-    }
-
-    $(window).scroll(function () {
-        $csrollTop = $(this).scrollTop();
-        $offsetTop = $('.count__body').offset().top;
-
-        if($csrollTop > $offsetTop - 200) {
+        if($csrollTop >= $offsetTop) {
             $('.count__body').addClass('count__body_active');
         } else {
             $('.count__body').removeClass('count__body_active');
-        }
-    })
+        };
+
+        $(window).scroll(function () {
+            $csrollTop = $(this).scrollTop() + $hWindow - $height;
+            if($csrollTop >= $offsetTop) {
+                $('.count__body').addClass('count__body_active');
+            } else {
+                $('.count__body').removeClass('count__body_active');
+            }
+        });
+    }
 });
