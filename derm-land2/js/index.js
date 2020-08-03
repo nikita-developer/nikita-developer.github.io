@@ -1,10 +1,5 @@
 
 $(document).ready(function() {
-    AOS.init({
-        startEvent: 'load',
-        offset: 60
-    });
-
     $('.mistakes__item').click(function() {
         $(this).children('.mistakes__body').toggleClass('mistakes__body_hide');
     })
@@ -116,4 +111,8 @@ $(document).ready(function() {
     setTimeout(function() {
         $('body').addClass('loaded');
     }, 600);
+
+    AOS.init({
+        offset: 60
+    });
 });
