@@ -12,7 +12,7 @@
 
 	<script type="text/javascript" src="/cdn/js/countrieslist_abpfree.js"></script>
 	<script type="text/javascript" src="/cdn/js/countries.js"></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/cdn/js/jquery.js"></script>
 	<script type="text/javascript" src="/cdn/js/shakesland.js"></script>
 
@@ -643,6 +643,10 @@
 		<script>
 			$('.open-sertificate').click(function() {
 				$('.sertificate__box ').toggleClass('sertificate__box_open');
+				$("body,html").animate({ 
+					scrollTop: $('.block_sertificate').offset().top 
+				}, 300); 
+				return false;
 			})
 	
 			$('.sertificate__item').click(function () {
