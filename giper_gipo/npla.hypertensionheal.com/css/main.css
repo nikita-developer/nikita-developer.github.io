@@ -2659,6 +2659,13 @@ img {
 
 
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .block_sertificate {
     padding-top: 40px;
 }
@@ -2678,8 +2685,11 @@ img {
 .sertificate__box {
     position: relative;
     margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     height: 530px;
     overflow: hidden;
     padding: 15px;
@@ -2708,26 +2718,39 @@ img {
 }
 
 .sertificate__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 15px;
     border: 1px solid #dcdcdc;
-    flex: 0 0 calc(25% - 20px);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(25% - 20px);
+            flex: 0 0 calc(25% - 20px);
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 20px;
     cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .sertificate__item:hover {
-    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
 }
 
 .sertificate__box .owl-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 15px;
 }
 
@@ -2746,7 +2769,9 @@ img {
 }
 
 .sertificate__item:hover {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
 }
 
 .sertificate__box .owl-nav button + button {
@@ -2771,7 +2796,10 @@ img {
 }
 
 .sertificate__item img {
-    width: 100% !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto !important;
     max-width: 90%;
     max-height: 90%;
 }
@@ -2787,7 +2815,8 @@ img {
 
 .open-sertificate {
     display: inline-block;
-    box-shadow: 0px 14px 20px 0px #e0e0e0;
+    -webkit-box-shadow: 0px 14px 20px 0px #e0e0e0;
+            box-shadow: 0px 14px 20px 0px #e0e0e0;
     border: 0;
     padding: 15px 60px;
     text-align: center;
@@ -2796,13 +2825,18 @@ img {
     background: rgb(255,168,103);
     border-radius: 3px;
     font-weight: 700;
+    background: -o-linear-gradient(302deg, rgba(255,168,103,1) 0%, rgba(255,87,157,1) 100%);
     background: linear-gradient(148deg, rgba(255,168,103,1) 0%, rgba(255,87,157,1) 100%);
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
     cursor: pointer;
 }
 
 .open-sertificate:hover {
-    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
 }
 
 .open-sertificate:focus {
@@ -2811,13 +2845,17 @@ img {
 
 @media (max-width: 1200px) {
     .sertificate__item {
-        flex: 0 0 calc(33.333% - 20px);
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 calc(33.333% - 20px);
+                flex: 0 0 calc(33.333% - 20px);
     }
 }
 
 @media (max-width: 700px) {
     .sertificate__item {
-        flex: 0 0 calc(50% - 20px);
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 calc(50% - 20px);
+                flex: 0 0 calc(50% - 20px);
     }
 }
 
