@@ -2745,11 +2745,6 @@ img {
     margin: 0;
 }
 
-.sertificate__item_active img {
-    max-width: 80%;
-    max-height: 80%;
-}
-
 .sertificate__item:hover {
     transform: scale(1);
 }
@@ -2776,8 +2771,14 @@ img {
 }
 
 .sertificate__item img {
-    width: auto !important;
-    max-width: 100%;
+    width: 100% !important;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.sertificate__item_active img {
+    max-width: 90%;
+    max-height: 90%;
 }
 
 .sertificate__btn {
