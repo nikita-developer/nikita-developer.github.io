@@ -2845,7 +2845,7 @@ p {
     max-height: 90%;
 }
 
-.sertificate__item > div img {
+.sertificate__item img {
     display: block;
     max-width: 100%;
     max-height: 100%;
