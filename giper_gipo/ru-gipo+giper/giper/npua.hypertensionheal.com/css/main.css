@@ -1181,6 +1181,10 @@ h1, h2, h3, p {
     background-size: 100% 100%
 }
 
+.bl5-right__list {
+    padding-left: 40px;
+}
+
 .bl6__header {
     position: relative;
     z-index: 2;
@@ -2074,6 +2078,10 @@ h1, h2, h3, p {
     .bl2-bottom__left div:nth-child(3) {
         flex: 0 0 100%;
     }
+    
+    .bl5-right__list {
+        padding-left: 0px;
+    }
 
     .container_box {
         max-width: 480px !important;
@@ -2490,6 +2498,10 @@ h1, h2, h3, p {
 
     .hert__box {
         padding: 15px 15px 280px 15px;
+    }
+
+    .bl9-header__text p {
+        text-align: left;
     }
 
     .bl5__right {

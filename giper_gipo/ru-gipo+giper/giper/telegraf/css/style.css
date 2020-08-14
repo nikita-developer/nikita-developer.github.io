@@ -511,6 +511,7 @@ template {
 .typography h3{
   line-height: 1.2;
   margin: 25px 0 15px;
+  line-height: 1;
 }
 .typography h1{
   font-size: 38px;

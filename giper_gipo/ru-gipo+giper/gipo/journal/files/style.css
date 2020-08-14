@@ -14994,7 +14994,7 @@ BODY:not(.s-schemius) .allbanners--common-banner .allbanners-link {
 .post2017 ul,
 .public-DraftStyleDefault-ol,
 .public-DraftStyleDefault-ul {
-    margin: 32px 0;
+    margin: 10px 0;
     padding-left: 2.5em!important;
     overflow: hidden
 }
@@ -29366,7 +29366,7 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
         .mdspost-text OL LI,
         .mdspost-text UL LI {
             position: relative;
-            margin-bottom: 20px
+            margin-bottom: 10px
         }
         .mdspost-text OL LI:before,
         .mdspost-text UL LI:before {
@@ -29379,7 +29379,7 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
             content: '\2014'
         }
         .mdspost-text P {
-            margin: 0 0 20px
+            margin: 0 0 10px
         }
         .mdspost-text P:first-child {
             margin-bottom: 13px
@@ -39791,4 +39791,17 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
     span._4d._4h._4f {
     display: none;
  }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p > i {
+    margin-top: -5px;
+    display: block;
+    text-align: center;
 }

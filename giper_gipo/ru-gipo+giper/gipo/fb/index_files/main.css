@@ -5292,7 +5292,8 @@ div.cs49+div.cs74 {
 
 .csmp .cspp {
     display: block;
-    padding: 10px 15px
+    padding: 10px 15px;
+    width: 100%;
 }
 
 .csmp .cspp:hover {

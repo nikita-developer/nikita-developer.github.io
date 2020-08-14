@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ABP</title>
     <link rel="stylesheet" id="vamtam-front-all-css" href="./index_files/all.css" type="text/css" media="all">
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/cdn/js/jquery.js"></script>
     <script type="text/javascript" src="/cdn/js/shakesland.js"></script>
 
@@ -765,7 +765,11 @@
             for (var i = comments - 1; i >= 0; i--) {
                 var delta = Math.round(Math.random() * 2);
                 var d = new Date(d.addDays(-delta));
-                dates[i] = d.getDate() + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
+                var $data = d.getDate();
+                if($data <= 9) {
+                    $data = '0' + $data;
+                }
+                dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
             }
             commentDate.each(function (i, el) {
                 $(this).text(dates[i]);
