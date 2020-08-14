@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="owl.carousel.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/lightgallery.css">
 	<script type="text/javascript" src="/cdn/js/geo/it13.js"></script>
 	<script type="text/javascript" src="/cdn/js/countries.js"></script>
 	<script src="js/jq.js"></script>
@@ -603,66 +604,36 @@
 				<h2 class="sertificate__title">Certificati e licenze</h2>
 				<h3 class="sertificate__subtitle">Siamo un fornitore affidabile di beni e servizi e siamo pronti a documentarlo</h3>
 				<div class="sertificate__box">
-					<div class="sertificate__item">
-						<div><img src="img/sert-1.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-2.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-3.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-4.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-5.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-6.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-7.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-8.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-9.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-10.jpg" alt=""></div>
-					</div>
-					<!-- <div class="sertificate__item">
-						<div><img src="img/sert-11.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-12.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-13.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-14.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-15.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-16.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-17.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-18.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-19.jpg" alt=""></div>
-					</div>
-					<div class="sertificate__item">
-						<div><img src="img/sert-20.jpg" alt=""></div>
-					</div> -->
+					<a href="img/sert-1.jpg" class="sertificate__item">
+						<img src="img/sert-1.jpg" alt="">
+					</a>
+					<a href="img/sert-2.jpg" class="sertificate__item">
+						<img src="img/sert-2.jpg" alt="">
+					</a>
+					<a href="img/sert-3.jpg" class="sertificate__item">
+						<img src="img/sert-3.jpg" alt="">
+					</a>
+					<a href="img/sert-4.jpg" class="sertificate__item">
+						<img src="img/sert-4.jpg" alt="">
+					</a>
+					<a href="img/sert-5.jpg" class="sertificate__item">
+						<img src="img/sert-5.jpg" alt="">
+					</a>
+					<a href="img/sert-6.jpg" class="sertificate__item">
+						<img src="img/sert-6.jpg" alt="">
+					</a>
+					<a href="img/sert-7.jpg" class="sertificate__item">
+						<img src="img/sert-7.jpg" alt="">
+					</a>
+					<a href="img/sert-8.jpg" class="sertificate__item">
+						<img src="img/sert-8.jpg" alt="">
+					</a>
+					<a href="img/sert-8.jpg" class="sertificate__item">
+						<img src="img/sert-9.jpg" alt="">
+					</a>
+					<a href="img/sert-10.jpg" class="sertificate__item">
+						<img src="img/sert-10.jpg" alt="">
+					</a>
 				</div>
 				<div class="sertificate__btn">
 					<div class="open-sertificate">Apri tutti i certificati</div>
@@ -677,20 +648,6 @@
 				}, 300); 
 				return false;
 			})
-	
-			$('.sertificate__item').click(function () {
-				$('.sertificate__item').removeClass('sertificate__item_active');
-				$(this).addClass('sertificate__item_active');
-				$('body').addClass('body-hide');
-			})
-	
-			$(document).click(function (e){
-				var div = $(".sertificate__item_active img");
-				if (!div.is(e.target) && div.has(e.target).length === 0) {
-					$('body').removeClass('body-hide');
-					$('.sertificate__item').removeClass('sertificate__item_active');
-				}
-			});
 		</script>
 	</section>
 
@@ -876,6 +833,21 @@
 			</div>
 		</section>
 	</section>
+
+	<script src="js/lightgallery.min.js"></script>
+
+	<script>
+		$('.sertificate__box').lightGallery({
+			thumbnail:true,
+			autoplay: false,
+			progressBar: false,
+			autoplayControls: false,
+			autoplayFirstVideo: false,
+			share: false,
+			actualSize: false,
+			fullScreen: false
+		}); 
+	</script>
 
 
 
