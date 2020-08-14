@@ -253,9 +253,6 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
@@ -718,7 +715,6 @@ p {
 .bl2-top__text p:first-child span {
     font-family: proxima_novabold;
     color: #c72329;
-    text-transform: uppercase
 }
 
 .bl2-top__text p:last-child span {
@@ -1681,6 +1677,29 @@ p {
     color: #6ab1a4
 }
 
+.bl2-top__header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.bl8__header h3 span {
+    font-family: proxima_novabold;
+}
+
+.bl2-top__header h2 {
+    font: 47px proxima_novaregular;
+    line-height: 1;
+}
+
+.bl2-top__header h2 span:first-child {
+    font-family: proxima_novabold;
+}
+
+.bl2-top__header h2 span:last-child {
+    font-family: proxima_novabold;
+    color: #c72329;
+}
+
 .bl10-main__img {
     position: relative;
     text-align: center
@@ -1968,7 +1987,7 @@ p {
 @media screen and (max-width:1200px) {
     .container {
         max-width: 900px;
-        padding: 0 10px
+        padding: 0 15px
     }
 
     .bl6-main__img {
@@ -2658,7 +2677,14 @@ p {
     }
 
     .bl8__header h3 {
-        margin-bottom: 30px;
+        line-height: 1;
+        font-size: 28px;
+        margin-right: 0;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .bl8__header h3 span {
+        display: block;
     }
 
     .bl2-bottom__left div:first-child h3 {

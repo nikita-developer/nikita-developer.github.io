@@ -1454,7 +1454,14 @@ select {
 }
 
 #facebook .css5 a {
+
     font-family: inherit
+}
+
+.csmp .cspp {
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 #facebook .css5 h1,
@@ -5582,6 +5589,10 @@ _:future,
     margin-left: 10px;
 }
 
+.cs11 {
+    max-width: 1012px;
+}
+
 .lks {
     display: -webkit-flex;
     display: -moz-flex;
@@ -5737,6 +5748,14 @@ _:future,
 }
 .img-first {
     width: 100%;
+}
+
+.cs56 {
+    padding-bottom: 12px;
+}
+
+.cs56 + .cs56 {
+    padding-top: 0;
 }
 
 @media (max-width: 900px) {

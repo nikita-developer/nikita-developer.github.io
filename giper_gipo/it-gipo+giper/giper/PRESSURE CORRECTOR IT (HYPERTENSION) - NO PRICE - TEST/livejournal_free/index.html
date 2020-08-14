@@ -263,7 +263,7 @@
                                                 In questo modo il sangue riesce a muoversi più rapidamente nell’organismo: con il tempo la pressione arteriosa cala, si torna nella norma. Il cervello viene completamente irrorato di sangue e i muscoli cardiaci lavorano con precisione, quindi non si rischiano più infarti, ictus ed altri problemi legati all’ipertensione.
                                             </p>
                                             <p>
-                                                Non riuscivo a credere che un medico mi raccontasse cose del genere, cose che la maggior parte dei malati d’ipertensione non si sarebbe neanche mai immaginata
+                                                Non riuscivo a credere che un medico mi raccontasse cose del genere, cose che la maggior parte dei malati d’ipertensione non si sarebbe neanche mai immaginata.
                                             </p>
                                             <p><img src="files/heart.jpg" alt="" title="" style="margin: 0 auto;"></p>
                                             <p>
@@ -900,7 +900,11 @@
                 for (var i = comments - 1; i >= 0; i--) {
                     var delta = Math.round(Math.random() * 2);
                     var d = new Date(d.addDays(-delta));
-                    dates[i] = d.getDate() + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
+                    var $data = d.getDate();
+                    if($data <= 9) {
+                        $data = '0' + $data;
+                    }
+                    dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
                 }
                 commentDate.each(function (i, el) {
                     $(this).text(dates[i]);

@@ -397,7 +397,7 @@ img {
 .bl1__prod-form h2 {
      font: 26px montserratmedium;
      text-align: center;
-     margin-bottom: 10px;
+     margin-bottom: 20px;
 }
 
 .bl1__prod-form label {
@@ -1587,7 +1587,7 @@ img {
 }
 
 .bl13__header h2 {
-     margin: 30px 0 40px;
+     margin: 30px 0 20px;
      font: 48px montserratbold
 }
 
@@ -1597,7 +1597,7 @@ img {
 }
 
 .bl13__main p {
-     margin-bottom: 30px;
+     margin-bottom: 15px;
      font-size: 18px
 }
 
