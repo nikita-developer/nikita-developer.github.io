@@ -928,7 +928,8 @@ h1, h2, h3, p {
     margin-top: 5px;
     font: 18px proxima_novaregular;
     color: #c72329;
-    vertical-align: top
+    vertical-align: top;
+    margin-left: -5px;
 }
 
 .bl3-main__prod a {
@@ -1233,7 +1234,6 @@ h1, h2, h3, p {
 .bl6-main__order p {
     margin-bottom: 30px;
     font: 18px proxima_novaregular;
-    text-transform: uppercase
 }
 
 .bl6-main__order a {
@@ -1537,6 +1537,42 @@ h1, h2, h3, p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
+}
+
+.hert {
+    padding-bottom: 60px;
+    background-color: #fff;
+}
+
+.hert__box {
+    padding: 50px;
+    border: 2px solid #da1c1e;
+    border-radius: 10px;
+    background-image: url("../img/hert.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.hert__box p {
+    max-width: 570px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.hert__box p span {
+    display: block;
+    margin-top: 15px;
+    max-width: 570px;
+}
+
+.hert__box {
+    padding: 25px;
+}
+
+.hert__box p {
+    background-color: #ffffff9e;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .bl9-header__text img {
@@ -2535,12 +2571,20 @@ h1, h2, h3, p {
         max-width: 400px
     }
 
+    .bl5-right__header h3 {
+        text-align: center;
+    }
+
     .bl5__right {
         padding-left: 0
     }
 
     .bl5-right__header, .bl5-right__list li:first-child, .bl5-right__list li:last-child {
         margin-left: auto
+    }
+
+    .hert__box {
+        padding: 15px 15px 280px 15px;
     }
 
     .bl5__left p:after {
@@ -3040,6 +3084,12 @@ button:focus {
 
     .sertificate__box {
         height: 440px;
+    }
+
+    .hert__box {
+        background-position: center bottom;
+        padding-bottom: 270px;
+        background-size: 280px;
     }
 }
 

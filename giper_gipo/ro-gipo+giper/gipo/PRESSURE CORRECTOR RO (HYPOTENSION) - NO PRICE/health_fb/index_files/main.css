@@ -5685,7 +5685,7 @@ div.cs49+div.cs74 {
     .cs27 {
         max-width: 820px;
         width: 100%;
-        margin: 10px auto;
+        margin: 0 auto;
         float: none;
     }
     .cs30,
@@ -5715,5 +5715,18 @@ div.cs49+div.cs74 {
         flex-basis: 100%;
         flex-wrap: wrap;
         justify-content: flex-start;
+    }
+
+    .reg-form {
+        text-align: center;
+    }
+
+    .reg-form__left {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .button {
+        font-size: 14px;
     }
 }

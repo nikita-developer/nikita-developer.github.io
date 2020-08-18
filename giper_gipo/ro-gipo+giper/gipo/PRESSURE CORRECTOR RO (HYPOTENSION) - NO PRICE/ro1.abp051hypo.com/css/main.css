@@ -228,6 +228,42 @@ img {
     font: 48px montserratbold
 }
 
+.hert {
+    padding-bottom: 60px;
+    background-color: #fff;
+}
+
+.hert__box {
+    padding: 50px;
+    border: 2px solid #da1c1e;
+    border-radius: 10px;
+    background-image: url("../img/hert.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.hert__box p {
+    max-width: 570px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.hert__box p span {
+    display: block;
+    margin-top: 15px;
+    max-width: 570px;
+}
+
+.hert__box {
+    padding: 25px;
+}
+
+.hert__box p {
+    background-color: #ffffff9e;
+    padding: 15px;
+    border-radius: 5px;
+}
+
 .bl1__list > p {
     font: 26px montserratmedium
 }
@@ -973,6 +1009,10 @@ img {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start
+}
+
+.bl8-main__left {
+    margin-bottom: 15px;
 }
 
 .bl8-main__left div:first-child, .bl8-main__right div:first-child {
@@ -1815,7 +1855,7 @@ img {
 
     .block5 {
         height: 855px;
-        background-position-y: 145px
+        background-position-y: 90px
     }
 
     .bl5__wrapper {
@@ -1841,7 +1881,7 @@ img {
         position: static;
         max-width: 100%;
         margin-top: 30px;
-        text-align: center
+        text-align: center;
     }
 
     .bl6__bottom p, .bl6__top p {
@@ -1851,6 +1891,7 @@ img {
         bottom: auto;
         max-width: 400px;
         margin: 10px auto;
+        text-align: left
     }
 
     .bl6__bottom p:after {
@@ -1978,7 +2019,11 @@ img {
     }
 
     .block5 {
-        background-position-y: 180px
+        background-position-y: 120px
+    }
+
+    .block6 {
+        margin-top: -360px;
     }
 
     .bl5__wrapper {
@@ -2170,7 +2215,7 @@ img {
 
     .block5 {
         height: 775px;
-        background-position-y: 220px
+        background-position-y: 160px
     }
 
     .block6 {
@@ -2337,6 +2382,10 @@ img {
         flex-basis: 100%
     }
 
+    .hert__box {
+        padding: 15px 15px 280px 15px;
+    }
+
     .bl2__left p {
         left: 30px
     }
@@ -2346,8 +2395,8 @@ img {
     }
 
     .block5 {
-        height: 830px;
-        background-position-y: 300px
+        height: 700px;
+        background-position-y: 120px
     }
 
     .bl5__wrapper {
@@ -2382,7 +2431,8 @@ img {
     }
 
     .block5 {
-        height: 690px
+        height: 675px;
+        background-position-y: 150px;
     }
 
     .bl9__right div {
@@ -2440,10 +2490,6 @@ img {
         margin-top: 15px;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%
-    }
-
-    .block5 {
-        height: 780px
     }
 
     .bl2__left p {
@@ -2820,6 +2866,12 @@ button:focus {
 
     .sertificate__box {
         height: 440px;
+    }
+
+    .hert__box {
+        background-position: center bottom;
+        padding-bottom: 270px;
+        background-size: 280px;
     }
 }
 
