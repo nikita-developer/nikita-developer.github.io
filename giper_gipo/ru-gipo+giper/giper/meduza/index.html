@@ -321,14 +321,14 @@
                                                     <b>- Если не в аптеке, то где можно купить АВР-051?</b>
                                                 </p>
 
-                                                <p>
-                                                    <img src="index_files/product.jpg" alt="">
-                                                </p>
 
                                                 <p>- АВР-051 можно заказать с
                                                     <a href="">официального сайта аппарата</a>. Причем сделать это можно
                                                     по льготной
                                                     цене!
+                                                </p>
+                                                <p>
+                                                    <img src="index_files/product.jpg" alt="">
                                                 </p>
 
                                                 <p>Заказать аппарат просто. Для этого необходимо:</p>
@@ -612,7 +612,8 @@
                     var appendNull = function (num) {
                         return num < 10 ? 0 + num.toString() : num;
                     };
-                    d = new Date(); p = new Date(d.getTime() + 0 * 86400000);
+                    d = new Date();
+                    p = new Date(d.getTime() + 0 * 86400000);
                     monthb = '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
                     document.write(appendNull(p.getDate()) + '.' + monthb[p.getMonth()] + '.' + p.getFullYear());
                 </script> вы можете получить аппарат по акции!</p>
@@ -627,7 +628,9 @@
 
     <script>
         $(function () {
-            $('.screenLock').css({ height: $(document).height() + "px" });
+            $('.screenLock').css({
+                height: $(document).height() + "px"
+            });
             $('a.order-btn').click(function () {
                 $(this).closest('form').submit();
                 return false;

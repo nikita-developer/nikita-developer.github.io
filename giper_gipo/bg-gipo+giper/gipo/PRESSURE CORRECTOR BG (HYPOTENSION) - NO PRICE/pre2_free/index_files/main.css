@@ -1221,7 +1221,7 @@ form {
 }
 
 label {
-    color: #666;
+    color: #fff;
     cursor: default;
     font-weight: 600;
     vertical-align: middle
@@ -5780,5 +5780,20 @@ _:future,
 
     .cs27 {
         width: 100% !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .reg-form__left {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .reg-form {
+        text-align: center;
+    }
+
+    .button {
+        font-size: 14px;
     }
 }
