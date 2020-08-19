@@ -389,6 +389,7 @@ p,
 .main-container {
   font: normal 18px/24px "arial";
 }
+
 .page-header .desc,
 .page-header .desc a,
 em {
@@ -480,8 +481,12 @@ h6 em {
   color: #5C6C23;
 }
 small {
-  color: #e2e2e2;
-  font-size: 11px !important;
+  display: block;
+  color: #000;
+  font-size: 12px !important;
+  line-height: 15px;
+  margin-top: 5px;
+  text-align: center;
 }
 a {
   text-decoration: none;
@@ -1004,7 +1009,6 @@ body.bosed .meta-header > .limit-wrapper {
   text-align: left;
   border-bottom: 1px solid #dadade;
   position: relative;
-  margin: 0 5px;
 }
 .page-header .page-header-content:before {
   width: 60px;
@@ -1023,7 +1027,7 @@ body.bosed .meta-header > .limit-wrapper {
   position: relative;
 }
 .page-header .title {
-  padding: 70px 0 20px 0;
+  padding: 20px 0 20px 0;
   display: inline-block;
 }
 .page-header .desc {
@@ -1191,7 +1195,7 @@ html {
   z-index: 1;
 }
 #sub-header.has-background + .wpv-main {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 body.single-tribe_events #sub-header.has-background + .wpv-main,
 body.single.events-list #sub-header.has-background + .wpv-main {
@@ -1578,6 +1582,7 @@ ol li {
 .loop-wrapper .post-article {
   display: inline-block;
   margin: 0;
+  width: auto;
   padding: 15px;
 }
 body:not(.single-post) .loop-wrapper .post-article:hover {
@@ -2026,6 +2031,9 @@ var,
 cite {
   font-style: italic;
 }
+#sub-header header.page-header {
+  padding: 0 60px;
+}
 @media (min-width: 959px) {
   header.main-header {
     overflow: visible;
@@ -2043,9 +2051,7 @@ cite {
     position: relative;
     z-index: 2;
   }
-  #sub-header header.page-header {
-    padding: 0 60px;
-  }
+  
   .loop-wrapper.news > .grid-1-4:nth-child(4n+1),
   .loop-wrapper.news > .grid-1-3:nth-child(3n+1),
   .loop-wrapper.news > .grid-1-2:nth-child(2n+1),
@@ -2117,8 +2123,8 @@ cite {
   display: flex;
 }
 .quot-img {
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 230px;
+  max-width: 230px;
 }
 @media screen and (max-width: 545px) {
   .quot {
@@ -2135,7 +2141,7 @@ cite {
 .quot-text {
   margin-left: 30px;
   align-self: center;
-  max-width: 500px;
+  max-width: 340px;
 }
 .underline {
   text-decoration: underline;
@@ -2174,7 +2180,7 @@ figcaption {
 }
 .comments-block {
   width: 80%;
-  margin-top: 20px;
+  margin-top: 0;
 }
 @media screen and (max-width: 545px) {
   .comments-block {
@@ -2182,7 +2188,7 @@ figcaption {
 }
 }
 .info-comments {
-  margin: 30px 0;
+  margin: 15px 0 30px;
   padding: 10px 0;
   border-bottom: 1px solid lightgrey;
 }
@@ -2258,21 +2264,32 @@ figcaption {
 
 @media (max-width: 768px) {
     .page-wrapper > article {
-        padding-right: 0;
-        padding-left: 0;
+        padding-right: 15px;
+        padding-left: 15px;
     }
 
     .quot-img {
         min-width: 150px;
         max-width: 150px;
     }
+
+    #sub-header header.page-header {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
 }
 
 @media (max-width: 480px) {
-    .quot {
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .quot {
+    display: block;
+}
+
+.quot-img {
+  float: left;
+  margin-right: 10px;
+}
+    .list {
+      width: 100%;
     }
 
     .quot-text {
@@ -2284,4 +2301,9 @@ figcaption {
         font-size: 28px;
         line-height: 1.2;
     }
+
+
+  p {
+    margin: 0.5em 0;
+}
 }
