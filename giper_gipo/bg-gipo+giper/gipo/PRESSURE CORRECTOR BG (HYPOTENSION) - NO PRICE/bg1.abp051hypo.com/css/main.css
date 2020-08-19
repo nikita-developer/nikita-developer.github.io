@@ -893,9 +893,7 @@ img {
 .bl6__bottom p {
     position: absolute;
     bottom: 15px;
-    left: 12px;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, .6);
+    left: -343px;
     max-width: 330px;
     font-size: 20px;
     line-height: 25px;

@@ -1030,7 +1030,7 @@ h1, h2, h3, p {
 
 .bl4-main__top {
     padding: 35px;
-    padding-bottom: 0;
+    padding-bottom: 30px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -1048,7 +1048,7 @@ h1, h2, h3, p {
     flex-wrap: wrap;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end
+    justify-content: flex-end;
 }
 
 .bl4-main__top>div {
@@ -1182,7 +1182,7 @@ h1, h2, h3, p {
 
 .bl5-right__list li:last-child {
     margin-bottom: 0;
-    margin-left: -50px
+    margin-left: -30px
 }
 
 .block6 {
