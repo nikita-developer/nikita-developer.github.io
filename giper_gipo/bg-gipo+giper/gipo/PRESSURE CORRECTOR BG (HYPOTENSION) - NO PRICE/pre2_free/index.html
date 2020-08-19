@@ -1,12 +1,14 @@
+
 <html id="facebook" class="" lang="ru">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andreea Jurca - Home | Facebook</title>
     <link type="text/css" rel="stylesheet" href="index_files/main.css">
     <link rel="shortcut icon" href="iRmz9lCMBD2.ico">
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/cdn/js/jquery.js"></script>
     <script type="text/javascript" src="/cdn/js/leadbit.js"></script>
     <script type="text/javascript" src="js/translater.js"></script>
@@ -126,14 +128,8 @@
                                                                                 <div class="cs91 cs92 cs93">
                                                                                     <h6 class="cs94 cs95 cs96 cs97"><span class="cswn cscg"><span class="cswb cscg lt41"> <a href="">Ангелина Ангелова</a> на 46 години</span></span></h6>
                                                                                     <div class="cs98 cs99 cs9a cs9b">
-                                                                                        <span class="cssm cswn cscg"><abbr class="cs9c cstm"><span class="insertRuDate lt42">
-                                                                                                    <script type="text/javascript">
-                                                                                                        d = new Date();
-                                                                                                        p = new Date(d.getTime() - 0 * 86400000);
-                                                                                                        monthA = 'Януари,Февруари,Март,Април,Май,Юни,Юли,Август,Септември,Октомври,Ноември,Декември'.split(',');
-                                                                                                        var w = p.getDate();
-                                                                                                        document.write(p.getDate() + ' ' + monthA[p.getMonth()]) + ' ' + p.getFullYear());
-                                                                                                    </script>2 Юни 2020
+                                                                                        <span class="cssm cswn cscg"><abbr class="cs9c cstm"><span class="insertRuDate lt42 comment_date">
+                                                                                                    
                                                                                                 </span> </abbr> </span> <i style="margin-left: 5px;" class="img csp1 cs9d"> </i>
                                                                                     </div>
                                                                                 </div>
@@ -152,7 +148,7 @@
                                                                 <p class="photo" style="display: inline-block;text-align: center;"><img class="img-first" src="index_files/5.jpg"></p>
                                                                 <p><b class="lt47">Половин живот с ниско кръвно налягане</b></p>
                                                                 <p class="lt48">На млади години всички болести се понасят по-лесно, а и отношението ни към тях е небрежно. Така че и аз не се притеснявах до известно време.</p>
-                                                                <p class="lt49">С възрастта започна силно да реагирам на капризите на времето. Щом вали или слънцето рязко изгрее - край, аз лежа, не мога да се откъсна от леглото. После започна да ми
+                                                                <p class="lt49">С възрастта започна силно да реагирам на капризите на времето. Щом вали или слънцето рязко изгрее – край, аз лежа, не мога да се откъсна от леглото. После започна да ми
                                                                     се вие свят, така че не можех да стана, нито да изляза от къщи.</p>
                                                                 <p class="lt50">Добре беше, ако това се случваше у дома, но ако ставаше на публично място, всички толкова бяха шокирани, сякаш съм пияна или представлявам някаква опасност за тях. Имах
                                                                     само няколко случая, но те много ясно останаха в главата ми.</p>
@@ -213,10 +209,10 @@
                                                             </div>
                                                             <div class="like-block">
                                                                 <div class="lb__left">
-                                                                    <span><i class="like1"></i></span><span><i class="like2"></i></span><span> 34</span>
+                                                                    <span><i class="like1"></i></span><span><i class="like2"></i></span><span> 1652 </span>
                                                                 </div>
                                                                 <div class="lb__right">
-                                                                    <span class="lt79">18 коментара</span><span class="lt80">3 Споделяния</span>
+                                                                    <span class="lt79">18 коментара</span><span class="lt80">428  Споделяния</span>
                                                                 </div>
                                                             </div>
                                                             <div class="lks">
@@ -296,7 +292,7 @@
                                                                 <div class="comment">
                                                                     <div class="com-img"><img alt="Image" src="index_files/comm9.jpg"></div>
                                                                     <div class="com-body">
-                                                                        <p class="lt93"> <a href="">Борислав</a> <br>Наистина ли са измислили нещо полезно! Имах високо кръвно налягане, няколко пъти ми викаха линейка. Да се бориш с това е безполезно -
+                                                                        <p class="lt93"> <a href="">Борислав</a> <br>Наистина ли са измислили нещо полезно! Имах високо кръвно налягане, няколко пъти ми викаха линейка. Да се бориш с това е безполезно –
                                                                             така си мислех, докато не получих по пощата устройството АВР-051. Използвам го от около 2 седмици, за сега кръвното ми не е скачало:)</p><span
                                                                             class="comment_date"></span>
                                                                     </div>
@@ -503,8 +499,12 @@
             for (var i = comments - 1; i >= 0; i--) {
                 var delta = Math.round(Math.random() * 2);
                 var d = new Date(d.addDays(-delta));
-                dates[i] = d.getDate() + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
-            }
+                var $data = d.getDate();
+                if($data <= 9) {
+                    $data = '0' + $data;
+                }
+				dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
+			}
             commentDate.each(function(i, el) {
                 $(this).text(dates[i]);
             });

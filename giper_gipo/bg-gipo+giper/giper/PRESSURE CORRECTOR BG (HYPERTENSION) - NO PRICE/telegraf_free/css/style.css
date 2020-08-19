@@ -509,7 +509,7 @@ template {
 .typography h1,
 .typography h2,
 .typography h3{
-  line-height: 1.2;
+  line-height: 1;
   margin: 25px 0 15px;
 }
 .typography h1{

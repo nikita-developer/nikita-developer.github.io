@@ -1041,13 +1041,13 @@ span.MaterialTag {
 }
 
 a.button {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     color: #fff !important;
     background-color: red;
     display: block;
     width: 100%;
-    max-width: 320px;
+    max-width: 670px;
     border-radius: 30px;
     text-decoration: none;
     padding: 15px;

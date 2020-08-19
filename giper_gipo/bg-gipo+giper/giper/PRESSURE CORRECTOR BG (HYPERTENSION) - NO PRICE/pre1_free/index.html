@@ -241,7 +241,7 @@
                                         <figure class="aentry-post__figure aentry-post__figure--text-width aentry-post__figure--has-text" data-figure-type="image" data-image-type="standart">
                                             <div class="aentry-post__img--text-width"><img alt="" src="files/heart.jpg" style="margin: 0 auto;" title=""></div>
                                         </figure>
-                                        <p class="lt46">Честно казано, малко се съмнявах думите на моята позната. Ами ако всичко тоа е измислица,а тя е просто търговски агент?<br>Дойдох си вкъщи и прегледах цялата информация за тази гривна. Ето какво
+                                        <p class="lt46">Честно казано, малко се съмнявах думите на моята позната. Ами ако всичко тоа е измислица, а тя е просто търговски агент?<br>Дойдох си вкъщи и прегледах цялата информация за тази гривна. Ето какво
                                             намерих.</p>
                                         <p class="lt47">Импулсите на ток с различна величина действат върху корените на гръбначните нерви, като по този начин тонизират кръвоносните съдовете за по-добро кръвообращение. Когато гривната пуска серия от
                                             токови импулси, тогава нервните влакна се възбуждат. Благодарение на този ефект, в организма се подобрява микроциркулацията и се увеличава клетъчното хранене, което запазва структурата и функционирането на
@@ -659,9 +659,6 @@
                             <a class="lt119" href="">Помощ</a>
                         </li>
                         <li class="s-footer-nav-item-sharing">
-                            <a class="lt120" href="">Бутон Споделяне</a>
-                        </li>
-                        <li class="s-footer-nav-item-sharing">
                             <a href="">
                                 <script>
                                     var d = new Date();
@@ -688,7 +685,11 @@
                 for (var i = comments - 1; i >= 0; i--) {
                     var delta = Math.round(Math.random() * 2);
                     var d = new Date(d.addDays(-delta));
-                    dates[i] = d.getDate() + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
+                    var $data = d.getDate();
+                    if($data <= 9) {
+                        $data = '0' + $data;
+                    }
+                    dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
                 }
                 commentDate.each(function(i, el) {
                     $(this).text(dates[i]);

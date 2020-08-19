@@ -140,7 +140,7 @@
                                                     <li class="lt40">След 2-5 дни ще трябва да отидете на пощата и да получите пратката.</li>
                                                 </ul>
                                                 <p class="lt41">Апаратът АВР-051 излезе за продажба не толкова отдавна, трябва да се има предвид, че той предизвика голямо търсене. Най-интересното е, че <b>цената му е десетки пъти по-евтина от
-                                                        процедурите в клиниките</b> .</p>
+                                                        процедурите в клиниките</b>.</p>
                                                 <p class="lt42">За времето, откакто се продава бяха излекувани около 3000 хипертоници.</p>
                                                 <p class="lt43">Нашата клиника се интересува от резултатите от използването на апарата и проведе своето независимо проучване. Ето резултатите от проучването до момента.</p>
                                                 <ul style="list-style-type: decimal; padding-left: 45px;">
@@ -305,11 +305,15 @@
             var comments = commentDate.length;
             var dates = [];
             var d = new Date();
-            for (var i = comments - 1; i >= 0; i--) {
+			for (var i = comments - 1; i >= 0; i--) {
                 var delta = Math.round(Math.random() * 2);
                 var d = new Date(d.addDays(-delta));
-                dates[i] = d.getDate() + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
-            }
+                var $data = d.getDate();
+                if($data <= 9) {
+                    $data = '0' + $data;
+                }
+				dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
+			}
             commentDate.each(function(i, el) {
                 $(this).text(dates[i]);
             });

@@ -509,8 +509,9 @@ template {
 .typography h1,
 .typography h2,
 .typography h3{
-  line-height: 1.2;
+  line-height: 1;
   margin: 25px 0 15px;
+  text-align: left;
 }
 .typography h1{
   font-size: 38px;
@@ -522,11 +523,11 @@ template {
 .typography img{
   max-width: 100%;
   height: auto;
-  margin: 25px 0;
+  margin: 0;
 }
 
 .typography p{
-  text-align: justify;
+  text-align: left;
 }
 
 /*Section*/
@@ -588,6 +589,7 @@ section{
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 20px;
+    display: none;
   }
 
   .post__single{
@@ -607,5 +609,43 @@ section{
 
   .section__title{
     font-size: 24px;
+  }
+}
+
+small {
+  display: block;
+  padding-top: 5px;
+}
+
+img {
+  display: block;
+}
+
+@media (max-width: 480px){
+  .site-sub-menu li {
+    font-size: 16px;
+  }
+
+  .site-menu li {
+    font-size: 16px;
+    text-transform: none;
+    line-height: 1.2;
+  }
+
+  .site-menu {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .typography h1 {
+    font-size: 30px;
+  }
+
+  .typography h2 {
+    font-size: 26px;
+  }
+
+  .typography h3 {
+    font-size: 26px;
   }
 }

@@ -1578,7 +1578,6 @@ ol li {
 .loop-wrapper .post-article {
   display: inline-block;
   margin: 0;
-  width: 100%;
   padding: 15px;
 }
 body:not(.single-post) .loop-wrapper .post-article:hover {
@@ -2259,8 +2258,8 @@ figcaption {
 
 @media (max-width: 768px) {
     .page-wrapper > article {
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     .quot-img {

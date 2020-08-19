@@ -5292,7 +5292,8 @@ div.cs49+div.cs74 {
 
 .csmp .cspp {
     display: block;
-    padding: 10px 15px
+    padding: 10px 15px;
+    width: 100%;
 }
 
 .csmp .cspp:hover {
@@ -5632,7 +5633,7 @@ _:future,
     color: #fff;
     padding: 10px 15px;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 15px;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 700;
@@ -5784,13 +5785,13 @@ _:future,
 }
 
 @media (max-width: 500px) {
+    .reg-form {
+        text-align: center;
+    }
+
     .reg-form__left {
         margin-right: auto;
         margin-left: auto;
-    }
-
-    .reg-form {
-        text-align: center;
     }
 
     .button {

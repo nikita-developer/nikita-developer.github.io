@@ -1459,6 +1459,15 @@
         .b-popup-manage-notes .b-flatbutton:first-child {
             margin-top: 0
         }
+
+        .mdspost-text UL {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .aentry-post__text ul li {
+            line-height: 18px;
+        }
     }
     
     .b-fader {
@@ -32808,7 +32817,7 @@
                 width: 100%;
                 max-width: 772px;
                 padding: 0 16px;
-                margin: 0 auto 56px;
+                margin: 0 auto 0;
                 box-sizing: border-box
             }
             .aentry-post FIGURE IFRAME {
@@ -39802,4 +39811,26 @@
         margin-top: -5px;
         display: block;
         text-align: center;
+    }
+
+    small {
+        display: block;
+        padding-top: 5px;
+        line-height: 18px;
+    }
+
+    @media (max-width: 480px) {
+        .mdspost-text UL {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding-left: 20px !important;
+        }
+
+        .acomments .mdspost-comments-controls__meta {
+            margin-bottom: 20px;
+        }
+
+        .mdspost-entry__aside {
+            padding-top: 0;
+        }
     }

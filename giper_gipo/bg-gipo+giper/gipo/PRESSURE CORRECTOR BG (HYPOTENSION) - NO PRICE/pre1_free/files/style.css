@@ -1459,6 +1459,11 @@ BODY .b-loginpopup-item A:hover {
     .b-popup-manage-notes .b-flatbutton:first-child {
         margin-top: 0
     }
+
+    small {
+        display: block;
+        margin-top: 5px;
+    }
 }
 
 .b-fader {
@@ -32808,7 +32813,7 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
             width: 100%;
             max-width: 772px;
             padding: 0 16px;
-            margin: 0 auto 56px;
+            margin: 0 auto 0;
             box-sizing: border-box
         }
         .aentry-post FIGURE IFRAME {
@@ -33097,8 +33102,10 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
                 display: none
             }
             .aentry-post__text {
-                margin-bottom: 35px
+                margin-bottom: 0
             }
+
+            
             .aentry-post__title-text {
                 font-size: 32px;
                 line-height: 32px
@@ -39802,4 +39809,20 @@ p > i {
     margin-top: -5px;
     display: block;
     text-align: center;
+}
+small {
+    display: block;
+    margin-top: 5px;
+}
+
+@media all and (max-width:480px) {
+
+    small {
+        padding-top: 5px;
+        line-height: 14px;
+    }
+
+    .acomments .mdspost-comments-controls__meta {
+        margin-bottom: 15px;
+    }
 }

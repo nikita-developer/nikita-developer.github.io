@@ -524,7 +524,7 @@ a {
     -ms-flex-direction: row;
     flex-direction: row;
     margin: 0 auto;
-    padding: 13px 0 12px;
+    padding: 15px 0 15px;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap
@@ -534,10 +534,15 @@ a {
     color: rgba(255, 255, 255, 0.5)
 }
 
+img {
+    display: block;
+}
+
+
 @media only screen and (min-width: 48em) {
     .Copyright-container {
         max-width: 675px;
-        padding: 10px 0 18px;
+        padding: 18px 0 18px;
         border-top: 1px solid #505050;
         -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
@@ -928,6 +933,7 @@ span.MaterialTag {
 }
 
 .Figure-caption {
+    display: block;
     width: 100%;
     max-width: 650px;
     margin: 0 auto;
@@ -1041,16 +1047,17 @@ span.MaterialTag {
 }
 
 a.button {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     color: #fff !important;
     background-color: red;
     display: block;
     width: 100%;
-    max-width: 320px;
+    max-width: 670px;
     border-radius: 30px;
     text-decoration: none;
     padding: 15px;
+    margin-top: 22px;
 }
 
 a.button:hover {
@@ -1064,4 +1071,15 @@ a.button:hover {
 
 .com + .com {
     margin-top: 40px;
+}
+
+small {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 7px 12px 0;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
 }
