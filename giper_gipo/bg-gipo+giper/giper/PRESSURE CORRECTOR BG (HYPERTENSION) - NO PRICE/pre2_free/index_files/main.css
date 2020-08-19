@@ -5034,6 +5034,7 @@ html .cs40 {
     background-color: #3b5998;
     border-bottom: 1px solid #133783;
     min-height: 42px;
+    height: 42px;
     position: relative;
     z-index: 1;
     box-shadow: 40px 0 0 #3b5998;
