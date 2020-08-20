@@ -179,14 +179,8 @@
 																						<span class="cswn cscg"><span class="cswb cscg lt41"><a href="">Andreea Jurca</a> 46 de ani</span></span>
 																					</h6>
 																					<div class="cs98 cs99 cs9a cs9b">
-																						<span class="cssm cswn cscg"><abbr class="cs9c cstm"><span class="insertRuDate lt42">
-																									<script type="text/javascript">
-																										d = new Date();
-																										p = new Date(d.getTime() - 0 * 86400000);
-																										monthA = 'Ianuarie,Februarie,Martie,Aprilie,Mai,Iunie,Iulie,August,Septembrie,Octombrie,Noiembrie,Decembrie'.split(',');
-																										var w = p.getDate();
-																										document.write(p.getDate() + ' ' + monthA[p.getMonth()] + ' ' + p.getFullYear());
-																									</script>
+																						<span class="cssm cswn cscg"><abbr class="cs9c cstm"><span class="insertRuDate lt42 comment_date">
+																									
 																								</span></abbr></span><i class="img csp1 cs9d"></i>
 																					</div>
 																				</div>
@@ -515,14 +509,14 @@
 			var dates = [];
 			var d = new Date();
 			for (var i = comments - 1; i >= 0; i--) {
-                var delta = Math.round(Math.random() * 2);
-                var d = new Date(d.addDays(-delta));
-                var $data = d.getDate();
-                if($data <= 9) {
-                    $data = '0' + $data;
-                }
-			dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
-		}
+					var delta = Math.round(Math.random() * 2);
+					var d = new Date(d.addDays(-delta));
+					var $data = d.getDate();
+					if ($data <= 9) {
+						$data = '0' + $data;
+					}
+					dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
+				}
 			commentDate.each(function (i, el) {
 				$(this).text(dates[i]);
 			});
