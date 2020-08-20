@@ -1,5 +1,9 @@
 
 $(document).ready(function() {
+    AOS.init({
+        offset: 60
+    });
+
     $('.form__field').focus( function() {
         $(this).addClass('form__field_active')
     }).blur(function () {
