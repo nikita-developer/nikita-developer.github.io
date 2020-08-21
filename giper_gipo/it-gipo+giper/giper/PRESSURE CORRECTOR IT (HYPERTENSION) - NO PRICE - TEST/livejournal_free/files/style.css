@@ -30052,7 +30052,6 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
         }
 
         .mdspost-text>:last-child {
-            margin-bottom: 50px;
             text-align: center;
         }
 
@@ -34205,7 +34204,7 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
             width: 100%;
             max-width: 772px;
             padding: 0 16px;
-            margin: 0 auto 56px;
+            margin: 0 auto 0;
             box-sizing: border-box
         }
 
@@ -42089,10 +42088,6 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
             span._4d._4h._4f {
                 display: none;
             }
-        }
-
-        p > img {
-            margin-bottom: 20px;
         }
 
         img {

@@ -858,6 +858,10 @@ p {
     left: 60px
 }
 
+.bl2__top {
+    margin-bottom: 110px;
+}
+
 .bl2-right__list li:nth-child(3) {
     right: 50px;
     bottom: 38px;
@@ -1019,7 +1023,7 @@ p {
 
 .bl4-main__top {
     padding: 35px;
-    padding-bottom: 0;
+    padding-bottom: 35px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -1112,14 +1116,7 @@ p {
 }
 
 .bl5__left p:after {
-    position: absolute;
-    bottom: -90px;
-    left: 50%;
-    width: 29px;
-    height: 84px;
-    margin-left: -15px;
-    background: url("../img/bl5_arr.png") center no-repeat;
-    content: ""
+    display: none;
 }
 
 .bl5-right__header {
@@ -2078,6 +2075,10 @@ p {
         max-width: 700px
     }
 
+    .bl2__top {
+        margin-bottom: 0;
+    }
+
     .block1 {
         background: url("../img/bl1_bgTablet.png") center no-repeat;
         background-size: 100% 100%;
@@ -2326,6 +2327,15 @@ p {
         max-width: 480px
     }
 
+    .bl5__left p {
+        max-width: 180px;
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 16px;
+        top: 35%;
+    }
+
     .block3 {
         margin-top: 0;
         background: #fff
@@ -2541,6 +2551,9 @@ p {
         display: none
     }
 
+    .bl5-right__list li {
+        margin-bottom: 25px;
+    }
     
     .bl2-top__header {
         margin-bottom: 20px;
@@ -2617,8 +2630,17 @@ p {
     }
 
     .bl7__list:before {
+        display: none;
         top: 25px;
         bottom: 117px
+    }
+
+    .bl7-list__title:before {
+        display: none;
+    }
+
+    .bl7__list {
+        padding-left: 0;
     }
 
     .bl8__list {
@@ -2726,7 +2748,7 @@ p {
     }
 
     .bl5-right__list li {
-        padding-left: 75px
+        padding-left: 90px
     }
 
     .bl5__left p {
@@ -3007,6 +3029,11 @@ p {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 calc(50% - 20px);
                 flex: 0 0 calc(50% - 20px);
+    }
+
+    .bl12__list .bl12-list__img {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
 
