@@ -2431,7 +2431,7 @@ p {
 
 @media screen and (max-width:580px) {
      .block6 {
-          margin-top: -360px;
+          margin-top: -300px;
      }
 }
 
@@ -2871,6 +2871,12 @@ p {
          height: 440px;
      }
  }
+
+ @media (max-width: 600px) {
+     .block5 {
+          background-position-y: 210px;
+      }
+ }
  
  @media (max-width: 480px) {
      .sertificate .sertificate__subtitle {
@@ -2889,12 +2895,24 @@ p {
          padding-right: 30px;
          padding-left: 30px;
      }
+
+     .block5 {
+          background-position-y: 260px;
+      }
+
+      .block6 {
+          margin-top: -320px;
+      }
  }
  
  @media (max-width: 400px) {
      .sertificate__box {
          height: 320px;
      }
+
+     .block6 {
+          margin-top: -260px;
+      }
  }
  
  .body-hide {

@@ -31088,11 +31088,10 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
 
         .mdspost-article__comments {
             margin: 0;
-            padding: 40px 0
+            padding: 15px 0
         }
 
         .mdspost-comments {
-            margin: -20px 0 0;
             padding: 20px 0 0
         }
 
@@ -34662,7 +34661,7 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
         }
 
         .acomments .mdspost-comments-controls__meta {
-            margin-bottom: 40px
+            margin-bottom: 20px
         }
 
         .acomments .b-pager {
@@ -35426,12 +35425,7 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
         @media (max-width:1400px) {
             .acomments {
                 width: 100%;
-                padding: 0 70px;
                 box-sizing: border-box
-            }
-
-            .acomments.mdspost-article__comments {
-                padding: 0
             }
 
             .mdspost .massaction {
