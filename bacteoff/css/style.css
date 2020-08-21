@@ -3060,7 +3060,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .pain__info {
-  padding: 60px 40px 15px;
+  padding: 60px 20px 15px;
   background-color: #fff;
   -webkit-box-shadow: 20px 20px 20px -12px rgba(0, 0, 0, 0.18);
   box-shadow: 20px 20px 20px -12px rgba(0, 0, 0, 0.18);
@@ -3279,11 +3279,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .sostav__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 390px;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 15px;
   background-color: #fff;
   border-radius: 2px;
@@ -3298,15 +3295,17 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .sostav__item_right .sostav__media {
+  float: right;
   margin-right: 0;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .sostav__media {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  margin-right: 20px;
+  float: left;
+  margin-right: 10px;
 }
 
 .sostav__info span:first-child {
@@ -3488,12 +3487,12 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .sostav__item_right .sostav__media {
     margin-right: 0;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   .sostav__media {
     max-width: 90px;
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
   .sostav__info span:first-child {
@@ -3686,6 +3685,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .sostav__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -3699,6 +3701,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     margin-right: auto;
     margin-bottom: 10px;
     margin-left: auto;
+  }
+
+  .sostav__info span:last-child {
+    font-size: 14px;
   }
 
   .sostav__product {
@@ -3871,6 +3877,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 @media (max-width: 420px) {
   .sostav__item {
+    display: block;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -3881,6 +3888,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .sostav__item .sostav__media {
     margin-right: 10px;
+    margin-bottom: 0;
   }
 
   .sostav__item_right {
@@ -3894,5 +3902,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   .sostav__item_right .sostav__media {
     margin-right: 0;
     margin-left: 10px;
+  }
+
+  .sostav__media {
+    margin-bottom: 0;
   }
 }
