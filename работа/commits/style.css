@@ -1,6 +1,3 @@
-
-
-
 .commits {
     padding: 15px;
     font-family: 'Roboto', sans-serif;
@@ -20,7 +17,7 @@
     display: none;
 }
 
-.commits__item + .commits__item {
+.commits__item+.commits__item {
     margin-top: 20px;
     border-top: 1px solid #eaeaea;
 }
@@ -103,7 +100,11 @@
     resize: none;
 }
 
-.error {
+.commits__item_hide {
+    display: none;
+}
+
+.commits_error {
     border-color: red;
 }
 
