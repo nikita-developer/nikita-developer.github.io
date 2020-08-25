@@ -3626,7 +3626,7 @@ body {
     padding-left: 40px;
     width: 100%;
     max-width: 300px;
-    color: #fff;
+    color: #000;
     font-weight: 700;
     max-width: 176px;
     text-align: center;
@@ -3922,7 +3922,6 @@ body {
 
 .all-form__count {
     color: red;
-    margin-top: 15px;
 }
 
 .all-form__body {
