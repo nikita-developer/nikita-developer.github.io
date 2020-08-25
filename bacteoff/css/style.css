@@ -3150,10 +3150,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  max-width: 425px;
 }
 
 .prezents__title {
+  max-width: 700px;
   margin-bottom: 30px;
   font-size: 63px;
   line-height: 56px;
@@ -3165,6 +3165,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .prezents__description {
+  max-width: 425px;
   font-size: 18px;
 }
 
@@ -3320,7 +3321,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   bottom: 0;
   left: 50%;
   margin-bottom: -160px;
-  margin-left: -32px;
+  margin-left: -25px;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -3472,6 +3473,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     border-radius: 3px;
   }
 
+  .prezents__box {
+    max-width: 425px;
+  }
+
   .problems__media {
     max-width: 230px;
   }
@@ -3501,7 +3506,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .sostav__product {
     max-width: 390px;
-    margin-left: -24px;
+    margin-left: -19px;
   }
 
   .symptoms__title {
@@ -3743,23 +3748,35 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     font-size: 28px;
   }
 
+  .section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   .commits__title {
     font-size: 37px;
+    text-align: left;
   }
 
   .commits__description {
-    font-size: 18px;
-    line-height: 1.4;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: left;
   }
 
   .commits__item {
     padding: 15px;
   }
 
+  .commits__name {
+    margin-right: auto;
+  }
+
   .eags__box {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-bottom: 30px;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
@@ -3775,12 +3792,17 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     font-size: 20px;
   }
 
+  .face__logo {
+    margin-bottom: 20px;
+  }
+
   .face__check {
     font-size: 18px;
   }
 
   .face__product {
     max-width: 320px;
+    margin-top: -20px;
   }
 
   .face__product::before {
@@ -3800,8 +3822,13 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     max-width: 100%;
   }
 
+  .pain__head {
+    padding: 10px 10px 5px;
+  }
+
   .pain__item {
     width: 100%;
+    overflow: hidden;
     background-color: #fff;
   }
 
@@ -3810,13 +3837,26 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .pain__item-media {
-    padding: 15px 15px 0 15px;
+    position: relative;
+    float: left;
+    width: 121px;
+    height: 82px;
+    padding: 0;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
 
   .pain__item-media img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    max-width: none;
+    height: 100%;
     margin-left: 0;
   }
 
@@ -3846,7 +3886,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .pain__info {
-    padding: 15px;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 
   .container {
@@ -3887,21 +3929,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   }
 
   .sostav__item .sostav__media {
+    float: left;
     margin-right: 10px;
     margin-bottom: 0;
-  }
-
-  .sostav__item_right {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-    text-align: right;
-  }
-
-  .sostav__item_right .sostav__media {
-    margin-right: 0;
-    margin-left: 10px;
   }
 
   .sostav__media {
