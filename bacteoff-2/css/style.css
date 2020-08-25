@@ -4857,6 +4857,26 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     font-size: 20px;
   }
 
+  .garant__face {
+    position: relative;
+    width: 105px;
+    min-width: 105px;
+    height: 105px;
+    overflow: hidden;
+  }
+
+  .garant__face img {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    max-width: none;
+  }
+
+  .garant__name {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
   .infected__title span {
     font-size: 18px;
   }
@@ -4898,6 +4918,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     justify-content: center;
     max-width: 100%;
     padding-left: 100px;
+  }
+
+  .ingredients__name {
+    font-size: 17px;
   }
 
   .ingredients__media {
@@ -4963,6 +4987,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   .warning__list {
     width: 100%;
     max-width: 250px;
+  }
+
+  .warning__box:last-child {
+    text-align: left;
   }
 
   .who__description {

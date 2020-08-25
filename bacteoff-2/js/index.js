@@ -1,8 +1,7 @@
 
 $(document).ready(function() {
     AOS.init({
-        startEvent: 'load',
-        offset: 20
+        offset: 60
     });
 
     $('.form__field').focus( function() {
