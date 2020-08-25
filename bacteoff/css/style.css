@@ -3753,6 +3753,14 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     padding-bottom: 30px;
   }
 
+  .section_parazits {
+    background-image: url("../media/section/parazits-480.jpg");
+  }
+
+  .section_pain {
+    background-image: url("../media/section/pain-480.jpg");
+  }
+
   .commits__title {
     font-size: 37px;
     text-align: left;

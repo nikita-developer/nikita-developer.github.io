@@ -2659,3 +2659,11 @@ figcaption {
         display: none;
     }
 }
+
+@media (max-width: 480px) {
+    .css-10spavb {
+        width: calc(100% - 116px);
+        text-align: center;
+        margin-left: 0;
+    }
+}

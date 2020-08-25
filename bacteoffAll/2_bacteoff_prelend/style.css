@@ -565,7 +565,6 @@ h1, h2, h3, h4 {
 ._3m_3s {
     color: #fff;
     background-color: var(--masthead-fill, #2b3237);
-    height: 3rem;
     box-sizing: content-box
 }
 
@@ -581,7 +580,6 @@ h1, h2, h3, h4 {
     padding: 0;
     outline: 0 none;
     float: left;
-    white-space: nowrap
 }
 
 .U3zty:after {
