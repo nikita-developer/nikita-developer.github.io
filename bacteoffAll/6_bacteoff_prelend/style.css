@@ -226,8 +226,7 @@ A.badge:visited {
     max-width: 1100px;
     margin: 24px 0 20px;
     padding: 4px 0 12px;
-    border-top: 1px solid #dce1e4;
-    border-bottom: 1px solid #dce1e4
+    
 }
 
 .category-panel__caption {
@@ -608,9 +607,11 @@ HTML BODY .i-ljuser-type-P .i-ljuser-userhead {
 }
 
 .mdspost-entry__wrapper {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    max-width: 740px;
-    margin-right: 40px
+    max-width: 100%;
+    margin-right: 0
 }
 
 .mdspost-article__header {
@@ -664,7 +665,6 @@ HTML BODY .i-ljuser-type-P .i-ljuser-userhead {
 }
 
 .mdspost-text {
-    overflow: hidden;
     font: 19px/1.45 'PT Serif', Georgia, Times, serif;
     color: #242f33
 }
@@ -851,7 +851,7 @@ HTML BODY .i-ljuser-type-P .i-ljuser-userhead {
 
 .mdspost-entry__aside {
     width: 300px;
-    margin-right: 50px;
+    margin-right: 0;
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0
@@ -1101,9 +1101,19 @@ HTML BODY .i-ljuser-type-P .i-ljuser-userhead {
 
     .mdspost-entry__aside {
         float: none;
-        width: 100%;
+        width: 250px;
         margin: 0;
         padding-top: 30px
+    }
+}
+
+@media (max-width: 768px) {
+    .mdspost-entry__wrapper {
+        flex-direction: column;
+    }
+
+    .mdspost-entry__aside {
+        display: none;
     }
 }
 
@@ -1124,6 +1134,8 @@ HTML BODY .i-ljuser-type-P .i-ljuser-userhead {
     .mdspost-comment__body {
         min-width: 0
     }
+
+    
 
     .mdspost-article__entry {
         padding-top: 12px
@@ -1471,7 +1483,10 @@ HTML BODY .i-ljuser-type-P .i-ljuser-userhead {
 
 .aentry-post.mdspost-entry__content {
     max-width: 740px;
-    padding: 0
+    padding: 0;
+    margin-left: 0 !important;
+    margin-right: 0;
+    margin-right: 40px;
 }
 
 .aentry-post .mdspost-title {
@@ -1552,7 +1567,6 @@ HTML BODY .i-ljuser-type-P .i-ljuser-userhead {
 @media (max-width:1000px) {
     .aentry-post.mdspost-entry__content {
         max-width: 100%;
-        margin-right: 0;
         padding: 0
     }
 }
@@ -1884,6 +1898,11 @@ HTML BODY .i-ljuser-type-P .i-ljuser-userhead {
 .plista_widget_sidebar .plistaAllOuter {
     display: block;
     -webkit-font-smoothing: antialiased
+}
+
+.svgicon.svgicon--embed {
+    color: #838b8e;
+    margin-left: 15px;
 }
 
 .plista_widget_sidebar a,
@@ -2293,6 +2312,11 @@ HTML BODY .i-ljuser-type-P .i-ljuser-userhead {
 @media (max-width:430px) {
     span._4d._4h._4f {
         display: none
+    }
+
+    .aentry-post .mdspost-title {
+        font-size: 32px;
+        line-height: 1.2;
     }
 }
 

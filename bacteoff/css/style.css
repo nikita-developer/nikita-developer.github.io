@@ -3368,6 +3368,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     background-position: center bottom;
   }
 
+  .section_sostav {
+    overflow-y: hidden;
+  }
+
   .section__title {
     font-size: 40px;
     line-height: 1.2;
@@ -3722,6 +3726,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     transform: translateX(-26px);
   }
 
+  .sostav__product img {
+    margin-left: 15px;
+  }
+
   .symptoms {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -3751,6 +3759,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   .section {
     padding-top: 30px;
     padding-bottom: 30px;
+    overflow-y: hidden;
   }
 
   .section_parazits {
@@ -3811,6 +3820,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   .face__product {
     max-width: 320px;
     margin-top: -20px;
+    margin-left: -6px;
   }
 
   .face__product::before {
@@ -3832,6 +3842,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .pain__head {
     padding: 10px 10px 5px;
+  }
+
+  .pain__box {
+    margin-top: 0;
   }
 
   .pain__item {
@@ -3899,8 +3913,8 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
     box-shadow: none;
   }
 
-  .container {
-    max-width: 100%;
+  .prezents__product img {
+    margin-left: -10px;
   }
 
   .problems__title {
@@ -3918,6 +3932,10 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .problems__body {
     margin-bottom: 70px;
+  }
+
+  .problems__name mark {
+    max-width: 200px;
   }
 
   .container {
@@ -3944,5 +3962,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
   .sostav__media {
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .sostav__item .sostav__media {
+    max-width: 110px;
   }
 }
