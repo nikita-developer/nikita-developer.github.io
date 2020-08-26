@@ -14733,6 +14733,7 @@ BODY:not(.s-schemius) .allbanners--common-banner .allbanners-link {
 .aentry-post .aentry-post__figure,
 .post2017 .aentry-post__figure {
     min-height: 1px;
+    margin-bottom: 8px;
     text-align: center
 }
 
@@ -15428,7 +15429,7 @@ BODY:not(.s-schemius) .allbanners--common-banner .allbanners-link {
 .aentry-post__text p+figure,
 .post2017 figure+p,
 .post2017 p+figure {
-    margin-top: 20px
+    margin-top: 15px
 }
 
 .DraftEditor-root .aentry-post__figure--fullscreen+p,
@@ -27887,7 +27888,7 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
             margin: 0 0 23px
         }
         .mdspost-furtherdata {
-            margin: 0 0 24px;
+            margin: 0 0 0;
             line-height: 1.2;
             color: #A1AEB2
         }
@@ -29202,7 +29203,7 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
         }
         .mdspost-text {
             overflow: hidden;
-            font: 19px/1.45 'PT Serif', Georgia, Times, serif;
+            font: 18px/1.3 'PT Serif', Georgia, Times, serif;
             color: #242F33
         }
         .mdspost-text::after {
@@ -29271,7 +29272,6 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
             margin-top: 0!important
         }
         .mdspost-text>:last-child {
-            margin-bottom: 50px;
             text-align: center;
         }
         .mdspost-text IMG {
@@ -30148,10 +30148,9 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
         }
         .mdspost-article__comments {
             margin: 0;
-            padding: 40px 0
+            padding: 0 0
         }
         .mdspost-comments {
-            margin: -20px 0 0;
             padding: 20px 0 0
         }
         .mdscomments-list {
@@ -31314,11 +31313,12 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
             margin: 0;
             font-size: .75em
         }
-
         .mdspost-comment-username::after {
-            display: none;
+            content: "\00b7";
+            margin: 0 .5em 0 .3em;
+            font-weight: 700;
+            color: #A1AEB2
         }
-
         .mdspost-comment-username__name .i-ljuser-alias {
             text-transform: none
         }
@@ -31332,7 +31332,9 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
             color: #A1AEB2
         }
         .mdspost-comment-meta::after {
-            display: none;
+            content: "\00b7";
+            margin: 0 .5em;
+            font-weight: 700
         }
         .mdspost-comment-meta A:link,
         .mdspost-comment-meta A:visited {
@@ -31916,6 +31918,7 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
                 margin-right: 0
             }
             .mdspost-entry__aside {
+                display: none;
                 float: none;
                 width: 100%;
                 margin: 0;
@@ -32804,7 +32807,7 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
             width: 100%;
             max-width: 772px;
             padding: 0 16px;
-            margin: 0 auto;
+            margin: 0 auto 0;
             box-sizing: border-box
         }
         .aentry-post FIGURE IFRAME {
@@ -33836,7 +33839,7 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
                 box-sizing: border-box
             }
             .acomments.mdspost-article__comments {
-                padding: 0
+                padding: 20px
             }
             .mdspost .massaction {
                 left: -20px
@@ -39479,7 +39482,8 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
         }
 
         ._5f {
-            width: 16px;
+            display: flex;
+            width: auto;
             height: 16px;
             border: 0;
             display: inline-block;
@@ -39490,7 +39494,7 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
         }
 
         ._5f span {
-            width: 16px;
+            width: 35px;
             height: 16px;
             display: inline-block;
         }
@@ -39521,7 +39525,7 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
         ._5i {
             color: #838B8E;
             height: 16px;
-            margin: 0 0 0 8px;
+            margin: 0 0 0 -8px;
             border: 0;
             display: inline-block;
             outline: 0;
@@ -39575,6 +39579,10 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
             position: absolute;
         }
         ._4c {
+            display: flex;
+            justify-content: space-between;
+            -ms-align-items: center;
+            align-items: center;
             width: 100%;
             margin: 0;
             display: flex;
@@ -39591,6 +39599,9 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
         }
 
         ._4e {
+            display: flex;
+            -ms-align-items: center;
+            align-items: center;
             margin-right: 24px;
             vertical-align: top;
         }
@@ -39620,6 +39631,7 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
         }
 
         ._4h {
+            display: flex;
             margin-left: auto;
         }
 
@@ -39787,18 +39799,4 @@ screen and (-ms-high-contrast:active) and (max-width:30em),
     span._4d._4h._4f {
     display: none;
  }
-}
-
-.aentry-post__text p+figure {
-    margin-top: 0;
-}
-
-.aentry-post__text figure+p {
-    margin-top: 10px;
-}
-
-.aentry-post__img--text-width img {
-    display: block;
-    margin-right: auto !important;
-    margin-left: auto !important;
 }
