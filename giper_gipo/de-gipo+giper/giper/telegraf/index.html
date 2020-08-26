@@ -18,7 +18,7 @@
 		<div class="container">
 			<div class="site-header__row row no-gutters justify-content-end align-items-center">
 				<div class="col-md-5 col-6"><a class="logo lt0" href="">TELEGRAPH <span class="slogan">Weltnachrichten</span></a></div>
-				<div class="col-6 align--right"><span class="comment_date"></span></div>
+				<div class="col-6 align--right"><span class="comment_date commits__date"></span></div>
 			</div>
 		</div>
 	</header>
@@ -372,31 +372,7 @@
 		</div>
 	</main>
 	<script src="index.js"></script>
-	<script type="text/javascript">
-		Date.prototype.addDays = function (d) {
-			this.setDate(this.getDate() + d);
-			return this
-		};
-		$('document').ready(function () {
-			var monthsList = ['Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember'];
-			var commentDate = $('span.comment_date');
-			var comments = commentDate.length;
-			var dates = [];
-			var d = new Date();
-			for (var i = comments - 1; i >= 0; i--) {
-                var delta = Math.round(Math.random() * 2);
-                var d = new Date(d.addDays(-delta));
-                var $data = d.getDate();
-                if($data <= 9) {
-                    $data = '0' + $data;
-                }
-				dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
-			}
-			commentDate.each(function (i, el) {
-				$(this).text(dates[i])
-			})
-		});
-	</script>
+
 	<script type="text/javascript">
 		d = new Date();
 		p = new Date(d.getTime() - 0 * 86400000);
