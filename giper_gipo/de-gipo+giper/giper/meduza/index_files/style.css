@@ -947,6 +947,17 @@ span.MaterialTag {
 
 @-moz-document url-prefix() {}
 
+.commits + .commits {
+    margin-top: 40px;
+}
+
+.commits > div > img {
+    display: block;
+    max-width: 450px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
 .App {
     display: -webkit-flex;
     display: -ms-flexbox;

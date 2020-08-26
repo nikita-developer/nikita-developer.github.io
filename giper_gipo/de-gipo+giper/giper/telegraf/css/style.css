@@ -509,25 +509,30 @@ template {
 .typography h1,
 .typography h2,
 .typography h3{
-  line-height: 1.2;
+  line-height: 1;
   margin: 25px 0 15px;
 }
 .typography h1{
   font-size: 38px;
   color: #333;
-  margin-bottom: 0;
 }
 .typography h2{
   font-size: 38px;
-  margin-top: 20px;
 }
 .typography img{
+  display: block;
   max-width: 100%;
   height: auto;
+  margin: 0;
 }
 
 .typography p{
-  text-align: justify;
+  text-align: left;
+}
+
+.typography p img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Section*/
@@ -611,15 +616,8 @@ section{
   }
 }
 
-img {
-  display: block;
-}
-
-@media (max-width: 480px) {
-	.typography h2 {
-		font-size: 28px;
-		line-height: 1;
-	}
+.post__single.typography {
+  margin-bottom: 0;
 }
 
 .commits {
@@ -629,7 +627,6 @@ img {
 }
 
 .commits__title {
-  margin-bottom: 15px;
   font-size: 24px;
 }
 
