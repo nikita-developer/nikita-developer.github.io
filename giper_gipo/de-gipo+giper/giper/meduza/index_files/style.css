@@ -972,6 +972,10 @@ span.MaterialTag {
     transition: transform .25s ease-out, -webkit-transform .25s ease-out, -o-transform .25s ease-out
 }
 
+img {
+    display: block;
+}
+
 .App-content,
 .App-footer {
     transition: -webkit-transform .25s ease-out;
@@ -1075,4 +1079,26 @@ a.button:hover {
 
 .com + .com {
     margin-top: 30px;
+}
+
+.commits + .commits {
+    margin-top: 25px;
+}
+
+.commits > p:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.commits > div > img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+}
+
+.commits strong > span {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
 }

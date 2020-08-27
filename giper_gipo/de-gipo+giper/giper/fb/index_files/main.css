@@ -5647,6 +5647,10 @@ div.cs49 + div.cs74 {
     display: none !important;
 }
 
+.com-body > span.comment_date {
+    display: block !important;
+}
+
 .com-body p {
     margin: 0;
 }

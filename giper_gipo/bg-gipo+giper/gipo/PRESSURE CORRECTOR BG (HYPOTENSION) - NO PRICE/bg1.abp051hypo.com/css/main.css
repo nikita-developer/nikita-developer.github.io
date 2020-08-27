@@ -2048,6 +2048,7 @@ img {
         background-size: 280px;
     }
 
+
     .bl3-left__list li {
         padding-right: 0;
         padding-left: 60px;
@@ -2886,6 +2887,8 @@ img {
     .sertificate__box {
         height: 440px;
     }
+
+    
 }
 
 @media (max-width: 480px) {

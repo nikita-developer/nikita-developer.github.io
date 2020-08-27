@@ -70,11 +70,7 @@
 									<div class=" mdspost-furtherdata mdspost-furtherdata--mdsrepost">
 										<dl class="aentry-head__userpanel">
 											<dt class="aentry-head__userpic" itemprop="image" itemscope=""><a class="aentry-head__userpic-img" href="" itemprop="contentUrl" title=""><img alt="" src="files/85157356.png"></a></dt>
-											<dd>
-												<meta content="56" itemprop="width">
-												<meta content="56" itemprop="height">
-												<meta content="" itemprop="url">
-											</dd>
+											
 											<dd class="aentry-head__block">
 												<p class="aentry-head__list"><span class="aentry-head__info aentry-head__username" itemscope=""><span class="ljuser i-ljuser i-ljuser-type-P"><a class="i-ljuser-profile" href="" target="_blank"><img class="i-ljuser-userhead" src="files/userinfo_v8.svg"></a><a class="i-ljuser-username" href="" target="_blank"><b class="lt17">AnnetPink</b></a></span></span><span class="mdspost-furtherdata aentry-head__info"><span class="mdspost-furtherdata__item mdspost-furtherdata__item--time lt18">10 Minuten zum Lesen</span></span></p>
 												<p class="aentry-head__date"><time><span class="comment_date"></span></time><a class="aentry-head__rating lt19" href="">Beitrag befindet sich auf dem 156. Platz in der Bewertung</a></p>
@@ -152,7 +148,7 @@
 										<p class="lt53">Ich bin wieder aktiv geworden, habe wieder angefangen zu spazieren, Bücher zu lesen und bin ein ganz anderer Mensch geworden!</p>
 										<p><img alt="" src="files/product4.jpg" title=""></p>
 										<p><b class="lt54">WO KANN MAN DAS ARMBAND ERHALTEN?</b></p>
-										<p class="lt55">Ich bin so froh darüber, dass viele versuchen, die Fehler, die ich gemacht habe, zu vermeiden und sich noch vor derartigen Gesundheitsproblemen um die eigene Gesundheit zu kümmern. Ich hinterlasse also hier noch den Link auf die Webseite, auf der ich dieses Gerät bestellt habe. Bis 
+										<p class="lt55">Ich bin so froh darüber, dass viele versuchen, die Fehler, die ich gemacht habe, zu vermeiden und sich noch vor derartigen Gesundheitsproblemen um die eigene Gesundheit zu kümmern. Ich hinterlasse also hier noch den Link auf die Webseite, auf der ich dieses Gerät bestellt habe. Bis
 											<script type="text/javascript">
 												d = new Date, p = new Date(d.getTime() - 0), monthA = "01,02,03,04,05,06,07,08,09,10,11,12".split(",");
 												var w = p.getDate();
@@ -183,7 +179,7 @@
 											</div>
 										</div>
 									</div>
-									
+
 								</div>
 							</div>
 						</div>
@@ -449,7 +445,11 @@
 				for (var i = comments - 1; i >= 0; i--) {
 					var delta = Math.round(Math.random() * 2);
 					var d = new Date(d.addDays(-delta));
-					dates[i] = d.getDate() + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear()
+					var $data = d.getDate();
+					if ($data <= 9) {
+						$data = '0' + $data;
+					}
+					dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
 				}
 				commentDate.each(function (i, el) {
 					$(this).text(dates[i])
