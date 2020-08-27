@@ -2,268 +2,265 @@ var new_lang = {
 
 
 
-
 "lt0": "ABP<span>051</span>",
 
-"lt1": "XX: az alacsony vérnyomást szabályozó készülék",
+"lt1": "Blutdruckkorrektor XX",
 
-"lt2": "Szabadulj meg az alacsony vérnyomástól!",
+"lt2": "Werden Sie die Hypotonie <br>ganz einfach los!",
 
-"lt3": "<span>Helyreállítja</span>az artériás vérnyomást",
+"lt3": "<span>Korrigiert </span><br>den Blutdruck",
 
-"lt4": "<span>Javítja</span>az általnos közérzetet és az alvást",
+"lt4": "<span>Verbessert</span><br>das Wohlbefinden und den Schlaf",
 
-"lt5": "<span>Fokozza</span><br>a munkabírást",
+"lt5": "<span>Erhöht die</span><br>Arbeitsfähigkeit",
 
-"lt6": "<span>Helyreállítja</span><br>a szív- és érrendszer működését",
+"lt6": "<span>Normalisiert</span><br>dei Arbeit des Herz-Kreislauf-Systems",
 
-"lt7": "<span>Stabilizálja</span>az érzelmi állapotot",
+"lt7": "<span>Stabilisiert</span><br>den emotionalen Zustand",
 
-"lt8": "A készülék orvosi termékként van regisztrálva",
+"lt8": "Das Gerät wurde als Medizinprodukt registriert",
 
-"lt9": "XX megrendelése",
+"lt9": "XX bestellen",
 
-"lt10": "Ország",
+"lt10": "Land",
 
-"lt11": "Neve",
+"lt11": "Ihr Name",
 
-"lt12": "Telefonszám",
+"lt12": "Telefonnummer",
 
-"lt13": "Megrendelés most",
+"lt13": "Jetzt bestellen",
 
-"lt14": "Az EU vezető kardiológusainak ajánlásával",
+"lt14": "Empfohlen von führenden Kardiologen der EU",
 
-"lt15": "A hatás már a használat megkezdése utáni 5. napon már érezhető.",
+"lt15": "Die Wirkung wird höchstens am 5. Tag der Behandlung erzielt",
 
-"lt16": "A hatékonyság klinikailag bizonyított",
+"lt16": "Klinisch nachgewiesene Wirksamkeit",
 
-"lt17": "sérült véredények",
+"lt17": "Beschädigte Blutgefäße",
 
-"lt18": "Megfosztja az erőtől:",
+"lt18": "Sie beraubt Ihnen kraft:",
 
-"lt19": "hipotónia",
+"lt19": "Hypotonie",
 
-"lt20": "A hipotenzió önmagában nem tekinthető betegségnek, <span> ugyanakkor jelentősen rontja az alacsony vérnyomású ember életét.</span>",
+"lt20": "Die Hypotonie wird nicht als Krankheit angesehen,<span> beeinträchtigt jedoch erheblich das Leben einer Person mit niedrigem Blutdruck.</span>",
 
-"lt21": "A folyamatos gyengeség, az álmosság, a lüktető fejfájás, a hirtelen émelygés, a hányás, a túlzott izzadás és akár az ájulás is gyakran előfordulnak az alacsony vérnyomástól szenvedő embereknél.",
+"lt21": "Anhaltende Schwäche, Schläfrigkeit, ständige Kopfschmerzen, plötzliche Übelkeitsgefühle, Erbrechen, übermäßiges Schwitzen und sogar Ohnmacht sind häufige Begleiter der Hypotonie.",
 
-"lt22": "Fontos megérteni, hogy ha a megfelelő kezelést megtagadják ennél a problémánál, a betegség évről évre csak súlyosbodni fog, és ezzel együtt csökkenti az életminőséget is.",
+"lt22": "Man sollte verstehen, dass die Krankheit, wenn sie nicht behandelt wird, immer fortschreitet  ",
 
-"lt23": "Mivel jár ez a betegség?",
+"lt23": "Was bringt eine Krankheit mit sich?",
 
-"lt24": "A test kritikus kiszáradása",
+"lt24": "Dehydration des Körpers",
 
-"lt25": "Hirtelen veseelégtelenség",
+"lt25": "Schweres Nierenversagen",
 
-"lt26": "A vesék teljes leállása",
+"lt26": "Komplettes Nierenversagen",
 
-"lt27": "Kóma",
+"lt27": "Кома",
 
-"lt28": "Az artériás hipotenzió nem csupán egy kellemetlen szindróma. Ez egy olyan betegség, amely első sorban az agyra, a szív- és érrendszerre, illetve az idegrendszer működésére veszélyes",
+"lt28": "Arterielle Hypotonie ist nicht nur ein unangenehmes Syndrom. Das ist eine Krankheit, die vor allem für das Gehirn, das Herz-Kreislauf- und das Nervensystem sehr gefährlich ist.",
 
-"lt29": "Az alacsony vérnyomás az agy rossz vérellátásához vezet, ami annak oxigénhiányával jár. A hypotoniós állapotban lévő koszorúér artériák (a szívet ellátó artériák) nem képesek elegendő véráramot biztosítani a szívizomhoz, ami olyan betegségek kialakulásához vezet, amelyek akár halálos kimenetelűek is lehetnek.",
+"lt29": "Niedriger Blutdruck führt zu einer schlechten Blutversorgung des Gehirns, was zu Sauerstoffmangel führt. Koronararterien (Arterien, die das Herz versorgen) in einem Zustand der Hypotonie können keine ausreichende Durchblutung des Herzmuskels gewährleisten, vor dessen Hintergrund sich Krankheiten entwickeln, die zum Tod führen können.",
 
-"lt30": "Iszkémiás stroke",
+"lt30": "Ischämischer Schlaganfall",
 
-"lt31": "Anafilaxiás sokk",
+"lt31": "Anaphylaktischer Schock",
 
-"lt32": "Öntudatzavar",
+"lt32": "Bewusstseinsstörung",
 
-"lt33": "A szív az ember legértékesebb szerve!",
+"lt33": "Das Herz ist das wertvollste menschliche Organ",
 
-"lt34": "Különböző nagyságú elektromos impulzusok hatást fejtenek ki a gerincvelő ideggyökereire, így erősítve az ereket a jobb vérkeringés érdekében.",
+"lt34": "Stromimpulse unterschiedlicher Stärke üben eine Wirkung auf die Wurzeln der Spinalnerven aus und straffen so die Gefäße für eine bessere Durchblutung.",
 
-"lt35": "Óvják meg az XX készülékkel!",
+"lt35": "Halten Sie sich mit XX gesund!",
 
-"lt36": "A vérnyomás biztonságos szabályozása otthon körülmények között",
+"lt36": "Sichere Blutdruckkorrektur zu Hause",
 
-"lt37": "Az elektromos terápia egy modern eljárás a hipotóniás betegségek hagyományos orvoslásban.",
+"lt37": "Die derzeitige Therapie ist eines der modernen Verfahren in der traditionellen Medizin zur Behandlung hypotonischer Erkrankungen.",
 
-"lt38": "A beteg erek egészséges megközelítése",
+"lt38": "Ein gesunder Ansatz für kranke Gefäße",
 
-"lt39": "A készülék működése közben az idegrostok mozgásba jönnek (gerjednek), ami az érrendszer helyreállításához vezet. Ez a vér mikrocirkulációjának javulásához vezet, amelynek eredményeként minden szerv megfelelő mennyiségű oxigénhez tud jutni. ",
+"lt39": "Während der Betriebs  des Geräts werden Nervenfasern angeregt, was zur Normalisierung des Gefäßtonus führt. Das führt zu einer Verbesserung der Mikrozirkulation im Blut, wodurch alle Körperorgane beginnen, die erforderliche Menge an Sauerstoff zu erhalten. ",
 
-"lt40": "<span>Különböző nagyságú elektromos impulzusok</span> hatást fejtenek ki a gerincvelő ideggyökereire, így erősítve az ereket a jobb vérkeringés érdekében.",
+"lt40": "<span>Stromimpulse </span>unterschiedlicher Stärke üben eine Wirkung auf die Wurzeln der Spinalnerven aus und straffen dadurch die Blutgefäße für eine bessere Durchblutung.",
 
-"lt41": "Hogyan működik a vérnyomás-szabályozó",
+"lt41": "Wie funktioniert der Blutdruckkorrektor?",
 
-"lt42": "A vérnyomás-szabályozó stabilizálja az artériás vérnyomást a bioaktív zónákra kifejtett elektromos stimuláció révén.",
+"lt42": "Ein Blutdruckkorrektor stabilisiert durch transkutane elektrische Stimulation der bioaktiven Zonen den Blutdruck auf den Normalwert",
 
-"lt43": "Az eszköz a karra erősíthető, szorosan illeszkedik a reflexogén ponthoz a bal csuklón.",
+"lt43": "Das Gerät wird an der Hand befestigt und sitzt fest an der reflexogenen Zone am linken Handgelenk.",
 
-"lt44": "A készülékből kiinduló elektromágneses impulzusok perkután hatnak az erekre.",
+"lt44": "Elektromagnetische Impulse üben eine perkutane Wirkung auf die Blutgefäße aus",
 
-"lt45": "A terápiás hatás elérése érdekében 14 napon keresztül napi gyakorisággal javasolt végezni az XX készülékkel az elektromos stimulációs eljárásokat.",
+"lt45": "Um eine therapeutische Wirkung zu erzielen, müssen die Elektrostimulationsverfahren mit Hilfe von XX 14 Tage lang täglich durchgeführt werden.",
 
-"lt46": "Az XX készülék könnyű és a használata egyszerű. Ez egy kompakt eszköz egy karkötő formájában, amely segít gyorsan lecsökkenteni a vérnyomását a normális szintre. A kezelések után tartós hatást észlel.",
+"lt46": "XX lässt sich leicht und einfach bedienen. Das ist ein kompaktes Gerät in Form eines Armbandes, mit dem Sie Ihren Blutdruck schnell auf den Normalwert senken können. Nach einer Reihe von Eingriffen werden Sie eine dauerhafte Wirkung feststellen.",
 
-"lt47": "XX: készülék a vérnyomás stabilizálásához. Egyformán magas terápiás hatást fejt ki mind az artériás hipertóniában, mind pedig a hipotenzióban szenvedőknél is. A vérnyomás-szabályozó két programon működik, amelyek az áramimpulzusok sorrendjében különböznek. Az első esetben elősegítik az ér összehúzódását, a második esetben kitágítják azokat.",
+"lt47": "XX – Gerät zur Stabilisierung des Blutdrucks. Es hat eine ebenso hohe therapeutische Wirkung sowohl bei Menschen mit arterieller Hypertonie als auch bei Menschen mit Hypotonie. Der Blutdruckkorrektor verfügt über zwei Programme, die sich in der Reihenfolge der Stromimpulse unterscheiden. Im ersten Fall tragen sie zur Verengung der Blutgefäße bei und im zweiten erweitern sie sie.",
 
-"lt48": "A készülék rendszeres használatával az impulzusok kiválasztott sorrendben történő mozgása lehetővé teszi a vérnyomás stabilizálását az életkornak megfelelő egészséges értékeken belül.",
+"lt48": "Bei regelmäßiger Anwendung ermöglichen es die Impulse den Blutdruck zu normalisieren.",
 
-"lt49": "A vérnyomás-szabályozó megváltoztatja az életét!",
+"lt49": "Blutdruckkorrektor wird Ihr Leben zum Besseren verändern",
 
-"lt50": "Normalizálja az artériás vérnyomást",
+"lt50": "Normalisiert den Blutdruck",
 
-"lt51":  "Javítja az általános közérzetet és az alvást",
+"lt51": "Verbessert das allgemeine Wohlbefinden und den Schlaf",
 
-"lt52":  "Segít az időjárásra való érzékenységnél",
+"lt52": "Hilft bei Wetterfühligkeit",
 
-"lt53":  "Csökkenti az általános stressz-szintet",
+"lt53": "Reduziert das Stressniveau",
 
-"lt54":  "Javítja a pszicho-érzelmi állapot",
+"lt54": "Verbessert den psycho-emotionalen Zustand",
 
-"lt55": "A készülék orvosi termékként van regisztrálva",
+"lt55": "Das Gerät wurde als Medizinprodukt registriert",
 
-"lt56": "Az érzelmi állapot javulása",
+"lt56": "Verbesserung des emotionalen Zustands",
 
-"lt57": "Az érzelmi állapot javulása",
+"lt57": "Verbesserung des emotionalen Zustands",
 
-"lt58": "A depresszió, a szorongás és az idegesség gyakran a test kiegyensúlyozatlanságának és a neurotranszmitterek hiányának az eredménye. Az érgörcs zavarja az agyat abban, hogy továbbítsa az idegi impulzusokat, így azok nem érik el a sejteket, ami miatt az élet szürkének tűnik.",
+"lt58": "Depressionen, Angstzustände und Nervosität sind häufig die Folge eines Ungleichgewichts im Körper und eines Mangels an Neurotransmittern. Gefäßkrämpfe verhindern, dass das Gehirn Nervenimpulse überträgt, sie erreichen daher nicht die Zellen und das Leben scheint grau zu sein.",
 
-"lt59": "Az XX javítja az idegimpulzusok továbbítását és helyreállítja a hormonális rendszert. A test újra egyensúlyba kerül fizikai és érzelmi szinten is.",
+"lt59": "XX verbessert die Weiterleitung der Nervenimpulse und normalisiert das Hormonsystem. Der Körper gerät auf körperlicher und emotionaler Ebene ins Gleichgewicht.",
 
-"lt60": "A munkabírás fokozása",
+"lt60": "Verbesserung der Arbeitsfähigkeit",
 
-"lt61": "A munkabírás fokozása",
+"lt61": "Verbesserung der Arbeitsfähigkeit",
 
-"lt62": "A munkán kívül semmire sincs ereje. Mi több, még a munkára sem elég az, ami van\". Ez a modern ember szokásos állapota. A krónikus fáradtság szindróma a vegetatív idegrendszer szabályozásának egy zavara. A szervezet gátló folyamatai sérülnek, ami azt jelenti, hogy egyszerűen nem tud pihenni.",
+"lt62": "Es gibt keine Kraft mehr außer Arbeit. - der übliche Zustand des modernen Menschen. Das chronische Müdigkeitssyndrom ist eine Fehlfunktion bei der Regulierung des autonomen Nervensystems. Die Hemmungsprozesse werden im Körper gestört, was bedeutet, dass Sie sich einfach nicht ausruhen können. ",
 
-"lt63": "Az XX helyreállítja az idegrendszer gátló és gerjesztő fiziológiai folyamatait. Aktív, amikor szüksége van rá, de mindig pihenhet és erőt gyűjthet.",
+"lt63": "XX stellt die physiologischen Prozesse der Erregung und Hemmung des Nervensystems wieder her.  Sie können wieder einen aktiven Lebensstil führen und können sich jederzeit entspannen und ausruhen.",
 
-"lt64": "Az alvás helyreállása",
+"lt64": "Normalisiert den Schlaf ",
 
-"lt65": "Az alvás helyreállása",
+"lt65": "Normalisiert den Schlaf ",
 
-"lt66": "Éjszaka nem tud elaludni, reggel pedig álmosság gyötri. Az állandó stressz és a túlterheltség zavarokat idéz elő az idegrendszer működésében, és ennek eredményeként pedig alvászavart.",
+"lt66": "Sie können nachts nicht schlafen und haben tagsüber mit Schläfrigkeit zu kämpfen. Ständiger Stress und Überlastung führen zu Funktionsstörungen des Nervensystems und damit zu Schlaflosigkeit ",
 
-"lt67": "Az XX ellazítja az ereket és oldja a feszültséget, így szabályozva a szimpatikus idegrendszer működését.",
+"lt67": "XX entspannt die Blutgefäße und löst Verspannungen, korrigiert die Arbeit des sympathischen Nervensystems.",
 
-"lt68": "Este könnyedén elalszik, reggel pedig kipihentnek érzi magát.",
+"lt68": "Sie können abends leichter einschlafen und stehen morgens leichter aus dem Bett auf.",
 
-"lt69": "Az időjárás-változásra való érzékenység csökkenése",
+"lt69": "Verminderte Wetterfühligkeit",
 
-"lt70": "Az időjárás-változásra való érzékenység csökkenése",
+"lt70": "Verminderte Wetterfühligkeit",
 
-"lt71": "Ha az időjárás változásakor fáj a feje, az azt jelenti, hogy Ön szervezete az időjárásra érzékeny. Ennek az oka az autonóm idegrendszer zavarában keresendő. Mindemellett a külső környezet kellemetlen hatást gyakorol a szervezetre.",
+"lt71": "Wenn Sie bei \"schlechtem Wetter \" Kopfschmerzen haben, dann sind Sie wetterfühlig. Der Grund liegt in der Störung des autonomen Nervensystems. Gleichzeitig wirkt sich die äußere Umgebung unangenehm auf den Körper aus. ",
 
-"lt72": "Az XX stabilizálja a vérnyomását és beállítja az idegrendszer helyes működését.",
+"lt72": "XX stabilisiert den eigenen Druck und stellt die korrekte Funktion des Nervensystems ein.",
 
-"lt73": "A teljesítőképesség<br>növekedése",
+"lt73": "Steigerung <br>der Produktivität",
 
-"lt74": "A teljesítőképesség növekedése",
+"lt74": " Steigerung der Produktivität",
 
-"lt75": "Az XX szabályozza a szervezet funkcionális állapotát, a vérkeringést és a szervek oxigénellátását.",
+"lt75": "XX korrigiert den Funktionszustand des Körpers, die Durchblutung und die Sauerstoffversorgung der Organe. ",
 
-"lt76": "A test jobban működik, vagyis energikusabbnak érzi magát. Több ereje lesz az aktív élethez.",
+"lt76": "Der Körper beginnt besser zu arbeiten, was bedeutet, dass Sie sich viel besser fühlen werden. Sie haben mehr Kraft, um einen aktiven Lebensstil zu führen.",
 
-"lt77": "Az XX vérnyomás-szabályozó megrendelése",
+"lt77": "Blutdruckkorrektor XX bestellen",
 
-"lt78": "Hogyan kell használni az XX vérnyomás-szabályozót",
+"lt78": "Wie wendet man den Blutdruckkorrektor XX richtig an?",
 
-"lt79": "Helyezze magát kényelembe, lazítsa el a bal kezét.",
+"lt79": "Nehmen Sie eine bequeme Position ein, entspannen Sie Ihre linke Hand",
 
-"lt80": "Rögzítse az XX-et a csuklójára és kapcsolja be.",
+"lt80": "Befestigen Sie das Gerät am Handgelenk und schalten Sie es ein",
 
-"lt81": "Naponta 1-3 alkalommal tegye fel 6 percre.",
+"lt81": "Führen Sie diesen Vorgang 1 bis 3 Mal täglich 6 Minuten lang durch",
 
-"lt82": "FONTOS: Ha már orvos által előírt gyógyszereket szed, az XX készülék kiegészíti és fokozza azok hatását, így felgyorsítva a gyógyulás folyamatát. Az eszköz monoterápia esetén is hatékony, és önmagában is használható.",
+"lt82": "WICHTIG: Wenn Sie bereits Medikamente einnehmen, die von Ihrem Arzt verschrieben wurden, wird das XX Gerät deren Wirkung ergänzen und beschleunigt den Heilungsprozess. Das Gerät ist auch als Monotherapie wirksam und kann unabhängig von anderen Medikamenten verwendet werden.",
 
-"lt83": "Milyen problémák esetén segít a vérnyomás-szabályozó?",
+"lt83": "Welche Probleme behandelt der Blutdruckkorrektor??",
 
-"lt84": "Az XX készülék segítségével végzett elektrostimulációs eljárások javasoltak az alapvető gyógyszeres kezelés mellett azon betegek számára, akik a kardiovaszkuláris rendszer betegségeitől szenvednek.",
+"lt84": "Elektrostimulationsverfahren, die mit XX durchgeführt werden, eignen sich in Kombination mit einer grundlegenden medikamentösen Therapie für Patienten mit Erkrankungen des Herz-Kreislauf-Systems.",
 
-"lt85": "I-II-III stádiumú artériás hipertenzió",
+"lt85": "Arterielle Hypotonie",
 
-"lt86": "szívkoszorúér-betegség, sztenokardia",
+"lt86": "Ischämische Herzkrankheit, Stenokardie",
 
-"lt87": "érbetegségek és az erek traumatikus sérülései",
+"lt87": "Krankheiten und traumatische Gefäßverletzungen ",
 
-"lt88": "krónikus szívelégtelenség",
+"lt88": "Chronische Herzinsuffizienz",
 
-"lt89": "A szabályozó megrendelése",
+"lt89": "Blutdruckkorrektor",
 
-"lt90": "Szakértői vélemény",
+"lt90": "Expertenmeinung",
 
-"lt91": "Az artériás hipertónia szindróma egy összetett betegség. A konzervatív kezelés elsősorban a szövődmények elkerülésére irányul. Ezenkívül a konzervatív kezelés nem jelenti a készítmények eltörlését, mivel ha az ember ezeket elkezdi szedni, évekig gyógyszeres terápiára kényszerül. A gyógyszerek egyéni kiválasztást igényelnek, és hosszantartó használatuk súlyos következményekkel járhat.",
+"lt91": "Das Syndrom der arteriellen Hypotonie ist eine komplexe Erkrankung. Die konservative  Behandlung zielt in erster Linie darauf ab, die Folgen zu beseitigen. Darüber hinaus sieht eine konservative Behandlung keine Abschaffung von Medikamenten vor. Medikamente erfordern eine individuelle Auswahl und führen bei längerem Gebrauch zu schwerwiegenden Folgen ",
 
-"lt92": "Az XX elektrostimulátor szabályozza a vérnyomást az erek feszességére hatva. A csukló bőrének áramimpulzus sorozat révén való finom stimulálása normalizálja az artériás feszességet, és kiegyenlíti a vérnyomást.<b>A készülék 14 napos alkalmazása drámai változást jelent a hipotenzió kezelésében.</b>",
+"lt92": "Der Elektrostimulator XX korrigiert den Blutdruck durch Einwirken auf den Gefäßtonus. Eine sanfte Stimulation der Hautoberfläche am Handgelenk durch eine Reihe von Stromimpulsen normalisiert den Tonus der Arterien und den Blutdruck.<b>Eine 14 tägige Anwendung führt zu einer deutlichen Verbesserung des Wohlbefindens.</b>",
 
-"lt93": "Az XX az általános közérzet javulására is jó hatással van. A vérkeringés javul, és ettől az ember frissebbnek érzi magát, jobban teljesít, és energiával telik meg, valamint segít megszabadulni az időjárásra való érzékenységtől is.",
+"lt93": "XX ist gut für das allgemeine Wohlbefinden. Die Verbesserung der Durchblutung führt zur verbesserter Leistung, erhöhter Energie und der Fähigkeit, Wetterfühligkeit loszuwerden.",
 
-"lt94": "Több éves tapasztalattal rendelkező szakemberként mindenképp ajánlom a XX elektrostimulátort akár mindennapi használatra is.",
+"lt94": "Als Spezialist mit langjähriger Erfahrung empfehle ich den XX Elektrostimulator für den täglichen Gebrauch.",
 
-"lt95": "Simon Áron",
+"lt95": "Sven Schmidt",
 
-"lt96": "Professzor, orvos,<br>kardiológus<br>Munkatapasztalat: 36 év",
+"lt96": "Professor, Doktor der medizinischen Wissenschaften,<br>Kardiologe<br>Berufserfahrung: 36 Jahre",
 
-"lt97": "Tanúsítványok és engedélyek",
+"lt97": "Zertifikate und Lizenzen",
 
-"lt98": "Egy megbízható értékesítő vagyunk, és készek vagyunk ennek a dokumentumokkal való megerősítésére is.",
+"lt98": "Wir sind ein zuverlässiger Lieferant von Waren und Dienstleistungen und bereit, das zu dokumentieren",
 
-"lt99": "az összes tanúsítvány megnyitása",
+"lt99": "Alle Zertifikate öffnen",
 
-"lt100": "Visszajelzések",
+"lt100": "Bewertungen",
 
-"lt101": "Kántor Béla",
+"lt101": "Thomas Kaiser",
 
-"lt102": "52 éves",
+"lt102": "52 Jahre",
 
-"lt103": "A vérnyomásesés ideje alatt erőtlenséget érzek, mintha az energia elhagyna. Miután elkezdtem használni a karkötőt, már a második héten erőt és frissességet éreztem. Valóban egészséges embernek érezem magam azóta!",
+"lt103": "Habe mich früher immer schlecht gefühlt und hatte überhaupt keine Energie. Nachdem ich angefangen habe das Armband  zu verwenden, habe ich mich seit der zweiten Woche wesentlich besser gefühlt. Toll, sich gesund zu fühlen! ",
 
-"lt104": "Réti Olga",
+"lt104": "Barbara Peters",
 
-"lt105": "42 éves",
+"lt105": "42 Jahre",
 
-"lt106": "14 éves kortól alacsony vérnyomásom volt, ezért állandóan erőtlen voltam. A karkötőt a barátnőmnél láttam először, és úgy döntöttem, én is rendelek. Meglepő módon jobban érzem magam! Csak két hétig viseltem, és már ez idő alatt megnőtt a munkabírásom.",
+"lt106": "Ich hatte leid dem 14. Lebensjahr niedrigen Blutdruck und hatte immer keine Kraft. Habe bei einer Bekannten dieses Armband gesehen und beschloss es zu bestellen. Überraschenderweise fühle ich mich jetzt viel besser! Habe es nur zwei Wochen lang getragen. ",
 
-"lt107": "Mészáros Csaba",
+"lt107": "Dennis Winkler",
 
-"lt108": "47 év",
+"lt108": "47 Jahre",
 
-"lt109": "Egyszer a hirtelen leeső vérnyomás miatt elájultam a buszon. Ezután az eset után megrendeltem magamnak a vérnyomás-szabályozó készüléket, hogy többé ne fordulhasson ilyen elő. Miután elvégeztem egy teljes terápiát ezzel az eszközzel, az orvos a gyógyszerek több mint felét eltörölte, amelyek nélkül korábban nem tudtam élni.",
+"lt109": "Bin mal wegen einem zu niedrigem Blutdruck im Bus ohnmächtig geworden. Nach diesem Vorfall habe ich mir den Blutdruckkorrektor gekauft, um das zu verhindern. Nach der Behandlung mit diesem Gerät brauchte ich nicht mehr all die Medikamente einzunehmen, auf die ich vorher nicht verzichten konnte.",
 
-"lt110": "Antal Barbara",
+"lt110": "Annika Schumacher",
 
-"lt111": "56 éves",
+"lt111": "56 Jahre",
 
-"lt112": "Sokáig nem volt erőm semmihez, mindig fáradtnak éreztem magam és álmatlanság gyötört. Azt sem tudtam elképzelni, hogy ez a probléma a vérnyomás miatt lehet, hiszen rendszeresen szedtem a tablettákat! Miután a XX készülékkel elkezdtem a terápiát, azonnal észrevettem a javulásokat. Eleinte energikusabb lettem, jobban kezdtem aludni, most már a vérnyomásom is visszaállt a megfelelő szintre. Most jobban érzem magam, mint 20 évesen!",
+"lt112": "hatte lange Zeit ein sehr schlechtes Wohlbefinden und litt unter Schlaflosigkeit. Hätte nie gedacht, dass so etwas wegen Problemen mit dem Blutdruck passieren könnte! Nach der Behandlung mit XX habe ich mich wesentlich besser gefühlt. Habe zunächst mehr Kraft bekommen, dann hat sich auch der Schlaf verbessert und schließlich auch der Blutdruck normalisiert. Fühle mich nun 20 Jahre jünger! ",
 
 "lt113": "ABP<span>051</span>",
 
-"lt114": "XX: az alacsony vérnyomást szabályozó készülék",
+"lt114": "Blutdruckkorrektor XX",
 
-"lt115": "Szabaduljon meg az alacsony vérnyomástól!",
+"lt115": "Hypotonie jetzt leicht loswerden!",
 
-"lt116": "<span>Helyreállítja</span>az artériás vérnyomást",
+"lt116": "<span>Korrigiert</span><br>den arteriellen Druck",
 
-"lt117": "<span>Javítja</span>az általnos közérzetet és az alvást",
+"lt117": "<span>Verbessert </span><br>das Wohlbefinden und den Schlaf",
 
-"lt118": "<span>Fokozza</span><br>a munkabírást",
+"lt118": "<span>Erhöht die</span><br>Arbeitsfähigkeit",
 
-"lt119": "<span>Helyreállítja</span><br>a szív- és érrendszer működését",
+"lt119": "<span>Normalisiert</span><br>die Arbeit des Herz-Kreislauf-Systems ",
 
-"lt120": "<span>Stabilizálja</span>az érzelmi állapotot",
+"lt120": "<span>Stabilisiert</span><br>den emotionalen Zustand",
 
-"lt121": "A készülék orvosi termékként van regisztrálva",
+"lt121": "Das Gerät wurde als Medizinprodukt registriert",
 
-"lt122": "XX megrendelése",
+"lt122": "XX bestellen",
 
-"lt123": "Ország",
+"lt123": "Land",
 
-"lt124": "Neve",
+"lt124": "Ihr Name",
 
-"lt125": "Telefonszám",
+"lt125": "Telefonnummer",
 
-"lt126": "Megrendelés most",
+"lt126": "Jetzt bestellen",
 
-"lt127": "A hatékonyság klinikailag bizonyított",
+"lt127": "Klinisch nachgewiesene Wirksamkeit",
 
-"lt128": "A hatás már a használat megkezdése utáni 5. napon már érezhető.",
+"lt128": "Verbesserungen sind sind innerhalb der ersten 5 Tage zu erkennen",
 
-"lt129": "Az EU vezető kardiológusainak ajánlásával",
-
-
+"lt129": "Empfohlen von führenden Kardiologen der EU",
 
 
 
