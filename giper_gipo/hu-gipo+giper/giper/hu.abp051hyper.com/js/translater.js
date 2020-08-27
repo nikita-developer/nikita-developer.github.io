@@ -1,295 +1,278 @@
 var new_lang = {
 
+"lt1": "Начало",
 
+"lt2": "Rак работи",
 
-"lt00": "Vérnyomás-szabályozó",
+"lt3": "Клинични проучвания",
 
-"lt0": "авр<span>051</span>",
+"lt4": "Отзиви",
 
-"lt1": "Főoldal",
+"lt5": "Коректор за<br>високо кръвно налягане",
 
-"lt2": "Hogyan működik",
+"lt6": " <span>Спасението </span> от хипертонията е <span>лесно!</span> ",
 
-"lt3": "Szakértői vélemény",
+"lt7": "Коригира",
 
-"lt4": "Visszajelzések",
+"lt8": "кръвното налягане",
 
-"lt5": "<br>Vérnyomás-szabályozó",
+"lt9": "Подобрява",
 
-"lt6": "<span>Szabaduljon meg</span>a magas vérnyomástól <span>könnyedén!</span>",
+"lt10": "здравословното състояние и съня",
 
-"lt7": "Korrigálja",
+"lt11": "Стабилизира",
 
-"lt8": "az artériás vérnyomást",
+"lt12": "емоционалното състояние",
 
-"lt9": "Javítja",
+"lt13": "Нормализира",
 
-"lt10": "a közérzetet és az alvást",
+"lt14": "работата на сърдечно-съдовата система",
 
-"lt11": "Stabilizálja",
+"lt15": "Увеличава",
 
-"lt12": "az érzelmi<br>állapotot",
+"lt16": "работоспособността",
 
-"lt13": "Helyreállítja",
+"lt17": " <span>Ефективността</span> <br>е клинично доказана!",
 
-"lt14": "a szív- és érrendszer működését.",
+"lt18": "Устройството е регистрирано като <span>медицинско изделие</span> ",
 
-"lt15": "Fokozza",
+"lt19": "Само днес! <span>50% намаление</span> ",
 
-"lt16": "a munkabírást",
+"lt20": "cтара цена:",
 
-"lt17": "Hatékonyságát <br>klinikai vizsgálatok bizonyították*",
+"lt22": "нова цена:",
 
-"lt18": "A készülék <span>orvosi termékként van regisztrálva</span>",
+"lt24": "Държава",
 
-"lt19": "Ország",
+"lt25": "Вашето име",
 
-"lt20": "Neve",
+"lt26": "Телефон",
 
-"lt21": "Telefonszám:",
+"lt27": "поръчай",
 
-"lt22": "rendelés",
+"lt28": "Вашите данни са защитени",
 
-"lt23": "Adatai biztonságban vannak",
+"lt29": "До края на промоцията остава:",
 
-"lt24": "Hipertónia:<span>egyenes</span><span>ütés a szívnek</span>",
+"lt30": "часа",
 
-"lt25": "<span class=\"text-red\"> A HIPERTÓNIA bármely szív- és érrendszeri betegség felé vezető út első szakasza.</span> A magas vérnyomás önmagában ritkán okoz nyilvánvaló tüneteket, ám a talaján kialakuló betegségek az egész testet elpusztíthatják. ",
+"lt31": "минути",
 
-"lt26": "A világon<span class=\"text-black\">már több, mint egy milliárd ember</span>szenved ettől az állapottól. A magas vérnyomás szívrohamot és agyvérzést okozhat. A magas vérnyomás évente kilenc millió embert öl meg.",
+"lt32": "секунди",
 
-"lt27": "<span>A magas vérnyomás következményei</span>",
+"lt33": "Хипертония: <span>директен</span>  <span>удар в сърцето</span> ",
 
-"lt28": "Az artériás hipertónia nem csupán egy kellemetlen szindróma.",
+"lt34": "<span class=\"text-red\">ХИПЕРТОНИЯТА е началото на всички заболявания на сърдечно-съдовата система.</span> Хипертонията, сама по себе си, рядко има ясни симптоми, но може да унищожи целия организъм, с появяващите се на нейния фон заболявания.",
 
-"lt29": "Ez egy olyan betegség, amely megzavarja az ember kardiovaszkuláris rendszerét és az autonóm idegrendszert (a belső szervek kölcsönhatása). Az erek állandóan feszült állapotban vannak, a falaik szűkülnek, a szívnek ötször annyi vérmennyiséget kell pumpálnia 1 ütés során, mint egy egészséges ember esetében. Az erek falai elvékonyodnak, alakjuk megváltozik, és a szív megállás nélkül a maximumon dolgozik.",
+"lt35": "В света от<span class=\" text-black\">това заболяване страдат повече от един милиард души. Хипертонията е причина за сърдечни инфаркти и мозъчни инсулти. Високото кръвно налягане всяка година отнема живота на девет милиона души.",
 
-"lt30": "A szív- és érrendszer megnövekedett terhelése miatt szívkoszorúér-betegség, szívelégtelenség, aneurizma (az érfal kiálló része) alakulhat ki az erekben, amelyek 10 eset közül 8-szor halálhoz vezetnek.",
+"lt36": " <span>Последици</span> от хипертонията",
 
-"lt31": "<br>VESEELÉGTELENSÉG",
+"lt37": "Артериалната хипертония не е просто неприятен синдром.",
 
-"lt32": "AZ EREK SZÉTROBBANÁSA, ANEURIZMÁK",
+"lt38": "Това е <span>заболяване</span> , което нарушава сърдечно-съдовата, вегетативната и нервната системи. При високото кръвно налягане кръвоносните съдове се разширяват, стените им се изтъняват, а сърцето трябва да изпомпва до 5 пъти повече кръв, отколкото се нуждае един здрав човек.",
 
-"lt33": "AGYVÉRZÉS,<br>VAKSÁG",
+"lt39": "На фона на това силно натоварване на сърцето се появяват заболявания, <span>които в 8 от 10 случая водят до смърт.</span> ",
 
-"lt34": "SZÍVINFARKTUS",
+"lt40": "БЪБРЕЧНА<br>НЕДОСТАТЪЧНОСТ",
 
-"lt35": "A szív–<span>az ember legértékesebb</span>szerve!",
+"lt41": "РАЗКЪСВАНЕ<br>НА КРЪВОНОСНИТЕ СЪДОВЕ,<br>АНЕВРИЗМА",
 
-"lt36": "Óvják meg őt az<span>АВР</span><span>-051</span> segítségével.",
+"lt42": "ИНСУЛТ,<br>СЛЕПОТА",
 
-"lt37": "RENDELÉS",
+"lt43": "ИНФАРКТ",
 
-"lt38": "<span>A beteg erek gészséges megközelítése</span>",
+"lt44": "Сърцето е <span>най-ценният</span>човешки орган!",
 
-"lt39": "1. A bőrön át történő elektroneuro-stimuláció a bizonyítékokon alapuló gyógyászat egyik modern eljárásának számít a különféle típusú fájdalmak kezelésére, és a vérnyomás-szabályozó eszköz megjelenésével már a magas vérnyomás kezelésére is képes. A különböző frekvenciájú áramimpulzusok hatást fejtenek ki az idegrendszer azon részeire, amelyek felelősek a vérnyomás szabályozásáért (az érrendszeri központra, az agyalapi mirigyre, a hipotalamuszra, a gerincideg gyökereire stb.), és így csökkentik az erek állandó feszültségét. Valójában a vérnyomás-szabályozó arra utasítja az artériák izomrétegét, hogy „lazuljon el”.",
+"lt45": "Запазете го здраво заедно с <span>АВР</span>  <span>-051</span> ",
 
-"lt40": "2. A készülék működése közben az idegrostok mozgásba jönnek (gerjednek), ami az érrendszer helyreállításához vezet. Ez a vér mikrocirkulációjának javulásához vezet, amelynek eredményeként minden szerv megfelelő mennyiségű oxigénhez tud jutni. ",
+"lt46": "ПОРЪЧАЙ",
 
-"lt41": "Az eszköz a karra erősíthető, <span> szorosan illeszkedik a reflexogén ponthoz </span> a bal csuklón.",
+"lt47": " <span>Здравословен подход</span> към болните кръвоносни съдове",
 
-"lt42": "<span>Hogyan működik</span>a vérnyomás-szabályozó",
+"lt48": " <span>1. Токовата терапия</span> е една от съвременните процедури в традиционната медицина за лечение на заболявания свързани с хипертонията. Импулсите на ток с различна величина действат върху корените на гръбначните нерви, и по този начин <span>тонизират кръвоносните съдовете за по-добро кръвообращение.</span> ",
 
-"lt43": "A készülék a magas vérnyomást a normális szintre hozza a bal csukló reflexogén zónájának perkután <span> elektromos stimulálása révén.</span>",
+"lt49": " <span>2. Когато импулсите на тока започват да действат,</span> нервните влакна се възбуждат. Благодарение на този ефект на тока, в организма  <span>се подобрява микроциркулацията и се увеличава клетъчното хранене, </span> което запазва структурата и функционирането на кожата.",
 
-"lt44": "A terápiás hatás elérése érdekében 14 napon keresztül napi gyakorisággal javasolt végezni az<span>XX készülékkel az elektromos stimulációs eljárásokat.</span>",
+"lt50": "Устройството «АВР-051» е разрешен за медицинска употреба от Службата за надзор в сферата на здравеопазването и е включен в списъка на медицинското оборудване (удостоверение за регистрация № РЗН 2016/3776 от 31 март 2016 г.; EC Certificate № 1942/MDD от 1 септември 2017 г.) и отговаря на ТУ 9444-005-12342964-2015.",
 
-"lt45": "авр<span>051</span>",
+"lt51": "Устройството се прикрепя към ръката, <span>като се прилепва плътно към биоактивната точка</span> на китката на лявата ръка.",
 
-"lt46": "A vérnyomás-szabályozó<br><span>megváltoztatja az</span>életét!",
+"lt52": " <span>Как работи</span> коректора на кръвното налягане",
 
-"lt47": "<span>Megelőzi</span>a hipertóniás krízist",
+"lt53": "Коректорът на кръвното налягане <span>понижава кръвното налягане до нормата</span> чрез електрическа стимулация на биоактивните зони през кожата",
 
-"lt48": "<span>helyreállítja</span>az artériás vérnyomást",
+"lt54": "Електромагнитните импулси, които се излъчват от устройството, действат през кожата <span>върху кръвоносните съдове, като укрепват и почистват стените им.</span> ",
 
-"lt49": "<span>Javítja</span>az általnos közérzetet és az alvást",
+"lt55": "За да се постигне терапевтичен ефект, трябва да се правят процедури на електрическа стимулация с <span>АВР-051 ежедневно в продължение на 14 дни.</span> ",
 
-"lt50": "<span>Segít az</span>időjárásra való érzékenységnél",
+"lt56": "авр <span>051</span> ",
 
-"lt51": "<span>Csökkenti</span>az általános stressz-szintet",
+"lt57": "Коректорът на кръвното налягане<br> <span>ще промени живота Ви</span> към по-добро!",
 
-"lt52": "<span>Javítja</span>a pszicho-érzelmi állapot",
+"lt58": "<span>Профилактика от</span>хипертонични кризи",
 
-"lt53": "Rendelje meg az XX vérnyomás-szabályozót",
+"lt59": "<span>Стабилизиране</span> на кръвното налягане",
 
-"lt54": "RENDELÉS",
+"lt60": "<span>Укрепване</span> на сърдечния мускул ",
 
-"lt55": "Az érzelmi állapot javulása",
+"lt61": "<span>Подобряване</span> на общото здравословно състояние",
 
-"lt56": "A depresszió, a szorongás és az idegesség gyakran a test kiegyensúlyozatlanságának és a neurotranszmitterek hiányának az eredménye. Az érgörcs zavarja az agyat abban, hogy továbbítsa az idegi impulzusokat, így azok nem érik el a sejteket, ami miatt az élet szürkének tűnik.",
+"lt62": "<span>Укрепване</span> на нервната система",
 
-"lt57": "<span>Az XX javítja az idegimpulzusok továbbítását és helyreállítja a hormonális rendszert.</span> A test újra egyensúlyba kerül fizikai és érzelmi szinten is.",
+"lt63": "<span>Спасяване</span> от световъртеж и главоболие",
 
-"lt58": "A munkabírás fokozása",
+"lt64": "поръчайте коректора на кръвното налягане АВР-051",
 
-"lt59": "\"A munkán kívül semmire sincs ereje. Mi több, még a munkára sem elég az, ami van\". Ez a modern ember szokásos állapota. A krónikus fáradtság szindróma a vegetatív idegrendszer szabályozásának egy zavara. A szervezet gátló folyamatai sérülnek, ami azt jelenti, hogy egyszerűen nem tud pihenni.",
+"lt65": "ПОРЪЧАЙ",
 
-"lt60": "Az XX helyreállítja az idegrendszer gátló és gerjesztő fiziológiai folyamatait.",
+"lt66": "Подобряване на емоционалното състояние",
 
-"lt61": "Az alvás helyreállása",
+"lt67": "Често депресията, тревожността и нервността са следствие от нарушения баланс в организма и липсата на неврони трансмитери. Спазмът на кръвоносните съдове пречи на мозъка да предава нервни импулси, те не достигат до клетките и животът изглежда сив.",
 
-"lt62": "Éjszaka nem tud elaludni, reggel pedig álmosság gyötri. Az állandó stressz és a túlterheltség zavarokat idéz elő az idegrendszer működésében, és ennek eredményeként pedig alvászavart.",
+"lt68": " <span>АВР-051 подобрява проводимостта на нервните импулси и нормализира работата на хормоналната система.</span> Тялото влиза в баланс на физическо и емоционално ниво.",
 
-"lt63": "Az XX «megtanítja» a szervezetnek ellazítania az ereket, és oldja a feszültséget, így szabályozva a szimpatikus idegrendszer működését. Este könnyedén elalszik, reggel pedig kipihentnek érzi magát.",
+"lt69": "Подобряване на работоспособността",
 
-"lt64": "Az időjárás-változásra való érzékenység csökkenése",
+"lt70": "Нямам сила за нищо друго, освен за работа. Пък, и за нея вече не ми стигат - обикновено това е състоянието на съвременния човек. Синдромът на хроничната умора се дължи на проблеми в регулирането на вегетативната нервна система. В организма се нарушават процесите на инхибиране - това означава, че просто не можете да почивате.",
 
-"lt65": "Ha az időjárás változásakor fáj a feje, az azt jelenti, hogy Ön szervezete az időjárásra érzékeny. Ennek az oka az autonóm idegrendszer zavarában keresendő. Mindemellett a külső környezet kellemetlen hatást gyakorol a szervezetre.",
+"lt71": "АВР-051 възстановява физиологичните процеси на възбуждане и инхибиране на нервната система.",
 
-"lt66": "Az XX stabilizálja a vérnyomását és beállítja az idegrendszer helyes működését.",
+"lt72": "Нормализиране на съня",
 
-"lt67": "A teljesítőképesség növekedése",
+"lt73": "През нощта не можете да заспите, а през деня се борите със сънливостта. Постоянният стрес и умората предизвикват нарушения в нервната система и в резултат на това се появява безсъницата.",
 
-"lt68": "<span>Az XX szabályozza a szervezet funkcionális állapotát, a vérkeringést és a szervek oxigénellátását.  A test jobban működik, vagyis energikusabbnak érzi magát.</span>Több ereje lesz az aktív élethez.",
+"lt74": "АВР-051 «учи» тялото да отпуска кръвоносните съдове и да намалява напрежението, коригира работата на симпатиковата нервна система. Вечер лесно заспивате, а сутрин се чувствате отпочинали.",
 
-"lt69": "<span>Hogyan kell használni a</span>vérnyomás-szabályozót",
+"lt75": "Намаляване на метеорологична чувствителност",
 
-"lt70": "авр<span>051</span>",
+"lt76": "Ако \"от времето\" имате главоболие, значи сте чувствителни към времето. Причината се крие в нарушената работа на вегетативната нервна система. В този случай външната среда има неприятен ефект върху тялото.",
 
-"lt71": "Vegye ki a készüléket a csomagolásból",
+"lt77": "АВР-051 стабилизира собственото Ви кръвно налягане и регулира правилното функциониране на нервната система.",
 
-"lt72": "Helyezze be a két AAA elemet a készülékbe",
+"lt78": "Повишаване на производителността",
 
-"lt73": "Helyezze fel a készüléket a bal csuklója belső oldalára",
+"lt79": " <span>АВР-051 регулира функционалното състояние на организма, кръвообращението и храненето на органите с кислород. Тялото работи по-добре, а това означава, че се чувствате по-енергични.</span> Имате повече сила за активен и ярък живот.",
 
-"lt74": "Állítsa be a készüléket az ábrának megfelelően",
+"lt80": " <span>Как се използва</span> коректора на кръвното налягане",
 
-"lt75": "Nyomja meg a piros gombot",
+"lt82": "Заемете удобна позиция, <span>разхлабете лявата си ръка</span> ",
 
-"lt76": "Ne vegye le a készüléket, amíg az indikátor világít",
+"lt83": "Закопчейте<span> устройството на китката си</span> и го включете",
 
-"lt78": "Ismételje meg naponta 2-3 alkalommal 14 napon keresztül",
+"lt84": "Изпълнявайте процедурата <span>от 1 до 3 пъти на ден</span> по 6 минути",
 
-"lt79": "FONTOS:",
+"lt85": "ВАЖНО:",
 
-"lt80": "Ha már orvos által előírt gyógyszereket szed, az XX készülék kiegészíti és fokozza azok hatását, így felgyorsítva a gyógyulás folyamatát. Az eszköz monoterápia esetén is hatékony, és önmagában is használható.",
+"lt86": "Ако вече вземате лекарства по лекарско предписание, устройството АВР-051 ще допълни тяхното действие и ще ускори процеса на възстановяване. Също така, устройството е ефективно и като монотерапия и може да се използва за отделно.",
 
-"lt81": "XX: készülék a vérnyomás stabilizálásához. Egyformán magas terápiás hatást fejt ki mind az artériás hipertóniában, mind pedig a hipotenzióban szenvedőknél is. A vérnyomás-szabályozó két programon működik, amelyek az áramimpulzusok sorrendjében különböznek. Az első esetben elősegítik az ér összehúzódását, a második esetben kitágítják azokat.",
+"lt87": "С какви <span>проблеми може да се справи</span> коректора на кръвно налягане?",
 
-"lt82": "A készülék rendszeres használatával az impulzusok kiválasztott sorrendben történő mozgása lehetővé teszi a vérnyomás stabilizálását az életkornak megfelelő egészséges értékeken belül.",
+"lt88": "Процедурите на електрическа стимулация, извършвани с апарата «АВР-051», <span>могат да се използват заедно с основната лекарствена терапия</span> при пациенти със заболявания на сърдечно-съдовата система",
 
-"lt83": "Milyen<span>problémák esetén segít a</span>vérnyomás-szabályozó?",
+"lt89": "артериална хипертония от I-II-III степен",
 
-"lt84": "Az XX készülék segítségével végzett elektrostimulációs eljárások<span> javasoltak az alapvető gyógyszeres kezelés mellett</span> azon betegek számára, akik a kardiovaszkuláris rendszer betegségeitől szenvednek, mint például a",
+"lt90": "невроциркулаторна дистония",
 
-"lt85": "I-II-III stádiumú artériás hipertenzió",
+"lt91": "коронарна болест на сърцето",
 
-"lt86": "szívkoszorúér-betegség",
+"lt92": "стенокардия",
 
-"lt87": "koszorúér szűkület",
+"lt93": "заболявания и травматични увреждания на кръвоносните съдове",
 
-"lt88": "érbetegségek és az erek traumatikus sérülései",
+"lt94": "хронична сърдечна недостатъчност",
 
-"lt89": "krónikus szívelégtelenség",
+"lt95": "ангиоспазми, заличаващ се ендартерит",
 
-"lt90": "A szakértő<span>véleménye</span>",
+"lt96": "болест на Рейно",
 
-"lt91": "Az artériás hipertónia szindróma egy összetett betegség. A kezelés elsősorban a szövődmények elkerülésére vagy kiiktatására irányul. Ezenkívül a konzervatív kezelés nem jelenti a készítmények eltörlését, mivel ha az ember ezeket elkezdi szedni, évekig gyógyszeres terápiára kényszerül. A gyógyszerek egyéni kiválasztást igényelnek, és hosszantartó használatuk súlyos következményekkel járhat.",
+"lt97": "Коментар на <span>специалист</span> ",
 
-"lt92": "Az XX készülés másképpen hat. A fizikailag nem érezhető impulzusok miatt a készülék megváltoztatja az erek feszességét.</span>Ez döntő előrehaladást eredményez a hipertónia kezelésében. A tradicionális kezeléssel való kombinációja pedig lehetséges.",
+"lt98": "Синдромът на артериалната хипертония е сложно заболяване. Лечението предимно е насочено към премахване на последствията. Освен това, консервативното лечение не означава отмяна на лекарствата, започвайки употребата им, Вие ще попаднете за дълги години на продължителна лекарствена терапия. Лекарствата трябва да се подбират индивидуално и имат сериозни последици при продължителна употреба.",
 
-"lt93": "ABP-051 az általános közérzet javulására is jó hatással van. A vérkeringés javul<span>, és ettől az ember frissebbnek érzi magát, jobban teljesít, és energiával telik meg.</span> Segít megszabadulni az időjárásra való érzékenységtől is. Én minden magas vérnyomásban szenvedő embernek javaslom az XX kúraszerű 14 napos használatát. Megelőzés céljából az eszközt naponta legfeljebb 1 alkalommal lehet alkalmazni, és használata csak 14 évnél idősebb személyeknek ajánlott. ",
+"lt99": "Устройството АВР-051 действа по различен начин. С помощта на импулсите на тока, които не се усещат физически,<span>устройството предизвиква промяна в тонуса на кръвоносните съдове.</span> Това дава голяма промяна в лечението на хипертонията. И възможността да се комбинира с традиционните схеми на лечение.",
 
-"lt94": "Simon Áron",
+"lt100": "ABP-051 е добър за цялостно подобряване на здравословното състояние. Подобряване на кръвообращението – това е <span>чувството на бодрост, и подобряване на работоспособността и повишаване на енергичността.</span> И възможността да се отървете от метеорологичната чувствителност. Препоръчвам да използвате устройството ABP-051 в продължение на 14 дни за терапевтични цели на всички, страдащи от хипертония. За превантивни цели устройството може да се използва ежедневно не повече от 1 път на ден за лица над 14-годишна възраст.",
 
-"lt95": "professzor, orvos, kardiológus",
+"lt101": "Костадин Станчев",
 
-"lt96": "Munkatapasztalat: 36 év",
+"lt102": "Професор, доктор на медицинските науки, кардиолог",
 
-"lt97": "Tanúsítványok és engedélyek",
+"lt103": "Трудов стаж: 36 години",
 
-"lt98": "Egy megbízható értékesítő vagyunk, és készek vagyunk ennek a dokumentumokkal való megerősítésére is.",
+"lt104": "Отзиви",
 
-"lt99": "az összes tanúsítvány megnyitása",
+"lt105": "През последните няколко години хипертонията силно ми разваляше живота. Когато времето е хладно може да се търпи, а през лятото, в жегата, направо ми се плаче. Сърцето ми бие така, че чак в главата ми звъни, вдигам кръвно, нямам сили. През изминалите години лекарствата ме спасяваха някак си, но сега те не ми помагат. Реших да опитам гривната за корекция на кръвното налягане АВР-051. <span>Забелязах подобрение още на петия ден от употребата. Главата ми спря да се върти, кръвното ми не се вдигаше над 130. Чувствам се страхотно!</span> ",
 
-"lt100": "Visszajelzések",
+"lt106": "Веселина, 65 годишна",
 
-"lt101": "A progresszív hipertóniámmal két bypass műtéten (aorto-coronariás áthidaláson) is átestem: a vérnyomásom megugrott, és ráeszmélni sem volt időm, már a kórházban feküdtem és töltöttem ki a papírokat a műtéthez. A harmadik szívroham már elég rosszul érintett. Több mint egy hónapig feküdtem a kórházban, elhagyott az erőm. Azt gondoltam, hogy kész, ennyi volt, nem élem túl. A feleségem mentett meg engem: szinte kényszerített arra, hogy vérnyomás-szabályozót viseljek. Hiába álltam ellen, ő volt az, aki valójában kihúzott engem a gödörből, és nem hagyta, hogy magába rántson a túlvilág. <span> Az állapotom szemmel láthatóan javult, csökkent a vérnyomás, a kísérő tünetek eltűntek. Ezután az eset után a vérnyomásmérő soha nem mutatott 130 fölötti értéket, pedig már több mint két év telt el.</span> ",
+"lt107": "Преживях две коронарни байпасни операции с прогресираща хипертония: вдигнах кръвно, нямах време да се опомня  –  и вече лежах в болницата с инфаркт и попълвам документи за операцията. Третият ми инфаркт много ме подкоси. Лежах в болницата повече от месец, силите ми ме напускаха. Мислех си, че вече няма да преживея това. Жена ми ме спаси: едва ли не със сила ме накара да нося коректора на кръвното налягане. Разбира се, напразно се съпротивлявах, защото всъщност той ме извади от оня свят. <span>Състоянието ми видимо започна да се подобрява, кръвното ми спадна, а съпътстващите симптоми изчезнаха. След този случай, нито веднъж тонометъра не е показал над 130, а минаха вече повече от две години.</span> ",
 
-"lt102": "Ákos, 56 éves",
+"lt108": "Александър, на 56 години",
 
-"lt103": "Nem emlékszem, hány éve kezelnek magas vérnyomással. Az elmúlt hat hónapban 4 hipertóniás válságom volt. Nagyon rosszul érintettek, teljesen elhagyott az erőm. Eltűnt még a vágy is, hogy legyőzzem ezt a betegséget, és enélkül egész életemben tablettákra szorultam. Nem akartam kipróbálni mindenféle új gyógyszert, de a XX felkeltette az érdeklődésemet, és a feladattal szuperül megbirkóztam. A vérnyomás még a melegben sem ingadozik, a fejfájás is enyhült. Folyamatosan a karomon van a szabályozó, hogy ne felejtsük el a procedúrákat, és ha valami történik, akkor azonnal lépni tudjunk.<span>Még csak 10 napja gyógyulok vele, de az eredmény már most nagyon nagy örömet szerez.</span> ",
+"lt109": "Дори не мога да си спомня от колко години се мъча с това кръвно. През последните шест месеца имах 4 хипертонични кризи. Преживях ги трудно, силите напълно ме напуснаха. Желанието ми да се боря с това заболяване изчезна - и без това цял живот пия хапчета. Не ми се искаше да опитвам някакви нови лекарства, но АВР-051 ме заинтересува и той перфектно се справи със задачата си. Кръвното ми вече не скача дори в жегата, главоболието ми отстъпва. Нося коректора на ръката си постоянно, за да не забравям за процедурите и ако нещо почувствам, веднага го използвам. <span>За сега едва от 10 дни се лекувам с негова помощ, но много съм доволен от резултата.</span> ",
 
-"lt104": "Lukács, 72 éves",
+"lt110": "Николай, на 72 години",
 
-"lt105": "Az elmúlt években a magas vérnyomás teljesen tönkre tette az életem. A hideg évszakokban még valahogy tolerálható volt a helyzet, de nyáron a melegben csak sírni van kedvem. A szívverésemet már a fejemben érzem, a vérnyomásom felugrik, és semmi erőm. Az elmúlt években még valahogy a gyógyszerek megmentettek, de most már azok sem segítenek. Úgy döntöttem, hogy kipróbálom az XX vérnyomás szabályozót. <span>A javulást már a használat ötödik napján észrevehető volt. A szédülés abbamaradt, a vérnyomásom pedig nem megy 130 fölé. Kiválóan érzem magam!</span>",
+"lt112": "Начало",
 
-"lt106": "Petra, 65 éves",
+"lt113": "Как работи",
 
-"lt107": "A progresszív hipertóniámmal két bypass műtéten (aorto-coronariás áthidaláson) is átestem: a vérnyomásom megugrott, és ráeszmélni sem volt időm, már a kórházban feküdtem és töltöttem ki a papírokat a műtéthez. A harmadik szívroham már elég rosszul érintett. Több mint egy hónapig feküdtem a kórházban, elhagyott az erőm. Azt gondoltam, hogy kész, ennyi volt, nem élem túl. A feleségem mentett meg engem: szinte kényszerített arra, hogy vérnyomás-szabályozót viseljek. Hiába álltam ellen, ő volt az, aki valójában kihúzott engem a gödörből, és nem hagyta, hogy magába rántson a túlvilág. <span> Az állapotom szemmel láthatóan javult, csökkent a vérnyomás, a kísérő tünetek eltűntek. Ezután az eset után a vérnyomásmérő soha nem mutatott 130 fölötti értéket, pedig már több mint két év telt el.</span> ",
+"lt114": "Клинични проучвания",
 
-"lt108": "Ákos, 56 éves",
+"lt115": "Отзиви",
 
-"lt109": "Nem emlékszem, hány éve kezelnek magas vérnyomással. Az elmúlt hat hónapban 4 hipertóniás válságom volt. Nagyon rosszul érintettek, teljesen elhagyott az erőm. Eltűnt még a vágy is, hogy legyőzzem ezt a betegséget, és enélkül egész életemben tablettákra szorultam. Nem akartam kipróbálni mindenféle új gyógyszert, de a XX felkeltette az érdeklődésemet, és a feladattal szuperül megbirkóztam. A vérnyomás még a melegben sem ingadozik, a fejfájás is enyhült. Folyamatosan a karomon van a szabályozó, hogy ne felejtsük el a procedúrákat, és ha valami történik, akkor azonnal lépni tudjunk.<span>Még csak 10 napja gyógyulok vele, de az eredmény már most nagyon nagy örömet szerez.</span> ",
+"lt116": "Коректор за<br>високо кръвно налягане",
 
-"lt110": "Lukács, 72 éves",
+"lt117": " <span>Спасението </span> от хипертонията е <span>лесно!</span> ",
 
-"lt111": "Az elmúlt években a magas vérnyomás teljesen tönkre tette az életem. A hideg évszakokban még valahogy tolerálható volt a helyzet, de nyáron a melegben csak sírni van kedvem. A szívverésemet már a fejemben érzem, a vérnyomásom felugrik, és semmi erőm. Az elmúlt években még valahogy a gyógyszerek megmentettek, de most már azok sem segítenek. Úgy döntöttem, hogy kipróbálom az XX vérnyomás szabályozót. <span>A javulást már a használat ötödik napján észrevehető volt. A szédülés abbamaradt, a vérnyomásom pedig nem megy 130 fölé. Kiválóan érzem magam!</span>",
+"lt118": "Коригира",
 
-"lt112": "Petra, 65 éves",
+"lt119": "кръвното налягане",
 
-"lt113": "A progresszív hipertóniámmal két bypass műtéten (aorto-coronariás áthidaláson) is átestem: a vérnyomásom megugrott, és ráeszmélni sem volt időm, már a kórházban feküdtem és töltöttem ki a papírokat a műtéthez. A harmadik szívroham már elég rosszul érintett. Több mint egy hónapig feküdtem a kórházban, elhagyott az erőm. Azt gondoltam, hogy kész, ennyi volt, nem élem túl. A feleségem mentett meg engem: szinte kényszerített arra, hogy vérnyomás-szabályozót viseljek. Hiába álltam ellen, ő volt az, aki valójában kihúzott engem a gödörből, és nem hagyta, hogy magába rántson a túlvilág.<span> Az állapotom szemmel láthatóan javult, csökkent a vérnyomás, a kísérő tünetek eltűntek. Ezután az eset után a vérnyomásmérő soha nem mutatott 130 fölötti értéket, pedig már több mint két év telt el.</span> ",
+"lt120": "Подобрява",
 
-"lt114": "Ákos, 56 éves",
+"lt121": "здравословното състояние и съня",
 
-"lt117": "авр<span>051</span>",
+"lt122": "Стабилизира",
 
-"lt118": "Főoldal",
+"lt123": "емоционалното състояние",
 
-"lt119": "Hogyan működik",
+"lt124": "Нормализира",
 
-"lt120": "Klinikai vizsgálatok",
+"lt125": "работата на сърдечно-съдовата система",
 
-"lt121": "Visszajelzések",
+"lt126": "Увеличава",
 
-"lt122": "<br>Vérnyomás-szabályozó",
+"lt127": "работоспособността",
 
-"lt123": "<span>Szabaduljon meg</span>a magas vérnyomástól <span>könnyedén!</span>",
+"lt128": " <span>Ефективността</span> <br>е клинично доказана!",
 
-"lt124": "Korrigálja",
+"lt129": "Устройството е регистрирано като <span>медицинско изделие</span> ",
 
-"lt125": "az artériás vérnyomást",
+"lt130": "Само днес! <span>50% намаление</span> ",
 
-"lt126": "Javítja",
+"lt131": "cтара цена:",
 
-"lt127": "a közérzetet és az alvást",
+"lt133": "нова цена:",
 
-"lt128": "Stabilizálja",
+"lt135": "Държава",
 
-"lt129": "az érzelmi<br>állapotot",
+"lt136": "Вашето име",
 
-"lt130": "Helyreállítja",
+"lt137": "Телефон",
 
-"lt131": "a szív- és érrendszer működését.",
+"lt138": "поръчай",
 
-"lt132": "Fokozza",
+"lt139": "Вашите данни са защитени",
 
-"lt133": "a munkabírást",
+"lt140": "До края на промоцията остава:",
 
-"lt134": "Hatékonyságát<br>klinikai vizsgálatok bizonyították*",
+"lt141": "часа",
 
-"lt135": "A készülék<span>orvosi termékként van regisztrálva</span>",
+"lt142": "минути",
 
-"lt136": "Ország",
-
-"lt137": "Neve",
-
-"lt138": "Telefonszám:",
-
-"lt139": "rendelés",
-
-"lt140": "Adatai biztonságban vannak",
-
-
-
-
-
-
-
-
-
-
-
+"lt143": "секунди",
 
 
 };
