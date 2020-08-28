@@ -225,7 +225,7 @@ h1, h2, h3, p {
 
 .block1 {
     padding-top: 30px;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     background: url("../img/bl1_bg.png") top no-repeat;
     background-size: 100% 100%
 }
@@ -1354,7 +1354,7 @@ h1, h2, h3, p {
 .bl7__list:before {
     position: absolute;
     top: 17px;
-    bottom: 138px;
+    bottom: 157px;
     left: 0;
     width: 4px;
     background-color: #71ada2;
@@ -1569,7 +1569,6 @@ h1, h2, h3, p {
 
 .bl9-header__title {
     margin-bottom: 30px;
-    text-align: center
 }
 
 .bl9-header__title h2 {
@@ -2041,11 +2040,11 @@ h1, h2, h3, p {
 
     .bl7__list:before {
         top: 28px;
-        bottom: 210px
+        bottom: 200px
     }
 
     .loader {
-        bottom: 225px
+        bottom: 113px
     }
 
     .bl2-bottom__main {
@@ -2375,8 +2374,8 @@ h1, h2, h3, p {
     }
 
     .loader {
-        bottom: 97px;
-        left: 289px
+        bottom: 112px;
+        left: 266px;
     }
 
     h1, h2, h3, {
@@ -2496,7 +2495,7 @@ h1, h2, h3, p {
 
     .bl7__list:before {
         top: 28px;
-        bottom: 189px
+        bottom: 199px
     }
 
     .bl9-header__text {
@@ -2543,8 +2542,8 @@ h1, h2, h3, p {
     }
 
     .loader {
-        bottom: 79px;
-        left: 179px
+        bottom: 94px;
+        left: 157px;
     }
 
     .bl2-right__list li:first-child {
@@ -2785,17 +2784,18 @@ h1, h2, h3, p {
     }
 
     .bl5-right__list li:before {
-        width: 70px
+        width: 55px;
+        background-size: 100% auto;
     }
 
     .bl5-right__list li {
-        padding-left: 90px;
+        padding-left: 55px;
     }
 
     .bl5__left p {
         top: 35%;
         left: 51%;
-        font-size: 14px;
+        font-size: 13px;
         max-width: 150px;
         padding: 5px;
         background-color: #fff;
@@ -2803,8 +2803,8 @@ h1, h2, h3, p {
     }
 
     .loader {
-        bottom: 58px;
-        left: 138px
+        bottom: 16%;
+        left: 33%;
     }
 
     .bl2-bottom__right {
@@ -2843,6 +2843,7 @@ h1, h2, h3, p {
 
     .bl6__header {
         margin-bottom: 30px;
+        text-align: center;
     }
 
     .block9 {
@@ -2880,18 +2881,14 @@ h1, h2, h3, p {
         top: 37px;
         bottom: 182px
     }
-
     .loader {
-        bottom: 43px;
-        left: 114px
+        bottom: 11%;
+        left: 27%;
     }
 }
 
 @media screen and (max-width:320px) {
-    .loader {
-        bottom: 35px;
-        left: 98px
-    }
+
 
     .bl9-main__img img {
         margin-bottom: -46px;
@@ -3170,6 +3167,29 @@ h1, h2, h3, p {
     .open-sertificate {
         padding-right: 30px;
         padding-left: 30px;
+    }
+
+    .bl1-main__title h1 {
+        font-size: 34px;
+    }
+
+    .bl3-main__text p {
+        font-size: 20px;
+    }
+
+    .bl2-top__main {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .bl6-main__list li p {
+        font-size: 19px;
+    }
+
+    .bl11-main__text div p {
+
+        font-size: 18px;
+        line-height: 1.2;
     }
 }
 

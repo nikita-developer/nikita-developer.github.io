@@ -3430,7 +3430,7 @@ a.async_saving.cs39 .img,
     display: flex;
     -ms-align-items: flex-end;
     align-items: flex-end;
-    flex-basis: 70%;
+    flex-basis: 450px;
     justify-content: space-between;
     padding-bottom: 23px;
 }
@@ -5199,7 +5199,7 @@ html .cs40 {
 .pages-title p {
     margin: 0;
     font-size: 13px;
-    line-height: 23px;
+    line-height: 1.2;
     font-weight: 600;
 }
 

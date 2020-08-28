@@ -34566,7 +34566,11 @@ iframe[src*=likus] {
     }
 
     .aentry-post__text {
-        margin-bottom: 35px
+        margin-bottom: 0
+    }
+
+    .mdspost-extra {
+        margin-top: 0;
     }
 
     .aentry-post__title-text {

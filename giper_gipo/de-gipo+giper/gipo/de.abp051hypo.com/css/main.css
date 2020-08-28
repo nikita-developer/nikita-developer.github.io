@@ -2608,7 +2608,7 @@ img {
     .container h2,
     .container h3 {
         font-size: 26px;
-        line-height: normal
+        line-height: 1;
     }
 
     .container h2 {
@@ -2714,6 +2714,8 @@ img {
 .sertificate__subtitle {
     text-align: center;
     font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
 .sertificate__box {
@@ -3010,7 +3012,9 @@ img {
         font-size: 17px;
     }
 
-    
+    .sertificate__subtitle {
+        line-height: 1.2 !important;
+    }
 }
 
 @media (max-width: 400px) {

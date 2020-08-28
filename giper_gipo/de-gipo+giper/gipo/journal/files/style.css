@@ -34575,7 +34575,7 @@ iframe[src*=likus] {
     }
 
     .aentry-post__text {
-        margin-bottom: 35px
+        margin-bottom: 0
     }
 
     .aentry-post__title-text {
@@ -34688,7 +34688,7 @@ iframe[src*=likus] {
 }
 
 .acomments .mdspost-comments-controls__meta {
-    margin-bottom: 40px
+    margin-bottom: 15px
 }
 
 .acomments .b-pager {
