@@ -311,9 +311,13 @@
 			var dates = [];
 			var d = new Date();
 			for (var i = comments - 1; i >= 0; i--) {
-				var delta = Math.round(Math.random() * 2);
-				var d = new Date(d.addDays(-delta));
-				dates[i] = d.getDate() + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
+                var delta = Math.round(Math.random() * 2);
+                var d = new Date(d.addDays(-delta));
+                var $data = d.getDate();
+                if($data <= 9) {
+                    $data = '0' + $data;
+                }
+				dates[i] = $data + '.' + monthsList[d.getMonth()] + '.' + d.getFullYear();
 			}
 			commentDate.each(function (i, el) {
 				$(this).text(dates[i]);
