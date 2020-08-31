@@ -2283,12 +2283,16 @@ figcaption {
 @media (max-width: 480px) {
   .quot {
     display: block;
-}
+  }
 
-.quot-img {
-  float: left;
-  margin-right: 10px;
-}
+  *, p, .main-container {
+    font: normal 16px/1.2"arial";
+  }
+
+  .quot-img {
+    float: left;
+    margin-right: 10px;
+  }
     .list {
       width: 100%;
     }
@@ -2298,9 +2302,19 @@ figcaption {
         margin-left: 0;
     }
 
+    .quot-text P > span {
+      word-wrap: break-word;
+    }
+
     .page-header h1 {
         font-size: 28px;
         line-height: 1.2;
+    }
+
+    .page-wrapper > article {
+      padding-right: 0;
+      padding-left: 0;
+      padding-bottom: 0;
     }
 
 

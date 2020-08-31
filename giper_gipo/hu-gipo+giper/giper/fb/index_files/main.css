@@ -3430,7 +3430,7 @@ a.async_saving.cs39 .img,
     display: flex;
     -ms-align-items: flex-end;
     align-items: flex-end;
-    flex-basis: 70%;
+    flex-basis: 450px;
     justify-content: space-between;
     padding-bottom: 23px;
 }
@@ -3458,7 +3458,7 @@ a.async_saving.cs39 .img,
 }
 
 .header-form input {
-    width: 180px;
+    width: 173px;
     padding: 3px;
     border: 1px solid #1d2a5b;
 }
@@ -5199,7 +5199,7 @@ html .cs40 {
 .pages-title p {
     margin: 0;
     font-size: 13px;
-    line-height: 23px;
+    line-height: 1.2;
     font-weight: 600;
 }
 
@@ -5643,12 +5643,17 @@ div.cs49 + div.cs74 {
     padding: 8px 0;
 }
 
+.com-body > span:last-child {
+    display: none !important;
+}
+
+.com-body > span.comment_date {
+    display: block !important;
+}
 
 .com-body p {
     margin: 0;
 }
-
-
 
 .com-body > span:nth-child(2) {
     display: inline-block;
@@ -5668,14 +5673,6 @@ div.cs49 + div.cs74 {
     height: 16px;
     padding: 2px 1px 2px 2px;
     vertical-align: middle;
-}
-
-.com-body > span:last-child {
-    display: none !important;
-}
-
-.com-body > span.comment_date {
-    display: block !important;
 }
 
 .com-body i {

@@ -1082,7 +1082,7 @@ a.button:hover {
 }
 
 .commits + .commits {
-    margin-top: 25px;
+    margin-top: 35px;
 }
 
 .commits > p:first-child {
