@@ -30181,10 +30181,6 @@ HTML BODY .mdspost-brief .i-ljuser .i-ljuser-profile {
     margin-bottom: 20px
 }
 
-.mdspost-text OL LI:last-child, .mdspost-text UL LI:last-child {
-    margin-bottom: 0;
-}
-
 .mdspost-text OL LI:before,
 .mdspost-text UL LI:before {
     position: absolute;
@@ -34683,7 +34679,7 @@ iframe[src*=likus] {
 }
 
 .acomments .mdspost-comments-controls__meta {
-    margin-bottom: 40px
+    margin-bottom: 20px
 }
 
 .acomments .b-pager {
@@ -42080,11 +42076,6 @@ a:visited._vd {
 
 ._33 {
     margin-right: 24px;
-}
-
-i {
-    display: block;
-    text-align: center;
 }
 
 @media (max-width: 1100px) {

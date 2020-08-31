@@ -256,7 +256,8 @@ img {
 
 .bl1__list h1 {
     margin-bottom: 30px;
-    font: 42px montserratbold
+    font: 42px montserratbold;
+    line-height: 1;
 }
 
 .bl1__list>p {
@@ -2504,6 +2505,10 @@ img {
         margin-bottom: 0;
     }
 
+    .bl10-bottom__list li>div p, .bl10-top__list li>div p {
+        visibility: hidden;
+    }
+
     .bl1__logo {
         margin-bottom: 20px;
     }
@@ -2996,7 +3001,8 @@ img {
     }
 
     .bl1__list h1 {
-        font: 28px montserratbold;
+        font-size: 28px;
+        line-height: 1;
     }
 
     .sertificate__box {
@@ -3032,4 +3038,10 @@ img {
 
 .body-hide {
     overflow: hidden;
+}
+
+@media (max-width: 380px) {
+    .block5 {
+        background-position-y: 248px;
+    }
 }
