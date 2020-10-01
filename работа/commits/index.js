@@ -113,40 +113,40 @@ window.onload = function() {
 
         if (format == 'fullTime') {
             if (dd < 10) dd = '0' + dd;
-            if (mm += 1 < 10) mm = '0' + mm;
+            if ((mm = mm + 1) < 10) mm = '0' + mm;
             if (yy < 10) yy = '0' + yy;
             return dd + '.' + mm + '.' + yy;
         } else if (format == 'minTime') {
             if (dd < 10) dd = '0' + dd;
-            if (mm += 1 < 10) mm = '0' + mm;
+            if ((mm = mm + 1) < 10) mm = '0' + mm;
             if ((yy %= 100) < 10) yy = '0' + yy;
             return dd + '.' + mm + '.' + yy;
         } else if (format == 'year') {
             if (yy < 10) yy = '0' + yy;
             return yy;
         } else if (format == 'month') {
-            if (mm += 1 < 10) mm = '0' + mm;
+            if ((mm = mm + 1) < 10) mm = '0' + mm;
             return mm;
         } else if (format == 'day') {
             if (dd < 10) dd = '0' + dd;
             return dd;
         } else if (format == 'day-month') {
             if (dd < 10) dd = '0' + dd;
-            if (mm += 1 < 10) mm = '0' + mm;
+            if ((mm = mm + 1) < 10) mm = '0' + mm;
             return dd + '.' + mm;
         } else if (format == 'day-year') {
             if (dd < 10) dd = '0' + dd;
             if (yy < 10) yy = '0' + yy;
             return dd + '.' + yy;
         } else if (format == 'month-year') {
-            if (mm += 1 < 10) mm = '0' + mm;
+            if ((mm = mm + 1) < 10) mm = '0' + mm;
             if (yy < 10) yy = '0' + yy;
             return mm + '.' + yy;
         } else if (format == 'false') {
             return '';
         } else {
             if (dd < 10) dd = '0' + dd;
-            if (mm += 1 < 10) mm = '0' + mm;
+            if ((mm = mm + 1) < 10) mm = '0' + mm;
             if (yy < 10) yy = '0' + yy;
             return dd + '.' + mm + '.' + yy;
         };
