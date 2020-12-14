@@ -1,5 +1,5 @@
 .commits {
-    padding: 15px;
+    margin-top: 15px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
@@ -53,8 +53,6 @@
     font-size: 12px;
 }
 
-/* .commits__body {} */
-
 .commits__description {
     color: #000;
     line-height: 24px;
@@ -106,6 +104,15 @@
 
 .commits_error {
     border-color: red;
+}
+
+.commits__sucses {
+    background-color: #a1caa6;
+    color: #fff;
+    display: inline-block;
+    padding: 7px 20px;
+    margin-top: 15px;
+    font-style: italic;
 }
 
 @media(max-width: 480px) {
