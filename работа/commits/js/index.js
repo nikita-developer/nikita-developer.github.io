@@ -4,7 +4,7 @@ $(document).ready(function () {
     var $arryMontRU = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
 
     /* проставляем дату в коммитах */
-    dataComments('commits__date', $arryDay, $arryMont);
+    dataComments('js-commits__date', $arryDay, $arryMont);
 
     /* проставляем дату */
     dataFull('data', $arryDay, $arryMont);

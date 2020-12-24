@@ -9,8 +9,8 @@
     font-size: 24px;
 }
 
-.commits__item {
-    padding: 25px 0 0;
+.commits__item + .commits__item {
+    padding-top: 25px;
 }
 
 .commits__item.hide .commits__add {
@@ -83,9 +83,11 @@
 .commits__field-name {
     display: block;
     width: 100%;
-    max-width: 230px;
+    max-width: 500px;
     margin-bottom: 10px;
     padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #b9b7b7;
 }
 
 .commits__field-message {
@@ -96,6 +98,8 @@
     margin-bottom: 10px;
     padding: 5px;
     resize: none;
+    box-sizing: border-box;
+    border: 1px solid #b9b7b7;
 }
 
 .commits__item_hide {
@@ -115,8 +119,49 @@
     font-style: italic;
 }
 
+.commits__add-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #b10000;
+    text-decoration: none;
+    opacity: .9;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.commits__add-btn:hover {
+    transform: scale(.98);
+    opacity: 1;
+}
+
+.mybtn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #b10000;
+    text-decoration: none;
+    opacity: .9;
+    text-transform: uppercase;
+}
+
+
+
+.mybtn:hover {
+    transform: scale(.98);
+    opacity: 1;
+}
+
 @media(max-width: 480px) {
     .commits__description {
         font-size: 14px;
+    }
+
+    .commits__sucses {
+        font-size: 12px;
     }
 }
