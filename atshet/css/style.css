@@ -254,6 +254,9 @@ html [type="button"],
   background: -webkit-gradient(linear, left top, left bottom, from(#fc8f00), to(#cc3702));
   background: -o-linear-gradient(top, #fc8f00 0%, #cc3702 100%);
   background: linear-gradient(180deg, #fc8f00 0%, #cc3702 100%);
+  -webkit-animation: btn 2s linear infinite;
+  animation: btn 2s linear infinite;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -2591,6 +2594,52 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   font-size: 21px;
   font-weight: 500;
   margin-bottom: 30px;
+  -webkit-animation: pulse 3s linear infinite;
+  animation: pulse 3s linear infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  10% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+
+  20% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  10% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+
+  20% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 .block5 {
@@ -2688,9 +2737,19 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 
 .block6__item-body {
   z-index: 2;
-  padding: 200px 20px 40px 20px;
   -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
+  background-image: url("../media/block6/cards.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.block6__item-back {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  padding: 200px 20px 40px 20px;
   background-image: url("../media/block6/icon.png");
   background-repeat: no-repeat;
   background-position: center top;
@@ -2700,16 +2759,6 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
   color: #fe8f00;
 }
 
-.block6__item-back {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  background-image: url("../media/block6/cards.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 5px;
-}
-
 .block6__wrap {
   -webkit-perspective: 1200;
   perspective: 1200;
@@ -2717,6 +2766,11 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 .block6__wrap:hover .block6__item {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.block6__wrap:first-child .block6__item {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
